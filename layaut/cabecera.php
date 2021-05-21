@@ -18,6 +18,9 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
       rel="stylesheet" />
 
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="../assets/vendor/font-awesome/css/font-awesome.min.css">
+
    <!-- Vendor CSS Files -->
    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
    <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
@@ -30,3 +33,4 @@
 
    <!-- Template Main CSS File -->
    <link href="../assets/css/style.css" rel="stylesheet" />
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">
