@@ -1,7 +1,7 @@
-<?php include_once('../layaut/cabecera.php'); ?>
+<?php include_once('../../layaut/plantilla/cabecera.php'); ?>
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
-<link rel="stylesheet" href="../assets/vendor/galery/disponibilidad.css">
-<?php include_once('../layaut/menu.php'); ?>
+<link rel="stylesheet" href="../../assets/vendor/galery/disponibilidad.css">
+<?php include_once('../../layaut/plantilla/menu.php'); ?>
 
 <main id="main" style="padding-top: 40px;">
 
@@ -218,8 +218,8 @@
    <!-- End Modal EDITAR-->
 </form>
 
-<?php include_once('../layaut/footer.php'); ?>
+<?php include_once('../../layaut/plantilla/footer.php'); ?>
 <!-- COLOCAR JS ADICIONALES ACA ABAJO -->
-<script src="../assets/vendor/moment/moment.min.js"></script>
-<script src="../assets/js/controladores/paquete/seleccionar-paquete.js"></script>
-<?php include_once('../layaut/cierre.php'); ?>
+<script src="../../assets/vendor/moment/moment.min.js"></script>
+<script src="../../assets/js/controladores/paquete/seleccionar-paquete.js"></script>
+<?php include_once('../../layaut/plantilla/cierre.php'); ?>

@@ -4,20 +4,16 @@
 <head>
    <meta charset="utf-8" />
    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
    <title>Martínez Travels y Tours</title>
    <meta content="" name="description" />
    <meta content="" name="keywords" />
-
    <!-- Favicons -->
    <link href="assets/img/favicon.png" rel="icon" />
    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-
    <!-- Google Fonts -->
    <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
       rel="stylesheet" />
-
    <!-- Vendor CSS Files -->
    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
@@ -27,10 +23,8 @@
    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
    <link href="assets/css/adminlte.css" rel="stylesheet" />
-
    <!-- Template Main CSS File -->
    <link href="assets/css/style.css" rel="stylesheet" />
-
    <!-- =======================================================
   * Template Name: eBusiness - v2.2.1
   * Template URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
@@ -50,7 +44,6 @@
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
          </div>
-
          <nav class="nav-menu d-none d-lg-block">
             <ul>
                <li class="active"><a href="#header">Inicio</a></li>
@@ -87,11 +80,93 @@
    </header>
    <!-- End Header -->
 
-
+   <!-- Start Slider Area -->
+   <div id="home" class="slider-area">
+      <div class="bend niceties preview-2">
+         <div id="ensign-nivoslider" class="slides">
+            <img src="assets/img/slider/001.jpg" alt="" title="#slider-direction-1" />
+            <img src="assets/img/slider/002.jpg" alt="" title="#slider-direction-2" />
+            <img src="./assets/img/slider/portada.jpg" alt="" title="#slider-direction-3" />
+         </div>
+         <!-- direction 1 -->
+         <div id="slider-direction-1" class="slider-direction slider-one">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                     <div class="slider-content">
+                        <!-- layer 1 -->
+                        <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
+                           <h2 class="title1">Agencia de Viajes </h2>
+                        </div>
+                        <!-- layer 2 -->
+                        <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                           <h1 class="title2">Martínez Travels & Tours</h1>
+                        </div>
+                        <!-- layer 3 -->
+                        <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                           <a class="ready-btn right-btn page-scroll" href="#services">Servicios</a>
+                           <a class="ready-btn page-scroll" href="#about">Historia</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- direction 2 -->
+         <div id="slider-direction-2" class="slider-direction slider-two">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                     <div class="slider-content text-center">
+                        <!-- layer 1 -->
+                        <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                           <h2 class="title1">Agencia de Viajes </h2>
+                        </div>
+                        <!-- layer 2 -->
+                        <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                           <h1 class="title2">Martínez Travels & Tours</h1>
+                        </div>
+                        <!-- layer 3 -->
+                        <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                           <a class="ready-btn right-btn page-scroll" href="#services">Servicios</a>
+                           <a class="ready-btn page-scroll" href="#about">Historia</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- direction 3 -->
+         <div id="slider-direction-3" class="slider-direction slider-two">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                     <div class="slider-content">
+                        <!-- layer 1 -->
+                        <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                           <h2 class="title1">Agencia de Viajes </h2>
+                        </div>
+                        <!-- layer 2 -->
+                        <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                           <h1 class="title2">Martínez Travels & Tours</h1>
+                        </div>
+                        <!-- layer 3 -->
+                        <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                           <a class="ready-btn right-btn page-scroll" href="#services">Servicios</a>
+                           <a class="ready-btn page-scroll" href="#about">Historia</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- End Slider Area -->
 
    <main id="main">
       <!-- ======= About Section ======= -->
-      <div id="about" class="about-area area-padding" style="margin: 15px;">
+      <div id="about" class="about-area area-padding">
          <div class="container">
             <div class="row">
                <div class="col-md-12 col-sm-12 col-xs-12">
@@ -141,7 +216,6 @@
          </div>
       </div>
       <!-- End About Section -->
-
       <!-- ======= Services Section ======= -->
       <div id="services" class="services-area area-padding">
          <div class="container">
@@ -267,10 +341,6 @@
          </div>
       </div>
       <!-- End Services Section -->
-
-
-
-
    </main>
    <!-- End #main -->
 
@@ -362,12 +432,32 @@
             </div>
          </div>
       </div>
+      <div class="footer-area-bottom">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="copyright text-center">
+                     <p>
+                        &copy; Copyright <strong>eBusiness</strong>. All Rights Reserved
+                     </p>
+                  </div>
+                  <div class="credits">
+                     <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eBusiness
+            -->
+                     Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
    </footer>
    <!-- End  Footer -->
-
    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
    <div id="preloader"></div>
-
    <!-- Vendor JS Files -->
    <script src="assets/vendor/jquery/jquery.min.js"></script>
    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -381,7 +471,6 @@
    <script src="assets/vendor/nivo-slider/js/jquery.nivo.slider.js"></script>
    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
    <script src="assets/vendor/venobox/venobox.min.js"></script>
-
    <!-- Template Main JS File -->
    <script src="assets/js/main.js"></script>
 </body>
