@@ -91,7 +91,7 @@
 
    <main id="main">
       <!-- ======= About Section ======= -->
-      <div id="about" class="about-area area-padding">
+      <div id="about" class="about-area area-padding" style="margin: 15px;">
          <div class="container">
             <div class="row">
                <div class="col-md-12 col-sm-12 col-xs-12">
