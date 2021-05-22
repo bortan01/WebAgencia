@@ -1,6 +1,6 @@
 </head>
 
-<body data-spy="scroll" data-target="#navbar-example" style="">
+<body data-spy="scroll" data-target="#navbar-example">
    <!-- ======= Header ======= -->
    <header id="header" class="fixed-top">
       <div class="container d-flex">
