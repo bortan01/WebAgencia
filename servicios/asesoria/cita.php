@@ -43,6 +43,7 @@
    </div><!-- End Blog Page -->
 </main><!-- End #main -->
 
+<?php include_once('./modal_eventos.php')?>
 <?php include_once('../../layaut/plantilla/footer.php'); ?>
 <!-- COLOCAR JS ADICIONALES ACA ABAJO -->
 <script src="../../assets/vendor/sweetalert2/sweetalert2.js"></script>
@@ -54,13 +55,10 @@
 <script src="../../assets/vendor/subir-foto/js/fileinput.js" type="text/javascript"></script>
 <script src="../../assets/vendor/subir-foto/js/locales/es.js" type="text/javascript"></script>
 <script src="../../assets/vendor/subir-foto/themes/fas/theme.js" type="text/javascript"></script>
-
 <script src='../../assets/vendor/oldCalendar/js/moment.min.js'></script>
 <script src='../../assets/vendor/oldCalendar/js/fullcalendar.min.js'></script>
 <script src='../../assets/vendor/oldCalendar/js/locale/es.js'></script>
-
-
-<!-- <script src="../../assets/js/controladores/client/comboUsuario.js"></script> -->
+<script src="../../assets/js/controladores/client/comboUsuario.js"></script>
 <script src="../../assets/js/controladores/asesorias/combobox.js"></script>
 <script src="../../assets/js/controladores/asesorias/ramas_automaticas.js"></script>
 <script src="../../assets/js/controladores/asesorias/preguntas_automaticas.js"></script>
@@ -69,4 +67,6 @@
 <script src="../../assets/js/controladores/asesorias/calendario-app.js"></script>
 <script src="../../assets/js/controladores/asesorias/input.js"></script>
 <script src="../../assets/js/controladores/asesorias/validar-exist.js"></script>
+<script src="../../assets/js/controladores/asesorias/operaciones.js"></script>
+
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>
