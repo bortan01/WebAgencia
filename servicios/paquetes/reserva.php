@@ -1,18 +1,13 @@
 <?php include_once('../../layaut/plantilla/cabecera.php'); ?>
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
 
-<link href="../../assets/vendor/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css" rel="stylesheet" type="text/css" />
-<script src="../../assets//vendor/sweetalert2/sweetalert2.js"></script>
-
-
-
-
-
-
-
 
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
+
+
 <main id="main" style="padding-top: 40px;">
+
+
 
    <!-- ======= Blog Page ======= -->
    <div class="blog-page area-padding">
@@ -218,4 +213,49 @@
 <!-- COLOCAR JS ADICIONALES ACA ABAJO -->
 <script src="../../assets/vendor/asiento-bus/js/jquery.seat-charts.js"></script>
 <script src="../../assets/js/controladores/paquete/reserva-paquete.js"></script>
-<?php include_once('../../layaut/plantilla/cierre.php'); ?>
+
+<link href="../../assets/vendor/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css" rel="stylesheet" type="text/css" />
+<script src="../../assets//vendor/sweetalert2/sweetalert2.js"></script>
+<link href="../../assets/vendor/datatables-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+<script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="../../assets/vendor/datatables-bs4/js/dataTables.bootstrap4.min.js">
+</script>
+<link href="../../assets/vendor/select2/css/select2.min.css" rel="stylesheet">
+
+<script src="../../assets/vendor/select2/js/select2.full.min.js"></script>
+<style>
+.select2-container--default .select2-selection--single {
+   border: 1px solid #ced4da;
+   padding: .46875rem .75rem;
+   height: calc(2.25rem + 2px);
+}
+
+.select2-container--default .select2-selection--single {
+   background-color: #fff;
+   border: 1px solid #aaa;
+   border-radius: 4px;
+}
+
+.select2-container .select2-selection--single {
+   box-sizing: border-box;
+   cursor: pointer;
+   display: block;
+   height: 28px;
+   user-select: none;
+   -webkit-user-select: none;
+}
+
+.select2-container--default .select2-selection--single {
+   border: 1px solid #ced4da;
+   padding: .46875rem .75rem;
+   height: calc(2.25rem + 2px);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+   height: 31px;
+   right: 6px;
+}
+</style>
+
+<?php include_once('../../layaut/plantilla/cierre.php');
+?>
