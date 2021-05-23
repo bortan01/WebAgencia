@@ -71,14 +71,15 @@
                            </div>
                         </div>
                         <div class="col-12 col-sm-6">
-                           <h3 style="text-align: center;" name="titulo" id="titulo"></h3>
+                           <h3 style="text-align: center; text-align: center;" name="titulo" id="titulo"></h3>
                            <h3 class="my-3" name="mode1" id="mode1"></h3>
                            <h3 name="anio" id="anio"></h3>
 
                            <hr>
                            <div class="py-2 px-3 mt-4" style="background-color: #0069d9; color:white">
                               <div class="centrar">
-                                 <h3 class="mb-0" name="precio" id="precio" style="text-align: center;"></h3>
+                                 <h3 style="color: white;text-align: center;" class="mb-0" name="precio" id="precio">
+                                 </h3>
                               </div>
                            </div>
                            <div class="card">

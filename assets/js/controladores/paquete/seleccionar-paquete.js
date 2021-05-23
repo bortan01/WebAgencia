@@ -43,7 +43,7 @@ $(document).ready(function () {
       $('#titulo').text(data.nombreTours);
       $('#descripcion_tur').html(data.descripcion_tur);
      let fechaSalida = moment(data.start);
-      $('#fecha').text(fechaSalida.locale('es').format('LL'));
+      $('#fecha').text(fechaSalida.locale('es').format('ll'));
       $('#cupos').text(data.cupos_disponibles);
 
       $('#incluye').empty();
