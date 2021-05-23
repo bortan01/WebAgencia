@@ -1,17 +1,18 @@
 <?php include_once('../../layaut/plantilla/cabecera.php'); ?>
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
+<link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous" rel="stylesheet">
 <link href="../../assets/vendor/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css" rel="stylesheet" type="text/css" />
 <link href="../../assets/vendor/datatables-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet">
 <link href="../../assets/vendor/select2/css/select2.min.css" rel="stylesheet">
 <link href="../../assets/vendor/select2/css/miEstilo.css" rel="stylesheet">
-
+<link href="../../assets/vendor/asiento-bus/css/jquery.seat-charts.css" rel=" stylesheet" type="text/css">
+<link href="../../assets/vendor/asiento-bus/css/reserva.css" rel=" stylesheet" type="text/css">
+<link href="../../assets/vendor/subir-foto/css/fileinput.css" rel="stylesheet" type="text/css" />
+<link href="../../assets/vendor/subir-foto/css/avatar.css" rel="stylesheet" type="text/css" />
+<link href="../../assets/vendor/subir-foto/themes/explorer-fas/theme.css" rel="stylesheet" type="text/css" />
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 
-
 <main id="main" style="padding-top: 40px;">
-
-
-
    <!-- ======= Blog Page ======= -->
    <div class="blog-page area-padding">
       <div class="container">
@@ -212,13 +213,25 @@
    </div><!-- End Blog Page -->
 </main><!-- End #main -->
 
+<?php
+include './modalCliente.php'; 
+?>
 
 <?php include_once('../../layaut/plantilla/footer.php'); ?>
 <!-- COLOCAR JS ADICIONALES ACA ABAJO -->
-<script src="../../assets//vendor/sweetalert2/sweetalert2.js"></script>
+<script src="../../assets/vendor/jquery-validation/jquery.validate.min.js" type="text/javascript"></script>
+<script src="../../assets/vendor/jquery-validation/additional-methods.min.js" type="text/javascript"></script>
+<script src="../../assets/vendor/subir-foto/js/plugins/piexif.js" type="text/javascript"></script>
+<script src="../../assets/vendor/subir-foto/js/plugins/sortable.js" type="text/javascript"></script>
+<script src="../../assets/vendor/subir-foto/js/fileinput.js" type="text/javascript"></script>
+<script src="../../assets/vendor/subir-foto/js/locales/es.js" type="text/javascript"></script>
+<script src="../../assets/vendor/subir-foto/themes/fas/theme.js" type="text/javascript"></script>
+<script src="../../assets/vendor/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+<script src="../../assets/vendor/sweetalert2/sweetalert2.js"></script>
 <script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="../../assets/vendor/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
 <script src="../../assets/vendor/select2/js/select2.full.min.js"></script>
 <script src="../../assets/vendor/asiento-bus/js/jquery.seat-charts.js"></script>
 <script src="../../assets/js/controladores/paquete/reserva-paquete.js"></script>
+<script src="./registro-cliente.js" type="text/javascript"></script>
 <?php include_once('../../layaut/plantilla/cierre.php');?>
