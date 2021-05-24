@@ -71,7 +71,7 @@ $(document).ready(function () {
       obtenerInformacionAdicional();
    });
    $(document).on('click', '#btnReservar', function () {
-      window.location = `${URL_SISTEMA}vistas/paquetes/reserva-paquete.php?tur=${ID_TUR}`;
+      window.location = `reserva?tur=${ID_TUR}`;
    });
    function inicializarViajes() {
       $.ajax({

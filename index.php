@@ -39,7 +39,7 @@
       <div class="container d-flex">
          <div class="logo mr-auto">
             <h1 class="text-light">
-               <a href="index.html"><span>Martínez</span>Travels & Tours</a>
+               <a href="index.php"><span>Martínez</span>Travels & Tours</a>
             </h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -49,13 +49,13 @@
                <li class="active"><a href="#header">Inicio</a></li>
                <li><a href="#about">¿Quienes somos?</a></li>
                <li class="drop-down">
-                  <a href="">Servicios</a>
+                  <a href="#services">Servicios</a>
                   <ul>
                      <li>
                         <a href="vistas/asesoria/">Asesoria Migratora</a>
                      </li>
                      <li>
-                        <a href="vistas/paquete/">Paquetes</a>
+                        <a href="servicios/paquetes/disponibles.php">Paquetes</a>
                      </li>
                      <li>
                         <a href="vistas/tours/">Tours</a>
@@ -250,7 +250,7 @@
                   <div class="about-move">
                      <div class="services-details">
                         <div class="single-services">
-                           <a class="services-icon" href="#">
+                           <a class="services-icon" href="servicios/paquetes/disponibles.php">
                               <i class="fa fa-camera-retro"></i>
                            </a>
                            <h4>Paquetes</h4>
