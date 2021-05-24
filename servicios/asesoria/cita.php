@@ -68,5 +68,4 @@
 <script src="../../assets/js/controladores/asesorias/input.js"></script>
 <script src="../../assets/js/controladores/asesorias/validar-exist.js"></script>
 <script src="../../assets/js/controladores/asesorias/operaciones.js"></script>
-
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>
