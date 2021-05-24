@@ -1,11 +1,11 @@
 <?php include_once('../../layaut/plantilla/cabecera.php'); ?>
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
-<!-- fullCalendar -->
 <link href="../../assets/vendor/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="http://localhost/Plantillas/SistemaAgencia/plugins/fullcalendar/main.min.css">
-<link rel="stylesheet" href="http://localhost/Plantillas/SistemaAgencia/plugins/fullcalendar-daygrid/main.min.css">
-<link rel="stylesheet" href="http://localhost/Plantillas/SistemaAgencia/plugins/fullcalendar-timegrid/main.min.css">
-<link rel="stylesheet" href="http://localhost/Plantillas/SistemaAgencia/plugins/fullcalendar-bootstrap/main.min.css">
+<link rel="stylesheet" href="../../assets/vendor/fullcalendar/main.min.css">
+<link rel="stylesheet" href="../../assets/vendor/fullcalendar-daygrid/main.min.css">
+<link rel="stylesheet" href="../../assets/vendor/fullcalendar-timegrid/main.min.css">
+<link rel="stylesheet" href="../../assets/vendor/fullcalendar-bootstrap/main.min.css">
+<!-- Theme style -->
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 <main id="main" style="padding-top: 40px;">
    <!-- ======= Blog Page ======= -->
@@ -115,13 +115,15 @@ include './modalCliente.php';
 ?>
 
 <?php include_once('../../layaut/plantilla/footer.php'); ?>
-<!-- COLOCAR JS ADICIONALES ACA ABAJO -->
+<!-- PONER SCRIPT ADICIONALES ACA -->
+<script src="../../assets/vendor/jquery-ui/jquery-ui.min.js"></script>
 <script src="../../assets/vendor/sweetalert2/sweetalert2.js"></script>
-<script src="http://localhost/Plantillas/SistemaAgencia/plugins/fullcalendar/main.min.js"></script>
-<script src="http://localhost/Plantillas/SistemaAgencia/plugins/fullcalendar-daygrid/main.min.js"></script>
-<script src="http://localhost/Plantillas/SistemaAgencia/plugins/fullcalendar-timegrid/main.min.js"></script>
-<script src="http://localhost/Plantillas/SistemaAgencia/plugins/fullcalendar-interaction/main.min.js"></script>
-<script src="http://localhost/Plantillas/SistemaAgencia/plugins/fullcalendar-bootstrap/main.min.js"></script>
-<script src='http://localhost/Plantillas/SistemaAgencia/plugins/fullcalendar/locales/es.js'></script>
+<script src="../../assets/vendor/moment/moment.min.js"></script>
+<script src="../../assets/vendor/fullcalendar/main.min.js"></script>
+<script src="../../assets/vendor/fullcalendar-daygrid/main.min.js"></script>
+<script src="../../assets/vendor/fullcalendar-timegrid/main.min.js"></script>
+<script src="../../assets/vendor/fullcalendar-interaction/main.min.js"></script>
+<script src="../../assets/vendor/fullcalendar-bootstrap/main.min.js"></script>
+<script src='../../assets/vendor/fullcalendar/locales/es.js'></script>
 <script src="../../assets/js/controladores/paquete/itinerario.js"></script>
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>
