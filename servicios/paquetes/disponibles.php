@@ -1,6 +1,7 @@
 <?php include_once('../../layaut/plantilla/cabecera.php'); ?>
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
 <link rel="stylesheet" href="../../assets/vendor/galery/disponibilidad.css">
+<link rel="stylesheet" href="../../assets/vendor/carrucel-bootstrap/style.css">
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 
 <main id="main" style="padding-top: 40px;">
