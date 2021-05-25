@@ -14,7 +14,7 @@
 
          <nav class="nav-menu d-none d-lg-block">
             <ul>
-               <li class=""><a href="#header">Inicio</a></li>
+               <li class=""><a href="../../index.php">Inicio</a></li>
                <li><a href="../../index.php">¿Quienes somos?</a></li>
                <li class="drop-down">
                   <a href="#">Servicios</a>
@@ -29,18 +29,18 @@
                         <a href="#">Tours</a>
                      </li>
                      <li>
-                        <a href="#">Renta de Vehiculos</a>
+                        <a href="../../servicios/vehiculos/disponibilidad.php">Renta de Vehiculos</a>
                      </li>
                      <li>
                         <a href="#">Encomienda</a>
                      </li>
                      <li>
-                        <a href="#">Vuelos</a>
+                        <a href="../../servicios/vuelos/disponibles.php">Vuelos</a>
                      </li>
                   </ul>
                </li>
                <li><a href="#contact">Contacto</a></li>
-               <li><a href="#contact">Resgistrate</a></li>
+               <li><a href="#contact">Registrarse</a></li>
             </ul>
          </nav>
          <!-- .nav-menu -->
