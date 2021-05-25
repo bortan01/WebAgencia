@@ -20,7 +20,7 @@
                   <a href="#">Servicios</a>
                   <ul>
                      <li>
-                        <a href="">Asesoria Migratora</a>
+                        <a href="">Asesoria Migratoria</a>
                      </li>
                      <li>
                         <a href="../../servicios/paquetes/disponibles.php">Paquetes</a>
@@ -29,13 +29,16 @@
                         <a href="#">Tours</a>
                      </li>
                      <li>
-                        <a href="../../servicios/vehiculos/disponibilidad.php">Renta de Vehiculos</a>
+                        <a href="../../servicios/vehiculos/disponibilidad.php">Renta de Vehículos</a>
                      </li>
                      <li>
-                        <a href="#">Encomienda</a>
+                        <a href="#">Cotización de Vuelos</a>
                      </li>
                      <li>
-                        <a href="../../servicios/vuelos/disponibles.php">Vuelos</a>
+                        <a href="../../servicios/vuelos/disponibilidadPromociones.php">Promociones de Vuelos</a>
+                     </li>
+                     <li>
+                        <a href="#">Cotización de Encomiendas</a>
                      </li>
                   </ul>
                </li>

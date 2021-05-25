@@ -61,13 +61,17 @@
                                 <a href="vistas/tours/">Tours</a>
                             </li>
                             <li>
-                                <a href="vistas/vehiculos/">Renta de Vehiculos</a>
+                                <a href="servicios/vehiculos/disponibilidad.php">Renta de Vehiculos</a>
+                            </li>
+                            
+                            <li>
+                                <a href="servicios/vuelos/">Cotización de Vuelos</a>
+                            </li>
+                            <li>
+                                <a href="servicios/vuelos/disponibilidadPromociones.php">Promociones de Vuelos</a>
                             </li>
                             <li>
                                 <a href="vistas/encomienda/">Encomienda</a>
-                            </li>
-                            <li>
-                                <a href="vistas/vuelos">Vuelos</a>
                             </li>
                         </ul>
                     </li>
@@ -292,7 +296,7 @@
                                 <div class="single-services">
                                     <a href="servicios/vehiculos/disponibilidad.php"><img
                                             src="assets/img/vehiculos.png" /></a>
-                                    <h4>Renta de Vehiculos </h4>
+                                    <h4>Renta de Vehículos </h4>
                                     <p>
                                         Si lo que quieres es movilizarte en modernos vehículos, pregunta por nuestro
                                         servicio de alquiler de autos.
@@ -319,7 +323,28 @@
                             <!-- end about-details -->
                         </div>
                     </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <!-- end col-md-4 -->
+                        <div class="about-move">
+                            <div class="services-details">
+                                <div class="single-services">
+                                    <a href=""><img src="assets/img/encomiendas.png" /></a>
+                                    <h4>Encomiendas</h4>
+                                    <p>
+                                        Deseas relizar envíos nacionales o al extrangero, no busques más somos la mejor
+                                        opcion para enviar tu encomienda.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- end about-details -->
+                        </div>
+                    </div>
                     <!-- End Left services -->
+
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <!-- end col-md-4 -->
+
+                    </div>
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <!-- end col-md-4 -->
                         <div class="about-move">
@@ -335,6 +360,10 @@
                             </div>
                             <!-- end about-details -->
                         </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <!-- end col-md-4 -->
+
                     </div>
                 </div>
             </div>
