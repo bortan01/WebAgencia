@@ -238,16 +238,14 @@
                         <div class="about-move">
                             <div class="services-details">
                                 <div class="single-services">
-                                    
+
                                     <a href="servicios/paquetes/disponibles.php"><img
                                             src="assets/img/asesoria.png" /></a>
                                     </a>
                                     <h4>Asesoría Migratoria</h4>
                                     <p>
-                                        will have to make sure the prototype looks finished by inserting text or
-                                        photo.make sure
-                                        the
-                                        prototype looks finished by.
+                                        Somos profesionales en El Salvador en asesoría sobre trámites migratorios hacia
+                                        los Estados Unidos.
                                     </p>
                                 </div>
                             </div>
@@ -279,8 +277,8 @@
                                     <a href="servicios/paquetes/disponibles.php"><img src="assets/img/tours.png" /></a>
                                     <h4>Tours</h4>
                                     <p>
-                                        Quieres viajar? tu elige el destino, nosotros te llevamos haz realidad tus
-                                        sueños viaja a Centro América, Sudamérica y Europa
+                                        Tú elige el destino, nosotros te llevamos! haz realidad tus
+                                        sueños viajando a Centro América, Sudamérica y Europa
                                     </p>
                                 </div>
                             </div>
@@ -310,11 +308,11 @@
                         <div class="about-move">
                             <div class="services-details">
                                 <div class="single-services">
-                                    <a href=""><img src="assets/img/encomienda.png" /></a>
-                                    <h4>Encomienda</h4>
+                                    <a href=""><img src="assets/img/vuelos.png" /></a>
+                                    <h4>Vuelos</h4>
                                     <p>
-                                        Deseas relizar envios al extrangero, no busques más somos la mejor opcion para
-                                        enviar tu encomienda.
+                                        Conoce todas las promociones y tarifas bajas en vuelos nacionales e
+                                        internacionales.
                                     </p>
                                 </div>
                             </div>
@@ -327,7 +325,7 @@
                         <div class="about-move">
                             <div class="services-details">
                                 <div class="single-services">
-                                <a href=""><img src="assets/img/chat.png" /></a>
+                                    <a href=""><img src="assets/img/chat.png" /></a>
                                     <h4>Atención al Cliente 24/7</h4>
                                     <p>
                                         Tienes alguna duda, no te preocupes estamos aqui para ayudarte, ponte en
