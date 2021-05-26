@@ -40,6 +40,7 @@
                               <div class="timeline-body">
                                  <div class="row">
                                     <div class="col-sm-11">
+
                                        <div class="form-group">
                                           <label>Seleccione el Cliente</label>
                                           <select name="comboUsuario" id="comboUsuario"

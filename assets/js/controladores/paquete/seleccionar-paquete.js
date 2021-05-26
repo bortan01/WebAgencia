@@ -42,7 +42,7 @@ $(document).ready(function () {
       $('#precio').text("Asiento Normal $" + data.precio);
       $('#titulo').text(data.nombreTours);
       $('#descripcion_tur').html(data.descripcion_tur);
-     let fechaSalida = moment(data.start);
+      let fechaSalida = moment(data.start);
       $('#fecha').text(fechaSalida.locale('es').format('ll'));
       $('#cupos').text(data.cupos_disponibles);
 
@@ -71,7 +71,15 @@ $(document).ready(function () {
       obtenerInformacionAdicional();
    });
    $(document).on('click', '#btnReservar', function () {
-      window.location = `reserva?tur=${ID_TUR}`;
+      // $().redirect('intermedio.php', {'arg1': 'value1', 'arg2': 'value2'});
+      $.post("intermedio.php", { id: "dfadfa", prezime: "dfasdfadsfa" }, function(data) {
+         location = 'reserva.php';
+     });
+     
+
+
+
+      // window.location = `reserva?tur=${ID_TUR}`;
    });
    function inicializarViajes() {
       $.ajax({
