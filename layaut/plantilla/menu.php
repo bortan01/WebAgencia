@@ -26,7 +26,7 @@
                         <a href="../../servicios/paquetes/disponibles.php">Paquetes</a>
                      </li>
                      <li>
-                        <a href="#">Tours</a>
+                        <a href="../../servicios/tours/disponibles.php">Tours</a>
                      </li>
                      <li>
                         <a href="../../servicios/vehiculos/disponibilidad.php">Renta de Vehículos</a>

@@ -13,20 +13,13 @@
    <link rel="stylesheet" href="assets/css/adminlte.css">
    <!-- Google Font: Source Sans Pro -->
    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-   <!-- CONFIGURACION DE CHAT -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   <!-- Firebase App is always required and must be first -->
-   <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-app.js"></script>
-   <!-- Add additional services that you want to use -->
-   <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-auth.js"></script>
-   <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-firestore.js"></script>
    <link href="assets/vendor/sweetalert2-theme-bootstrap-4/bootstrap-4.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="hold-transition login-page">
    <div class="login-box">
       <div class="login-logo">
-         <a href=""><b>Administración</b><br>Martínez Travels y Tours</a>
+         <a href=""><br>Martínez Travels y Tours</a>
       </div>
       <!-- /.login-logo -->
       <div class="card">
@@ -64,6 +57,14 @@
    <!-- /.login-box -->
 
    <!-- jQuery -->
+
+   <!-- CONFIGURACION DE CHAT -->
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+   <!-- Firebase App is always required and must be first -->
+   <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-app.js"></script>
+   <!-- Add additional services that you want to use -->
+   <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-firestore.js"></script>
    <script src="assets/vendor/jquery/jquery.min.js"></script>
    <!-- Bootstrap 4 -->
    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
