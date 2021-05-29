@@ -77,6 +77,28 @@
                </li>
                <li><a href="#contact">Contacto</a></li>
                <li><a href="#contact">Resgistrate</a></li>
+               <li class="drop-down"><a href="#">Mi Cuenta</a>
+                  <ul>
+                     <li><a href="#">Actualizar Datos </a></li>
+                     <li><a href="#">Foto de Perfil</a></li>
+                     <li><a href="#">Documentos Personales</a></li>
+                     <li class="drop-down"><a href="#">Servicios Adquiridos</a>
+                        <ul>
+                           <li><a href="#">Viajes</a></li>
+                           <li><a href="#">Vehículos</a></li>
+                           <li><a href="#">Encomiendas</a></li>
+                        </ul>
+                     </li>
+                     <li class="drop-down"><a href="#">Cotizaciones</a>
+                        <ul>
+                           <li><a href="#">Tours</a></li>
+                           <li><a href="#">Vehículos</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="#">Cerrar Sesión</a></li>
+                  </ul>
+               </li>
+
             </ul>
          </nav>
          <!-- .nav-menu -->
