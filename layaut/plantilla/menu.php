@@ -13,7 +13,7 @@
          </div>
          <nav class="nav-menu d-none d-lg-block">
             <ul>
-               <li class="active"><a href="#header">Inicio</a></li>
+               <li class=""><a href="#header">Inicio</a></li>
                <li><a href="#about">¿Quienes somos?</a></li>
                <li class="drop-down">
                   <a href="#">Servicios</a>
@@ -43,9 +43,11 @@
                   </ul>
                </li>
                <li><a href="#contact">Contacto</a></li>
-               <li><a href="#contact">Resgistrate</a></li>
+
                <li class="drop-down"><a href="#">Mi Cuenta</a>
                   <ul>
+                     <li><a href="../../createAccount.php">Registrate</a></li>
+                     <li><a href="../../login.php">Identificate</a></li>
                      <li><a href="#">Actualizar Datos </a></li>
                      <li><a href="#">Foto de Perfil</a></li>
                      <li><a href="#">Documentos Personales</a></li>
