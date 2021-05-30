@@ -2741,3 +2741,7 @@ span.email-notes {
     padding: 0;
   }
 }
+
+#loader{
+	height: 30px;
+}

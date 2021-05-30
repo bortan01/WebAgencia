@@ -71,15 +71,7 @@ $(document).ready(function () {
       obtenerInformacionAdicional();
    });
    $(document).on('click', '#btnReservar', function () {
-      // $().redirect('intermedio.php', {'arg1': 'value1', 'arg2': 'value2'});
-      $.post("intermedio.php", { id: "dfadfa", prezime: "dfasdfadsfa" }, function(data) {
-         location = 'reserva.php';
-     });
-     
-
-
-
-      // window.location = `reserva?tur=${ID_TUR}`;
+      location = 'reserva.php';
    });
    function inicializarViajes() {
       $.ajax({

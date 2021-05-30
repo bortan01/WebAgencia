@@ -79,7 +79,7 @@
                <li class="drop-down"><a href="#">Mi Cuenta</a>
                   <ul>
                      <li><a href="createAccount.php">Registrate</a></li>
-                     <li><a href="../../login.php">Identificate</a></li>
+                     <li><a href="login.php">Identificate</a></li>
                      <li><a href="#">Actualizar Datos </a></li>
                      <li><a href="#">Foto de Perfil</a></li>
                      <li><a href="#">Documentos Personales</a></li>

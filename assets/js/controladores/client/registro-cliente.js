@@ -151,6 +151,8 @@ $(document).ready(function () {
         }).done(function (response) {
             //REST_Controller::HTTP_OK
             let respuestaDecodificada = JSON.parse(response);
+            $("#miFormularioCliente").trigger("reset");
+            $("#comboUsuario").empty();
             const Toast = Swal.mixin();
             Toast.fire({
                 title: 'Exito...',
@@ -159,8 +161,7 @@ $(document).ready(function () {
                 showConfirmButton: true,
             }).then((result) => {
                 //TODO BIEN Y RECARGAMOS LA PAGINA 
-                $("#miFormularioCliente").trigger("reset");
-                $("#comboUsuario").empty();
+                window.location.href = "login.php";
             });
         }).fail(function (response) {
             //SI HUBO UN ERROR EN LA RESPUETA REST_Controller::HTTP_BAD_REQUEST
