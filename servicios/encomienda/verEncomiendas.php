@@ -18,6 +18,81 @@
          <section class="content">
             <div class="container-fluid">
                <div class="overlay-wrapper">
+
+                  <!--AQUI COLOCARE MI DISEÑO-->
+                  <div class="row">
+            <div class="col-12">
+
+
+                <div class="card">
+                          <!--para filtrar los productos activos e inactivos-->
+                <div class="card-header">
+                  <div class="row">
+                     <div class="form-check mx-auto">
+                        <input class="form-check-input" type="radio" name="radioEnvio" id="radioEnviado"
+                           value="Enviado" checked>
+                        <label class="form-check-label" for="radioEncomiendaEnviadas">
+                           ENCOMIENDAS ENVIADAS
+                        </label>
+                     </div>
+                     <div class="form-check mx-auto">
+                        <input class="form-check-input" type="radio" name="radioEnvio" id="radioEntregado"
+                           value="Entregado">
+                        <label class="form-check-label" for="radioEncomiendaEntregadas">
+                           ENCOMIENDAS ENTREGADAS
+                        </label>
+                     </div>
+                  </div>
+               </div>
+               <!-- /.card-header -->
+<!--*******************************fin de filtrar esos productos***-->
+                    <div class="card-header">
+                        <h3 class="card-title">Datos de la Encomienda</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                          <div id="" class="dataTables_wrapper dt-bootstrap4">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <table id="tabla_actu-envio" class="table table-bordered table-striped">
+                                        <thead style="text-align: center;">
+                                            <tr>
+                                                <th>Nombre</th>
+                                                <th>Ciudad de origen</th>
+                                                <th>Código postal</th>
+                                                <th>Fecha</th>
+                                                <th>Acciones</th>
+                                                <th>estado</th>
+                                            </tr>
+                                        </thead>
+                                        <!-- /.inicio de loading -->
+                                        <div class="overlay-wrapper">
+                                            <div id="loading" class="overlay"><i
+                                                    class="fas fa-3x fa-sync-alt fa-spin"></i>
+
+                                                <div class="text-bold pt-2">Cargando...
+                                                </div>
+                                            </div>
+                                            <tbody id="tableBody" style="text-align: center;">
+                                            </tbody>
+                                        </div>
+                                        <!-- /.fin de loading -->
+
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+                  <!--AQUI COLOCARE MI DISEÑO FIN-->
                   
                </div><!-- /overlay-wrapper -->
             </div><!-- /.container-fluid -->
@@ -26,20 +101,16 @@
    </div><!-- End Blog Page -->
 </main><!-- End #main -->
 
-<?php
-include './modalCliente.php';
-?>
 
 <?php include_once('../../layaut/plantilla/footer.php'); ?>
 <!-- PONER SCRIPT ADICIONALES ACA -->
 <script src="../../assets/vendor/jquery-ui/jquery-ui.min.js"></script>
 <script src="../../assets/vendor/sweetalert2/sweetalert2.js"></script>
-<script src="../../assets/vendor/moment/moment.min.js"></script>
-<script src="../../assets/vendor/fullcalendar/main.min.js"></script>
-<script src="../../assets/vendor/fullcalendar-daygrid/main.min.js"></script>
-<script src="../../assets/vendor/fullcalendar-timegrid/main.min.js"></script>
-<script src="../../assets/vendor/fullcalendar-interaction/main.min.js"></script>
-<script src="../../assets/vendor/fullcalendar-bootstrap/main.min.js"></script>
-<script src='../../assets/vendor/fullcalendar/locales/es.js'></script>
+<!-- DataTables -->
+<script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="../../assets/vendor/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../assets/vendor/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../assets/vendor/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+
 <script src="../../assets/js/controladores/paquete/itinerario.js"></script>
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>
