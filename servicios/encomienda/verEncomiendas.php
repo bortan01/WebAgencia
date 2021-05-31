@@ -8,8 +8,8 @@
     type="text/css" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">
 <!-- DataTables -->
-   <link rel="stylesheet" href="../../assets/vendor/datatables-bs4/css/dataTables.bootstrap4.min.css">
-   <link rel="stylesheet" href="../../assets/vendor/datatables-responsive/css/responsive.bootstrap4.min.css">
+<link href="../../assets/vendor/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css" rel="stylesheet" type="text/css" />
+<link href="../../assets/vendor/datatables-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet">
 <!-- Theme style -->
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 <main id="main" style="padding-top: 40px;">
@@ -110,9 +110,8 @@
 <script src="../../assets/vendor/sweetalert2/sweetalert2.js"></script>
 <!-- DataTables -->
 <script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="../../assets/vendor/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-<script src="../../assets/vendor/datatables-responsive/js/dataTables.responsive.min.js"></script>
-<script src="../../assets/vendor/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 
 <script type="text/javascript" src="../../assets/js/controladores/conf.js"></script>>
 <script type="text/javascript" src="../../assets/js/controladores/encomienda/actu-envio.js"></script>
