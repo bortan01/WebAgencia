@@ -114,5 +114,6 @@
 <script src="../../assets/vendor/datatables-responsive/js/dataTables.responsive.min.js"></script>
 <script src="../../assets/vendor/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 
-<script src="../../assets/js/controladores/paquete/itinerario.js"></script>
+<script type="text/javascript" src="../../assets/js/controladores/conf.js"></script>>
+<script type="text/javascript" src="../../assets/js/controladores/encomienda/actu-envio.js"></script>
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>
