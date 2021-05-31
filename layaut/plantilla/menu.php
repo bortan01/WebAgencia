@@ -38,7 +38,7 @@
                         <a href="servicios/vuelos/disponibilidadPromociones.php">Promociones de Vuelos</a>
                      </li>
                      <li>
-                        <a href="vistas/encomienda/">Encomienda</a>
+                        <a href="servicios/encomienda/verEncomiendas.php">Encominda</a>
                      </li>
                   </ul>
                </li>
