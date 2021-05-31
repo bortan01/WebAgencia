@@ -7,7 +7,9 @@
 <link href="../../assets/vendor/subir-foto/themes/explorer-fas/theme.css" media="all" rel="stylesheet"
     type="text/css" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">
-
+<!-- DataTables -->
+   <link rel="stylesheet" href="../../assets/vendor/datatables-bs4/css/dataTables.bootstrap4.min.css">
+   <link rel="stylesheet" href="../../assets/vendor/datatables-responsive/css/responsive.bootstrap4.min.css">
 <!-- Theme style -->
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 <main id="main" style="padding-top: 40px;">
