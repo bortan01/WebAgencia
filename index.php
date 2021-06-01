@@ -54,7 +54,7 @@ if (isset($_SESSION["activo"])) {
          </div>
          <nav class="nav-menu d-none d-lg-block">
             <ul>
-               <li class="active"><a href="#header">Inicio</a></li>
+               <li class="active"><a href="../../index.php">Inicio</a></li>
                <li><a href="#about">¿Quienes somos?</a></li>
                <li class="drop-down">
                   <a href="#services">Servicios</a>
@@ -518,4 +518,9 @@ if (isset($_SESSION["activo"])) {
    <script src="assets/js/main.js"></script>
 </body>
 
+
+<script>
+let id = localStorage.getItem('id_cliente');
+console.log(id);
+</script>
 </html>

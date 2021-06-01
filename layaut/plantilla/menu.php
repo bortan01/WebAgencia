@@ -13,7 +13,7 @@
          </div>
          <nav class="nav-menu d-none d-lg-block">
             <ul>
-               <li class=""><a href="#header">Inicio</a></li>
+               <li class=""><a href="../../index.php">Inicio</a></li>
                <li><a href="#about">¿Quienes somos?</a></li>
                <li class="drop-down">
                   <a href="#">Servicios</a>

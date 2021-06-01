@@ -1,3 +1,5 @@
+<?php include_once('../../layaut/plantilla/session.php'); ?>
+
 <?php include_once('../../layaut/plantilla/cabecera.php'); ?>
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
 <link rel="stylesheet" href="../../assets/vendor/galery/disponibilidad.css">
