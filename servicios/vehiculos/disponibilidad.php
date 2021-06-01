@@ -93,7 +93,7 @@ h6 {
                            <h6 name="categoria" id="categoria"></h6>
                            <hr>
                            <button class="btn btn-primary btn-block mb-3">
-                              <h1 name="placa" id="placa"></h1>
+                              <h1 style="color:#FFFFFF" name="placa" id="placa"></h1>
                            </button>
 
                            <div class="card">
@@ -156,16 +156,11 @@ h6 {
                            </div>
                            <div class="bg-gray py-2 px-3 mt-4">
                               <div class="centrar">
-                                 <h3>Precio: $</h3>
-                                 <h3 class="mb-0" name="precio" id="precio" style="text-align:center"></h3>
+                                 <h3 style="color:#FFFFFF">Precio: $</h3>
+                                 <h3 class="mb-0" name="precio" id="precio" style="text-align:center; color:#FFFFFF" ></h3>
                               </div>
                            </div>
-                           <div class="mt-4">
-                              <button class="btn btn-block btn-success btn-flat" id="btnReservar" name="btnReservar">
-                                 <i class="fas fa-cart-plus fa-lg"></i>
-                                 Reservar Vehiculo
-                              </button>
-                           </div>
+                           
                         </div>
                      </div>
                      <div class="row mt-4">
