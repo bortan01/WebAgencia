@@ -4,11 +4,11 @@ $("#login-btn").on("click", function () {
   const Toast = Swal.mixin();
 
   $.ajax({
-    url: "http://localhost/API-REST-PHP/Usuario/loginUser",
+    url: URL_SERVIDOR + "Usuario/loginUser",
     method: "POST",
     data: $("#login-form").serialize()
   }).done(function (resp) {
-
+    initPreferencias(resp);
     //NUESTRO SERVICIO RETORNARA UN TOKEN QUE ES EL
     // QUE OCUPAREMOS PARA MANEJAR LA SESION DEL USUARIO
     if (!resp.err) {
@@ -21,17 +21,8 @@ $("#login-btn").on("click", function () {
           .then(function (data) {
             $("#login-btn").html(btnHTML);
             if (data.user.uid != "") {
-
               $.post("servicios/client/session.php", {
-                action: "start",
-                id_cliente: resp.id_cliente,
-                nombre: resp.nombre,
-                correo: resp.correo,
-                nivel: resp.nivel,
-                celular: resp.celular,
-                dui: resp.dui,
-                foto: resp.foto,
-                user_uuid: resp.user_uuid,
+                action: "start"
               }, function (data) {
                 location = 'index.php';
               });
@@ -106,3 +97,14 @@ $(".card input").on("focus blur", function () {
   $(".card").toggleClass("active");
 });
 
+function initPreferencias(resp) {
+  console.log(resp);
+  localStorage.setItem("id_cliente", resp.id_cliente);
+  localStorage.setItem("nombre", resp.nombre);
+  localStorage.setItem("correo", resp.correo);
+  localStorage.setItem("nivel", resp.nivel);
+  localStorage.setItem("celular", resp.celular);
+  localStorage.setItem("dui", resp.dui);
+  localStorage.setItem("foto", resp.foto);
+  localStorage.setItem("user_uuid", resp.user_uuid);
+}

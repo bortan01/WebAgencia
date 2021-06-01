@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (isset($_SESSION["activo"])) {
+   echo ("LOGUEADO");
+} else {
+   echo ("NO LOGUEADO");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -505,6 +513,7 @@
    <script src="assets/vendor/nivo-slider/js/jquery.nivo.slider.js"></script>
    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
    <script src="assets/vendor/venobox/venobox.min.js"></script>
+   <script src="assets/js/conf.js"></script>
    <!-- Template Main JS File -->
    <script src="assets/js/main.js"></script>
 </body>
