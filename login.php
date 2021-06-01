@@ -92,6 +92,7 @@ if (isset($_SESSION["activo"])) {
    <script src="assets/vendor/jquery-validation/jquery.validate.min.js"></script>
    <script src="assets/vendor/jquery-validation/additional-methods.min.js"></script>
    <script src="assets/js/controladores/firebase/firestore-config.js"></script>
+   <script src="assets/js/conf.js"></script>
    <script src="assets/js/controladores/firebase/main.js"></script>
 </body>
 
