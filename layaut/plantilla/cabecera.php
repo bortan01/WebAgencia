@@ -31,6 +31,8 @@
    <link href="../../assets/vendor/venobox/venobox.css" rel="stylesheet" />
    <link href="../../assets/css/adminlte.css" rel="stylesheet" />
 
+   
+
    <!-- Template Main CSS File -->
    <link href="../../assets/css/style.css" rel="stylesheet" />
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">

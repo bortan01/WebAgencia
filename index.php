@@ -1,10 +1,5 @@
 <?php
-session_start();
-if (isset($_SESSION["activo"])) {
-   echo ("LOGUEADO");
-} else {
-   echo ("NO LOGUEADO");
-}
+include_once "./layaut/plantilla/session.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">

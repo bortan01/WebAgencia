@@ -1,5 +1,6 @@
 $(document).ready(function () {
     let tabla;
+    let id = localStorage.getItem('id_cliente');
 
     //inicializarValidaciones();
    // inicializarCombo()
@@ -55,7 +56,7 @@ $(document).on('click', '.btn-group .btn-success', function () {
             "autoWidth": false,
             "deferRender": true,
             "ajax": {
-                "url": URL_SERVIDOR + "Encomienda/encomienda",
+                "url": URL_SERVIDOR +"Encomienda/show?id_usuario="+id,
                 "method": "GET",
                 "dataSrc": function (json) {
                     //console.log(json.preguntas);

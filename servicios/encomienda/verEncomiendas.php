@@ -1,4 +1,5 @@
 <?php include_once('../../layaut/plantilla/cabecera.php'); ?>
+<?php include_once "../../layaut/plantilla/session.php";?>s
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
 <link href="../../assets/vendor/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css" rel="stylesheet" type="text/css" />
 
@@ -27,27 +28,6 @@
 
 
                 <div class="card">
-                          <!--para filtrar los productos activos e inactivos-->
-                <div class="card-header">
-                  <div class="row">
-                     <div class="form-check mx-auto">
-                        <input class="form-check-input" type="radio" name="radioEnvio" id="radioEnviado"
-                           value="Enviado" checked>
-                        <label class="form-check-label" for="radioEncomiendaEnviadas">
-                           ENCOMIENDAS ENVIADAS
-                        </label>
-                     </div>
-                     <div class="form-check mx-auto">
-                        <input class="form-check-input" type="radio" name="radioEnvio" id="radioEntregado"
-                           value="Entregado">
-                        <label class="form-check-label" for="radioEncomiendaEntregadas">
-                           ENCOMIENDAS ENTREGADAS
-                        </label>
-                     </div>
-                  </div>
-               </div>
-               <!-- /.card-header -->
-<!--*******************************fin de filtrar esos productos***-->
                     <div class="card-header">
                         <h3 class="card-title">Datos de la Encomienda</h3>
                     </div>
@@ -113,6 +93,6 @@
 <script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="../../assets/vendor/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
 
-<script type="text/javascript" src="../../assets/js/controladores/conf.js"></script>>
-<script type="text/javascript" src="../../assets/js/controladores/encomienda/actu-envio.js"></script>
+<script type="text/javascript" src="../../assets/js/conf.js"></script>>
+<script type="text/javascript" src="../../assets/js/controladores/encomiendas/actu-envio.js"></script>
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>
