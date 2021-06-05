@@ -2,6 +2,8 @@
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
 <link rel="stylesheet" href="../../assets/vendor/galery/disponibilidad.css">
 <link rel="stylesheet" href="../../assets/vendor/carrucel-bootstrap/style.css">
+<link rel="stylesheet" href="../../assets/vendor/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css" type="text/css" />
+
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 
 <!-- End Header -->
@@ -44,7 +46,7 @@
                                                    <label>Correo Electronico</label>
                                                    <div class="input-group">
                                                       <input placeholder="Digite Correo Electronico" type="text"
-                                                         class="form-control" name="correo" id="correo">
+                                                         class="form-control" disabled='true' name="correo" id="correo">
                                                    </div>
                                                    <!-- /.input group -->
                                                 </div>
@@ -99,8 +101,8 @@
                                  </div>
                                  <br> <br>
                                  <div class="timeline-footer" style="text-align: right;">
-                                    <button name="btnguardarCliente" id="btnguardarCliente" class="btn btn-info btn-sm"
-                                       style="color: white">Guardar</button>
+                                    <button name="btnActualizar" id="btnActualizar" class="btn btn-info btn-sm"
+                                       style="color: white">Actualizar</button>
                                     <button class="btn btn-danger btn-sm" style="color: white">Cancelar</button>
                                  </div>
                               </div>
@@ -121,5 +123,6 @@
 <!-- COLOCAR JS ADICIONALES ACA ABAJO -->
 <script src="../../assets/vendor/jquery-validation/jquery.validate.min.js" type="text/javascript"></script>
 <script src="../../assets/vendor/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+<script src="../../assets/vendor/sweetalert2/sweetalert2.js"></script>
 <script src="../../assets/js/controladores/client/updateInfo.js"></script>
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>

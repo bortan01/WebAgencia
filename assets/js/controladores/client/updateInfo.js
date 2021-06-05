@@ -1,23 +1,11 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $('#loadingCliente').hide();
+    init();
     inicializarValidaciones();
     inicializarMascara();
-     
-        //BOTON DE EDITAR
-    $(document).on('click', '.btn-group .btn-primary', function() {
-        $('#loadingCliente').hide();
-        $('#modal-editar').modal('show');
-        let fila = $(this).closest("tr");
-        let data = tabla.row(fila).data();
-        $('#nombreCliente').val(data.nombre);
-        $('#correo').val(data.correo);
-        $('#celular').val(data.celular);
-        $('#dui').val(data.dui);
-        idSeleccionado = data.id_cliente;
 
-    });
     //BOTON PARA ACTUALIZAR
-    $(document).on('click', '#btnActualizar', function(evento) {
+    $(document).on('click', '#btnActualizar', function (evento) {
         evento.preventDefault(); //para evitar que la pagina se recargue
         let form = $("#miFormularioCliente");
         form.validate();
@@ -25,7 +13,12 @@ $(document).ready(function() {
             actualizar();
         }
     });
-  
+    function init() {
+        $('#nombreCliente').val(localStorage.getItem('nombre'));
+        $('#correo').val(localStorage.getItem('correo'));
+        $('#celular ').val(localStorage.getItem('celular'));
+        $('#dui').val(localStorage.getItem('dui'));
+    }
     //INICIALIZANDO VALIDACIONES
     function inicializarValidaciones() {
         $('#miFormularioCliente').validate({
@@ -63,14 +56,14 @@ $(document).ready(function() {
                 }
             },
             errorElement: 'span',
-            errorPlacement: function(error, element) {
+            errorPlacement: function (error, element) {
                 error.addClass('invalid-feedback');
                 element.closest('.form-group').append(error);
             },
-            highlight: function(element, errorClass, validClass) {
+            highlight: function (element, errorClass, validClass) {
                 $(element).addClass('is-invalid');
             },
-            unhighlight: function(element, errorClass, validClass) {
+            unhighlight: function (element, errorClass, validClass) {
                 $(element).removeClass('is-invalid');
 
             }
@@ -78,11 +71,12 @@ $(document).ready(function() {
 
     }
 
+
     function actualizar() {
         $('#loadingCliente').show();
         let data = {
 
-            "id_cliente": idSeleccionado,
+            "id_cliente": localStorage.getItem('id_cliente'),
             "nombre": document.getElementById("nombreCliente").value,
             "correo": document.getElementById("correo").value,
         };
@@ -101,23 +95,26 @@ $(document).ready(function() {
             method: "PUT",
             timeout: 0,
             data: data
-        }).done(function(response) {
+        }).done(function (response) {
             //REST_Controller::HTTP_OK
             console.log(response);
+
+            localStorage.setItem('nombre',response.usuario.nombre);
+            localStorage.setItem('correo',response.usuario.correo);
+            localStorage.setItem('celular',response.usuario.celular);
+            localStorage.setItem('dui',response.usuario.dui);
+            init();
             const Toast = Swal.mixin();
+            
+   
             Toast.fire({
                 title: 'Exito...',
                 icon: 'success',
                 text: response.mensaje,
                 showConfirmButton: true,
-            }).then((result) => {
-                $("#formularioEditar").trigger("reset");
-                $('#modal-editar').modal('hide');;
-                tabla.ajax.reload(null, false);
             });
-        }).fail(function(response) {
+        }).fail(function (response) {
             console.log(response);
-
             const Toast = Swal.mixin();
             Toast.fire({
                 title: 'Oops...',
@@ -126,8 +123,8 @@ $(document).ready(function() {
                 showConfirmButton: true,
             });
 
-        }).always(function(xhr, opts) {
-            //  $('#loadingActualizar').hide();
+        }).always(function (xhr, opts) {
+            $('#loadingCliente').hide();
         });
     }
 
@@ -137,7 +134,7 @@ $(document).ready(function() {
         dui.inputmask({ "mask": "99999999-9" }); //specifying options
         // $("#dui").inputmask("9-a{1, 3}9{1, 3}"); //mask with dynamic syntax
         let celular = $("#celular");
-        celular.inputmask("(+123) 1234-5678"); //static mask
+        // celular.inputmask("(+123) 1234-5678"); //static mask
         celular.inputmask({ "mask": "(+999) 9999-9999" }); //specifying options
     }
 
