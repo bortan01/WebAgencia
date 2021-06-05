@@ -39,7 +39,7 @@ include_once "./layaut/plantilla/session.php";
 <body data-spy="scroll" data-target="#navbar-example">
    <!-- ======= Header ======= -->
    <header id="header" class="fixed-top">
-      <div class="container d-flex">
+      <div class="container d-flex" style="max-width: 1000px;">
          <div class="logo mr-auto">
             <h1 class="text-light">
                <a href="index.php"><span>Martínez</span>Travels & Tours</a>
@@ -367,7 +367,7 @@ include_once "./layaut/plantilla/session.php";
                   <div class="about-move">
                      <div class="services-details">
                         <div class="single-services">
-                           <a href=""><img src="assets/img/chat.png" /></a>
+                           <a href="./servicios/chat/messenger.php"><img src="assets/img/chat.png" /></a>
                            <h4>Atención al Cliente 24/7</h4>
                            <p>
                               Tienes alguna duda, no te preocupes estamos aqui para ayudarte, ponte en
@@ -518,4 +518,5 @@ include_once "./layaut/plantilla/session.php";
 let id = localStorage.getItem('id_cliente');
 console.log(id);
 </script>
+
 </html>

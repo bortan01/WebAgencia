@@ -34,7 +34,7 @@ function logout() {
 }
 function inicializarChat(user_2) {
   $(".message-container").html("Cargando Mensajes...");
-  $(".name").text("ADMINISTRADOR");
+  $(".name").text("SERVICIO AL CLIENTE");
   $('#btn-enviar').prop('disabled', false);
   proximaConsulta = null;
 

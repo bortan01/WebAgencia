@@ -3,7 +3,7 @@
 <body data-spy="scroll" data-target="#navbar-example">
    <!-- ======= Header ======= -->
    <header id="header" class="fixed-top">
-      <div class="container d-flex">
+      <div class="container d-flex" style="max-width: 1000px;">
          <div class="logo mr-auto">
             <h1 class="text-light">
                <a href="../../index.php"><span>Martínez</span>Travels & Tours</a>
