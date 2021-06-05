@@ -407,16 +407,16 @@ include_once "./layaut/plantilla/session.php";
                         <div class="footer-icons">
                            <ul>
                               <li>
-                                 <a href="#"><i class="fa fa-facebook"></i></a>
+                                 <a href="#" style="padding-top: 10px"><i class="fa fa-facebook"></i></a>
                               </li>
                               <li>
-                                 <a href="#"><i class="fa fa-twitter"></i></a>
+                                 <a href="#" style="padding-top: 10px"><i class="fa fa-twitter"></i></a>
                               </li>
                               <li>
-                                 <a href="#"><i class="fa fa-google"></i></a>
+                                 <a href="#" style="padding-top: 10px"><i class="fa fa-google"></i></a>
                               </li>
                               <li>
-                                 <a href="#"><i class="fa fa-pinterest"></i></a>
+                                 <a href="#" style="padding-top: 10px"><i class="fa fa-pinterest"></i></a>
                               </li>
                            </ul>
                         </div>

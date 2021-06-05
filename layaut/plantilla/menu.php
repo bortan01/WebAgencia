@@ -22,33 +22,33 @@
                         <a href="vistas/asesoria/">Asesoria Migratora</a>
                      </li>
                      <li>
-                        <a href="servicios/paquetes/disponibles.php">Paquetes</a>
+                        <a href="../../servicios/paquetes/disponibles.php">Paquetes</a>
                      </li>
                      <li>
-                        <a href="servicios/tours/disponibles.php">Tours</a>
+                        <a href="../../servicios/tours/disponibles.php">Tours</a>
                      </li>
                      <li>
-                        <a href="servicios/vehiculos/disponibilidad.php">Renta de Vehiculos</a>
+                        <a href="../../servicios/vehiculos/disponibilidad.php">Renta de Vehiculos</a>
                      </li>
 
                      <li>
-                        <a href="servicios/vuelos/">Cotización de Vuelos</a>
+                        <a href="../../servicios/vuelos/">Cotización de Vuelos</a>
                      </li>
                      <li>
-                        <a href="servicios/vuelos/disponibilidadPromociones.php">Promociones de Vuelos</a>
+                        <a href="../../servicios/vuelos/disponibilidadPromociones.php">Promociones de Vuelos</a>
                      </li>
                      <li>
-                        <a href="servicios/encomienda/verEncomiendas.php">Encomienda</a>
+                        <a href="../../servicios/encomienda/verEncomiendas.php">Encomienda</a>
                      </li>
                   </ul>
                </li>
-               <li><a href="#contact">Contacto</a></li>
+               <li><a href="../../servicios/chat/messenger.php">Contacto</a></li>
 
                <li class="drop-down"><a href="#">Mi Cuenta</a>
                   <ul>
                      <li><a href="../../createAccount.php">Registrate</a></li>
                      <li><a href="../../login.php">Identificate</a></li>
-                     <li><a href="#">Actualizar Datos </a></li>
+                     <li><a href="../../servicios/client/updateInfo.php">Actualizar Datos </a></li>
                      <li><a href="#">Foto de Perfil</a></li>
                      <li><a href="#">Documentos Personales</a></li>
                      <li class="drop-down"><a href="#">Servicios Adquiridos</a>
