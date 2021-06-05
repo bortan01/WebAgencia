@@ -39,7 +39,6 @@
                                        <table id="tabla_actu-envio" class="table table-bordered table-striped">
                                           <thead style="text-align: center;">
                                              <tr>
-                                                <th>Nombre</th>
                                                 <th>Ciudad de origen</th>
                                                 <th>Código postal</th>
                                                 <th>Fecha</th>

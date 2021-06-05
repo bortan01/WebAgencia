@@ -16,40 +16,6 @@ $(document).on('click', '.btn-group .btn-success', function () {
                     
     
 });
-   
-    //BOTON PARA ELIMINAR
-    $(document).on('click', '.btn-group .btn-danger', function (evento) {
-        idpregunta = $(this).attr("name");
-        fila = $(this).closest("tr");
-
-        const Toast = Swal.mixin();
-        Swal.fire({
-            title: '¿Estas seguro?',
-            text: "Se Eliminará este registro!",
-            icon: 'warning',
-            showCancelButton: true,
-            cancelButtonText: "Cancelar",
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'Sí, eliminar!'
-        }).then((result) => {
-            console.log(result);
-            if (result.value) {
-                eliminar();
-            }
-        })
-    });
-    //BOTON PARA ACTUALIZAR
-    $(document).on('click', '#btnActualizar', function (evento) {
-        evento.preventDefault(); //para evitar que la pagina se recargue
-        let form = $("#register-form");
-        form.validate();
-          if (form.valid()) {
-            actualizar();
-        }
-    });
-   
-
     function inicializarTabla() {
         tabla = $("#tabla_actu-envio").DataTable({
             "responsive": true,
@@ -71,10 +37,6 @@ $(document).on('click', '.btn-group .btn-success', function () {
                             html += '         data-target="#modal-editar">';
                             html += '            <i class="fas fa-map-marked-alt" style="color: white"></i>';
                             html += '        </button>';
-                            html += '        <button type="button" name="' + json.Encomiendas[i].id_encomienda+ '" class="btn btn-danger" data-toggle="modal"';
-                            html += '            data-target="#modal-eliminar">';
-                            html += '            <i class="fas fa-trash" style="color: white"></i>';
-                            html += '        </button>';
                             html += '    </div>';
                             html += '</td>';
                             json.Encomiendas[i]["botones"] = html;
@@ -89,7 +51,6 @@ $(document).on('click', '.btn-group .btn-success', function () {
                 }
             },
             columns: [
-                { data: "nombre" },
                 { data: "ciudad_origen" },
                 { data: "codigo_postal_origen" },
                 { data: "fecha" },
@@ -99,7 +60,7 @@ $(document).on('click', '.btn-group .btn-success', function () {
              columnDefs: [
             { "className": "dt-center", "targets": "_all" },
            
-            { targets: [5], visible: false },
+            { targets: [4], visible: false },
          ]
         });
 
