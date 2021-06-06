@@ -11,6 +11,8 @@
 <!-- DataTables -->
 <link href="../../assets/vendor/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css" rel="stylesheet" type="text/css" />
 <link href="../../assets/vendor/datatables-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+<link href="../../assets/vendor/select2/css/select2.min.css" rel="stylesheet">
+<link href="../../assets/vendor/select2/css/miEstilo.css" rel="stylesheet">
 <!-- Theme style -->
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 <main id="main" style="padding-top: 40px;">
@@ -47,26 +49,17 @@
                             <div class="timeline-body">
                                 <form id="datosOrigen-form" name="register-form" onsubmit="return false">
                                     <div class="row">
-                                        <div class="col-sm-5">
+                                        <div class="col-sm-6">
                                               <div class="form-group multiple-form-group input-group">
                                                 <label>Cliente</label>
                                                 <div class="input-group">
-                                                    <select name="id_usuario" id="comboUsuario"
-                                                        class="select2 select2-hidden-accessible form-control"
-                                                        data-placeholder="Seleccione" style="width: 100%;">
-                                                    </select>
+                                                    <input disabled="true" type="text" name="telefono" id="telefono"
+                                                class="form-control" autocomplete="off" placeholder="Cliente">
                                                     <input type="hidden" name="estado" id="estado" value="Enviado">
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-1">
-                                            <br>
-                                            <span class="input-group-btn">
-                                                <button type="button" class="btn btn-success btn-add"
-                                                    data-toggle="modal" data-target="#modalAgregarCliente"
-                                                    style="margin-top: 10px; width: 100%;">+</button>
-                                            </span>
-                                        </div>
+                                        
                                         <div class="col-sm-6">
                                                 <label>Teléfono</label>
                                                 <div class="input-group">
@@ -181,7 +174,7 @@
                                 <form id="encomienda-form" name="register-form" onsubmit="return false">
                                     <div class="row">
                                        
-                                        <div class="col-sm-5">
+                                        <div class="col-sm-6">
                                             <div class="form-group multiple-form-group input-group">
                                                 <label>Producto</label>
                                                 <div class="input-group">
@@ -192,14 +185,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-1">
-                                            <br>
-                                            <span class="input-group-btn">
-                                                <button type="button" class="btn btn-success btn-add" id="producto-add"
-                                                    name="" style="margin-top: 10px; width: 100%;">+</button>
-                                            </span>
-                                        </div>
-
                                         <div class="col-sm-3">
                                             <div class="form-group">
                                                 <label for="cars">Costo($)</label>
@@ -332,6 +317,7 @@
 <script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="../../assets/vendor/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../assets/vendor/select2/js/select2.full.min.js"></script>
 
-<script type="text/javascript" src="../../assets/js/controladores/encomiendas/actu-envio.js"></script>
+<script type="text/javascript" src="../../assets/js/controladores/encomiendas/producto.js"></script>
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>
