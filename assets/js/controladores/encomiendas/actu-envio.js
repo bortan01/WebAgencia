@@ -12,7 +12,7 @@ $(document).on('click', '.btn-group .btn-success', function () {
         $('#loadingActualizar').hide();
         id_encomienda = $(this).attr("name");
 
-    window.location = `http://localhost/Webagencia/servicios/encomienda/actuHistorial.php?ac=`+id;
+    window.location = `http://localhost/Webagencia/servicios/encomienda/actuHistorial.php?ac=`+id_encomienda;
                     
     
 });
