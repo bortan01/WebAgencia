@@ -283,8 +283,6 @@
                             <br> <br>
                             <!--****************botones***********-->
                          <div class="timeline-footer" style="text-align: right;">
-                                <button name="btnguardar" id="btnImprimir" class="btn btn-secondary btn-sm"
-                                    style="color: white">Imprimir</button>
                                 <button class="btn btn-danger btn-sm" style="color: white">Cancelar</button>
                             </div>
                         <!--**************fin de los botones*********-->
@@ -320,4 +318,5 @@
 <script src="../../assets/vendor/select2/js/select2.full.min.js"></script>
 
 <script type="text/javascript" src="../../assets/js/controladores/encomiendas/producto.js"></script>
+<script type="text/javascript" src="../../assets/js/controladores/encomiendas/calculo.js"></script>
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>
