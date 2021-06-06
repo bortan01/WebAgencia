@@ -3,7 +3,7 @@ $(document).ready(function () {
     init();
     inicializarValidaciones();
     inicializarMascara();
-
+    inicializarFoto();
     //BOTON PARA ACTUALIZAR
     $(document).on('click', '#btnActualizar', function (evento) {
         evento.preventDefault(); //para evitar que la pagina se recargue
@@ -13,7 +13,30 @@ $(document).ready(function () {
             actualizar();
         }
     });
+    //BOTON EDITAR FOTO PERFIL 
+    $(document).on('click', 'a[name ="camara"]', function () {
+        ///abrimos el modal
+        $('#modal-perfil').modal('show');
+
+    });
+    //BOTON DEL MODAL PARA ACTUALIZA LA FOTO DE PERFIL
+    $(document).on('click', '#actualizarFotoPerfil', function (evento) {
+        evento.preventDefault(); //para evitar que la pagina se recargue
+        //PARA SABER SI SE HA SELECCIONADO UNA FOTO 
+        if (document.getElementById("foto").files[0]) {
+            ActualizarFotoPerfil();
+        } else {
+            const Toast = Swal.mixin();
+            Toast.fire({
+                title: 'Exito...',
+                icon: 'error',
+                text: "Seleccione una Imagen",
+                showConfirmButton: true,
+            });
+        }
+    });
     function init() {
+        document.getElementById("currentPhoto").src = localStorage.getItem('foto');
         $('#nombreCliente').val(localStorage.getItem('nombre'));
         $('#correo').val(localStorage.getItem('correo'));
         $('#celular ').val(localStorage.getItem('celular'));
@@ -70,8 +93,6 @@ $(document).ready(function () {
         });
 
     }
-
-
     function actualizar() {
         $('#loadingCliente').show();
         let data = {
@@ -99,14 +120,14 @@ $(document).ready(function () {
             //REST_Controller::HTTP_OK
             console.log(response);
 
-            localStorage.setItem('nombre',response.usuario.nombre);
-            localStorage.setItem('correo',response.usuario.correo);
-            localStorage.setItem('celular',response.usuario.celular);
-            localStorage.setItem('dui',response.usuario.dui);
+            localStorage.setItem('nombre', response.usuario.nombre);
+            localStorage.setItem('correo', response.usuario.correo);
+            localStorage.setItem('celular', response.usuario.celular);
+            localStorage.setItem('dui', response.usuario.dui);
             init();
             const Toast = Swal.mixin();
-            
-   
+
+
             Toast.fire({
                 title: 'Exito...',
                 icon: 'success',
@@ -127,7 +148,6 @@ $(document).ready(function () {
             $('#loadingCliente').hide();
         });
     }
-
     function inicializarMascara() {
         let dui = $("#dui");
         dui.inputmask("99999999-9"); //static mask
@@ -137,6 +157,79 @@ $(document).ready(function () {
         // celular.inputmask("(+123) 1234-5678"); //static mask
         celular.inputmask({ "mask": "(+999) 9999-9999" }); //specifying options
     }
+    function inicializarFoto() {
 
+        // ESTO ES PARA INICIALIZAR EL ELEMENTO DE SUBIDA DE UNA UNICA FOTO
+        $('#foto').fileinput({
+            theme: 'fas',
+            language: 'es',
+            required: true,
+            maxFileSize: 2000,
+            maxFilesNum: 10,
+            showUpload: false,
+            showClose: false,
+            showCaption: true,
+            browseLabel: '',
+            removeLabel: '',
+            //removeIcon: '<i class="glyphicon glyphicon-remove"></i>',
+            removeTitle: 'Cancel or reset changes',
+            elErrorContainer: '#kv-avatar-errors-1',
+            msgErrorClass: 'alert alert-block alert-danger',
+            defaultPreviewContent: `<img src="${localStorage.getItem('foto')}" alt="Your Avatar">`,
+            layoutTemplates: { main2: '{preview} {remove} {browse}' },
+            allowedFileExtensions: ["jpg", "png", "gif"]
+        });
+    }
+    function ActualizarFotoPerfil() {
+        $('#loading').show();
+        let form = new FormData();
+        //ESTO ES PARA LA FOTO DE PERFIL
+        let foto_perfil = document.getElementById("foto").files[0];
+        form.append('foto', foto_perfil);
+        form.append('tipo', 'usuario_perfil');
+        form.append('identificador', localStorage.getItem('id_cliente'));
 
+        //OCUPAR ESTA CONFIGURACION CUANDO SE ENVIAEN ARCHIVOS(FOTOS-IMAGENES)
+        $.ajax({
+            url: URL_SERVIDOR + "Imagen/savePhotoPerfil",
+            method: "POST",
+            mimeType: "multipart/form-data",
+            data: form,
+            timeout: 0,
+            processData: false,
+            contentType: false,
+        }).done(function (response) {
+            //REST_Controller::HTTP_OK
+            console.log(response);
+            let data = JSON.parse(response);
+            localStorage.setItem('foto', data.path);
+            document.getElementById("currentPhoto").src = data.path;
+            const Toast = Swal.mixin();
+            Toast.fire({
+                title: 'Exito...',
+                icon: 'success',
+                text: "FOTO ACTUALIZADA",
+                showConfirmButton: true,
+            }).then((result) => {
+                //TODO BIEN Y RECARGAMOS LA PAGINA 
+
+                $("#miFormulario").trigger("reset");
+                $('#modal-perfil').modal('hide');
+            });
+        }).fail(function (response) {
+            //SI HUBO UN ERROR EN LA RESPUETA REST_Controller::HTTP_BAD_REQUEST
+            console.log(response);
+
+            const Toast = Swal.mixin();
+            Toast.fire({
+                title: 'Oops...',
+                icon: 'error',
+                text: "ERROR EN EL ENVIO DE INFORMACIÓN",
+                showConfirmButton: true,
+            });
+
+        }).always(function (xhr, opts) {
+            $('#loading').hide();
+        });
+    }
 });
