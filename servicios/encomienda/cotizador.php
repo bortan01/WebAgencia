@@ -53,7 +53,7 @@
                                               <div class="form-group multiple-form-group input-group">
                                                 <label>Cliente</label>
                                                 <div class="input-group">
-                                                    <input disabled="true" type="text" name="telefono" id="telefono"
+                                                    <input disabled="true" type="text" name="cliente" id="cliente"
                                                 class="form-control" autocomplete="off" placeholder="Cliente">
                                                     <input type="hidden" name="estado" id="estado" value="Enviado">
                                                 </div>

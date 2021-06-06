@@ -1,5 +1,12 @@
 $(document).ready(function () {
 
+     let id = localStorage.getItem('id_cliente'); 
+     let nombre = localStorage.getItem('nombre');
+
+     $('#cliente').val(nombre);
+
+
+
     let contadorTabla = 0;
     let TOTAL = 0.0;
     let COMISION = 0.0;
