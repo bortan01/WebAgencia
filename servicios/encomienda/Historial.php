@@ -243,5 +243,5 @@
 <script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="../../assets/vendor/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
 
-<script type="text/javascript" src="../../assets/js/controladores/encomiendas/actu-envio.js"></script>
+<script type="text/javascript" src="../../assets/js/controladores/encomiendas/actu-envio-proceso.js"></script>
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>

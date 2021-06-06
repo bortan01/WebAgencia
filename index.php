@@ -345,7 +345,7 @@ include_once "./layaut/plantilla/session.php";
                   <div class="about-move">
                      <div class="services-details">
                         <div class="single-services">
-                           <a href=""><img src="assets/img/encomiendas.png" /></a>
+                           <a href="./servicios/encomienda/cotizador.php"><img src="assets/img/encomiendas.png" /></a>
                            <h4>Encomiendas</h4>
                            <p>
                               Deseas relizar envíos nacionales o al extrangero, no busques más somos la mejor
