@@ -32,7 +32,7 @@
                      </li>
 
                      <li>
-                        <a href="../../servicios/vuelos/">Cotización de Vuelos</a>
+                        <a href="../../servicios/vuelos/cotizarVuelo.php">Cotización de Vuelos</a>
                      </li>
                      <li>
                         <a href="../../servicios/vuelos/disponibilidadPromociones.php">Promociones de Vuelos</a>
@@ -54,7 +54,7 @@
                      <li class="drop-down"><a href="#">Servicios Adquiridos</a>
                         <ul>
                            <li><a href="#">Viajes</a></li>
-                           <li><a href="#">Vehículos</a></li>
+                           <li><a href="../../servicios/vehiculos/vehiculosAlquilados.php">Vehículos</a></li>
                            <li><a href="#">Encomiendas</a></li>
                         </ul>
                      </li>

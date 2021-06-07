@@ -68,7 +68,7 @@ include_once "./layaut/plantilla/session.php";
                      </li>
 
                      <li>
-                        <a href="servicios/vuelos/">Cotización de Vuelos</a>
+                        <a href="servicios/vuelos/cotizarVuelo.php">Cotización de Vuelos</a>
                      </li>
                      <li>
                         <a href="servicios/vuelos/disponibilidadPromociones.php">Promociones de Vuelos</a>

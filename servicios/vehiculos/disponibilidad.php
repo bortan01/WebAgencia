@@ -212,6 +212,10 @@ h6 {
    <!-- End Modal EDITAR-->
 </form>
 
+<script>
+let id = localStorage.getItem('id_cliente');
+console.log(id);
+</script>
 
 <?php include_once('../../layaut/plantilla/footer.php'); ?>
 <!-- COLOCAR JS ADICIONALES ACA ABAJO -->
