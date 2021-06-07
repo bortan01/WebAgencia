@@ -89,7 +89,7 @@ include_once "./layaut/plantilla/session.php";
                      <li class="drop-down"><a href="#">Servicios Adquiridos</a>
                         <ul>
                            <li><a href="#">Viajes</a></li>
-                           <li><a href="#">Vehículos</a></li>
+                           <li><a href="servicios/vehiculos/vehiculosAlquilados.php">Vehículos</a></li>
                            <li><a href="#">Encomiendas</a></li>
                         </ul>
                      </li>
