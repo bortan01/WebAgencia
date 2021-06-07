@@ -62,6 +62,7 @@
                         <ul>
                            <li><a href="#">Tours</a></li>
                            <li><a href="../../servicios/vehiculos/cotizacionesRealizadas.php">Vehículos</a></li>
+                           <li><a href="../../servicios/vuelos/cotizacionesRealizadasV.php">Vuelos</a></li>
                         </ul>
                      </li>
                      <li><a href="#">Cerrar Sesión</a></li>

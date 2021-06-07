@@ -25,22 +25,22 @@
 
                                 <div class="card">
                                     <div class="card-header">
-                                        <h3 class="card-title">Historial de Vehiculos Alquilados</h3>
+                                        <h3 class="card-title">Cotizaciones de Vehiculos Realizadas</h3>
                                     </div>
                                     <!-- /.card-header -->
                                     <div class="card-body">
                                         <div id="" class="dataTables_wrapper dt-bootstrap4">
                                             <div class="row">
                                                 <div class="col-sm-12">
-                                                    <table id="tabla_historial"
+                                                    <table id="tabla_cotizaciones"
                                                         class="table table-bordered table-striped">
                                                         <thead style="text-align: center;">
                                                             <tr>
-                                                                <th>ID Alquiler</th>
-                                                                <th>Vehiculo</th>
-                                                                <th>Año</th>
-                                                                <th>Fecha - Hora</th>
-                                                                <th>Precio</th>
+                                                                <th>Ciudad de Partida</th>
+                                                                <th>Ciudad de Llegada</th>
+                                                                <th>Aerolinea</th>
+                                                                <th>Opc Avanzadas</th>
+                                                                <th>Precio ($)</th>
                                                                 <th>Acciones</th>
                                                             </tr>
                                                         </thead>
@@ -79,13 +79,14 @@
         </div>
     </div><!-- End Blog Page -->
 </main><!-- End #main -->
+
 <script>
 let id = localStorage.getItem('id_cliente');
 console.log(id);
 </script>
 
 <?php include_once('../../layaut/plantilla/footer.php'); ?>
-!-- PONER SCRIPT ADICIONALES ACA -->
+
 <script src="../../assets/vendor/jquery-ui/jquery-ui.min.js"></script>
 <script src="../../assets/vendor/sweetalert2/sweetalert2.js"></script>
 <!-- DataTables -->
@@ -93,7 +94,7 @@ console.log(id);
 <script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="../../assets/vendor/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
 
-<script type="text/javascript" src="../../assets/js/controladores/vehiculos/alquilados.js"></script>
+<script type="text/javascript" src="../../assets/js/controladores/vuelos/cotizacionesVuelos.js"></script>
 
 
 
