@@ -96,7 +96,7 @@ include_once "./layaut/plantilla/session.php";
                      <li class="drop-down"><a href="#">Cotizaciones</a>
                         <ul>
                            <li><a href="#">Tours</a></li>
-                           <li><a href="#">Vehículos</a></li>
+                           <li><a href="servicios/vehiculos/cotizacionesRealizadas.php">Vehículos</a></li>
                         </ul>
                      </li>
                      <li><a href="#">Cerrar Sesión</a></li>

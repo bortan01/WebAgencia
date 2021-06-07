@@ -1,62 +1,66 @@
 $(document).ready(function () {
-   
+
     let id = localStorage.getItem('id_cliente');
  
     inicializarTabla();
   
     function inicializarTabla() {
-        tablaDetalle= $("#tabla_historial").DataTable({
+        tablaCotizaciones= $("#tabla_cotizaciones").DataTable({
            responsive: true,
            autoWidth: false,
            deferRender: true,
            columns: [
-            { data: "id_detalle" },
+         
             { data: "modelo" },
             { data: "anio" },
-            { data: "fecha_reserva" },
-            { data: "totalDevolucion" },
+            { data: "totalCotizacion" },
+            { data: "fechaRecogida"},
+            { data: "fechaDevolucion"},
+            { data: "respuestaCotizacion" },
             { data: "botones" }
            ], 
            columnDefs: [
             { "className": "dt-center", "targets": "_all" },
            
-            { targets: [5], visible: false },
+            { targets: [6], visible: false },
         ]
         });
 
         $.ajax({
             type: "GET",
-            url: URL_SERVIDOR +"vehiculo/historial?id_cliente="+id,
+            url: URL_SERVIDOR +"cotizarVehiculo/cotizar?id_usuario="+id,
             
             dataType: "json",
             success: function (response) {
                
        
-                for (let i = 0, ien = response.historialDetalles.length; i < ien; i++) {
+                for (let i = 0, ien = response.cotizacion.length; i < ien; i++) {
                     //CREAMOS UNA NUEVA PROPIEDAD LLAMADA BOTONES
                     html = "";
                     html += '<td>';
                     html += '    <div class="btn-group">';
-                    html += '        <button type="button" name="' + response.historialDetalles[i].id_detalle +'" class="btn btn-success" data-toggle="modal"';
+                    html += '        <button type="button" name="' + response.cotizacion[i].idcotizarVehiculo +'" class="btn btn-success" data-toggle="modal"';
                     html += '         data-target="#modal-editar">';
                     html += '            <i class="fas fa-map-marked-alt" style="color: white"></i>';
                     html += '        </button>';
                     html += '    </div>';
                     html += '</td>';
-                    response.historialDetalles[i]["botones"] = html;
+                    response.cotizacion[i]["botones"] = html;
                   
                     let nuevoDetalle = {
-                        id_detalle: response.historialDetalles[i].id_detalle,
-                        modelo: response.historialDetalles[i].modelo,
-                        anio: response.historialDetalles[i].anio,
-                        fecha_reserva: response.historialDetalles[i].fecha_reserva,
-                        totalDevolucion: response.historialDetalles[i].totalDevolucion,
+                      
+                        modelo: response.cotizacion[i].modelo,
+                        anio: response.cotizacion[i].anio,
+                        totalCotizacion: response.cotizacion[i].totalCotizacion,
+                        fechaRecogida: response.cotizacion[i].fechaRecogida,
+                        fechaDevolucion: response.cotizacion[i].fechaDevolucion,
+                        respuestaCotizacion: response.cotizacion[i].respuestaCotizacion,
                         botones: html,
                      };  
-                     tablaDetalle.row.add(nuevoDetalle).draw(false);
+                     tablaCotizaciones.row.add(nuevoDetalle).draw(false);
                 }
                 $('#loading').hide();
-                return json.historialDetalles;
+                return response.cotizacion;
                 
             
             },
