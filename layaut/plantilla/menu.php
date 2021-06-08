@@ -49,8 +49,7 @@
                      <li><a href="../../createAccount.php">Registrate</a></li>
                      <li><a href="../../login.php">Identificate</a></li>
                      <li><a href="../../servicios/client/updateInfo.php">Actualizar Datos </a></li>
-                     <li><a href="../../servicios/client/updatePhoto.php">Foto de Perfil</a></li>
-                     <li><a href="#">Documentos Personales</a></li>
+                     <li><a href="../../servicios/client/updateDocumentos.php">Documentos Personales</a></li>
                      <li class="drop-down"><a href="#">Servicios Adquiridos</a>
                         <ul>
                            <li><a href="#">Viajes</a></li>

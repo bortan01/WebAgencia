@@ -98,7 +98,7 @@ $(".card input").on("focus blur", function () {
 });
 
 function initPreferencias(resp) {
-  console.log(resp);
+
   localStorage.setItem("id_cliente", resp.id_cliente);
   localStorage.setItem("nombre", resp.nombre);
   localStorage.setItem("correo", resp.correo);

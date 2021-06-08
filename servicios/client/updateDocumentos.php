@@ -28,31 +28,18 @@
                               <i class="fas fa-image bg-green"></i>
                               <div class="timeline-item">
                                  <h3 class="timeline-header no-border">
-                                    <a href="#">Selecciona una Foto</a>
+                                    <a href="#">Elimine y agrege nuevas imagenes de sus documentos</a>
                                  </h3>
                                  <div class="timeline-body">
                                     <div class="row">
-                                       <div class="col-sm-3">
-
-                                       </div>
-                                       <div class="col-sm-9">
-                                          <div class="form-group">
-                                             <div class="kv-avatar">
-                                                <div class="file-loading">
-                                                   <input id="foto" name="foto" type="file">
-                                                </div>
-                                             </div>
-                                             <!-- /.input group -->
+                                       <div class="col-sm-12">
+                                          <div class="file-loading">
+                                             <input id="kv-explorer" name="foto" type="file" multiple>
                                           </div>
                                        </div>
                                     </div>
                                  </div>
-                                 <br> <br>
-                                 <div class="timeline-footer" style="text-align: right;">
-                                    <button name="actualizarFotoPerfil" id="actualizarFotoPerfil"
-                                       class="btn btn-info btn-sm" style="color: white">Actualizar</button>
-                                    <button class="btn btn-danger btn-sm" style="color: white">Cancelar</button>
-                                 </div>
+
                               </div>
                            </div>
                            <!-- END timeline item -->
