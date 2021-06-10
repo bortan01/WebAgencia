@@ -55,7 +55,7 @@ include_once "./layaut/plantilla/session.php";
                   <a href="#services">Servicios</a>
                   <ul>
                      <li>
-                        <a href="vistas/asesoria/">Asesoria Migratora</a>
+                        <a href="servicios/asesoria/cita.php">Asesoria Migratora</a>
                      </li>
                      <li>
                         <a href="servicios/paquetes/disponibles.php">Paquetes</a>
@@ -263,7 +263,7 @@ include_once "./layaut/plantilla/session.php";
                      <div class="services-details">
                         <div class="single-services">
 
-                           <a href="servicios/paquetes/disponibles.php"><img src="assets/img/asesoria.png" /></a>
+                           <a href="servicios/asesoria/cita.php"><img src="assets/img/asesoria.png" /></a>
                            </a>
                            <h4>Asesoría Migratoria</h4>
                            <p>
