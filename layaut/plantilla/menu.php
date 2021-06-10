@@ -54,7 +54,7 @@
                         <ul>
                            <li><a href="#">Viajes</a></li>
                            <li><a href="../../servicios/vehiculos/vehiculosAlquilados.php">Vehículos</a></li>
-                           <li><a href="#">Encomiendas</a></li>
+                           <li><a href="../../servicios/Encomienda/verEncomiendas.php">Encomiendas</a></li>
                         </ul>
                      </li>
                      <li class="drop-down"><a href="#">Cotizaciones</a>
