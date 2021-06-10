@@ -23,29 +23,19 @@
                      <div class="form-group col-md-2">
                         <label>Fecha</label>
                         <input type="text" id="txtFecha" name="fecha" class="form-control" />
-                        <input type="hidden" id="usuario" name="usuario" id="usuario" class="form-control" />
+                        
 
                      </div>
-                     <div class="form-group col-md-5">
+                     <div class="form-group col-md-6">
                         <div class="form-group multiple-form-group input-group">
                            <label>Cliente</label>
                            <div class="input-group">
-                              <select name="id_cliente" id="comboUsuario"
-                                 class="select2 select2-hidden-accessible form-control" data-placeholder="Seleccione"
-                                 style="width: 100%;" onchange="ShowSelected();">
-                              </select>
+                              <input type="text" id="usuario" name="usuario" class="form-control" disabled/>
+                              <input type="hidden" id="id_cliente" name="comboUsuario" class="form-control" />
                               <input type="hidden" name="estado" id="estado" value="Enviado">
                            </div>
                         </div>
                      </div>
-                     <div class="col-sm-1">
-                        <br>
-                        <span class="input-group-btn">
-                           <button type="button" class="btn btn-success" data-toggle="modal"
-                              data-target="#modalAgregarCliente" style="margin-top: 10px; width: 100%;">+</button>
-                        </span>
-                     </div>
-
                      <div class="form-group col-md-4">
                         <label>N° pasaporte del cliente</label>
                         <input type="text" id="pasaporte" name="pasaporte" class="form-control"

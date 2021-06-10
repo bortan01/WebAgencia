@@ -1,5 +1,12 @@
 $(document).ready(function (){
 
+    let id = localStorage.getItem('id_cliente'); 
+    let nombre = localStorage.getItem('nombre');
+    let celular = localStorage.getItem('celular');
+
+    $('#id_cliente').val(id); 
+    $('#usuario').val(nombre);
+
     inicializarValidaciones();
     inicializarGaleria();
     inicializarFoto();
