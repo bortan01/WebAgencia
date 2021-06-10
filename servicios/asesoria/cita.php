@@ -68,4 +68,17 @@
 <script src="../../assets/js/controladores/asesorias/input.js"></script>
 <script src="../../assets/js/controladores/asesorias/validar-exist.js"></script>
 <script src="../../assets/js/controladores/asesorias/operaciones.js"></script>
+<script>
+$(document).ready(function() {
+   $('#timepicker').mdtimepicker(); //Initializes the time picker
+});
+
+$(document).ready(function() {
+   $('#timepicker2').mdtimepicker(); //Initializes the time picker
+});
+
+$('#loadingActualizar').hide();
+$('#loadingActualizarEventos').hide();
+
+</script>
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>
