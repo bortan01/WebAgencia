@@ -2,8 +2,10 @@ $(document).ready(function () {
 
      let id = localStorage.getItem('id_cliente'); 
      let nombre = localStorage.getItem('nombre');
+     let celular = localStorage.getItem('celular');
 
      $('#cliente').val(nombre);
+     $('#telefono').val(celular);
 
 
 
