@@ -6,9 +6,9 @@
 <link href="../../assets/vendor/subir-foto/css/avatar.css" rel="stylesheet" type="text/css" />
 <link href="../../assets/vendor/subir-foto/themes/explorer-fas/theme.css" rel="stylesheet" type="text/css" />
 <link href="../../assets/vendor/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css" rel="stylesheet" type="text/css" />
-<link rel='stylesheet' type='text/css'
-   href='http://localhost/Plantillas/SistemaAgencia/plugins/a/css/fullcalendar.css' />
-
+<link rel='stylesheet' type='text/css' href='http://localhost/Plantillas/SistemaAgencia/plugins/a/css/fullcalendar.css' />
+<link href="../../assets/css/mdtimepicker.css" rel="stylesheet" type="text/css">
+ 
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 
 <main id="main" style="padding-top: 40px;">
@@ -68,6 +68,7 @@
 <script src="../../assets/js/controladores/asesorias/input.js"></script>
 <script src="../../assets/js/controladores/asesorias/validar-exist.js"></script>
 <script src="../../assets/js/controladores/asesorias/operaciones.js"></script>
+<script src="../../assets/js/mdtimepicker.js"></script>
 <script>
 $(document).ready(function() {
    $('#timepicker').mdtimepicker(); //Initializes the time picker
