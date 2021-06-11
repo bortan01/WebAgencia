@@ -26,6 +26,7 @@
                         <!-- timeline time label -->
                         <div class="time-label">
                            <span class="bg-red">Registrar Reserva</span>
+                           <a href="https://lk.wompi.sv/aU5W">https://lk.wompi.sv/aU5W</a>
                         </div>
                         <!-- /.timeline-label -->
                         <!-- timeline item -->
