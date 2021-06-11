@@ -2,7 +2,7 @@
 $(document).ready(function () {
    const valores = window.location.search;
    const urlParams = new URLSearchParams(valores);
-   const ID_TUR = urlParams.get("tur");
+   const ID_PAQUETE = urlParams.get("paquete");
    const costoPasaje = $("#costoPasaje");
    const Toast = Swal.mixin();
    let $cart = $("#selected-seats");
@@ -18,8 +18,9 @@ $(document).ready(function () {
    let nombre_producto;
    let descripcionProducto;
 
+
    inicializarComboUsuario();
-   inicialData(ID_TUR);
+   inicialData(ID_PAQUETE);
    inicializarTabla();
 
    //CUANDO HAY CAMBIOS EN EL COMBO DE ASIENTOS
@@ -152,66 +153,64 @@ $(document).ready(function () {
       $.ajax({
          url: `${URL_SERVIDOR}TurPaquete/showReserva?id_tours=${idTour}`,
          method: "GET",
-      })
-         .done(function (response) {
-            $("#titulo").html(`Reservar Paquete (${response.nombre})`);
-            nombre_producto = response.nombre;
-            descripcionProducto = response.descripcion_tur;
-            console.log(response);
-            if (response.cupos != "" && response.cupos != "0") {
-               costoPasaje.val(response.precio);
-               CUPOS = parseInt(response.cupos);
-               $("#cupos").html(CUPOS);
-               //AGREGAMOS EL COSTO BASE
+      }).done(function (response) {
+         $("#titulo").html(`Reservar Paquete (${response.nombre})`);
+         nombre_producto = response.nombre;
+         descripcionProducto = response.descripcion_tur;
+         if (response.cupos != "" && response.cupos != "0") {
+            costoPasaje.val(response.precio);
+            CUPOS = parseInt(response.cupos);
+            $("#cupos").html(CUPOS);
+            //AGREGAMOS EL COSTO BASE
+            DATA_ASIENTOS.push({
+               seleccionables: "1",
+               id: 0,
+               pasaje: response.precio,
+               titulo: "Normal",
+            });
+            let lista = response.promociones;
+            for (let index = 0; index < lista.length; index++) {
                DATA_ASIENTOS.push({
-                  seleccionables: "1",
-                  id: 0,
-                  pasaje: response.precio,
-                  titulo: "Normal",
-               });
-               let lista = response.promociones;
-               for (let index = 0; index < lista.length; index++) {
-                  DATA_ASIENTOS.push({
-                     seleccionables: lista[index].asiento,
-                     id: index + 1,
-                     pasaje: lista[index].pasaje,
-                     titulo: lista[index].titulo,
-                  });
-               }
-               inicialComboAsientos();
-               if (response.transporte != null) {
-                  transporte = true;
-                  let derecho = response.transporte.asiento_derecho;
-                  let izquierdo = response.transporte.asiento_izquierdo;
-                  let numero_filas = response.transporte.filas;
-                  let deshabilitados =
-                     response.transporte.asientos_deshabilitados;
-
-                  let strFila = crearStrFila(derecho, izquierdo);
-                  let mapa = crearFilas(
-                     strFila,
-                     derecho,
-                     izquierdo,
-                     numero_filas,
-                     true
-                  );
-                  dibujarAsientos(mapa);
-                  bloquearAsientosInavilitados(deshabilitados);
-                  bloquearAsientosOcupados(response.transporte.ocupados);
-               } else {
-                  $("#dibujoAsientos").hide();
-               }
-            } else {
-               $("#item_asiento").hide();
-
-               Toast.fire({
-                  title: "Oops...",
-                  icon: "warning",
-                  text: "No hay cupos disponibles",
-                  showConfirmButton: true,
+                  seleccionables: lista[index].asiento,
+                  id: index + 1,
+                  pasaje: lista[index].pasaje,
+                  titulo: lista[index].titulo,
                });
             }
-         })
+            inicialComboAsientos();
+            if (response.transporte != null) {
+               transporte = true;
+               let derecho = response.transporte.asiento_derecho;
+               let izquierdo = response.transporte.asiento_izquierdo;
+               let numero_filas = response.transporte.filas;
+               let deshabilitados =
+                  response.transporte.asientos_deshabilitados;
+
+               let strFila = crearStrFila(derecho, izquierdo);
+               let mapa = crearFilas(
+                  strFila,
+                  derecho,
+                  izquierdo,
+                  numero_filas,
+                  true
+               );
+               dibujarAsientos(mapa);
+               bloquearAsientosInavilitados(deshabilitados);
+               bloquearAsientosOcupados(response.transporte.ocupados);
+            } else {
+               $("#dibujoAsientos").hide();
+            }
+         } else {
+            $("#item_asiento").hide();
+
+            Toast.fire({
+               title: "Oops...",
+               icon: "warning",
+               text: "No hay cupos disponibles",
+               showConfirmButton: true,
+            });
+         }
+      })
          .fail(function (response) {
             console.log("Error");
             console.log(response);
@@ -221,24 +220,29 @@ $(document).ready(function () {
       $("#loadingReservaTur").hide();
       let form = getData();
       $.ajax({
-         url: URL_SERVIDOR + "DetalleTour/saveByAgency",
+         url: URL_SERVIDOR + "DetalleTour/saveByClient",
          method: "POST",
          mimeType: "multipart/form-data",
          data: form,
          timeout: 0,
          processData: false,
          contentType: false,
+      }).done(function (response) {
+         let WompiResponse = JSON.parse(response);
+         console.log(WompiResponse);
+         const Toast = Swal.mixin();
+         Toast.fire({
+            title: "Exito...",
+            icon: "success",
+            text: "Servicio Guardado Exitosamente",
+            showConfirmButton: true,
+         }).then((result) => {
+            if (result.value) {
+               location = WompiResponse.urlEnlace;
+            }
+         });
+         reset();
       })
-         .done(function (response) {
-            const Toast = Swal.mixin();
-            Toast.fire({
-               title: "Exito...",
-               icon: "success",
-               text: "Servicio Guardado Exitosamente",
-               showConfirmButton: true,
-            });
-            reset();
-         })
          .fail(function (response) {
             //SI HUBO UN ERROR EN LA RESPUETA REST_Controller::HTTP_BAD_REQUEST
             console.log(response);
@@ -264,7 +268,7 @@ $(document).ready(function () {
       let total = 0.0;
       let cantidad_asientos = 0;
       let label_asiento = [];
-      let descripcionReserva = "";
+      let descripcionProducto = "";
       dataAsiento.forEach((element) => {
          label_asiento.push(element.settings.label);
       });
@@ -272,17 +276,19 @@ $(document).ready(function () {
          total += parseFloat(element.subTotal);
          cantidad_asientos +=
             parseInt(element.cantidad) * parseInt(element.seleccionables);
-         descripcionReserva = `${descripcionReserva} ${element.cantidad} X Asiento(s) ${element.tipo}  $${element.costo} c/u, Sub total: ${element.subTotal}  \n`;
+         descripcionProducto = `${descripcionProducto} ${element.cantidad} X Asiento(s) ${element.tipo}  $${element.costo} c/u, Sub total: ${element.subTotal}  \n`;
       });
-      descripcionReserva = `${descripcionReserva}  Total : $${total}`;
-      form.append("id_tours", ID_TUR);
+      descripcionProducto = `${descripcionProducto}  Total : $${total}`;
+      form.append("id_tours", ID_PAQUETE);
       form.append("id_cliente", id_cliente);
       form.append("asientos_seleccionados", asientos_seleccionados);
       form.append("label_asiento", label_asiento);
       form.append("nombre_producto", nombre_producto);
       form.append("total", total);
-      form.append("descripcionProducto", descripcionReserva);
+      form.append("descripcionProducto", descripcionProducto);
       form.append("cantidad_asientos", cantidad_asientos);
+      form.append("descripcionTurPaquete", "descripcion de producto");
+
 
       return form;
    }
@@ -412,12 +418,12 @@ $(document).ready(function () {
                //let's create a new <li> which we'll add to the cart items
                $(
                   "<li>" +
-                     this.data().category +
-                     " Seat # " +
-                     this.settings.label +
-                     ": <b>$" +
-                     this.data().price +
-                     '</b> <a href="#" class="cancel-cart-item">[cancel]</a></li>'
+                  this.data().category +
+                  " Seat # " +
+                  this.settings.label +
+                  ": <b>$" +
+                  this.data().price +
+                  '</b> <a href="#" class="cancel-cart-item">[cancel]</a></li>'
                )
                   .attr("id", "cart-item-" + this.settings.id)
                   .data("seatId", this.settings.id)
@@ -527,6 +533,6 @@ $(document).ready(function () {
       DATA_ASIENTOS = [];
       ASIENTOS_SELECCIONADOS = [];
       totalReserva = 0;
-      inicialData(ID_TUR);
+      inicialData(ID_PAQUETE);
    }
 });

@@ -1,12 +1,12 @@
 $(document).ready(function () {
-   let ID_TUR;
+   let ID_PAQUETE;
    let ARR_TUR = [];
 
    inicializarViajes();
    //BOTON DE MOSTRAR CARACTERISTICAS
    $(document).on('click', '.btn-primary', function () {
-      ID_TUR = $(this).attr("name");
-      let data = obtenerViaje(ID_TUR);
+      ID_PAQUETE = $(this).attr("name");
+      let data = obtenerViaje(ID_PAQUETE);
 
       if (data.galeria) {
          let galeria = data.galeria;
@@ -71,7 +71,7 @@ $(document).ready(function () {
       obtenerInformacionAdicional();
    });
    $(document).on('click', '#btnReservar', function () {
-      location = 'reserva.php';
+      location = 'reserva.php?paquete=' + ID_PAQUETE;
    });
    function inicializarViajes() {
       $.ajax({
@@ -107,7 +107,7 @@ $(document).ready(function () {
    }
    function obtenerInformacionAdicional() {
       $.ajax({
-         url: `${URL_SERVIDOR}TurPaquete/showAdicional?id_tours=${ID_TUR}`,
+         url: `${URL_SERVIDOR}TurPaquete/showAdicional?id_tours=${ID_PAQUETE}`,
          method: "GET"
       }).done(function (response) {
          dibujarSiiosTuristicos(response.sitiosTuristicos);

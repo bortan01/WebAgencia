@@ -21,7 +21,6 @@
    </div><!-- End Blog Page -->
 
 </main><!-- End #main -->
-
 <form id="miFormulario" name="miFormulario" role="form" onsubmit="return false">
    <!-- Modal EDITAR-->
    <div class="modal fade" id="modal-editar">
@@ -118,7 +117,6 @@
                                           <span class="badge bg-warning float-right">
                                              <h7 name="" id="">con el 50% o su totalidad</h7>
                                           </span>
-
                                        </a>
                                     </li>
                                     <li class="nav-item">
