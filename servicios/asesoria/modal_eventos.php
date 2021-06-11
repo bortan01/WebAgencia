@@ -23,14 +23,14 @@
                      <div class="form-group col-md-2">
                         <label>Fecha</label>
                         <input type="text" id="txtFecha" name="fecha" class="form-control" />
-                        
+
 
                      </div>
                      <div class="form-group col-md-6">
                         <div class="form-group multiple-form-group input-group">
                            <label>Cliente</label>
                            <div class="input-group">
-                              <input type="text" id="usuario" name="usuario" class="form-control" disabled/>
+                              <input type="text" id="usuario" name="usuario" class="form-control" disabled />
                               <input type="hidden" id="id_cliente" name="comboUsuario" class="form-control" />
                               <input type="hidden" name="estado" id="estado" value="Enviado">
                            </div>
@@ -105,7 +105,7 @@
 
                         <label>Agregar foto de pasaporte</label>
                         <div class="file-loading">
-                           <input type="file" name="fotos[]" id="fotos">
+                           <input multiple type="file" name="fotos[]" id="fotos">
                         </div>
                      </div>
                   </div>
