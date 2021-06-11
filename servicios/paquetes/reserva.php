@@ -7,8 +7,6 @@
 <link href="../../assets/vendor/select2/css/miEstilo.css" rel="stylesheet">
 <link href="../../assets/vendor/asiento-bus/css/jquery.seat-charts.css" rel=" stylesheet" type="text/css">
 <link href="../../assets/vendor/asiento-bus/css/reserva.css" rel=" stylesheet" type="text/css">
-<link href="../../assets/vendor/subir-foto/css/fileinput.css" rel="stylesheet" type="text/css" />
-<link href="../../assets/vendor/subir-foto/css/avatar.css" rel="stylesheet" type="text/css" />
 <link href="../../assets/vendor/subir-foto/themes/explorer-fas/theme.css" rel="stylesheet" type="text/css" />
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 
@@ -233,6 +231,5 @@ include './modalCliente.php';
 <script src="../../assets/vendor/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
 <script src="../../assets/vendor/select2/js/select2.full.min.js"></script>
 <script src="../../assets/vendor/asiento-bus/js/jquery.seat-charts.js"></script>
-<script src="../../assets/js/controladores/paquete/reserva-paquete.js"></script>
-<script src="./registro-cliente.js" type="text/javascript"></script>
+<script src="../../assets/js/controladores/tour/reserva-tour.js"></script>
 <?php include_once('../../layaut/plantilla/cierre.php');?>

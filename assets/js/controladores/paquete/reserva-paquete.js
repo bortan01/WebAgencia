@@ -258,7 +258,7 @@ $(document).ready(function () {
 
    function getData() {
       let form = new FormData();
-      let id_cliente = document.getElementById("comboUsuario").value;
+      let id_cliente = localStorage.getItem("id_cliente");
       let asientos_seleccionados = seat_charts.find("e.selected").seatIds;
       let dataAsiento = seat_charts.find("e.selected").seats;
       let total = 0.0;

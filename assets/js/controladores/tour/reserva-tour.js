@@ -253,7 +253,7 @@ $(document).ready(function () {
       descripcionReserva = `${descripcionReserva}  Total : $${totalPago}`
     
       form.append("id_tours", ID_TUR);
-      form.append("id_cliente", id_cliente);
+      form.append("id_cliente", localStorage.getItem("id_cliente"));
       form.append("asientos_seleccionados", "NO_SELECCIONADO");
       form.append("label_asiento", "NO_LABEL");
       form.append("nombre_producto", nombre_producto);
