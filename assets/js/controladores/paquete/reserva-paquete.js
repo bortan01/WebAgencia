@@ -234,7 +234,7 @@ $(document).ready(function () {
          Toast.fire({
             title: "Exito...",
             icon: "success",
-            text: "Servicio Guardado Exitosamente",
+            text: "Será redirigido a nuestra pasarela de pago para continuar con la reserva",
             showConfirmButton: true,
          }).then((result) => {
             if (result.value) {
@@ -262,7 +262,6 @@ $(document).ready(function () {
 
    function getData() {
       let form = new FormData();
-      let id_cliente = localStorage.getItem("id_cliente");
       let asientos_seleccionados = seat_charts.find("e.selected").seatIds;
       let dataAsiento = seat_charts.find("e.selected").seats;
       let total = 0.0;
@@ -279,8 +278,9 @@ $(document).ready(function () {
          descripcionProducto = `${descripcionProducto} ${element.cantidad} X Asiento(s) ${element.tipo}  $${element.costo} c/u, Sub total: ${element.subTotal}  \n`;
       });
       descripcionProducto = `${descripcionProducto}  Total : $${total}`;
+
       form.append("id_tours", ID_PAQUETE);
-      form.append("id_cliente", id_cliente);
+      form.append("id_cliente", localStorage.getItem("id_cliente"));
       form.append("asientos_seleccionados", asientos_seleccionados);
       form.append("label_asiento", label_asiento);
       form.append("nombre_producto", nombre_producto);

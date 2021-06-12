@@ -175,5 +175,5 @@
 <script src="../../assets/vendor/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
 <script src="../../assets/vendor/select2/js/select2.full.min.js"></script>
 <script src="../../assets/vendor/asiento-bus/js/jquery.seat-charts.js"></script>
-<script src="../../assets/js/controladores/paquete/reserva-paquete.js"></script>
+<script src="../../assets/js/controladores/tour/reserva-tour.js"></script>
 <?php include_once('../../layaut/plantilla/cierre.php');?>
