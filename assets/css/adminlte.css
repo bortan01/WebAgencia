@@ -6461,7 +6461,7 @@ a.disabled.mailbox-attachment-close {
 
 @media (min-width: 576px) {
     .modal-dialog {
-        max-width: 500px;
+        max-width: 85%;
         margin: 1.75rem auto;
     }
     .modal-dialog-scrollable {
