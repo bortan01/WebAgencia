@@ -207,7 +207,6 @@ $(document).ready(function () {
          contentType: false,
       }).done(function (response) {
          let WompiResponse = JSON.parse(response);
-         console.log(WompiResponse);
          const Toast = Swal.mixin();
          Toast.fire({
             title: "Exito...",
@@ -216,13 +215,13 @@ $(document).ready(function () {
             showConfirmButton: true,
          }).then((result) => {
             if (result.value) {
-               var link = document.createElement('a');
+               let link = document.createElement('a');
                link.target = '_blank';
                link.href = WompiResponse.urlEnlace;
                document.body.appendChild(link); // Required for Firefox
                link.click();
                link.remove();
-               location = 'home.php';
+               location = 'disponibles.php';
             }
          });
          reset();
