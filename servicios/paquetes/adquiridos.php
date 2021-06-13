@@ -35,12 +35,13 @@
                                        <table id="tabla_historial" class="table table-bordered table-striped">
                                           <thead style="text-align: center;">
                                              <tr>
-                                                <th>ID Alquiler</th>
-                                                <th>Vehiculo</th>
-                                                <th>Año</th>
-                                                <th>Fecha - Hora</th>
-                                                <th>Precio</th>
-                                                <th>Acciones</th>
+                                                <th>fasdfa</th>
+                                                <th>Título</th>
+                                                <th>Fecha de reserva</th>
+                                                <th>Detalle de reserva </th>
+                                                <th>Forma de pago utilizada</th>
+                                                <th>monto ($)</th>
+                                                <th>tipo</th>
                                              </tr>
                                           </thead>
                                           <!-- /.inicio de loading -->
