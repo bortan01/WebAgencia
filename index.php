@@ -87,7 +87,7 @@ include_once "./layaut/plantilla/session.php";
                      <li><a href="servicios/client/updateDocumentos.php">Documentos Personales</a></li>
                      <li class="drop-down"><a href="#">Servicios Adquiridos</a>
                         <ul>
-                           <li><a href="#">Viajes</a></li>
+                           <li><a href="servicios/paquetes/adquiridos.php">Tours/Paquetes</a></li>
                            <li><a href="servicios/vehiculos/vehiculosAlquilados.php">Vehículos</a></li>
                            <li><a href="#">Encomiendas</a></li>
                         </ul>
