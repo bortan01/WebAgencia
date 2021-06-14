@@ -6,7 +6,6 @@ inicializarTabla();
 $(document).on('click', '.btn-info', function () {
    let fila = $(this).closest("tr");
    let data = tablaHistorial.row(fila).data();
-
    if (data.galeria) {
       let galeria = data.galeria;
       let imagenGrande = document.getElementById('imagenGrande');
@@ -69,6 +68,7 @@ $(document).on('click', '.btn-info', function () {
    $('#otros').empty();
 
    $('#modal-editar').modal('show');
+   obtenerInformacionAdicional(data.id_tours);
 
 });
 
@@ -128,4 +128,130 @@ function inicializarTabla() {
       error: function (err) {
       }
    });
+}
+function obtenerInformacionAdicional(idTour) {
+   $.ajax({
+      url: `${URL_SERVIDOR}TurPaquete/showAdicional?id_tours=${idTour}`,
+      method: "GET"
+   }).done(function (response) {
+      dibujarSiiosTuristicos(response.sitiosTuristicos);
+      dibujarServicios(response.serviciosAdicionales);
+   }).fail(function (response) {
+      console.log(response);
+
+   });
+}
+function dibujarSiiosTuristicos(sitiosTuristicos) {
+   sitiosTuristicos.forEach((sitio, numeroCarrucel) => {
+      let allHtml = '';
+      allHtml += `<div style="display: block;" class="row">`;
+      allHtml += `    <h3>${sitio.nombre_sitio}</h3>`;
+      allHtml += `    <hr />`;
+      allHtml += `    <article>${sitio.descripcion_sitio}</article>`;
+      allHtml += `</div>`;
+      allHtml += `<div class="row">`;
+      allHtml += `      <div class="col-sm-8 centrado">`;
+      allHtml += `         <div id="carouselExampleIndicators-${numeroCarrucel}" class="carousel slide" data-ride="carousel">`;
+      allHtml += `            <ol class="carousel-indicators">`;
+
+      sitio.galeria.forEach((foto, index) => {
+         if (index == 0) {
+            allHtml += `<li data-target="#carouselExampleIndicators-${numeroCarrucel}" data-slide-to="${index}" class="active"></li>`;
+
+         } else {
+            allHtml += `<li data-target="#carouselExampleIndicators-${numeroCarrucel}" data-slide-to="${index}"></li>`;
+         }
+      });
+      allHtml += `</ol>`;
+      allHtml += `<div class="carousel-inner">`;
+
+      sitio.galeria.forEach((foto, index) => {
+         if (index == 0) {
+            allHtml += `<div class="carousel-item active ">`;
+            allHtml += `   <img class="d-block w-100 "`;
+            allHtml += `      src="${foto}" alt="First slide">`;
+            allHtml += `</div>`;
+
+         } else {
+            allHtml += `<div class="carousel-item">`;
+            allHtml += `   <img class="d-block w-100 "`;
+            allHtml += `      src="${foto}" alt="Second slide">`;
+            allHtml += `</div>`;
+         }
+      });
+      allHtml += `</div>`;
+      allHtml += `<a class="carousel-control-prev" href="#carouselExampleIndicators-${numeroCarrucel}"`;
+      allHtml += `            role="button" data-slide="prev">`;
+      allHtml += `            <span class="carousel-control-prev-icon" aria-hidden="true"></span>`;
+      allHtml += `            <span class="sr-only">Previous</span>`;
+      allHtml += `         </a>`;
+      allHtml += `         <a class="carousel-control-next" href="#carouselExampleIndicators-${numeroCarrucel}"`;
+      allHtml += `            role="button" data-slide="next">`;
+      allHtml += `            <span class="carousel-control-next-icon" aria-hidden="true"></span>`;
+      allHtml += `            <span class="sr-only">Next</span>`;
+      allHtml += `         </a>`;
+      allHtml += `      </div>`;
+      allHtml += `   </div>`;
+      allHtml += `</div>`;
+
+      $('#sitios').append(allHtml);
+   });
+
+}
+function dibujarServicios(serviciosAdicionales) {
+   serviciosAdicionales.forEach((servicio, numeroCarrucel) => {
+      let allHtml = '';
+      allHtml += `<div style="display: block;" class="row">`;
+      allHtml += `    <h3>${servicio.nombre_servicio}</h3>`;
+      allHtml += `    <hr />`;
+      allHtml += `    <article>${servicio.descripcion_servicio}</article>`;
+      allHtml += `</div>`;
+      allHtml += `<div class="row">`;
+      allHtml += `      <div class="col-sm-8 centrado">`;
+      allHtml += `         <div id="carouselServiciosIndicators-${numeroCarrucel}" class="carousel slide" data-ride="carousel">`;
+      allHtml += `            <ol class="carousel-indicators">`;
+
+      servicio.galeria.forEach((foto, index) => {
+         if (index == 0) {
+            allHtml += `<li data-target="#carouselServiciosIndicators-${numeroCarrucel}" data-slide-to="${index}" class="active"></li>`;
+
+         } else {
+            allHtml += `<li data-target="#carouselServiciosIndicators-${numeroCarrucel}" data-slide-to="${index}"></li>`;
+         }
+      });
+      allHtml += `</ol>`;
+      allHtml += `<div class="carousel-inner">`;
+
+      servicio.galeria.forEach((foto, index) => {
+         if (index == 0) {
+            allHtml += `<div class="carousel-item active ">`;
+            allHtml += `   <img class="d-block w-100 "`;
+            allHtml += `      src="${foto}" alt="First slide">`;
+            allHtml += `</div>`;
+
+         } else {
+            allHtml += `<div class="carousel-item">`;
+            allHtml += `   <img class="d-block w-100 "`;
+            allHtml += `      src="${foto}" alt="Second slide">`;
+            allHtml += `</div>`;
+         }
+      });
+      allHtml += `</div>`;
+      allHtml += `<a class="carousel-control-prev" href="#carouselServiciosIndicators-${numeroCarrucel}"`;
+      allHtml += `            role="button" data-slide="prev">`;
+      allHtml += `            <span class="carousel-control-prev-icon" aria-hidden="true"></span>`;
+      allHtml += `            <span class="sr-only">Previous</span>`;
+      allHtml += `         </a>`;
+      allHtml += `         <a class="carousel-control-next" href="#carouselServiciosIndicators-${numeroCarrucel}"`;
+      allHtml += `            role="button" data-slide="next">`;
+      allHtml += `            <span class="carousel-control-next-icon" aria-hidden="true"></span>`;
+      allHtml += `            <span class="sr-only">Next</span>`;
+      allHtml += `         </a>`;
+      allHtml += `      </div>`;
+      allHtml += `   </div>`;
+      allHtml += `</div>`;
+
+      $('#otros').append(allHtml);
+   });
+
 }
