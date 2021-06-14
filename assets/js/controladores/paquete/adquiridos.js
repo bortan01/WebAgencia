@@ -2,6 +2,8 @@ $("#loading").hide();
 let tablaHistorial;
 let seat_charts;
 let $cart = $("#selected-seats");
+let $counter = $('#counter');
+let $total = $('#total');
 inicializarTabla();
 
 //BOTON DE VER DETALLES
@@ -71,15 +73,15 @@ $(document).on('click', '.btn-info', function () {
    $('#otros').empty();
 
    $('#modal-editar').modal('show');
-   $('#tab-asientos').append(`<p>Cantidad de asientos reservados: <strong>${data.cantidad_asientos}</strong></p>`);
+   $('#labelCantidad').empty();
+   $('#labelCantidad').append(`Cantidad de asientos reservados: <strong>${data.cantidad_asientos}</strong>`);
    // DIBUJANDO ASIENTOS
    if (data.transporte != null && data.transporte != '') {
+      $('#seat-map').show();
       transporte = true;
       let derecho = data.transporte.asiento_derecho;
       let izquierdo = data.transporte.asiento_izquierdo;
       let numero_filas = data.transporte.filas;
-      let deshabilitados =
-         data.transporte.asientos_deshabilitados;
 
       let strFila = crearStrFila(derecho, izquierdo);
       let mapa = crearFilas(
@@ -91,15 +93,12 @@ $(document).on('click', '.btn-info', function () {
       );
       dibujarAsientos(mapa);
    } else {
-      $("#dibujoAsientos").hide();
+      $('#seat-map').hide();
    }
-
    bloquearAsientosOcupados(data.asientos_seleccionados);
-
    obtenerInformacionAdicional(data.id_tours);
 
 });
-
 function inicializarTabla() {
    tablaHistorial = $("#tabla_historial").DataTable({
       responsive: true,
@@ -317,48 +316,7 @@ function dibujarAsientos(miMapa) {
          ],
       },
       click: function () {
-         if (this.status() == "available") {
-            //let's create a new <li> which we'll add to the cart items
-            $(
-               "<li>" +
-               this.data().category +
-               " Seat # " +
-               this.settings.label +
-               ": <b>$" +
-               this.data().price +
-               '</b> <a href="#" class="cancel-cart-item">[cancel]</a></li>'
-            )
-               .attr("id", "cart-item-" + this.settings.id)
-               .data("seatId", this.settings.id)
-               .appendTo($cart);
-
-            /*
-             * Lets update the counter and total
-             *
-             * .find function will not find the current seat, because it will change its stauts only after return
-             * 'selected'. This is why we have to add 1 to the length and the current seat price to the total.
-             */
-            $counter.text(seat_charts.find("selected").length + 1);
-            $total.text(recalculateTotal(seat_charts) + this.data().price);
-
-            return "selected";
-         } else if (this.status() == "selected") {
-            //update the counter
-            $counter.text(seat_charts.find("selected").length - 1);
-            //and total
-            $total.text(recalculateTotal(seat_charts) - this.data().price);
-
-            //remove the item from our cart
-            $("#cart-item-" + this.settings.id).remove();
-
-            //seat has been vacated
-            return "available";
-         } else if (this.status() == "unavailable") {
-            //seat has been already booked
-            return "unavailable";
-         } else {
-            return this.style();
-         }
+         return this.status();
       },
       focus: function () {
          if (this.status() == "available") {

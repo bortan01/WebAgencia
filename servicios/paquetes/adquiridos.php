@@ -202,7 +202,7 @@ table.dataTable tbody td {
                      <div class="row mt-4">
                         <nav class="w-100">
                            <div class="nav nav-tabs" role="tablist">
-                              <a class="nav-item nav-link" data-toggle="tab" href="#tab-descripcion" role="tab"
+                              <a class="nav-item nav-link active" data-toggle="tab" href="#tab-descripcion" role="tab"
                                  aria-selected="true">Descripción</a>
                               <a class="nav-item nav-link" data-toggle="tab" href="#tab-incluye" role="tab"
                                  aria-selected="false">Incluye</a>
@@ -214,7 +214,7 @@ table.dataTable tbody td {
                                  aria-selected="false"> Promociones</a>
                               <a class="nav-item nav-link" data-toggle="tab" href="#tab-salida" role="tab"
                                  aria-selected="false">Lugar de Salida</a>
-                              <a class="nav-item nav-link active" data-toggle="tab" href="#tab-asientos" role="tab"
+                              <a class="nav-item nav-link" data-toggle="tab" href="#tab-asientos" role="tab"
                                  aria-selected="false">Asientos Seleccionados</a>
                               <a class="nav-item nav-link" data-toggle="tab" href="#tab-sitios" role="tab"
                                  aria-selected="false">Sitios Turísticos</a>
@@ -233,6 +233,7 @@ table.dataTable tbody td {
                               <div name="no-incluye" id="no-incluye"> </div>
                            </div>
                            <div class="tab-pane fade" id="tab-asientos" role="tabpanel">
+                              <p id="labelCantidad"></p>
                               <div id="seat-map" class="float-right seatCharts-container" tabindex="0"
                                  aria-activedescendant="1_5">
                                  <div class="front-indicator">Frontal</div>
