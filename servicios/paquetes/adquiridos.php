@@ -9,6 +9,13 @@
 <!-- Theme style -->
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 
+
+<style>
+table.dataTable tbody td {
+   vertical-align: inherit;
+}
+</style>
+
 <main id="main" style="padding-top: 40px;">
    <!-- ======= Blog Page ======= -->
    <div class="blog-page area-padding">
@@ -35,13 +42,14 @@
                                        <table id="tabla_historial" class="table table-bordered table-striped">
                                           <thead style="text-align: center;">
                                              <tr>
-                                                <th>fasdfa</th>
+                                                <th></th>
                                                 <th>Título</th>
                                                 <th>Fecha de reserva</th>
                                                 <th>Detalle de reserva </th>
                                                 <th>Forma de pago utilizada</th>
-                                                <th>monto ($)</th>
-                                                <th>tipo</th>
+                                                <th>Pago Realizado($)</th>
+                                                <th>Tipo de Viaje</th>
+                                                <th>Ver Detalle</th>
                                              </tr>
                                           </thead>
                                           <!-- /.inicio de loading -->
@@ -88,4 +96,12 @@
 <script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="../../assets/vendor/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
 <script src="../../assets/js/controladores/paquete/adquiridos.js"></script>
+
+<script src="http://localhost/Plantillas/SistemaAgencia/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="http://localhost/Plantillas/SistemaAgencia/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js">
+</script>
+<script src="http://localhost/Plantillas/SistemaAgencia/plugins/datatables-responsive/js/dataTables.responsive.min.js">
+</script>
+<script src="http://localhost/Plantillas/SistemaAgencia/plugins/datatables-responsive/js/responsive.bootstrap4.min.js">
+</script>
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>
