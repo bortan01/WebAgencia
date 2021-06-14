@@ -6,6 +6,7 @@ inicializarTabla();
 
 //BOTON DE VER DETALLES
 $(document).on('click', '.btn-info', function () {
+   borrarTodo();
    let fila = $(this).closest("tr");
    let data = tablaHistorial.row(fila).data();
    if (data.galeria) {
@@ -71,7 +72,6 @@ $(document).on('click', '.btn-info', function () {
 
    $('#modal-editar').modal('show');
    $('#tab-asientos').append(`<p>Cantidad de asientos reservados: <strong>${data.cantidad_asientos}</strong></p>`);
-   console.log(data);
    // DIBUJANDO ASIENTOS
    if (data.transporte != null && data.transporte != '') {
       transporte = true;
@@ -428,4 +428,11 @@ function bloquearAsientosInavilitados(asientosBloqueados) {
 }
 function bloquearAsientosOcupados(ocupados) {
    seat_charts.get(ocupados).status("ocupado");
+}
+
+function borrarTodo() {
+   $('.seatCharts-row').remove();
+   $('.seatCharts-legendItem').remove();
+   $('#seat-map,#seat-map *').unbind().removeData();
+
 }
