@@ -1,7 +1,6 @@
 $(document).ready(function () {
    let ID_PAQUETE;
    let ARR_TUR = [];
-
    inicializarViajes();
    //BOTON DE MOSTRAR CARACTERISTICAS
    $(document).on('click', '.btn-primary', function () {

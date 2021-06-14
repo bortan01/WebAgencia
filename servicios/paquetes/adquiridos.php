@@ -6,6 +6,10 @@
 <!-- DataTables -->
 <link href="../../assets/vendor/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css" rel="stylesheet" type="text/css" />
 <link href="../../assets/vendor/datatables-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+<!-- PARA EL DIBUJO DEL BUS -->
+<link href="../../assets/vendor/asiento-bus/css/jquery.seat-charts.css" rel=" stylesheet" type="text/css">
+<link href="../../assets/vendor/asiento-bus/css/reserva.css" rel=" stylesheet" type="text/css">
+
 <!-- Theme style -->
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 
@@ -198,7 +202,7 @@ table.dataTable tbody td {
                      <div class="row mt-4">
                         <nav class="w-100">
                            <div class="nav nav-tabs" role="tablist">
-                              <a class="nav-item nav-link active" data-toggle="tab" href="#tab-descripcion" role="tab"
+                              <a class="nav-item nav-link" data-toggle="tab" href="#tab-descripcion" role="tab"
                                  aria-selected="true">Descripción</a>
                               <a class="nav-item nav-link" data-toggle="tab" href="#tab-incluye" role="tab"
                                  aria-selected="false">Incluye</a>
@@ -210,6 +214,8 @@ table.dataTable tbody td {
                                  aria-selected="false"> Promociones</a>
                               <a class="nav-item nav-link" data-toggle="tab" href="#tab-salida" role="tab"
                                  aria-selected="false">Lugar de Salida</a>
+                              <a class="nav-item nav-link active" data-toggle="tab" href="#tab-asientos" role="tab"
+                                 aria-selected="false">Asientos Seleccionados</a>
                               <a class="nav-item nav-link" data-toggle="tab" href="#tab-sitios" role="tab"
                                  aria-selected="false">Sitios Turísticos</a>
                               <a class="nav-item nav-link" data-toggle="tab" href="#tab-otros" role="tab"
@@ -225,6 +231,12 @@ table.dataTable tbody td {
                            </div>
                            <div class="tab-pane fade" id="tab-noIncluye" role="tabpanel">
                               <div name="no-incluye" id="no-incluye"> </div>
+                           </div>
+                           <div class="tab-pane fade" id="tab-asientos" role="tabpanel">
+                              <div id="seat-map" class="float-right seatCharts-container" tabindex="0"
+                                 aria-activedescendant="1_5">
+                                 <div class="front-indicator">Frontal</div>
+                              </div>
                            </div>
                            <div class="tab-pane fade" id="tab-requisito" role="tabpanel">
                               <div name="requisito" id="requisito"> </div>
@@ -267,5 +279,7 @@ table.dataTable tbody td {
 <script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="../../assets/vendor/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<!-- BUS -->
+<script src="../../assets/vendor/asiento-bus/js/jquery.seat-charts.js"></script>
 <script src="../../assets/js/controladores/paquete/adquiridos.js"></script>
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>
