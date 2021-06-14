@@ -70,6 +70,7 @@ $(document).ready(function () {
       $('#otros').empty();
       obtenerInformacionAdicional();
    });
+   // BOTON DE RESERVA
    $(document).on('click', '#btnReservar', function () {
       window.location = `reserva.php?tur=${ID_TUR}`;
    });

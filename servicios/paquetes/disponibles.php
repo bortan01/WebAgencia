@@ -208,14 +208,6 @@
       <!-- /.card-body -->
    </div>
    <!-- /.card -->
-
-   </section>
-   </div>
-   <!-- /.modal-content -->
-   </div>
-   <!-- /.modal-dialog -->
-   </div>
-   <!-- End Modal EDITAR-->
 </form>
 
 <?php include_once('../../layaut/plantilla/footer.php'); ?>
