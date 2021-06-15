@@ -210,11 +210,10 @@ $(document).ready(function () {
                showConfirmButton: true,
             });
          }
-      })
-         .fail(function (response) {
-            console.log("Error");
-            console.log(response);
-         });
+      }).fail(function (response) {
+         console.log("Error");
+         console.log(response);
+      });
    }
    function guardarReserva() {
       $("#loadingReservaTur").hide();
@@ -243,7 +242,7 @@ $(document).ready(function () {
                document.body.appendChild(link); // Required for Firefox
                link.click();
                link.remove();
-               location = 'disponibles.php';  
+               location = 'disponibles.php';
             }
          });
          reset();

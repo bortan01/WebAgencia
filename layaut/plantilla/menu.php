@@ -35,6 +35,9 @@
                         <a href="../../servicios/vuelos/cotizarVuelo.php">Cotización de Vuelos</a>
                      </li>
                      <li>
+                        <a href="../../servicios/paquetes/cotizar.php">Cotización de Paquetes</a>
+                     </li>
+                     <li>
                         <a href="../../servicios/vuelos/disponibilidadPromociones.php">Promociones de Vuelos</a>
                      </li>
                      <li>

@@ -6,7 +6,6 @@ if (isset($_SESSION["activo"])) {
    echo ("NO LOGUEADO");
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 
