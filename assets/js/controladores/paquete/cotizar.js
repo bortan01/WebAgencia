@@ -71,16 +71,18 @@ function inicializarValidaciones() {
 }
 
 function guardar() {
+   const fecha = new Date();
+   // console.log(``);
+   // return;
    $.ajax({
       url: URL_SERVIDOR + "TurPaquete/cotizacion",
       method: "POST",
       data: {
-         id_cliente: "11",
-         peticion: "quiero soolo un beso",
-         fechaPeticion: "2021-05-12",
+         id_cliente: localStorage.getItem("id_cliente"),
+         peticion: $('#peticion').val(),
+         fechaPeticion: `${fecha.getFullYear()}-${fecha.getMonth() + 1}-${fecha.getDate()}`,
+         respuesta: 'SIN RESPUESTA',
          visto: "0"
-
-
       },
    }).done(function (response) {
       const Toast = Swal.mixin();

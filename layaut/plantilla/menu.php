@@ -62,7 +62,7 @@
                      </li>
                      <li class="drop-down"><a href="#">Cotizaciones</a>
                         <ul>
-                           <li><a href="#">Tours</a></li>
+                           <li><a href="../../servicios/paquetes/solicitudes.php">Paquetes</a></li>
                            <li><a href="../../servicios/vehiculos/cotizacionesRealizadas.php">Vehículos</a></li>
                            <li><a href="../../servicios/vuelos/cotizacionesRealizadasV.php">Vuelos</a></li>
                         </ul>
