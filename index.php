@@ -1,6 +1,3 @@
-<?php
-include_once "./layaut/plantilla/session.php";
-?>
 <!DOCTYPE html>
 <html lang="en">
 
