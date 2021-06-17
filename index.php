@@ -516,10 +516,4 @@ include_once "./layaut/plantilla/session.php";
    <script src="assets/js/main.js"></script>
 </body>
 
-
-<script>
-let id = localStorage.getItem('id_cliente');
-console.log(id);
-</script>
-
 </html>

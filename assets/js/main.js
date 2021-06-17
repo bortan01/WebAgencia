@@ -4,21 +4,21 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-(function($) {
+(function ($) {
   "use strict";
 
-    /*--------------------------
-  preloader
-  ---------------------------- */
-  $(window).on('load', function() {
+  /*--------------------------
+preloader
+---------------------------- */
+  $(window).on('load', function () {
     var pre_loader = $('#preloader');
-    pre_loader.fadeOut('slow', function() {
+    pre_loader.fadeOut('slow', function () {
       $(this).remove();
     });
   });
 
   // Toggle .header-scrolled class to #header when page is scrolled
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
     } else {
@@ -35,7 +35,7 @@
   if (window.matchMedia("(max-width: 991px)").matches) {
     scrolltoOffset += 20;
   }
-  $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
+  $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function (e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       if (target.length) {
@@ -75,19 +75,19 @@
     $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
     $('body').append('<div class="mobile-nav-overly"></div>');
 
-    $(document).on('click', '.mobile-nav-toggle', function(e) {
+    $(document).on('click', '.mobile-nav-toggle', function (e) {
       $('body').toggleClass('mobile-nav-active');
       $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
       $('.mobile-nav-overly').toggle();
     });
 
-    $(document).on('click', '.mobile-nav .drop-down > a', function(e) {
+    $(document).on('click', '.mobile-nav .drop-down > a', function (e) {
       e.preventDefault();
       $(this).next().slideToggle(300);
       $(this).parent().toggleClass('active');
     });
 
-    $(document).click(function(e) {
+    $(document).click(function (e) {
       var container = $(".mobile-nav, .mobile-nav-toggle");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         if ($('body').hasClass('mobile-nav-active')) {
@@ -102,7 +102,7 @@
   }
 
   // Activate smooth scroll on page load with hash links in the url
-  $(document).ready(function() {
+  $(document).ready(function () {
     if (window.location.hash) {
       var initial_nav = window.location.hash;
       if ($(initial_nav).length) {
@@ -155,7 +155,7 @@
   Page Scroll
   ------------------------------ */
   var page_scroll = $('a.page-scroll');
-  page_scroll.on('click', function(event) {
+  page_scroll.on('click', function (event) {
     var $anchor = $(this);
     $('html, body').stop().animate({
       scrollTop: $($anchor.attr('href')).offset().top - 55
@@ -166,7 +166,7 @@
   /*--------------------------
     Back to top button
   ---------------------------- */
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
     } else {
@@ -174,7 +174,7 @@
     }
   });
 
-  $('.back-to-top').click(function() {
+  $('.back-to-top').click(function () {
     $('html, body').animate({
       scrollTop: 0
     }, 1500, 'easeInOutExpo');
@@ -193,7 +193,7 @@
    collapse
   ---------------------------- */
   var panel_test = $('.panel-heading a');
-  panel_test.on('click', function() {
+  panel_test.on('click', function () {
     panel_test.removeClass('active');
     $(this).addClass('active');
   });
@@ -221,7 +221,7 @@
    isotope active
   ------------------------------ */
   // portfolio start
-  $(window).on("load", function() {
+  $(window).on("load", function () {
     var $container = $('.awesome-project-content');
     $container.isotope({
       filter: '*',
@@ -232,7 +232,7 @@
       }
     });
     var pro_menu = $('.project-menu li a');
-    pro_menu.on("click", function() {
+    pro_menu.on("click", function () {
       var pro_menu_active = $('.project-menu li a.active');
       pro_menu_active.removeClass('active');
       $(this).addClass('active');
@@ -254,19 +254,19 @@
   /*---------------------
    Circular Bars - Knob
 --------------------- */
-  if (typeof($.fn.knob) != 'undefined') {
+  if (typeof ($.fn.knob) != 'undefined') {
     var knob_tex = $('.knob');
-    knob_tex.each(function() {
+    knob_tex.each(function () {
       var $this = $(this),
         knobVal = $this.attr('data-rel');
 
       $this.knob({
-        'draw': function() {
+        'draw': function () {
           $(this.i).val(this.cv + '%')
         }
       });
 
-      $this.appear(function() {
+      $this.appear(function () {
         $({
           value: 0
         }).animate({
@@ -274,7 +274,7 @@
         }, {
           duration: 2000,
           easing: 'swing',
-          step: function() {
+          step: function () {
             $this.val(Math.ceil(this.value)).trigger('change');
           }
         });
@@ -286,3 +286,8 @@
   }
 
 })(jQuery);
+
+// ELIMINA EL LOCAL STORAGE CUANDO SE CIERRA EL NAVEGADOR
+window.onunload = () => {
+   localStorage.clear();
+}

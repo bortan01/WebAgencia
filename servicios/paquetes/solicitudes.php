@@ -49,8 +49,6 @@ table.dataTable tbody td {
                                                 <th>Fecha de Petición</th>
                                                 <th>Peticiónn</th>
                                                 <th>Respuesta</th>
-
-
                                              </tr>
                                           </thead>
                                           <!-- /.inicio de loading -->
