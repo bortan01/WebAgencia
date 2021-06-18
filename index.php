@@ -1,3 +1,10 @@
+<?php session_start();
+if (isset($_SESSION["activo"])) {
+   echo ("LOGUEADO");
+} else {
+   echo ("NO LOGUEADO");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -81,10 +88,10 @@
                <li><a href="#contact">Contacto</a></li>
                <li class="drop-down"><a href="#">Mi Cuenta</a>
                   <ul>
-                     <?php if (!isset($_SESSION["activo"])): ?>
+                     <?php if (!isset($_SESSION["activo"])) : ?>
                      <li><a href="createAccount.php">Registrate</a></li>
                      <li><a href="login.php">Identificate</a></li>
-                     <?php  else : ?>
+                     <?php else : ?>
                      <li><a href="servicios/client/updateInfo.php">Actualizar Datos </a></li>
                      <li><a href="servicios/client/updateDocumentos.php">Documentos Personales</a></li>
                      <li class="drop-down"><a href="#">Servicios Adquiridos</a>
@@ -102,7 +109,7 @@
                         </ul>
                      </li>
                      <li><a href="#">Cerrar Sesión</a></li>
-                     <?php endif;?>
+                     <?php endif; ?>
                   </ul>
                </li>
 

@@ -288,6 +288,6 @@ preloader
 })(jQuery);
 
 // ELIMINA EL LOCAL STORAGE CUANDO SE CIERRA EL NAVEGADOR
-window.onunload = () => {
-   localStorage.clear();
+window.beforeunload = () => {
+  localStorage.clear();
 }
