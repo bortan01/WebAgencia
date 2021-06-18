@@ -192,7 +192,8 @@ table.dataTable tbody td {
                               </div>
                            </div>
                            <div class="mt-4">
-                              <button class="btn btn-block btn-success btn-flat" id="btnReservar" name="btnReservar">
+                              <button class="btn btn-block btn-success btn-flat" id="btnItinerario" name="btnItinerario"
+                                 id="btnItinerario">
                                  <i class="nav-icon fas fa-map-marked-alt"></i>
                                  Ver Itinerario
                               </button>

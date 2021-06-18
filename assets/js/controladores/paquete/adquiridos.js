@@ -4,6 +4,7 @@ let seat_charts;
 let $cart = $("#selected-seats");
 let $counter = $('#counter');
 let $total = $('#total');
+let id_tours;
 inicializarTabla();
 
 //BOTON DE VER DETALLES
@@ -11,6 +12,7 @@ $(document).on('click', '.btn-info', function () {
    borrarTodo();
    let fila = $(this).closest("tr");
    let data = tablaHistorial.row(fila).data();
+   id_tours = data.id_tours;
    if (data.galeria) {
       let galeria = data.galeria;
       let imagenGrande = document.getElementById('imagenGrande');
@@ -41,7 +43,6 @@ $(document).on('click', '.btn-info', function () {
       }
 
    }
-
    $('#precio').text("Asiento Normal $" + data.precio);
    $('#titulo').text(data.nombreTours);
    $('#descripcion_tur').html(data.descripcion_tur);
@@ -97,6 +98,11 @@ $(document).on('click', '.btn-info', function () {
    }
    bloquearAsientosOcupados(data.asientos_seleccionados);
    obtenerInformacionAdicional(data.id_tours);
+
+});
+//BOTON DE ITINERARIO
+$(document).on('click', '#btnItinerario', function () {
+   location = 'itinerario.php?id=' + id_tours;
 
 });
 function inicializarTabla() {
