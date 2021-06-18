@@ -1,6 +1,8 @@
 <?php include_once('../../layaut/plantilla/cabecera.php'); ?>
 <?php include_once "../../layaut/plantilla/session.php";?>s
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
+<link href="../../assets/css/reportes.css" all rel="stylesheet" type="text/css" />
+
 <link href="../../assets/vendor/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">
 <!-- DataTables -->
@@ -81,9 +83,221 @@
     </div><!-- End Blog Page -->
 </main><!-- End #main -->
 
+
+<form id="miFormulario" name="miFormulario" role="form" onsubmit="return false">
+    <!-- Modal Cotizacion Reporte-->
+    <div class="modal fade" id="modal-cotizacion">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="overlay-wrapper">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Cotización:</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <section class="content">
+
+                                <div class="container-fluid" id="printDiv">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div id="page_pdf">
+                                                <table id="factura_head">
+                                                    <tr>
+                                                        <td class="logo_factura">
+                                                            <div>
+                                                                <img src="../../assets/img/logo-min.jpg" all
+                                                                    rel="stylesheet" type="text/css">
+                                                            </div>
+                                                        </td>
+                                                        <td class="info_empresa">
+                                                            <div>
+                                                                <span class="h2">Agencia de Viajes Martínez Travels &
+                                                                    Tours</span>
+                                                                <p>Segunda Avenida Sur, Barrio El Centro, #4D a 150mts
+                                                                    del Parquecito Infantil<br>Teléfono: +(503) 2319
+                                                                    2338<br>info.ventas@martineztraveltours.com</p>
+
+                                                            </div>
+                                                        </td>
+                                                        
+                                                    </tr>
+                                                </table>
+                                                <table id="factura_cliente">
+                                                    <tr>
+                                                        <td class="info_cliente">
+                                                            <div class="round">
+                                                                <span class="h3">Datos Generales del Cliente</span>
+                                                                <table class="datos_cliente">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <td><p> </p>
+                                                                                <label>Cliente:</label>
+                                                                                <p name="nombreC"
+                                                                                    id="nombreC">
+                                                                                </p>
+
+                                                                            </td>
+                                                                            <td><label>DUI:</label>
+                                                                                <p name="dui-cliente"
+                                                                                    id="dui-cliente">
+                                                                                </p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><p> </p>
+                                                                                <label>Teléfono:</label>
+                                                                                <p name="telefonoC" id="telefonoC"></p>
+                                                                            </td>
+                                                                            <td><label>Email:</label>
+                                                                                <p name="emailC" id="emailC"></p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </thead>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+
+                                                    </tr>
+                                                </table>
+
+                                                <table id="factura_detalle">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="textcenter">Vehiculo</th>
+                                                            <th class="textcenter">Año</th>
+                                                            <th class="textcenter">Caracteristicas</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="detalle_productos">
+
+                                                        <tr>
+                                                            <td class="textcenter"><label name="nombreVehiculoC" id="nombreVehiculoC"
+                                                                    style="font-weight: normal;"></label></td>
+                                                            <td class="textcenter"><label name="anioC" id="anioC"
+                                                                    style="font-weight: normal;"></label></td>
+                                                            <td class="textcenter"><label name="caracteristicasC" id="caracteristicasC"
+                                                                    style="font-weight: normal;"></label></td>
+
+                                                        </tr>
+
+                                                    </tbody>
+
+                                                </table>
+
+                                                <table id="factura_detalle">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="textcenter">Dirección de Recogida</th>
+                                                            <th class="textcenter">Fecha</th>
+                                                            <th class="textcenter">Hora</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="detalle_productos">
+
+                                                        <tr>
+                                                            <td class="textcenter"><label name="direccion_recogidaC" id="direccion_recogidaC"
+                                                                    style="font-weight: normal;"></label></td>
+                                                            <td class="textcenter"><label name="fechaRecogidaC" id="fechaRecogidaC"
+                                                                    style="font-weight: normal;"></label></label></td>
+                                                            <td class="textcenter"><label name="HoraRecogidaC" id="HoraRecogidaC"
+                                                                    style="font-weight: normal;"></label></label></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <table id="factura_detalle">
+                                                    <thead>
+                                                        <tr>
+                                                        <th class="textcenter">Dirección de Devolución</th>
+                                                            <th class="textcenter">Fecha</th>
+                                                            <th class="textcenter">Hora</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="detalle_productos">
+
+                                                        <tr>
+                                                            <td class="textcenter"><label name="direccion_devolucionC"
+                                                                    id="direccion_devolucionC" style="font-weight: normal;"></label>
+                                                            </td>
+                                                            <td class="textcenter"><label name="fechaDevolucionC" id="fechaDevolucionC"
+                                                                    style="font-weight: normal;"></label></td>
+                                                            <td class="textcenter"><label name="HoraDevolucionC"
+                                                                    id="HoraDevolucionC" style="font-weight: normal;"></label>
+                                                            </td>
+
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                
+
+                                                <table id="factura_detalle">
+                                                    
+                                                    <tfoot id="detalle_totales">
+
+                                                        <tr>
+                                                            <td colspan="3" class="textright"><label>DESCUENTOS
+                                                                    (%)</label>
+                                                            </td>
+                                                            <td class="textcenter"><label name="descuent" id="descuent"
+                                                                    style="font-weight: normal;"></label></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="3" class="textright"><label>TOTAL ($)</label>
+                                                            </td>
+                                                            <td class="textcenter"><label name="tot" id="tot"
+                                                                    style="font-weight: normal;"></label></td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                            <div class="row no-print">
+                                                <div class="col-md-12">
+
+                                                    <button target="_blank" id="doPrint" class="btn btn-default"><i
+                                                            class="fas fa-print"></i>
+                                                        Imprimir</button>
+
+                                                    <div id="editor"></div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal EDITAR-->
+</form>
+
+
 <script>
 let id = localStorage.getItem('id_cliente');
 console.log(id);
+</script>
+
+<script>
+document.getElementById("doPrint").addEventListener("click", function() {
+    var printContents = document.getElementById('printDiv').innerHTML;
+    var originalContents = document.body.innerHTML;
+    document.body.innerHTML = printContents;
+    window.print();
+    document.body.innerHTML = originalContents;
+});
 </script>
 
 <?php include_once('../../layaut/plantilla/footer.php'); ?>
