@@ -4,7 +4,6 @@ $("#logout").on("click", function () {
    }).catch((error) => {
       console.log(error);
    });
-   return;
    $.post("servicios/client/session.php", {
       action: "logout"
    }, function (data) {

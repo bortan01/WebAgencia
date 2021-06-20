@@ -28,7 +28,7 @@ function login() {
 
   let btnHTML = $("#login-btn").html();
   $("#login-btn").html("<img id='loader' src='assets/img/loader.svg' alt='Loading...!' />");
-  $(selector).prop('disabled', true);
+  $("#login-btn").prop('disabled', true);
   const Toast = Swal.mixin();
   $.ajax({
     url: URL_SERVIDOR + "Usuario/loginUser",
