@@ -13,7 +13,10 @@
    text-align: center;
    padding: 3px;
    margin-bottom: 5px;
+	/* PARA CHROME */
    -webkit-print-color-adjust: exact;
+	/* PARA FIREFOX */
+	color-adjust: exact;
 }
 #page_pdf {
    width: 95%;
@@ -71,7 +74,10 @@
    border: 1px solid #0a4661 !important;
    overflow: hidden;
    padding-bottom: 15px;
+	/* PARA CHROME */
 	-webkit-print-color-adjust: exact;
+	/* PARA FIREFOX */
+	color-adjust: exact;
 }
 .round p {
    padding: 0 15px;
@@ -84,7 +90,10 @@
    background: #058167 !important;
    color: #fff !important;
    padding: 5px;
+	/* PARA CHROME */
 	-webkit-print-color-adjust: exact;
+	/* PARA FIREFOX */
+	color-adjust: exact;
 }
 #detalle_productos tr:nth-child(even) {
    background: #ededed;
