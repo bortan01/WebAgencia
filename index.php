@@ -108,7 +108,7 @@ if (isset($_SESSION["activo"])) {
                            <li><a href="servicios/vuelos/cotizacionesRealizadasV.php">Vuelos</a></li>
                         </ul>
                      </li>
-                     <li><a href="#">Cerrar Sesión</a></li>
+                     <li><a name="logout" id="logout" href="#">Cerrar Sesión</a></li>
                      <?php endif; ?>
                   </ul>
                </li>
@@ -506,6 +506,9 @@ if (isset($_SESSION["activo"])) {
    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
    <div id="preloader"></div>
    <!-- Vendor JS Files -->
+   <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-app.js"></script>
+   <!-- Add additional services that you want to use -->
+   <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-auth.js"></script>
    <script src="assets/vendor/jquery/jquery.min.js"></script>
    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -519,8 +522,26 @@ if (isset($_SESSION["activo"])) {
    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
    <script src="assets/vendor/venobox/venobox.min.js"></script>
    <script src="assets/js/conf.js"></script>
+
    <!-- Template Main JS File -->
    <script src="assets/js/main.js"></script>
+
+
+   <script>
+   $("#logout").on("click", function() {
+      firebase.auth().signOut().then(() => {
+         console.log("cerrando sesion");
+      }).catch((error) => {
+         console.log(error);
+      });
+      $.post("servicios/client/session.php", {
+         action: "logout"
+      }, function(data) {
+         localStorage.clear();
+         location = 'index.php';
+      });
+   });
+   </script>
 </body>
 
 </html>

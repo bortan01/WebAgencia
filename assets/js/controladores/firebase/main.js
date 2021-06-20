@@ -1,8 +1,35 @@
-$("#login-btn").on("click", function () {
-  let btnHTML = $(this).html();
-  $(this).html("<img id='loader' src='assets/img/loader.svg' alt='Loading...!' />");
-  const Toast = Swal.mixin();
+$("#login-btn").on("click", function () { login(); });
 
+$(".login-register-btn").on("click", function () {
+  changeForm(this);
+});
+
+function changeForm($this) {
+  $($this).children("span").toggleClass("active");
+  $(".content").toggleClass("active");
+}
+$(".card input").on("focus blur", function () {
+  $(".card").toggleClass("active");
+});
+
+function initPreferencias(resp) {
+
+  localStorage.setItem("id_cliente", resp.id_cliente);
+  localStorage.setItem("nombre", resp.nombre);
+  localStorage.setItem("correo", resp.correo);
+  localStorage.setItem("nivel", resp.nivel);
+  localStorage.setItem("celular", resp.celular);
+  localStorage.setItem("dui", resp.dui);
+  localStorage.setItem("foto", resp.foto);
+  localStorage.setItem("user_uuid", resp.user_uuid);
+}
+
+function login() {
+
+  let btnHTML = $("#login-btn").html();
+  $("#login-btn").html("<img id='loader' src='assets/img/loader.svg' alt='Loading...!' />");
+  $(selector).prop('disabled', true);
+  const Toast = Swal.mixin();
   $.ajax({
     url: URL_SERVIDOR + "Usuario/loginUser",
     method: "POST",
@@ -82,29 +109,13 @@ $("#login-btn").on("click", function () {
     $("#login-btn").html(btnHTML);
 
   });;
-});
 
-$(".login-register-btn").on("click", function () {
-  changeForm(this);
-});
-
-function changeForm($this) {
-  $($this).children("span").toggleClass("active");
-
-  $(".content").toggleClass("active");
 }
-$(".card input").on("focus blur", function () {
-  $(".card").toggleClass("active");
+$('#password').keypress(function (e) {
+  var keycode = (e.keyCode ? e.keyCode : e.which);
+  if (keycode == '13') {
+    login();
+    e.preventDefault();
+    return false;
+  }
 });
-
-function initPreferencias(resp) {
-
-  localStorage.setItem("id_cliente", resp.id_cliente);
-  localStorage.setItem("nombre", resp.nombre);
-  localStorage.setItem("correo", resp.correo);
-  localStorage.setItem("nivel", resp.nivel);
-  localStorage.setItem("celular", resp.celular);
-  localStorage.setItem("dui", resp.dui);
-  localStorage.setItem("foto", resp.foto);
-  localStorage.setItem("user_uuid", resp.user_uuid);
-}

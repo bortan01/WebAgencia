@@ -5,6 +5,7 @@ let $cart = $("#selected-seats");
 let $counter = $('#counter');
 let $total = $('#total');
 let id_tours;
+let titulo;
 inicializarTabla();
 
 //BOTON DE VER DETALLES
@@ -13,6 +14,7 @@ $(document).on('click', '.btn-info', function () {
    let fila = $(this).closest("tr");
    let data = tablaHistorial.row(fila).data();
    id_tours = data.id_tours;
+   titulo = data.nombreTours;
    if (data.galeria) {
       let galeria = data.galeria;
       let imagenGrande = document.getElementById('imagenGrande');
@@ -102,7 +104,7 @@ $(document).on('click', '.btn-info', function () {
 });
 //BOTON DE ITINERARIO
 $(document).on('click', '#btnItinerario', function () {
-   location = 'itinerario.php?id=' + id_tours;
+   location = `itinerario.php?id=${id_tours}&titulo=${titulo}`;
 
 });
 function inicializarTabla() {

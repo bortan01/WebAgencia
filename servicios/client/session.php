@@ -41,6 +41,9 @@ switch ($_POST['action']) {
    case 'getUid':
       echo json_encode($_SESSION["user_uuid"]);
       break;
+   case 'logout':
+      session_destroy();
+      break;
    default:
       break;
 }
