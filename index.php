@@ -53,7 +53,7 @@ if (isset($_SESSION["activo"])) {
          </div>
          <nav class="nav-menu d-none d-lg-block">
             <ul>
-               <li class="active"><a href="../../index.php">Inicio</a></li>
+               <li class="active"><a href="index.php">Inicio</a></li>
                <li><a href="#about">¿Quienes somos?</a></li>
                <li class="drop-down">
                   <a href="#services">Servicios</a>

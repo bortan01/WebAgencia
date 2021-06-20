@@ -1,3 +1,10 @@
+<?php session_start();
+if (isset($_SESSION["activo"])) {
+   echo ("LOGUEADO");
+} else {
+   echo ("NO LOGUEADO");
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -60,13 +67,13 @@
          </div>
          <nav class="nav-menu d-none d-lg-block">
             <ul>
-               <li class=""><a href="#header">Inicio</a></li>
+               <li class=""><a href="index.php">Inicio</a></li>
                <li><a href="#about">¿Quienes somos?</a></li>
                <li class="drop-down">
-                  <a href="#">Servicios</a>
+                  <a href="#services">Servicios</a>
                   <ul>
                      <li>
-                        <a href="vistas/asesoria/">Asesoria Migratora</a>
+                        <a href="servicios/asesoria/cita.php">Asesoria Migratora</a>
                      </li>
                      <li>
                         <a href="servicios/paquetes/disponibles.php">Paquetes</a>
@@ -79,39 +86,44 @@
                      </li>
 
                      <li>
-                        <a href="servicios/vuelos/">Cotización de Vuelos</a>
+                        <a href="servicios/vuelos/cotizarVuelo.php">Cotización de Vuelos</a>
+                     </li>
+                     <li>
+                        <a href="servicios/paquetes/cotizar.php">Cotización de Paquetes</a>
                      </li>
                      <li>
                         <a href="servicios/vuelos/disponibilidadPromociones.php">Promociones de Vuelos</a>
                      </li>
                      <li>
-                        <a href="vistas/encomienda/">Encomienda</a>
+                        <a href="servicios/encomienda/cotizador.php">Encomienda</a>
                      </li>
                   </ul>
                </li>
                <li><a href="#contact">Contacto</a></li>
-
                <li class="drop-down"><a href="#">Mi Cuenta</a>
                   <ul>
+                     <?php if (!isset($_SESSION["activo"])) : ?>
                      <li><a href="createAccount.php">Registrate</a></li>
                      <li><a href="login.php">Identificate</a></li>
-                     <li><a href="#">Actualizar Datos </a></li>
-                     <li><a href="#">Foto de Perfil</a></li>
-                     <li><a href="#">Documentos Personales</a></li>
+                     <?php else : ?>
+                     <li><a href="servicios/client/updateInfo.php">Actualizar Datos </a></li>
+                     <li><a href="servicios/client/updateDocumentos.php">Documentos Personales</a></li>
                      <li class="drop-down"><a href="#">Servicios Adquiridos</a>
                         <ul>
-                           <li><a href="#">Viajes</a></li>
-                           <li><a href="#">Vehículos</a></li>
+                           <li><a href="servicios/paquetes/adquiridos.php">Tours/Paquetes</a></li>
+                           <li><a href="servicios/vehiculos/vehiculosAlquilados.php">Vehículos</a></li>
                            <li><a href="#">Encomiendas</a></li>
                         </ul>
                      </li>
                      <li class="drop-down"><a href="#">Cotizaciones</a>
                         <ul>
-                           <li><a href="#">Tours</a></li>
-                           <li><a href="#">Vehículos</a></li>
+                           <li><a href="servicios/paquetes/solicitudes.php">Paquetes</a></li>
+                           <li><a href="servicios/vehiculos/cotizacionesRealizadas.php">Vehículos</a></li>
+                           <li><a href="servicios/vuelos/cotizacionesRealizadasV.php">Vuelos</a></li>
                         </ul>
                      </li>
-                     <li><a href="#">Cerrar Sesión</a></li>
+                     <li><a name="logout" id="logout" href="#">Cerrar Sesión</a></li>
+                     <?php endif; ?>
                   </ul>
                </li>
 
