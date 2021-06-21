@@ -526,6 +526,7 @@ if (isset($_SESSION["activo"])) {
    <!-- Template Main JS File -->
    <script src="assets/js/main.js"></script>
    <script src="assets/js/controladores/firebase/firestore-config.js"></script>
+   <script src="assets/js/controladores/firebase/main.js"></script>
    <script src="assets/js/controladores/client/closeSesion.js"></script>
 </body>
 

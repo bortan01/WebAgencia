@@ -105,6 +105,13 @@
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 <div id="preloader"></div>
 
+<!-- FIREBASE -->
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-firestore.js"></script>
+<script src="../../assets/js/controladores/firebase/firestore-config.js"></script>
+
+
 <!-- Vendor JS Files -->
 <script src="../../assets/vendor/jquery/jquery.min.js"></script>
 <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -118,7 +125,7 @@
 <script src="../../assets/vendor/nivo-slider/js/jquery.nivo.slider.js"></script>
 <script src="../../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
 <script src="../../assets/vendor/venobox/venobox.min.js"></script>
-
 <!-- Template Main JS File -->
 <script src="../../assets/js/main.js"></script>
 <script src="../../assets/js/conf.js"></script>
+<script src="../../assets/js/controladores/client/closeSesion.js"></script>

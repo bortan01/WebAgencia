@@ -41,8 +41,8 @@ if (isset($_SESSION["activo"])) {
             <form id="login-form">
                <div class="input-group mb-3">
                   <input name="username" id="username" type="email" class="form-control"
-                     placeholder="Correo electrónico">
-                  <div class="input-group-append">
+                     placeholder="Correo electrónico" autocomplete="false">
+                  <div class=" input-group-append">
                      <div class="input-group-text">
                         <span class="fas fa-user"></span>
                      </div>
