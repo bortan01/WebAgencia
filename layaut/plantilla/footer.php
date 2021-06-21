@@ -128,4 +128,4 @@
 <!-- Template Main JS File -->
 <script src="../../assets/js/main.js"></script>
 <script src="../../assets/js/conf.js"></script>
-<script src="../../assets/js/controladores/client/closeSesion.js"></script>
+<script src="../../assets/js/controladores/client/closeSessionByMenu.js"></script>
