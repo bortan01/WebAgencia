@@ -1,3 +1,4 @@
+<?php include_once "../../layaut/plantilla/session.php"; ?>
 <?php include_once('../../layaut/plantilla/cabecera.php'); ?>
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
 <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous" rel="stylesheet">
@@ -181,7 +182,7 @@
 </main><!-- End #main -->
 
 <?php
-include './modalCliente.php'; 
+include './modalCliente.php';
 ?>
 
 <?php include_once('../../layaut/plantilla/footer.php'); ?>
@@ -200,4 +201,4 @@ include './modalCliente.php';
 <script src="../../assets/vendor/select2/js/select2.full.min.js"></script>
 <script src="../../assets/vendor/asiento-bus/js/jquery.seat-charts.js"></script>
 <script src="../../assets/js/controladores/paquete/reserva-paquete.js"></script>
-<?php include_once('../../layaut/plantilla/cierre.php');?>
+<?php include_once('../../layaut/plantilla/cierre.php'); ?>

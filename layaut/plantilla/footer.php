@@ -110,8 +110,6 @@
 <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-firestore.js"></script>
 <script src="../../assets/js/controladores/firebase/firestore-config.js"></script>
-
-
 <!-- Vendor JS Files -->
 <script src="../../assets/vendor/jquery/jquery.min.js"></script>
 <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -5,3 +5,4 @@ if (isset($_SESSION["activo"])) {
 } else {
   header('Location: ../../login.php');
 }
+?>

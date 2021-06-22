@@ -1,3 +1,4 @@
+<?php include_once "../../layaut/plantilla/session.php";?>
 <?php include_once('../../layaut/plantilla/cabecera.php'); ?>
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
 <link rel="stylesheet" href="../../assets/vendor/chat/css/style.css">
@@ -36,6 +37,7 @@
 <!-- Add additional services that you want to use -->
 <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-firestore.js"></script>
-<script src="../../assets/js/controladores/firebase/firestore-config.js"></script>
+<script src="../../assets/js/controladores/firebase/firestore-conf
+ig.js"></script>
 <script src="../../assets/vendor/chat/js/chat.js"></script>
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>

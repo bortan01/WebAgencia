@@ -1,5 +1,5 @@
+<?php include_once "../../layaut/plantilla/session.php"; ?>
 <?php include_once('../../layaut/plantilla/cabecera.php'); ?>
-<?php include_once "../../layaut/plantilla/session.php"; ?>s
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
 <link href="../../assets/vendor/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">

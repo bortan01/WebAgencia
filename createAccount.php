@@ -1,8 +1,9 @@
-<?php session_start();
-if (isset($_SESSION["activo"])) {
-   echo ("LOGUEADO");
-} else {
+<?php
+session_start();
+if (!isset($_SESSION["activo"])) {
    echo ("NO LOGUEADO");
+} else {
+  header('Location: index.php');
 }
 ?>
 <!DOCTYPE html>

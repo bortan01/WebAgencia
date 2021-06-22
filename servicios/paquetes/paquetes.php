@@ -1,4 +1,5 @@
-<?php include_once('../layaut/cabecera.php');?>
+<?php include_once "../../layaut/plantilla/session.php";?>
+<?php include_once('../../layaut/cabecera.php');?>
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
 <?php  include_once('../layaut/menu.php');?>
 
