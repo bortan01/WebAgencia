@@ -1,5 +1,7 @@
+<?php include_once "../../layaut/plantilla/session.php";?>
+
 <?php include_once('../../layaut/plantilla/cabecera.php'); ?>
-<?php include_once "../../layaut/plantilla/session.php";?>s
+
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
 <link href="../../assets/css/imprimir.css" all rel="stylesheet" type="text/css" />
 
@@ -104,7 +106,7 @@
                      
                         <div class="container-fluid" id="printDiv">
                            <div class="row">
-                              <div class="col-md-12">
+                              <div class="col-md-12" >
                                  <div id="page_pdf">
                                     <table id="factura_head">
                                        <tr>
