@@ -6,6 +6,8 @@
 <link href="../../assets/vendor/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css" rel="stylesheet" type="text/css" />
 <link href="../../assets/vendor/datatables-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet">
 <link href="../../assets/css/reportes.css" all rel="stylesheet" type="text/css" />
+<link href="../../assets/css/imprimir.css" all rel="stylesheet" type="text/css" />
+
 <?php include_once('../../layaut/plantilla/session.php'); ?>
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 
@@ -78,7 +80,7 @@
                      <div class="row no-print">
                         <div class="col-md-12">
 
-                           <button target="_blank" id="doPrint" class="btn btn-default"><i class="fas fa-print"></i>
+                           <button target="_blank" id="doPrint" type="button" class="btn btn-default"><i class="fas fa-print"></i>
                               Imprimir</button>
 
                            <div id="editor"></div>
@@ -101,16 +103,6 @@
 <script src="../../assets/vendor/jquery-ui/jquery-ui.min.js"></script>
 <script src="../../assets/vendor/sweetalert2/sweetalert2.js"></script>
 
-<script>
-// BOTON DE IMPRIMIR
-document.getElementById("doPrint").addEventListener("click", function() {
-   let printContents = document.getElementById('printDiv').innerHTML;
-   let originalContents = document.body.innerHTML;
-   document.body.innerHTML = printContents;
-   window.print();
-   document.body.innerHTML = originalContents;
-});
-</script>
 <!-- DataTables -->
 <script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
