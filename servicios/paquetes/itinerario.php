@@ -1,4 +1,3 @@
-<?php include_once "../../layaut/plantilla/session.php";?>
 <?php include_once('../../layaut/plantilla/cabecera.php'); ?>
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
 <link href="../../assets/vendor/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css" rel="stylesheet" type="text/css" />
@@ -7,7 +6,7 @@
 <link href="../../assets/vendor/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css" rel="stylesheet" type="text/css" />
 <link href="../../assets/vendor/datatables-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet">
 <link href="../../assets/css/reportes.css" all rel="stylesheet" type="text/css" />
-
+<?php include_once('../../layaut/plantilla/session.php'); ?>
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 
 <main id="main" style="padding-top: 40px;">
@@ -101,9 +100,21 @@
 <!-- COLOCAR JS ADICIONALES ACA ABAJO -->
 <script src="../../assets/vendor/jquery-ui/jquery-ui.min.js"></script>
 <script src="../../assets/vendor/sweetalert2/sweetalert2.js"></script>
+
+<script>
+// BOTON DE IMPRIMIR
+document.getElementById("doPrint").addEventListener("click", function() {
+   let printContents = document.getElementById('printDiv').innerHTML;
+   let originalContents = document.body.innerHTML;
+   document.body.innerHTML = printContents;
+   window.print();
+   document.body.innerHTML = originalContents;
+});
+</script>
 <!-- DataTables -->
 <script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="../../assets/vendor/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
 <script src="../../assets/js/controladores/paquete/itinerario.js"></script>
+<script src="../../assets/js/imprimir.js"></script>
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>

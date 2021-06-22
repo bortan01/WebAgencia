@@ -4,14 +4,6 @@ const ID = urlParams.get("id");
 const TITULO = urlParams.get("titulo");
 cargarData();
 
-// BOTON DE IMPRIMIR
-document.getElementById("doPrint").addEventListener("click", function () {
-    let printContents = document.getElementById('printDiv').innerHTML;
-    let originalContents = document.body.innerHTML;
-    document.body.innerHTML = printContents;
-    window.print();
-    document.body.innerHTML = originalContents;
-});
 // CARGAMOS LA DATA 
 function cargarData() {
     $.ajax({
