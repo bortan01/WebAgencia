@@ -99,7 +99,7 @@
                <div class="modal-body">
                   <div class="row">
                      <section class="content">
-
+                     
                         <div class="container-fluid" id="printDiv">
                            <div class="row">
                               <div class="col-md-12">
@@ -261,7 +261,7 @@
                                  <div class="row no-print">
                                     <div class="col-md-12">
 
-                                       <button target="_blank" id="doPrint" class="btn btn-default"><i
+                                       <button target="_blank" id="doPrint" type="button" class="btn btn-default"><i
                                              class="fas fa-print"></i>
                                           Imprimir</button>
 
@@ -282,19 +282,6 @@
    <!-- End Modal EDITAR-->
 </form>
 
-
-
-
-<script>
-document.getElementById("doPrint").addEventListener("click", function() {
-   var printContents = document.getElementById('printDiv').innerHTML;
-   var originalContents = document.body.innerHTML;
-   document.body.innerHTML = printContents;
-   window.print();
-   document.body.innerHTML = originalContents;
-});
-</script>
-
 <?php include_once('../../layaut/plantilla/footer.php'); ?>
 
 <script src="../../assets/vendor/jquery-ui/jquery-ui.min.js"></script>
@@ -303,6 +290,7 @@ document.getElementById("doPrint").addEventListener("click", function() {
 <script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="../../assets/vendor/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script type="text/javascript" src="../../assets/js/imprimir.js"></script>
 
 <script type="text/javascript" src="../../assets/js/controladores/vehiculos/cotizaciones.js"></script>
 
