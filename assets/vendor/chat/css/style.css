@@ -173,7 +173,7 @@ html, body{
 	border-radius: 10px;
 	padding:5px;
 	display: inline-block;
-	margin: 0px 1% 0px 10%;
+	margin: 0px 1% 0px 2%;
 }
 .received-message{
 	display: flex;

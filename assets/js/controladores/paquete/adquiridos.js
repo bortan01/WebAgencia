@@ -126,6 +126,8 @@ function inicializarTabla() {
                   ver += '</button>'
                   viaje.ver = ver;
                   viaje.foto = `<img src="${viaje.foto}" class ="img-responsive rounded"  >`;
+                  let fecha_reserva = new Date(viaje.fecha_reserva);
+                  viaje.fecha_reserva = formatAMPM(fecha_reserva);
 
                });
                return json.reservas;
@@ -401,4 +403,14 @@ function borrarTodo() {
    $('.seatCharts-legendItem').remove();
    $('#seat-map,#seat-map *').unbind().removeData();
 
+}
+function formatAMPM(date) {
+   let hours = date.getHours();
+   let minutes = date.getMinutes();
+   let ampm = hours >= 12 ? 'pm' : 'am';
+   hours = hours % 12;
+   hours = hours ? hours : 12; // the hour '0' should be '12'
+   minutes = minutes < 10 ? '0' + minutes : minutes;
+   let strTime = hours + ':' + minutes + ' ' + ampm;
+   return date.toLocaleDateString() + "  " + strTime;
 }

@@ -53,8 +53,7 @@
                                              <td style="text-align: center;">
                                                 <label style="width: 100%; padding-left: 10px;">Nombre del
                                                    Tour/Paquete:</label>
-                                                <p name="nombre" id="nombre">
-                                                </p>
+                                                <p name="nombre" id="nombre"></p>
                                              </td>
                                           </tr>
                                        </thead>
@@ -80,7 +79,8 @@
                      <div class="row no-print">
                         <div class="col-md-12">
 
-                           <button target="_blank" id="doPrint" type="button" class="btn btn-default"><i class="fas fa-print"></i>
+                           <button target="_blank" id="doPrint" type="button" class="btn btn-default"><i
+                                 class="fas fa-print"></i>
                               Imprimir</button>
 
                            <div id="editor"></div>
@@ -94,10 +94,6 @@
       </div>
    </div><!-- End Blog Page -->
 </main><!-- End #main -->
-
-
-
-
 <?php include_once('../../layaut/plantilla/footer.php'); ?>
 <!-- COLOCAR JS ADICIONALES ACA ABAJO -->
 <script src="../../assets/vendor/jquery-ui/jquery-ui.min.js"></script>
