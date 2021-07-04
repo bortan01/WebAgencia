@@ -23,7 +23,7 @@ $(document).ready(function (){
 
 function inicializarValidaciones() {
 
-        $('#register-form').validate({
+       $('#register-form').validate({
             rules: {
                 id_cliente: {
                     required: true
@@ -31,8 +31,20 @@ function inicializarValidaciones() {
                 asistencia: {
                     required: true
                 },
+                 pasaporte:{
+                    required:true,
+                    minlength:9
+                },
                 "asistiran[]": {
+                    required:true,
                     minlength: 10
+                },
+                "pasaporte_personas[]":{
+                    required:true,
+                    minlength: 9
+                },
+                "fotos[]":{
+                    required:true
                 }
             },
             messages: {
@@ -43,9 +55,20 @@ function inicializarValidaciones() {
                     required: "Seleccione si asistirá solo"
                    
                 },
+                pasaporte:{
+                    required:"Campo vacío",
+                    minlength: "Debe de tener una longitud minima de 9"
+                },
                 "asistiran[]": {
-                    minlength: "Debe de tener una longitud minima de 10"
-                    
+                    required:"Campo vacío",
+                    minlength: "Debe de tener una longitud minima de 10" 
+                },
+                "pasaporte_personas[]":{
+                    required:"Campo vacío",
+                    minlength: "Debe de tener una longitud minima de 9"
+                },
+                "fotos[]":{
+                    required:"Inserte las fotos de los pasaportes"
                 }
 
             },
@@ -150,7 +173,7 @@ function inicializarValidaciones() {
             });
         }).fail(function (response) {
             //SI HUBO UN ERROR EN LA RESPUETA REST_Controller::HTTP_BAD_REQUEST
-            let respuestaDecodificada = JSON.parse(response.responseText);
+            /*let respuestaDecodificada = JSON.parse(response.responseText);
             let listaErrores = "";
 
             if (respuestaDecodificada.errores) {
@@ -170,7 +193,7 @@ function inicializarValidaciones() {
                 text: listaErrores,
                 showConfirmButton: true,
             });
-
+            */
         });
 
     }
@@ -178,6 +201,21 @@ function inicializarValidaciones() {
     function obtenerInfo(){
         let form = new FormData();
 
+       
+        let asistiran = $("input[name='asistiran[]']").map(function () { return $(this).val(); }).get();
+        let pasaporte_personas = $("input[name='pasaporte_personas[]']").map(function () { return $(this).val(); }).get();
+
+        let verificar_personas= asistiran.filter(asistiran=>asistiran.length >1);
+        let verificar_pasaportes= pasaporte_personas.filter(pasaporte_personas=>pasaporte_personas.length >1);
+
+        let cuantos = verificar_personas.length;
+        let pasaporte_cuantos= verificar_pasaportes.length;
+        console.log('pasaportes:'+pasaporte_cuantos);
+        console.log('personas:'+cuantos);
+
+        if (cuantos==pasaporte_cuantos) {
+            //si son iguales recoje la data
+        
         form.append("fecha",       document.getElementById("txtFecha").value);
         form.append("usuario",     document.getElementById("usuario").value);
         form.append("id_cliente",  document.getElementById("comboUsuario").value);
@@ -185,19 +223,20 @@ function inicializarValidaciones() {
         form.append("asistencia", document.getElementById("asistencia").value);
         form.append("start", document.getElementById("timepicker").value);
         form.append("title", document.getElementById("txtTitulo").value);
+        form.append("asistiran", JSON.stringify(verificar_personas));
+        form.append("pasaporte_personas", JSON.stringify(verificar_pasaportes));
+        form.append("cuantos",cuantos);
+      }else{
 
+         const Toast = Swal.mixin();
+            Toast.fire({
+                title: 'Error',
+                icon: 'error',
+                text:'Verifique los nombre de las personas: '+cuantos+' Pasaportes: '+pasaporte_cuantos,
+                showConfirmButton: true,
+            });
 
-        //let pasaporte_personas = document.getElementsByName("pasaporte_personas[]");
-        //console.log(pasaporte_personas);
-        $("input[name='pasaporte_personas[]']").each(function(indice, elemento) {
-         //console.log('El elemento con el índice '+indice+' contiene '+$(elemento).val());
-         form.append('pasaporte_personas[]', $(elemento).val());
-          });
-          // 
-        $("input[name='asistiran[]']").each(function(indice, elemento) {
-         //console.log('El elemento con el índice '+indice+' contiene '+$(elemento).val());
-         form.append('asistiran[]', $(elemento).val());
-          });
+      }
         //
         return form;
     }
