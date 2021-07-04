@@ -31,33 +31,35 @@
                                     <div class="card-body">
                                         <div id="" class="dataTables_wrapper dt-bootstrap4">
                                             <div class="row">
-                                                <div class="col-sm-12">
-                                                    <table id="tabla_cotizaciones"
-                                                        class="table table-bordered table-striped">
-                                                        <thead style="text-align: center;">
-                                                            <tr>
-                                                                <th>Ciudad de Partida</th>
-                                                                <th>Ciudad de Llegada</th>
-                                                                <th>Aerolinea</th>
-                                                                <th>Opc Avanzadas</th>
-                                                                <th>Precio ($)</th>
-                                                                <th>Acciones</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <!-- /.inicio de loading -->
-                                                        <div class="overlay-wrapper">
-                                                            <div id="loading" class="overlay"><i
-                                                                    class="fas fa-3x fa-sync-alt fa-spin"></i>
+                                                <div class="table-responsive">
+                                                    <div class="col-sm-12">
+                                                        <table id="tabla_cotizaciones"
+                                                            class="table table-bordered table-striped">
+                                                            <thead style="text-align: center;">
+                                                                <tr>
+                                                                    <th>Ciudad de Partida</th>
+                                                                    <th>Ciudad de Llegada</th>
+                                                                    <th>Aerolinea</th>
+                                                                    <th>Opc Avanzadas</th>
+                                                                    <th>Precio ($)</th>
+                                                                    <th>Acciones</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <!-- /.inicio de loading -->
+                                                            <div class="overlay-wrapper">
+                                                                <div id="loading" class="overlay"><i
+                                                                        class="fas fa-3x fa-sync-alt fa-spin"></i>
 
-                                                                <div class="text-bold pt-2">Cargando...
+                                                                    <div class="text-bold pt-2">Cargando...
+                                                                    </div>
                                                                 </div>
+                                                                <tbody id="tableBody" style="text-align: center;">
+                                                                </tbody>
                                                             </div>
-                                                            <tbody id="tableBody" style="text-align: center;">
-                                                            </tbody>
-                                                        </div>
-                                                        <!-- /.fin de loading -->
+                                                            <!-- /.fin de loading -->
 
-                                                    </table>
+                                                        </table>
+                                                    </div>
                                                 </div>
                                             </div>
 

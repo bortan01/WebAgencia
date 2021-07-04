@@ -31,33 +31,36 @@
                                     <div class="card-body">
                                         <div id="" class="dataTables_wrapper dt-bootstrap4">
                                             <div class="row">
-                                                <div class="col-sm-12">
-                                                    <table id="tabla_historial"
-                                                        class="table table-bordered table-striped">
-                                                        <thead style="text-align: center;">
-                                                            <tr>
-                                                                <th>ID Alquiler</th>
-                                                                <th>Vehiculo</th>
-                                                                <th>Año</th>
-                                                                <th>Fecha - Hora</th>
-                                                                <th>Precio</th>
-                                                                <th>Acciones</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <!-- /.inicio de loading -->
-                                                        <div class="overlay-wrapper">
-                                                            <div id="loading" class="overlay"><i
-                                                                    class="fas fa-3x fa-sync-alt fa-spin"></i>
+                                                <div class="table-responsive">
 
-                                                                <div class="text-bold pt-2">Cargando...
+                                                    <div class="col-sm-12">
+                                                        <table id="tabla_historial"
+                                                            class="table table-bordered table-striped">
+                                                            <thead style="text-align: center;">
+                                                                <tr>
+                                                                    <th>ID Alquiler</th>
+                                                                    <th>Vehiculo</th>
+                                                                    <th>Año</th>
+                                                                    <th>Fecha - Hora</th>
+                                                                    <th>Precio</th>
+                                                                    <th>Acciones</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <!-- /.inicio de loading -->
+                                                            <div class="overlay-wrapper">
+                                                                <div id="loading" class="overlay"><i
+                                                                        class="fas fa-3x fa-sync-alt fa-spin"></i>
+
+                                                                    <div class="text-bold pt-2">Cargando...
+                                                                    </div>
                                                                 </div>
+                                                                <tbody id="tableBody" style="text-align: center;">
+                                                                </tbody>
                                                             </div>
-                                                            <tbody id="tableBody" style="text-align: center;">
-                                                            </tbody>
-                                                        </div>
-                                                        <!-- /.fin de loading -->
+                                                            <!-- /.fin de loading -->
 
-                                                    </table>
+                                                        </table>
+                                                    </div>
                                                 </div>
                                             </div>
 
