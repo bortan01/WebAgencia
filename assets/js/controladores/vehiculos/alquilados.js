@@ -13,7 +13,7 @@ $(document).ready(function () {
             { data: "id_detalle" },
             { data: "modelo" },
             { data: "anio" },
-            { data: "fecha_reserva" },
+            { data: "fechaHora_detalle" },
             { data: "totalDevolucion" },
             { data: "botones" }
            ], 
@@ -49,7 +49,7 @@ $(document).ready(function () {
                         id_detalle: response.historialDetalles[i].id_detalle,
                         modelo: response.historialDetalles[i].modelo,
                         anio: response.historialDetalles[i].anio,
-                        fecha_reserva: response.historialDetalles[i].fecha_reserva,
+                        fechaHora_detalle: response.historialDetalles[i].fechaHora_detalle,
                         totalDevolucion: response.historialDetalles[i].totalDevolucion,
                         botones: html,
                      };  
