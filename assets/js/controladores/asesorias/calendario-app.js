@@ -59,7 +59,7 @@ let id = localStorage.getItem('id_cliente');
 
 
     },
-    events: 'http://localhost/API-REST-PHP/index.php/Cita/citaWeb?id_cliente='+id, //aqui pongo la api que e hecho
+    events: URL_SERVIDOR+'index.php/Cita/citaWeb?id_cliente='+id, //aqui pongo la api que e hecho
     //http://localhost/restful/index.php/Calendario/calendario
     eventClick: function (calEvent, jsEvent, view) {
 

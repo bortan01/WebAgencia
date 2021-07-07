@@ -35,6 +35,7 @@ function login() {
     method: "POST",
     data: $("#login-form").serialize()
   }).done(function (resp) {
+    $("#login-btn").prop('disabled', false);
     initPreferencias(resp);
     //NUESTRO SERVICIO RETORNARA UN TOKEN QUE ES EL
     // QUE OCUPAREMOS PARA MANEJAR LA SESION DEL USUARIO
@@ -79,7 +80,7 @@ function login() {
     }
 
   }).fail(function (resp) {
-
+    $("#login-btn").prop('disabled', false);
     if (resp.responseJSON.err) {
       if (resp.responseJSON.mensaje == 'EMAIL_NOT_FOUND') {
         Toast.fire({
@@ -108,7 +109,7 @@ function login() {
     }
     $("#login-btn").html(btnHTML);
 
-  });;
+  });
 
 }
 $('#password').keypress(function (e) {

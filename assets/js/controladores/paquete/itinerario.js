@@ -7,7 +7,7 @@ cargarData();
 // CARGAMOS LA DATA 
 function cargarData() {
     $.ajax({
-        url: "http://localhost/API-REST-PHP/Itinerario/itinerarioForApp?id_tours=" + ID,
+        url: URL_SERVIDOR +"Itinerario/itinerarioForApp?id_tours=" + ID,
         method: "GET",
     }).done(function (response) {
         //REST_Controller::HTTP_OK

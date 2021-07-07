@@ -40,7 +40,7 @@ function inicializarChat(user_2) {
 
   //OBTEGO LOS DATOS PARTICULARES DE ESE CHAT
   $.ajax({
-    url: "http://localhost/API-REST-PHP/Usuario/obtenerChat",
+    url: URL_SERVIDOR +"Usuario/obtenerChat",
     method: "POST",
     data: { user_2 },
 
@@ -59,7 +59,7 @@ function inicializarChat(user_2) {
 
 function actualizarFecha(uuid) {
   $.ajax({
-    url: "http://localhost/API-REST-PHP/Usuario/updateFecha",
+    url: URL_SERVIDOR +"Usuario/updateFecha",
     method: "PUT",
     data: { uuid },
     success: function (resp) {
