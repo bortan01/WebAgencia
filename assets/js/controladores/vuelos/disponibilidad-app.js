@@ -68,7 +68,7 @@ $(document).ready(function() {
                     let html = "";
                     html += '<div class="col-xs-6 col-sm-4">';
                     html += '    <div class="fall-item fall-effect">';
-                    html += '        <img  src="' + promo[index].foto + '" />';
+                    html += '        <img  src="' + promo[index].foto + '"/>';
                     html += '        <div class="mask">';
                     html += '            <h2 id="">' + promo[index].pais_promocion + '</h2>';
                     html += '            <br>';
@@ -95,28 +95,5 @@ $(document).ready(function() {
         console.log(idBuscado);
         return promo.find((promocion_vuelo) => promocion_vuelo.idpromocion_vuelo == idBuscado);
     }
-
-
-
-    function name(params) {
-        document.getElementById("addToDo").addEventListener("keyup", function todoList() {
-            var item = document.getElementById("addToDo").value;
-            var text = document.createTextNode(item);
-            var newItem = document.createElement("li");
-            var span = document.createElement("span");
-            var itag = document.createElement("i");
-            itag.className = "fa fa-trash";
-            span.appendChild(itag);
-            newItem.appendChild(span);
-            newItem.appendChild(text);
-
-            if (event.keyCode === 13) { //keycode de tecla enter
-                document.querySelector("ul").appendChild(newItem);
-            }
-        });
-    }
-    $(document).on('click', '#btnReservar', function() {
-        window.location = `${URL_SISTEMA}vistas/vuelos/reservaVuelos.php?promocion_vuelo=${idPromo}`;
-    });
 
 });
