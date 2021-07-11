@@ -502,7 +502,7 @@ h6 {
                                             <div class="bg-primary py-2 px-3 mt-4">
                                                 <div class="centrar">
                                                     <h6 style="color:#FFFFFF">Precio por persona: $</h6>
-                                                    
+
                                                     <h6 class="mb-0" name="precioP" id="precioP"
                                                         style="text-align:center; color:#FFFFFF">
                                                     </h6>
@@ -567,11 +567,12 @@ h6 {
 
                                                             </a>
                                                         </li>
-                                                    </ul>  
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
-                                        <label>*Restricciones aplican, en caso de querer adquirir la promoción, favor ponerse en contacto con la Agencia </label>
+                                        <label>*Restricciones aplican, en caso de querer adquirir la promoción, favor
+                                            ponerse en contacto con la Agencia </label>
                                     </div>
                                 </div>
                                 <!-- /.card-body -->
@@ -589,7 +590,8 @@ h6 {
     </div>
 
     <!-- ======= fin contenedor promociones ======= -->
-
+    
+    
     <!-- ======= Footer ======= -->
     <footer id="contact">
         <div class="footer-area">
@@ -720,6 +722,7 @@ h6 {
     <script src="assets/js/controladores/firebase/main.js"></script>
     <script src="assets/vendor/moment/moment.min.js"></script>
     <script src="assets/js/controladores/vuelos/disponibilidad-app.js"></script>
+    
     <script src="assets/js/controladores/client/closeSesion.js"></script>
 
 </body>

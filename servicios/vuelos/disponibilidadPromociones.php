@@ -17,6 +17,16 @@ h6 {
 
     <!-- ======= Blog Page ======= -->
     <div class="blog-page area-padding">
+        <br>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="section-headline services-head text-center">
+                    <h2>Promociones</h2>
+                </div>
+            </div>
+        </div>
+        <br>
+
         <div class="container">
             <section class="content">
                 <form id="imagenPromociones" name="imagenPromociones" role="form" onsubmit="return false">
