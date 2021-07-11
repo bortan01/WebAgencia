@@ -244,10 +244,11 @@ h6 {
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="well-middle">
                             <div class="single-well">
+                                <br>
                                 <a href="#">
                                     <h4 class="sec-head">Agencia de Viajes</h4>
                                 </a>
-                                <p>
+                                <p style="text-align: justify;">
                                     La agencia de viajes surge en el año 2009 como un
                                     negocio familiar, realizando excursiones
                                     nacionales y en Centroamérica, vía terrestre,
