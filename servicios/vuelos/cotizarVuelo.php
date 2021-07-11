@@ -2,15 +2,16 @@
 <?php include_once "../../layaut/plantilla/session.php";?>s
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
 <link href="../../assets/vendor/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css" rel="stylesheet" type="text/css" />
-
+<link href="../../assets/vendor/select2/css/select2.min.css" rel="stylesheet">
+<link href="../../assets/vendor/select2/css/miEstilo.css" rel="stylesheet">
 <link rel="../../assets/vendor/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">
+
 <link href="../../assets/css/mdtimepicker.css" rel="stylesheet" type="text/css"> <!-- reloj -->
 
 <link rel="stylesheet" href="../../assets/vendor/icheck-bootstrap/icheck-bootstrap.min.css">
 
-<link href="../../assets/vendor/select2/css/select2.min.css" rel="stylesheet">
-<link href="../../assets/vendor/select2/css/miEstilo.css" rel="stylesheet">
+
 
 
 
@@ -311,32 +312,7 @@
     </div><!-- End Blog Page -->
 </main><!-- End #main -->
 
-<script>
-$(function() {
-    $('.select2').select2()
 
-    //Initialize Select2 Elements
-    $('.select2bs4').select2({
-        theme: 'bootstrap4'
-    })
-
-    $('.my-colorpicker1').colorpicker()
-    //color picker with addon
-
-    $("input[data-bootstrap-switch]").each(function() {
-        $(this).bootstrapSwitch('state', $(this).prop('checked'));
-    });
-
-    $(document).ready(function() {
-        $('#timepicker').mdtimepicker(); //Initializes the time picker
-    });
-
-    $(document).ready(function() {
-        $('#timepicker2').mdtimepicker(); //Initializes the time picker
-    });
-
-})
-</script>
 
 <script>
 function OpcAvanzada() {
@@ -368,5 +344,30 @@ function OpcAvanzada() {
 <script type="text/javascript" src="../../assets/js/controladores/vuelos/comboViaje.js"></script>
 <script type="text/javascript" src="../../assets/js/controladores/vuelos/mostrarCondiciones.js"></script>
 <script type="text/javascript" src="../../assets/js/controladores/vuelos/insertarCotizacion.js"></script>
+<script>
+$(function() {
+    $('.select2').select2()
 
+    //Initialize Select2 Elements
+    $('.select2bs4').select2({
+        theme: 'bootstrap4'
+    })
+
+    $('.my-colorpicker1').colorpicker()
+    //color picker with addon
+
+    $("input[data-bootstrap-switch]").each(function() {
+        $(this).bootstrapSwitch('state', $(this).prop('checked'));
+    });
+
+    $(document).ready(function() {
+        $('#timepicker').mdtimepicker(); //Initializes the time picker
+    });
+
+    $(document).ready(function() {
+        $('#timepicker2').mdtimepicker(); //Initializes the time picker
+    });
+
+})
+</script>
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>
