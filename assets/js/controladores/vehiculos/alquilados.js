@@ -14,7 +14,7 @@ $(document).ready(function () {
             { data: "modelo" },
             { data: "anio" },
             { data: "fechaHora_detalle" },
-            { data: "totalDevolucion" },
+            { data: "monto" },
             { data: "botones" }
            ], 
            columnDefs: [
@@ -50,7 +50,7 @@ $(document).ready(function () {
                         modelo: response.historialDetalles[i].modelo,
                         anio: response.historialDetalles[i].anio,
                         fechaHora_detalle: response.historialDetalles[i].fechaHora_detalle,
-                        totalDevolucion: response.historialDetalles[i].totalDevolucion,
+                        monto: response.historialDetalles[i].monto,
                         botones: html,
                      };  
                      tablaDetalle.row.add(nuevoDetalle).draw(false);
