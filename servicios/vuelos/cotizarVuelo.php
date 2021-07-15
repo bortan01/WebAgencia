@@ -1,5 +1,5 @@
 <?php include_once('../../layaut/plantilla/cabecera.php'); ?>
-<?php include_once "../../layaut/plantilla/session.php";?>s
+<?php include_once "../../layaut/plantilla/session.php"; ?>s
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
 <link href="../../assets/vendor/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css" rel="stylesheet" type="text/css" />
 <link href="../../assets/vendor/select2/css/select2.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
 
 <!-- Theme style -->
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
-<main id="main" style="padding-top: 40px;">
+<main id="main" style="padding-top: 55px;">
     <!-- ======= Blog Page ======= -->
     <div class="blog-page area-padding">
         <div class="container">
@@ -58,10 +58,7 @@
                                                                 <div class="form-group multiple-form-group input-group">
                                                                     <label>Cliente</label>
                                                                     <div class="input-group">
-                                                                        <select name="id_usuario" id="comboUsuario"
-                                                                            class="select2 select2-hidden-accessible form-control"
-                                                                            data-placeholder="Seleccione"
-                                                                            style="width: 100%;">
+                                                                        <select name="id_usuario" id="comboUsuario" class="select2 select2-hidden-accessible form-control" data-placeholder="Seleccione" style="width: 100%;">
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -71,25 +68,20 @@
                                                                 <!-- text input -->
                                                                 <div class="form-group">
                                                                     <label>Punto de Partida</label>
-                                                                    <input type="text" class="form-control"
-                                                                        name="ciudad_partida" id="ciudad_partida"
-                                                                        placeholder="Digite nombre del Lugar">
+                                                                    <input type="text" class="form-control" name="ciudad_partida" id="ciudad_partida" placeholder="Digite nombre del Lugar">
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <!-- text input -->
                                                                 <div class="form-group">
                                                                     <label>Fecha</label>
-                                                                    <input type="date" class="form-control"
-                                                                        name="fechaPartida" id="fechaPartida">
+                                                                    <input type="date" class="form-control" name="fechaPartida" id="fechaPartida">
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <label>Hora de Llegada</label>
-                                                                <div class="input-group clockpicker"
-                                                                    data-autoclose="true">
-                                                                    <input type="text" id="timepicker" name="start"
-                                                                        class="form-control" value="08:00" />
+                                                                <div class="input-group clockpicker" data-autoclose="true">
+                                                                    <input type="text" id="timepicker" name="start" class="form-control" value="08:00" />
 
                                                                 </div>
 
@@ -99,25 +91,20 @@
                                                                 <!-- text input -->
                                                                 <div class="form-group">
                                                                     <label>Punto de Llegada</label>
-                                                                    <input type="text" class="form-control"
-                                                                        name="ciudad_llegada" id="ciudad_llegada"
-                                                                        placeholder="Digite nombre del Lugar">
+                                                                    <input type="text" class="form-control" name="ciudad_llegada" id="ciudad_llegada" placeholder="Digite nombre del Lugar">
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <!-- text input -->
                                                                 <div class="form-group">
                                                                     <label>Fecha</label>
-                                                                    <input type="date" class="form-control"
-                                                                        name="fechaLlegada" id="fechaLlegada">
+                                                                    <input type="date" class="form-control" name="fechaLlegada" id="fechaLlegada">
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <label>Hora de Llegada</label>
-                                                                <div class="input-group clockpicker"
-                                                                    data-autoclose="true">
-                                                                    <input type="text" id="timepicker2" name="start"
-                                                                        class="form-control" value="08:00" />
+                                                                <div class="input-group clockpicker" data-autoclose="true">
+                                                                    <input type="text" id="timepicker2" name="start" class="form-control" value="08:00" />
 
                                                                 </div>
 
@@ -128,29 +115,25 @@
                                                             <div class="col-sm-3">
                                                                 <div class="form-group">
                                                                     <label>Adultos (+12 años)</label>
-                                                                    <input type="number" class="form-control" min="0"
-                                                                        max="100" name="adultos" id="adultos">
+                                                                    <input type="number" class="form-control" min="0" max="100" name="adultos" id="adultos">
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <div class="form-group">
                                                                     <label>Niños (5 a 11 años)</label>
-                                                                    <input type="number" class="form-control" min="0"
-                                                                        max="10" name="ninos" id="ninos">
+                                                                    <input type="number" class="form-control" min="0" max="10" name="ninos" id="ninos">
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <div class="form-group">
                                                                     <label>Bebés (0 a 4 años)</label>
-                                                                    <input type="number" class="form-control" min="0"
-                                                                        max="3" name="bebes" id="bebes">
+                                                                    <input type="number" class="form-control" min="0" max="3" name="bebes" id="bebes">
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <div class="form-group">
                                                                     <label>Cantidad de Maletas</label>
-                                                                    <input type="number" class="form-control" min="0"
-                                                                        max="3" name="maletas" id="maletas">
+                                                                    <input type="number" class="form-control" min="0" max="3" name="maletas" id="maletas">
                                                                 </div>
                                                             </div>
 
@@ -158,10 +141,7 @@
                                                                 <div class="form-group">
                                                                     <label>*En caso que el bebe viaje solo, favor
                                                                         detallarlo</label>
-                                                                    <textarea class="textarea" name="detalleBebe"
-                                                                        id="detalleBebe"
-                                                                        placeholder="Ejemplo: La bebe Casey Henriquez de 10 meses viaja sola, encargada responsable: Aeromoza Beatriz Ponce"
-                                                                        style="width: 100%; height: 50px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                                                                    <textarea class="textarea" name="detalleBebe" id="detalleBebe" placeholder="Ejemplo: La bebe Casey Henriquez de 10 meses viaja sola, encargada responsable: Aeromoza Beatriz Ponce" style="width: 100%; height: 50px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -186,10 +166,7 @@
                                                                 <div class="form-group multiple-form-group input-group">
                                                                     <label>Aerolinea</label>
                                                                     <div class="input-group">
-                                                                        <select name="idaerolinea" id="idaerolinea"
-                                                                            class="select2 select2-hidden-accessible form-control"
-                                                                            data-placeholder="Seleccione"
-                                                                            style="width: 100%;">
+                                                                        <select name="idaerolinea" id="idaerolinea" class="select2 select2-hidden-accessible form-control" data-placeholder="Seleccione" style="width: 100%;">
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -200,10 +177,7 @@
                                                                 <div class="form-group multiple-form-group input-group">
                                                                     <label>Clase</label>
                                                                     <div class="input-group">
-                                                                        <select name="idclase" id="idclase"
-                                                                            class="select2 select2-hidden-accessible form-control"
-                                                                            data-placeholder="Seleccione"
-                                                                            style="width: 100%;">
+                                                                        <select name="idclase" id="idclase" class="select2 select2-hidden-accessible form-control" data-placeholder="Seleccione" style="width: 100%;">
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -214,10 +188,7 @@
                                                                 <div class="form-group multiple-form-group input-group">
                                                                     <label>Tipo de Viaje</label>
                                                                     <div class="input-group">
-                                                                        <select name="idtipo_viaje" id="idtipo_viaje"
-                                                                            class="select2 select2-hidden-accessible form-control"
-                                                                            data-placeholder="Seleccione"
-                                                                            style="width: 100%;">
+                                                                        <select name="idtipo_viaje" id="idtipo_viaje" class="select2 select2-hidden-accessible form-control" data-placeholder="Seleccione" style="width: 100%;">
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -228,11 +199,7 @@
                                                                 <div class="form-group">
                                                                     <label>Opciones Avanzadas</label>
                                                                     <div class="select2-danger">
-                                                                        <select class="select2" multiple="multiple"
-                                                                            name="opc_avanzadas" id="opc_avanzadas"
-                                                                            data-placeholder="Seleccione"
-                                                                            data-dropdown-css-class="select2-danger"
-                                                                            style="width: 100%;">
+                                                                        <select class="select2" multiple="multiple" name="opc_avanzadas" id="opc_avanzadas" data-placeholder="Seleccione" data-dropdown-css-class="select2-danger" style="width: 100%;">
                                                                             <option>Vuelo sin Escalas</option>
                                                                             <option>Misma Aerolinea</option>
                                                                             <option>Equipaje Extra</option>
@@ -245,21 +212,14 @@
                                                                 <!-- text input -->
                                                                 <div class="form-group">
                                                                     <label>Nuevo Opción</label>
-                                                                    <input type="text" class="form-control"
-                                                                        name="insertarOpcion" id="insertarOpcion"
-                                                                        placeholder="Insertar Nueva Opcion"
-                                                                        autocomplete="off">
+                                                                    <input type="text" class="form-control" name="insertarOpcion" id="insertarOpcion" placeholder="Insertar Nueva Opcion" autocomplete="off">
                                                                 </div>
 
                                                             </div>
                                                             <div class="col-sm-1">
                                                                 <br>
                                                                 <span class="input-group-btn">
-                                                                    <button type="button"
-                                                                        class="btn btn-success btn-add"
-                                                                        name="agregarOpcion" id="agregarOpcion"
-                                                                        style="margin-top: 10px; width: 100%;"
-                                                                        onclick="OpcAvanzada()">+</button>
+                                                                    <button type="button" class="btn btn-success btn-add" name="agregarOpcion" id="agregarOpcion" style="margin-top: 10px; width: 100%;" onclick="OpcAvanzada()">+</button>
                                                                 </span>
 
                                                             </div>
@@ -280,19 +240,15 @@
                                                             <div class="col-sm-12">
                                                                 <div class="form-group" id="desborde">
                                                                     <p>
-                                                                        <!-- <pre> --><label name="condiciones"
-                                                                            id="condiciones"></label>
+                                                                        <!-- <pre> --><label name="condiciones" id="condiciones"></label>
                                                                     </p>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="timeline-footer" style="text-align: right;">
-                                                        <button name="btnGuardarCotizacion" id="btnGuardarCotizacion"
-                                                            class="btn btn-info btn-sm"
-                                                            style="color: white">Guardar</button>
-                                                        <a class="btn btn-danger btn-sm"
-                                                            style="color: white">Cancelar</a>
+                                                        <button name="btnGuardarCotizacion" id="btnGuardarCotizacion" class="btn btn-info btn-sm" style="color: white">Guardar</button>
+                                                        <a class="btn btn-danger btn-sm" style="color: white">Cancelar</a>
                                                     </div>
 
                                                 </div>
@@ -315,11 +271,11 @@
 
 
 <script>
-function OpcAvanzada() {
-    let x = $("#insertarOpcion").val();
-    let seleccion = $("<option></option>").val(x).text(x);
-    $("#opc_avanzadas").append(seleccion).trigger('change');
-}
+    function OpcAvanzada() {
+        let x = $("#insertarOpcion").val();
+        let seleccion = $("<option></option>").val(x).text(x);
+        $("#opc_avanzadas").append(seleccion).trigger('change');
+    }
 </script>
 
 <!-- jquery-validation -->
@@ -345,29 +301,29 @@ function OpcAvanzada() {
 <script type="text/javascript" src="../../assets/js/controladores/vuelos/mostrarCondiciones.js"></script>
 <script type="text/javascript" src="../../assets/js/controladores/vuelos/insertarCotizacion.js"></script>
 <script>
-$(function() {
-    $('.select2').select2()
+    $(function() {
+        $('.select2').select2()
 
-    //Initialize Select2 Elements
-    $('.select2bs4').select2({
-        theme: 'bootstrap4'
+        //Initialize Select2 Elements
+        $('.select2bs4').select2({
+            theme: 'bootstrap4'
+        })
+
+        $('.my-colorpicker1').colorpicker()
+        //color picker with addon
+
+        $("input[data-bootstrap-switch]").each(function() {
+            $(this).bootstrapSwitch('state', $(this).prop('checked'));
+        });
+
+        $(document).ready(function() {
+            $('#timepicker').mdtimepicker(); //Initializes the time picker
+        });
+
+        $(document).ready(function() {
+            $('#timepicker2').mdtimepicker(); //Initializes the time picker
+        });
+
     })
-
-    $('.my-colorpicker1').colorpicker()
-    //color picker with addon
-
-    $("input[data-bootstrap-switch]").each(function() {
-        $(this).bootstrapSwitch('state', $(this).prop('checked'));
-    });
-
-    $(document).ready(function() {
-        $('#timepicker').mdtimepicker(); //Initializes the time picker
-    });
-
-    $(document).ready(function() {
-        $('#timepicker2').mdtimepicker(); //Initializes the time picker
-    });
-
-})
 </script>
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>

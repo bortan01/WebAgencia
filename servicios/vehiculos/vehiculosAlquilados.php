@@ -1,5 +1,5 @@
 <?php include_once('../../layaut/plantilla/cabecera.php'); ?>
-<?php include_once "../../layaut/plantilla/session.php";?>s
+<?php include_once "../../layaut/plantilla/session.php"; ?>s
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
 <link href="../../assets/vendor/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">
@@ -9,7 +9,7 @@
 <!-- Theme style -->
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 
-<main id="main" style="padding-top: 40px;">
+<main id="main" style="padding-top: 55px;">
     <!-- ======= Blog Page ======= -->
     <div class="blog-page area-padding">
         <div class="container">
@@ -34,8 +34,7 @@
                                                 <div class="table-responsive">
 
                                                     <div class="col-sm-12">
-                                                        <table id="tabla_historial"
-                                                            class="table table-bordered table-striped">
+                                                        <table id="tabla_historial" class="table table-bordered table-striped">
                                                             <thead style="text-align: center;">
                                                                 <tr>
                                                                     <th>ID Alquiler</th>
@@ -48,8 +47,7 @@
                                                             </thead>
                                                             <!-- /.inicio de loading -->
                                                             <div class="overlay-wrapper">
-                                                                <div id="loading" class="overlay"><i
-                                                                        class="fas fa-3x fa-sync-alt fa-spin"></i>
+                                                                <div id="loading" class="overlay"><i class="fas fa-3x fa-sync-alt fa-spin"></i>
 
                                                                     <div class="text-bold pt-2">Cargando...
                                                                     </div>
@@ -83,8 +81,8 @@
     </div><!-- End Blog Page -->
 </main><!-- End #main -->
 <script>
-let id = localStorage.getItem('id_cliente');
-console.log(id);
+    let id = localStorage.getItem('id_cliente');
+    console.log(id);
 </script>
 
 <?php include_once('../../layaut/plantilla/footer.php'); ?>

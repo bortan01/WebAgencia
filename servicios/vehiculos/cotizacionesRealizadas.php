@@ -1,4 +1,4 @@
-<?php include_once "../../layaut/plantilla/session.php";?>
+<?php include_once "../../layaut/plantilla/session.php"; ?>
 
 <?php include_once('../../layaut/plantilla/cabecera.php'); ?>
 
@@ -14,7 +14,7 @@
 <!-- Theme style -->
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 
-<main id="main" style="padding-top: 40px;">
+<main id="main" style="padding-top: 55px;">
     <!-- ======= Blog Page ======= -->
     <div class="blog-page area-padding">
         <div class="container">
@@ -38,8 +38,7 @@
                                             <div class="row">
                                                 <div class="table-responsive">
                                                     <div class="col-sm-12">
-                                                        <table id="tabla_cotizaciones"
-                                                            class="table table-bordered table-striped">
+                                                        <table id="tabla_cotizaciones" class="table table-bordered table-striped">
                                                             <thead style="text-align: center;">
                                                                 <tr>
                                                                     <th>Vehiculo</th>
@@ -53,8 +52,7 @@
                                                             </thead>
                                                             <!-- /.inicio de loading -->
                                                             <div class="overlay-wrapper">
-                                                                <div id="loading" class="overlay"><i
-                                                                        class="fas fa-3x fa-sync-alt fa-spin"></i>
+                                                                <div id="loading" class="overlay"><i class="fas fa-3x fa-sync-alt fa-spin"></i>
 
                                                                     <div class="text-bold pt-2">Cargando...
                                                                     </div>
@@ -115,8 +113,7 @@
                                                     <tr>
                                                         <td class="logo_factura">
                                                             <div>
-                                                                <img src="../../assets/img/logo-min.jpg" all
-                                                                    rel="stylesheet" type="text/css">
+                                                                <img src="../../assets/img/logo-min.jpg" all rel="stylesheet" type="text/css">
                                                             </div>
                                                         </td>
                                                         <td class="info_empresa">
@@ -182,14 +179,9 @@
                                                     <tbody id="detalle_productos">
 
                                                         <tr>
-                                                            <td class="textcenter"><label name="nombreVehiculoC"
-                                                                    id="nombreVehiculoC"
-                                                                    style="font-weight: normal;"></label></td>
-                                                            <td class="textcenter"><label name="anioC" id="anioC"
-                                                                    style="font-weight: normal;"></label></td>
-                                                            <td class="textcenter"><label name="caracteristicasC"
-                                                                    id="caracteristicasC"
-                                                                    style="font-weight: normal;"></label></td>
+                                                            <td class="textcenter"><label name="nombreVehiculoC" id="nombreVehiculoC" style="font-weight: normal;"></label></td>
+                                                            <td class="textcenter"><label name="anioC" id="anioC" style="font-weight: normal;"></label></td>
+                                                            <td class="textcenter"><label name="caracteristicasC" id="caracteristicasC" style="font-weight: normal;"></label></td>
 
                                                         </tr>
 
@@ -209,15 +201,9 @@
                                                     <tbody id="detalle_productos">
 
                                                         <tr>
-                                                            <td class="textcenter"><label name="direccion_recogidaC"
-                                                                    id="direccion_recogidaC"
-                                                                    style="font-weight: normal;"></label></td>
-                                                            <td class="textcenter"><label name="fechaRecogidaC"
-                                                                    id="fechaRecogidaC"
-                                                                    style="font-weight: normal;"></label></label></td>
-                                                            <td class="textcenter"><label name="HoraRecogidaC"
-                                                                    id="HoraRecogidaC"
-                                                                    style="font-weight: normal;"></label></label></td>
+                                                            <td class="textcenter"><label name="direccion_recogidaC" id="direccion_recogidaC" style="font-weight: normal;"></label></td>
+                                                            <td class="textcenter"><label name="fechaRecogidaC" id="fechaRecogidaC" style="font-weight: normal;"></label></label></td>
+                                                            <td class="textcenter"><label name="HoraRecogidaC" id="HoraRecogidaC" style="font-weight: normal;"></label></label></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -234,16 +220,10 @@
                                                     <tbody id="detalle_productos">
 
                                                         <tr>
-                                                            <td class="textcenter"><label name="direccion_devolucionC"
-                                                                    id="direccion_devolucionC"
-                                                                    style="font-weight: normal;"></label>
+                                                            <td class="textcenter"><label name="direccion_devolucionC" id="direccion_devolucionC" style="font-weight: normal;"></label>
                                                             </td>
-                                                            <td class="textcenter"><label name="fechaDevolucionC"
-                                                                    id="fechaDevolucionC"
-                                                                    style="font-weight: normal;"></label></td>
-                                                            <td class="textcenter"><label name="HoraDevolucionC"
-                                                                    id="HoraDevolucionC"
-                                                                    style="font-weight: normal;"></label>
+                                                            <td class="textcenter"><label name="fechaDevolucionC" id="fechaDevolucionC" style="font-weight: normal;"></label></td>
+                                                            <td class="textcenter"><label name="HoraDevolucionC" id="HoraDevolucionC" style="font-weight: normal;"></label>
                                                             </td>
 
 
@@ -261,14 +241,12 @@
                                                             <td colspan="3" class="textright"><label>DESCUENTOS
                                                                     (%)</label>
                                                             </td>
-                                                            <td class="textcenter"><label name="descuent" id="descuent"
-                                                                    style="font-weight: normal;"></label></td>
+                                                            <td class="textcenter"><label name="descuent" id="descuent" style="font-weight: normal;"></label></td>
                                                         </tr>
                                                         <tr>
                                                             <td colspan="3" class="textright"><label>TOTAL ($)</label>
                                                             </td>
-                                                            <td class="textcenter"><label name="tot" id="tot"
-                                                                    style="font-weight: normal;"></label></td>
+                                                            <td class="textcenter"><label name="tot" id="tot" style="font-weight: normal;"></label></td>
                                                         </tr>
                                                     </tfoot>
                                                 </table>
@@ -276,8 +254,7 @@
                                             <div class="row no-print">
                                                 <div class="col-md-12">
 
-                                                    <button target="_blank" id="doPrint" type="button"
-                                                        class="btn btn-default"><i class="fas fa-print"></i>
+                                                    <button target="_blank" id="doPrint" type="button" class="btn btn-default"><i class="fas fa-print"></i>
                                                         Imprimir</button>
 
                                                     <div id="editor"></div>

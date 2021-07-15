@@ -11,7 +11,7 @@
 <?php include_once('../../layaut/plantilla/session.php'); ?>
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 
-<main id="main" style="padding-top: 40px;">
+<main id="main" style="padding-top: 55px;">
    <!-- ======= Blog Page ======= -->
    <div class="blog-page area-padding">
       <div class="container">
@@ -79,8 +79,7 @@
                      <div class="row no-print">
                         <div class="col-md-12">
 
-                           <button target="_blank" id="doPrint" type="button" class="btn btn-default"><i
-                                 class="fas fa-print"></i>
+                           <button target="_blank" id="doPrint" type="button" class="btn btn-default"><i class="fas fa-print"></i>
                               Imprimir</button>
 
                            <div id="editor"></div>

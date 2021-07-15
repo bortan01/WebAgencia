@@ -1,9 +1,9 @@
-<?php include_once "../../layaut/plantilla/session.php";?>
-<?php include_once('../../layaut/cabecera.php');?>
+<?php include_once "../../layaut/plantilla/session.php"; ?>
+<?php include_once('../../layaut/cabecera.php'); ?>
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
-<?php  include_once('../layaut/menu.php');?>
+<?php include_once('../layaut/menu.php'); ?>
 
-<main id="main" style="padding-top: 40px;">
+<main id="main" style="padding-top: 55px;">
 
    <!-- ======= Blog Page ======= -->
    <div class="blog-page area-padding">
@@ -34,17 +34,14 @@
                                     <div class="col-sm-11">
                                        <div class="form-group">
                                           <label>Seleccione el Cliente</label>
-                                          <select name="comboUsuario" id="comboUsuario"
-                                             class="select2 select2-hidden-accessible form-control"
-                                             data-placeholder="Seleccione el tipo" style="width: 100%;">
+                                          <select name="comboUsuario" id="comboUsuario" class="select2 select2-hidden-accessible form-control" data-placeholder="Seleccione el tipo" style="width: 100%;">
                                           </select>
                                        </div>
                                     </div>
                                     <div class="col-sm-1">
                                        <br>
                                        <span class="input-group-btn">
-                                          <button type="button" class="btn btn-success btn-add" id="btnNuevoCliente"
-                                             name="btnNuevoCliente" style="margin-top: 10px; width: 100%;">+</button>
+                                          <button type="button" class="btn btn-success btn-add" id="btnNuevoCliente" name="btnNuevoCliente" style="margin-top: 10px; width: 100%;">+</button>
                                        </span>
                                     </div>
 
@@ -66,9 +63,7 @@
                                        <div class="form-group multiple-form-group input-group">
                                           <label>Seleccione su asiento</label>
                                           <div class="input-group">
-                                             <select id="comboAsiento" name="comboAsiento"
-                                                class="select2 select2-hidden-accessible form-control"
-                                                data-placeholder="Seleccione su Asiento" style="width: 100%;">
+                                             <select id="comboAsiento" name="comboAsiento" class="select2 select2-hidden-accessible form-control" data-placeholder="Seleccione su Asiento" style="width: 100%;">
                                              </select>
                                           </div>
                                        </div>
@@ -77,8 +72,7 @@
                                        <div class="form-group">
                                           <label>Precio</label>
                                           <div class="input-group">
-                                             <input type="number" min="0" class=" form-control" disabled="true"
-                                                name="costoPasaje" id="costoPasaje">
+                                             <input type="number" min="0" class=" form-control" disabled="true" name="costoPasaje" id="costoPasaje">
                                           </div>
                                           <!-- /.input group -->
                                        </div>
@@ -87,8 +81,7 @@
                                        <div class="form-group">
                                           <label>Cantidad</label>
                                           <div class="input-group">
-                                             <input type="number" min="0" class=" form-control" value="1"
-                                                name="cantidadAsientos" id="cantidadAsientos">
+                                             <input type="number" min="0" class=" form-control" value="1" name="cantidadAsientos" id="cantidadAsientos">
                                           </div>
                                           <!-- /.input group -->
                                        </div>
@@ -108,8 +101,7 @@
                                     </div>
                                  </div>
                                  <div style="text-align: right;">
-                                    <button id="btnAgregarAsiento" class="btn btn-info btn-sm"
-                                       style="color: white">Agregar</button>
+                                    <button id="btnAgregarAsiento" class="btn btn-info btn-sm" style="color: white">Agregar</button>
                                  </div>
 
                               </div>
@@ -189,8 +181,7 @@
                                  </div>
                               </div>
                               <div class="timeline-footer" style="text-align: right;">
-                                 <button name="btnguardarReserva" id="btnguardarReserva" class="btn btn-info btn-sm"
-                                    style="color: white">Guardar</button>
+                                 <button name="btnguardarReserva" id="btnguardarReserva" class="btn btn-info btn-sm" style="color: white">Guardar</button>
                                  <button class="btn btn-danger btn-sm" style="color: white">Cancelar</button>
                               </div>
                            </div>
@@ -209,6 +200,6 @@
 <?php include_once('../layaut/footer.php'); ?>
 <!-- COLOCAR JS ADICIONALES ACA ABAJO -->
 <script>
-$('#loadingReservaTur').hide();
+   $('#loadingReservaTur').hide();
 </script>
 <?php include_once('../layaut/cierre.php'); ?>

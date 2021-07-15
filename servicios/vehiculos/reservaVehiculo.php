@@ -11,7 +11,7 @@
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 
 
-<main id="main" style="padding-top: 40px;">
+<main id="main" style="padding-top: 55px;">
     <!-- ======= Blog Page ======= -->
     <div class="blog-page area-padding">
         <div class="container">
@@ -39,9 +39,7 @@
                                                     <div class="form-group multiple-form-group input-group">
                                                         <label>Seleccione Cliente</label>
                                                         <div class="input-group">
-                                                            <select name="comboUsuario" id="comboUsuario"
-                                                                class="select2 select2-hidden-accessible form-control"
-                                                                data-placeholder="Seleccione" style="width: 100%;">
+                                                            <select name="comboUsuario" id="comboUsuario" class="select2 select2-hidden-accessible form-control" data-placeholder="Seleccione" style="width: 100%;">
                                                             </select>
                                                         </div>
                                                     </div>
@@ -49,9 +47,7 @@
                                                 <div class="col-sm-1">
                                                     <br>
                                                     <span class="input-group-btn">
-                                                        <button type="button" class="btn btn-success btn-add"
-                                                            data-toggle="modal" data-target="#modalAgregarCliente"
-                                                            style="margin-top: 10px; width: 100%;">+</button>
+                                                        <button type="button" class="btn btn-success btn-add" data-toggle="modal" data-target="#modalAgregarCliente" style="margin-top: 10px; width: 100%;">+</button>
                                                     </span>
                                                 </div>
 
@@ -75,25 +71,20 @@
                                                     <div class="col-sm-6">
                                                         <div class="form-group">
                                                             <label for="cars">Dirección de Recogida</label>
-                                                            <input name="direccionR" id="direccionR" type="text"
-                                                                class="form-control"
-                                                                placeholder="Digite la dirección de recogida">
+                                                            <input name="direccionR" id="direccionR" type="text" class="form-control" placeholder="Digite la dirección de recogida">
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-6">
                                                         <div class="form-group">
                                                             <label for="cars">Dirección de Devolución</label>
-                                                            <input name="direccionD" id="direccionD" type="text"
-                                                                class="form-control"
-                                                                placeholder="Digite la dirección de devolución">
+                                                            <input name="direccionD" id="direccionD" type="text" class="form-control" placeholder="Digite la dirección de devolución">
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-12">
                                                         <div class="form-group">
                                                             <label for="cars">Fecha y Hora</label>
                                                             <div class="input-group">
-                                                                <input class=" form-control" name="fecha_hora"
-                                                                    id="fecha_hora">
+                                                                <input class=" form-control" name="fecha_hora" id="fecha_hora">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -101,9 +92,7 @@
                                                         <div class="form-group multiple-form-group input-group">
                                                             <label>Seleccione los Servicios Adicionales</label>
                                                             <div class="input-group">
-                                                                <select name="comboServicio" id="comboServicio"
-                                                                    class="select2 select2-hidden-accessible form-control"
-                                                                    data-placeholder="Seleccione" style="width: 100%;">
+                                                                <select name="comboServicio" id="comboServicio" class="select2 select2-hidden-accessible form-control" data-placeholder="Seleccione" style="width: 100%;">
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -111,15 +100,13 @@
                                                     <div class="col-sm-3">
                                                         <div class="form-group">
                                                             <label for="cars">Costo($)</label>
-                                                            <input name="costo" id="costo" type="text"
-                                                                class="form-control" placeholder="Costo" disabled>
+                                                            <input name="costo" id="costo" type="text" class="form-control" placeholder="Costo" disabled>
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-3">
                                                         <div class="form-group">
                                                             <label for="cars">Cantidad</label>
-                                                            <input name="cantidad" id="cantidad" type="number" min="1"
-                                                                value="1" class="form-control" placeholder="Cantidad">
+                                                            <input name="cantidad" id="cantidad" type="number" min="1" value="1" class="form-control" placeholder="Cantidad">
                                                         </div>
                                                     </div>
 
@@ -130,8 +117,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="timeline-footer" style="text-align: right;">
-                                                    <a class="btn btn-info btn-sm" id="agregarTabla"
-                                                        style="color: white">Agregar</a>
+                                                    <a class="btn btn-info btn-sm" id="agregarTabla" style="color: white">Agregar</a>
 
                                                 </div>
                                             </form>
@@ -202,8 +188,7 @@
                                         </div>
                                         <br> <br>
                                         <div class="timeline-footer" style="text-align: right;">
-                                            <button name="btnGuardar" id="btnGuardar" class="btn btn-info btn-sm"
-                                                style="color: white">Guardar</button>
+                                            <button name="btnGuardar" id="btnGuardar" class="btn btn-info btn-sm" style="color: white">Guardar</button>
                                             <button class="btn btn-danger btn-sm" style="color: white">Cancelar</button>
                                         </div>
                                     </div>
@@ -222,7 +207,7 @@
 
 
 <?php
-include '../paquetes/modalCliente.php'; 
+include '../paquetes/modalCliente.php';
 ?>
 
 
@@ -246,4 +231,4 @@ include '../paquetes/modalCliente.php';
 <script src="../../assets/js/controladores/vehiculos/reservaVehiculo.js"></script>
 
 <script src="./registro-cliente.js" type="text/javascript"></script>
-<?php include_once('../../layaut/plantilla/cierre.php');?>
+<?php include_once('../../layaut/plantilla/cierre.php'); ?>

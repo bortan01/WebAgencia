@@ -412,7 +412,7 @@ $(document).ready(function () {
             node: $("#legend"),
             items: [
                ["e", "unavailable", "Asientos no Disponibles"],
-               ["e", "ocupado", "Asientos ya ocupados"],
+               // ["e", "ocupado", "Asientos ya ocupados"],
                ["e", "selected", "Asientos seleccionados"],
                ["e", "available", "Asientos Disponibles"],
             ],
@@ -528,7 +528,8 @@ $(document).ready(function () {
       seat_charts.get(arreglo).status("unavailable");
    }
    function bloquearAsientosOcupados(ocupados) {
-      seat_charts.get(ocupados).status("ocupado");
+      // seat_charts.get(ocupados).status("ocupado");
+      seat_charts.get(ocupados).status("unavailable");
    }
    function reset() {
       tablaReserva.clear().draw();

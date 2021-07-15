@@ -1,4 +1,4 @@
-<?php include_once "../../layaut/plantilla/session.php";?>
+<?php include_once "../../layaut/plantilla/session.php"; ?>
 <?php include_once('../../layaut/plantilla/cabecera.php'); ?>
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
 <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous" rel="stylesheet">
@@ -11,7 +11,7 @@
 <link href="../../assets/vendor/subir-foto/themes/explorer-fas/theme.css" rel="stylesheet" type="text/css" />
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 
-<main id="main" style="padding-top: 40px;">
+<main id="main" style="padding-top: 55px;">
    <!-- ======= Blog Page ======= -->
    <div class="blog-page area-padding">
       <div class="container">
@@ -42,16 +42,14 @@
                                           <div class="form-group multiple-form-group input-group">
                                              <label>Describa su paquete ideal</label>
                                              <div class="input-group">
-                                                <textarea name="peticion" id="peticion" rows="8"
-                                                   style="width: 100%;"></textarea>
+                                                <textarea name="peticion" id="peticion" rows="8" style="width: 100%;"></textarea>
                                              </div>
                                           </div>
                                        </div>
                                     </div>
                                  </div>
                                  <div class="timeline-footer" style="text-align: right;">
-                                    <button name="btnguardar" id="btnguardar" class="btn btn-info btn-sm"
-                                       style="color: white">Guardar</button>
+                                    <button name="btnguardar" id="btnguardar" class="btn btn-info btn-sm" style="color: white">Guardar</button>
                                     <button class="btn btn-danger btn-sm" style="color: white">Cancelar</button>
                                  </div>
                               </div>

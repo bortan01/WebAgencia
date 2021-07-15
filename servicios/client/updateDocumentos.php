@@ -1,4 +1,4 @@
-<?php include_once "../../layaut/plantilla/session.php";?>
+<?php include_once "../../layaut/plantilla/session.php"; ?>
 <?php include_once('../../layaut/plantilla/cabecera.php'); ?>
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
 <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous" rel="stylesheet">
@@ -8,10 +8,19 @@
 <link href="../../assets/vendor/subir-foto/themes/explorer-fas/theme.css" rel="stylesheet" type="text/css" />
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 
-<main id="main" style="padding-top: 40px;">
+<main id="main" style="padding-top: 55px;">
    <!-- ======= Blog Page ======= -->
    <div class="blog-page area-padding">
       <div class="container">
+         <div class="row">
+            <br>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+               <div class="section-headline services-head text-center">
+                  <h2>Actualizar Documentos Personales</h2>
+               </div>
+            </div>
+            <br>
+         </div>
          <section class="content">
             <form id="formulario_perfil" enctype="multipart/form-data" name="formulario_perfil" role="form">
                <div class="row">

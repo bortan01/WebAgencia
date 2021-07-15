@@ -320,7 +320,7 @@ function dibujarAsientos(miMapa) {
          node: $("#legend"),
          items: [
             ["e", "unavailable", "Asientos no Disponibles"],
-            ["e", "ocupado", "Asientos ya ocupados"],
+            // ["e", "ocupado", "Asientos ya ocupados"],
             ["e", "selected", "Asientos seleccionados"],
             ["e", "available", "Asientos Disponibles"],
          ],

@@ -11,10 +11,19 @@
 <link href="../../assets/vendor/subir-foto/themes/explorer-fas/theme.css" rel="stylesheet" type="text/css" />
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 
-<main id="main" style="padding-top: 40px;">
+<main id="main" style="padding-top: 55px;">
    <!-- ======= Blog Page ======= -->
    <div class="blog-page area-padding">
       <div class="container">
+         <div class="row">
+            <br>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+               <div class="section-headline services-head text-center">
+                  <h2>Reservar Paquete</h2>
+               </div>
+            </div>
+            <br>
+         </div>
          <section class="content">
             <div class="row">
                <div class="col-md-12">
@@ -25,10 +34,9 @@
                      </div>
                      <div class="timeline">
                         <!-- timeline time label -->
-                        <div class="time-label">
+                        <!-- <div class="time-label">
                            <span class="bg-red">Registrar Reserva</span>
-                           <a href="https://lk.wompi.sv/aU5W">https://lk.wompi.sv/aU5W</a>
-                        </div>
+                        </div> -->
                         <!-- /.timeline-label -->
                         <!-- timeline item -->
                         <div>

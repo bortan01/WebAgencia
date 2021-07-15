@@ -3,7 +3,7 @@ session_start();
 if (!isset($_SESSION["activo"])) {
    echo ("NO LOGUEADO");
 } else {
-  header('Location: index.php');
+   header('Location: index.php');
 }
 ?>
 <!DOCTYPE html>
@@ -134,7 +134,7 @@ if (!isset($_SESSION["activo"])) {
       </div>
    </header>
    <!-- End Header -->
-   <main id="main" style="padding-top: 40px;">
+   <main id="main" style="padding-top: 55px;">
       <!-- ======= Blog Page ======= -->
       <div class="blog-page area-padding">
          <div class="container">

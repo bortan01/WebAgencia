@@ -1,5 +1,5 @@
 <?php include_once('../../layaut/plantilla/cabecera.php'); ?>
-<?php include_once "../../layaut/plantilla/session.php";?>
+<?php include_once "../../layaut/plantilla/session.php"; ?>
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
 <link href="../../assets/vendor/select2/css/select2.min.css" rel="stylesheet">
 <link href="../../assets/vendor/select2/css/miEstilo.css" rel="stylesheet">
@@ -9,10 +9,10 @@
 <link href="../../assets/vendor/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css" rel="stylesheet" type="text/css" />
 <link rel='stylesheet' type='text/css' href='http://localhost/Plantillas/SistemaAgencia/plugins/a/css/fullcalendar.css' />
 <link href="../../assets/css/mdtimepicker.css" rel="stylesheet" type="text/css">
- 
+
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 
-<main id="main" style="padding-top: 40px;">
+<main id="main" style="padding-top: 55px;">
    <!-- ======= Blog Page ======= -->
    <div class="blog-page area-padding">
       <div class="container">
@@ -44,7 +44,7 @@
    </div><!-- End Blog Page -->
 </main><!-- End #main -->
 
-<?php include_once('./modal_eventos.php')?>
+<?php include_once('./modal_eventos.php') ?>
 <?php include_once('../../layaut/plantilla/footer.php'); ?>
 <!-- COLOCAR JS ADICIONALES ACA ABAJO -->
 <script src="../../assets/vendor/sweetalert2/sweetalert2.js"></script>
@@ -71,16 +71,15 @@
 <script src="../../assets/js/controladores/asesorias/operaciones.js"></script>
 <script src="../../assets/js/mdtimepicker.js"></script>
 <script>
-$(document).ready(function() {
-   $('#timepicker').mdtimepicker(); //Initializes the time picker
-});
+   $(document).ready(function() {
+      $('#timepicker').mdtimepicker(); //Initializes the time picker
+   });
 
-$(document).ready(function() {
-   $('#timepicker2').mdtimepicker(); //Initializes the time picker
-});
+   $(document).ready(function() {
+      $('#timepicker2').mdtimepicker(); //Initializes the time picker
+   });
 
-$('#loadingActualizar').hide();
-$('#loadingActualizarEventos').hide();
-
+   $('#loadingActualizar').hide();
+   $('#loadingActualizarEventos').hide();
 </script>
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>

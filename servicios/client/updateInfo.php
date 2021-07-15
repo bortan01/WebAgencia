@@ -15,10 +15,19 @@
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 
 <!-- End Header -->
-<main id="main" style="padding-top: 40px;">
+<main id="main" style="padding-top: 55px;">
    <!-- ======= Blog Page ======= -->
    <div class="blog-page area-padding">
       <div class="container">
+         <div class="row">
+            <br>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+               <div class="section-headline services-head text-center">
+                  <h2>Actualizar Datos Personales</h2>
+               </div>
+            </div>
+            <br>
+         </div>
          <section class="content">
             <form id="miFormularioCliente" enctype="multipart/form-data" name="miFormularioCliente" role="form">
                <div class="row">
@@ -144,7 +153,7 @@
 <form id="formulario_perfil" name="formulario_perfil" enctype="multipart/form-data">
    <div class="modal fade" id="modal-perfil">
       <!-- Modal EDITAR-->
-      <div class="modal-dialog">
+      <div class="modal-dialog" style="max-width: 35%;">
          <div class="modal-content">
             <div class="modal-header">
                <h4 class="modal-title">Selecciona una Foto</h4>

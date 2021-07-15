@@ -5,18 +5,18 @@
 <link rel="stylesheet" href="../../assets/vendor/galery/disponibilidad.css">
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 <style type="text/css" media="all">
-h3,
-h6 {
-    display: inline;
-}
+    h3,
+    h6 {
+        display: inline;
+    }
 
-.centrar {
+    .centrar {
 
-    text-align: center;
-}
+        text-align: center;
+    }
 </style>
 
-<main id="main" style="padding-top: 40px;">
+<main id="main" style="padding-top: 55px;">
 
     <!-- ======= Blog Page ======= -->
     <div class="blog-page area-padding">
@@ -111,8 +111,7 @@ h6 {
                                             <h3 class="card-title">Caracteristicas:</h3>
 
                                             <div class="card-tools">
-                                                <button type="button" class="btn btn-tool"
-                                                    data-card-widget="collapse"><i class="fas fa-minus"></i>
+                                                <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
                                                 </button>
                                             </div>
                                         </div>
@@ -167,8 +166,7 @@ h6 {
                                     <div class="bg-gray py-2 px-3 mt-4">
                                         <div class="centrar">
                                             <h3 style="color:#FFFFFF">Precio: $</h3>
-                                            <h3 class="mb-0" name="precio" id="precio"
-                                                style="text-align:center; color:#FFFFFF"></h3>
+                                            <h3 class="mb-0" name="precio" id="precio" style="text-align:center; color:#FFFFFF"></h3>
                                         </div>
                                     </div>
 
@@ -177,29 +175,20 @@ h6 {
                             <div class="row mt-4">
                                 <nav class="w-100">
                                     <div class="nav nav-tabs" id="product-tab" role="tablist">
-                                        <a class="nav-item nav-link active" id="product-desc-tab" data-toggle="tab"
-                                            href="#product-desc" role="tab" aria-controls="product-desc"
-                                            aria-selected="true">Detalles</a>
-                                        <a class="nav-item nav-link" id="product-comments-tab" data-toggle="tab"
-                                            href="#product-comments" role="tab" aria-controls="product-comments"
-                                            aria-selected="false">Descripción</a>
-                                        <a class="nav-item nav-link" id="product-rating-tab" data-toggle="tab"
-                                            href="#product-rating" role="tab" aria-controls="product-rating"
-                                            aria-selected="false">Opciones Avanzadas</a>
+                                        <a class="nav-item nav-link active" id="product-desc-tab" data-toggle="tab" href="#product-desc" role="tab" aria-controls="product-desc" aria-selected="true">Detalles</a>
+                                        <a class="nav-item nav-link" id="product-comments-tab" data-toggle="tab" href="#product-comments" role="tab" aria-controls="product-comments" aria-selected="false">Descripción</a>
+                                        <a class="nav-item nav-link" id="product-rating-tab" data-toggle="tab" href="#product-rating" role="tab" aria-controls="product-rating" aria-selected="false">Opciones Avanzadas</a>
 
                                     </div>
                                 </nav>
                                 <div class="tab-content p-3" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="product-desc" role="tabpanel"
-                                        aria-labelledby="product-desc-tab">
+                                    <div class="tab-pane fade show active" id="product-desc" role="tabpanel" aria-labelledby="product-desc-tab">
                                         <p name="detalles" id="detalles"></p>
                                     </div>
-                                    <div class="tab-pane fade" id="product-comments" role="tabpanel"
-                                        aria-labelledby="product-comments-tab">
+                                    <div class="tab-pane fade" id="product-comments" role="tabpanel" aria-labelledby="product-comments-tab">
                                         <p name="descripcion" id="descripcion"></p>
                                     </div>
-                                    <div class="tab-pane fade" id="product-rating" role="tabpanel"
-                                        aria-labelledby="product-rating-tab">
+                                    <div class="tab-pane fade" id="product-rating" role="tabpanel" aria-labelledby="product-rating-tab">
                                         <p name="opcA" id="opcA"></p>
                                     </div>
 
@@ -222,8 +211,8 @@ h6 {
 </form>
 
 <script>
-let id = localStorage.getItem('id_cliente');
-console.log(id);
+    let id = localStorage.getItem('id_cliente');
+    console.log(id);
 </script>
 
 <?php include_once('../../layaut/plantilla/footer.php'); ?>
