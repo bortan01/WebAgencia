@@ -1,4 +1,9 @@
 $(document).ready(function() {
+
+    let id = localStorage.getItem('id_cliente');
+    let nombre = localStorage.getItem('nombre');
+    $('#cliente').val(nombre);
+
     inicializarValidaciones();
 
     $("#btnGuardarCotizacion").on('click', function(e) {
@@ -17,7 +22,7 @@ $(document).ready(function() {
             console.log(arregloOpciones);
             let form = new FormData();
 
-            form.append("id_cliente", document.getElementById("comboUsuario").value);
+            form.append("id_cliente", id);
             form.append("ciudad_partida", document.getElementById("ciudad_partida").value);
             form.append("fechaPartida", document.getElementById("fechaPartida").value);
             form.append("HoraPartida", document.getElementById("timepicker").value);
