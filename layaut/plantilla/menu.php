@@ -14,12 +14,12 @@
          <nav class="nav-menu d-none d-lg-block">
             <ul>
                <li class=""><a href="../../index.php">Inicio</a></li>
-               <li><a href="#about">¿Quienes somos?</a></li>
+               <li><a href="#about">¿Quiénes somos?</a></li>
                <li class="drop-down">
                   <a href="#">Servicios</a>
                   <ul>
                      <li>
-                        <a href="../../servicios/asesoria/cita.php">Asesoria Migratora</a>
+                        <a href="../../servicios/asesoria/cita.php">Asesoría Migratora</a>
                      </li>
                      <li>
                         <a href="../../servicios/paquetes/disponibles.php">Paquetes</a>
@@ -28,7 +28,7 @@
                         <a href="../../servicios/tours/disponibles.php">Tours</a>
                      </li>
                      <li>
-                        <a href="../../servicios/vehiculos/disponibilidad.php">Renta de Vehiculos</a>
+                        <a href="../../servicios/vehiculos/disponibilidad.php">Renta de Vehículos</a>
                      </li>
 
                      <li>
@@ -50,7 +50,7 @@
                <li class="drop-down"><a href="#">Mi Cuenta</a>
                   <ul>
                      <?php if (!isset($_SESSION["activo"])) : ?>
-                     <li><a href="../../createAccount.php">Registrate</a></li>
+                     <li><a href="../../createAccount.php">Registrarse</a></li>
                      <li><a href="../../login.php">Identificate</a></li>
                      <?php else : ?>
                      <li><a href="../../servicios/client/updateInfo.php">Actualizar Datos </a></li>

@@ -11,7 +11,7 @@ if (isset($_SESSION["activo"])) {
 <head>
    <meta charset="utf-8" />
    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-   <title>Martínez Travels y Tours</title>
+   <title>Martínez Travels & Tours</title>
    <meta content="" name="description" />
    <meta content="" name="keywords" />
    <!-- Favicons -->
@@ -62,12 +62,12 @@ h6 {
          <nav class="nav-menu d-none d-lg-block">
             <ul>
                <li class="active"><a href="index.php">Inicio</a></li>
-               <li><a href="#about">¿Quienes somos?</a></li>
+               <li><a href="#about">¿Quiénes somos?</a></li>
                <li class="drop-down">
                   <a href="#services">Servicios</a>
                   <ul>
                      <li>
-                        <a href="servicios/asesoria/cita.php">Asesoria Migratora</a>
+                        <a href="servicios/asesoria/cita.php">Asesoría Migratora</a>
                      </li>
                      <li>
                         <a href="servicios/paquetes/disponibles.php">Paquetes</a>
@@ -76,7 +76,7 @@ h6 {
                         <a href="servicios/tours/disponibles.php">Tours</a>
                      </li>
                      <li>
-                        <a href="servicios/vehiculos/disponibilidad.php">Renta de Vehiculos</a>
+                        <a href="servicios/vehiculos/disponibilidad.php">Renta de Vehículos</a>
                      </li>
 
                      <li>
@@ -97,8 +97,8 @@ h6 {
                <li class="drop-down"><a href="#">Mi Cuenta</a>
                   <ul>
                      <?php if (!isset($_SESSION["activo"])) : ?>
-                     <li><a href="createAccount.php">Registrate</a></li>
-                     <li><a href="login.php">Identificate</a></li>
+                     <li><a href="createAccount.php">Registrarse</a></li>
+                     <li><a href="login.php">Identifícate</a></li>
                      <?php else : ?>
                      <li><a href="servicios/client/updateInfo.php">Actualizar Datos </a></li>
                      <li><a href="servicios/client/updateDocumentos.php">Documentos Personales</a></li>
@@ -219,7 +219,7 @@ h6 {
             <div class="row">
                <div class="col-md-12 col-sm-12 col-xs-12">
                   <div class="section-headline text-center">
-                     <h2>¿Quienes Somos?</h2>
+                     <h2>¿Quiénes Somos?</h2>
                   </div>
                </div>
             </div>
@@ -303,7 +303,7 @@ h6 {
                            <h4>Paquetes</h4>
                            <p>
                               Haz realidad tus sueños con nuestros paquetes turísticos para Centro América,
-                              Sudamérica y Europa
+                              Sudamérica y Europa.
                            </p>
                         </div>
                      </div>
@@ -319,7 +319,7 @@ h6 {
                            <h4>Tours</h4>
                            <p>
                               Tú elige el destino, nosotros te llevamos! haz realidad tus
-                              sueños viajando a Centro América, Sudamérica y Europa
+                              sueños viajando a Centro América, Sudamérica y Europa.
                            </p>
                         </div>
                      </div>
@@ -348,7 +348,7 @@ h6 {
                   <div class="about-move">
                      <div class="services-details">
                         <div class="single-services">
-                           <a href=""><img src="assets/img/vuelos.png" /></a>
+                           <a href="./servicios/vuelos/disponibilidadPromociones.php"><img src="assets/img/vuelos.png"/></a>
                            <h4>Vuelos</h4>
                            <p>
                               Conoce todas las promociones y tarifas bajas en vuelos nacionales e
@@ -390,7 +390,7 @@ h6 {
                            <h4>Atención al Cliente 24/7</h4>
                            <p>
                               Tienes alguna duda, no te preocupes estamos aqui para ayudarte, ponte en
-                              contacto con nosotros
+                              contacto con nosotros.
                            </p>
                         </div>
                      </div>
@@ -542,7 +542,7 @@ h6 {
 
                                           <li class="nav-item">
                                              <a href="#" class="nav-link">
-                                                <i class="fas fa-plane"></i> Aerolinea
+                                                <i class="fas fa-plane"></i> Aerolínea
                                                 <span class="badge bg-success float-right">
                                                    <h7 name="aerolineav" id="aerolineav"></h7>
                                                 </span>
@@ -595,7 +595,7 @@ h6 {
                            <h2><span>Martínez</span>Travels & Tours</h2>
                         </div>
 
-                        <p>Siguenos en todas nuestras redes sociales para estar al tanto de todas nuestras
+                        <p>Síguenos en todas nuestras redes sociales para estar al tanto de todas nuestras
                            promociones y
                            productos</p>
                         <div class="footer-icons">
@@ -625,10 +625,10 @@ h6 {
                            <h2><span>Cont</span>acto</h2>
                         </div>
                         <p>
-                           Tambien puedes contactarnos de las siguiente manera
+                           También puedes contactarnos de las siguiente manera
                         </p>
                         <div class="footer-contacts">
-                           <p><span>Tel:</span>+(503) 7841-1184</p>
+                           <p><span>Teléfono:</span>+(503) 7841-1184</p>
                            <p><span>Email:</span>info.ventas@martineztraveltours.com</p>
 
                         </div>
@@ -647,8 +647,8 @@ h6 {
                         </p>
                         <div class="footer-contacts">
 
-                           <p><span>Lunes-Viernes</span> (8am-5:30pm)</p>
-                           <p><span>Sábados</span> (8am-12:30pm)</p>
+                           <p><span>Lunes a Viernes</span> (8:00 am a 5:30 pm)</p>
+                           <p><span>Sábados</span> (8:00 am a 12:30 pm)</p>
                         </div>
 
 

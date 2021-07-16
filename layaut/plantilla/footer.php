@@ -10,7 +10,7 @@
                         <h2><span>Martínez</span>Travels & Tours</h2>
                      </div>
 
-                     <p>Siguenos en todas nuestras redes sociales para estar al tanto de todas nuestras promociones y
+                     <p>Síguenos en todas nuestras redes sociales para estar al tanto de todas nuestras promociones y
                         productos</p>
                      <div class="footer-icons">
                         <ul>
@@ -39,10 +39,10 @@
                         <h2><span>Cont</span>acto</h2>
                      </div>
                      <p>
-                        Tambien puedes contactarnos de las siguiente manera
+                        También puedes contactarnos de las siguiente manera
                      </p>
                      <div class="footer-contacts">
-                        <p><span>Tel:</span>+(503) 7841-1184</p>
+                        <p><span>Teléfono:</span>+(503) 7841-1184</p>
                         <p><span>Email:</span>info.ventas@martineztraveltours.com</p>
 
                      </div>
@@ -61,8 +61,8 @@
                      </p>
                      <div class="footer-contacts">
 
-                        <p><span>Lunes-Viernes</span> (8am-5:30pm)</p>
-                        <p><span>Sábados</span> (8am-12:30pm)</p>
+                        <p><span>Lunes a Viernes</span> (8:00 am a 5:30 pm)</p>
+                        <p><span>Sábados</span> (8:00 am a 12:30 pm)</p>
                      </div>
 
 
