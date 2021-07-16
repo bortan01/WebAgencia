@@ -1,4 +1,3 @@
-<?php include_once('../../layaut/plantilla/session.php'); ?>
 
 <?php include_once('../../layaut/plantilla/cabecera.php'); ?>
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
