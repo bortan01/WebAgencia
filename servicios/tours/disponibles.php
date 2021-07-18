@@ -156,7 +156,7 @@
                            <div class="mt-4">
                               <button class="btn btn-block btn-success btn-flat" id="btnReservar" name="btnReservar">
                                  <i class="fas fa-cart-plus fa-lg"></i>
-                                 Reservar Paquete
+                                 Reservar Tour
                               </button>
                            </div>
                         </div>
@@ -234,6 +234,9 @@
 
 <?php include_once('../../layaut/plantilla/footer.php'); ?>
 <!-- COLOCAR JS ADICIONALES ACA ABAJO -->
+
+
+
 <script src="../../assets/vendor/moment/moment.min.js"></script>
 <script src="../../assets/js/controladores/tour/seleccionar-tur.js"></script>
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>

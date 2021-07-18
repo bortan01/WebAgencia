@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     let explorer = $("#kv-explorer");
     let idVehiculo;
     let FLOTA = [];
@@ -7,7 +7,7 @@ $(document).ready(function() {
     inicializarFlota();
 
     //BOTON DE MOSTRAR CARACTERISTICAS
-    $(document).on('click', '.btn-primary', function() {
+    $(document).on('click', '.btn-primary', function () {
 
         idVehiculo = $(this).attr("name");
         let data = obtenerVehiculo(idVehiculo);
@@ -73,13 +73,20 @@ $(document).ready(function() {
     });
     $(document).on('click', '#btnReservar', function () {
         window.location = `reservaVehiculo.php?vehiculo=${idVehiculo}`;
-     });
+    });
 
+    // CLICK EN LA IMAGEN PEQUE;A
+    $(document).on('click', '.product-image-thumb', function () {
+        let $image_element = $(this).find('img')
+        $('.product-image').prop('src', $image_element.attr('src'))
+        $('.product-image-thumb.active').removeClass('active')
+        $(this).addClass('active')
+    });
     function inicializarFlota() {
         $.ajax({
             url: URL_SERVIDOR + "vehiculo/vehiculos",
             method: "GET"
-        }).done(function(response) {
+        }).done(function (response) {
             let contenedor = $('#contenedorAutos');
             if (response.autos) {
                 FLOTA = response.autos;
@@ -104,7 +111,7 @@ $(document).ready(function() {
                     contenedor.append(html);
                 }
             }
-        }).fail(function(response) {
+        }).fail(function (response) {
             console.log(response);
 
         });
@@ -133,7 +140,7 @@ $(document).ready(function() {
             }
         });
     }
-    
 
-   
+
+
 });

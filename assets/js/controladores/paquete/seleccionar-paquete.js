@@ -69,8 +69,16 @@ $(document).ready(function () {
       $('#otros').empty();
       obtenerInformacionAdicional();
    });
+   // CLICK EN EL BOTON DE RESRVA
    $(document).on('click', '#btnReservar', function () {
       location = 'reserva.php?paquete=' + ID_PAQUETE;
+   });
+   // CLICK EN LA IMAGEN PEQUE;A
+   $(document).on('click', '.product-image-thumb', function () {
+      let $image_element = $(this).find('img')
+      $('.product-image').prop('src', $image_element.attr('src'))
+      $('.product-image-thumb.active').removeClass('active')
+      $(this).addClass('active')
    });
    function inicializarViajes() {
       $.ajax({

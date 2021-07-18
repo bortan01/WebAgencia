@@ -296,7 +296,14 @@ $(document).ready(function () {
             { data: "cantidad" },
             { data: "subTotal" },
             { data: "eliminar" },
-         ]
+         ],
+         columnDefs: [
+            {
+                targets: [ 0 ],
+                visible: false,
+                searchable: false
+            }
+        ]
       });
 
    }
@@ -350,7 +357,7 @@ $(document).ready(function () {
          totalReserva += parseFloat(element.subTotal);
          porElegir += parseInt(element.cantidad) * parseInt(element.seleccionables);
       });
-      $('#totalPago').html('$' + totalReserva);
+      $('#totalPago').html('$' + (totalReserva.toFixed(2)));
       $('#asientosAReservar').html(porElegir);
    }
    function eliminarDeLista(id) {

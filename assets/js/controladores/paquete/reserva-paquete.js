@@ -323,6 +323,13 @@ $(document).ready(function () {
             { data: "subTotal" },
             { data: "eliminar" },
          ],
+         columnDefs: [
+            {
+                targets: [ 0 ],
+                visible: false,
+                searchable: false
+            }
+        ]
       });
    }
    function agregarFilaReservaViaje(asiento, cantidad) {
@@ -376,7 +383,7 @@ $(document).ready(function () {
          porElegir +=
             parseInt(element.cantidad) * parseInt(element.seleccionables);
       });
-      $("#totalPago").html("$" + totalReserva);
+      $("#totalPago").html("$" + (totalReserva.toFixed(2)));
       $("#asientosAReservar").html(porElegir);
    }
    function eliminarDeLista(id) {
