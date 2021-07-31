@@ -28,7 +28,7 @@ $(document).ready(function (){
                 showConfirmButton: true,
             }).then((result) => {
                 //TODO BIEN Y RECARGAMOS LA PAGINA 
-                location.reload(); //NO QUIERO QUE RECARGUE ME ACTUALIZA SOLA
+                //location.reload(); //NO QUIERO QUE RECARGUE ME ACTUALIZA SOLA
             });
 
         }).fail(function (response) {
