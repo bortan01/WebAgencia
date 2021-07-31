@@ -27,50 +27,12 @@ function inicializarValidaciones() {
             rules: {
                 id_cliente: {
                     required: true
-                },
-                asistencia: {
-                    required: true
-                },
-                 pasaporte:{
-                    required:true,
-                    minlength:9
-                },
-                "asistiran[]": {
-                    required:true,
-                    minlength: 10
-                },
-                "pasaporte_personas[]":{
-                    required:true,
-                    minlength: 9
-                },
-                "fotos[]":{
-                    required:true
                 }
             },
             messages: {
                 id_cliente:{
                     required: "Seleccione el Cliente"
-                },
-                asistencia:{
-                    required: "Seleccione si asistirá solo"
-                   
-                },
-                pasaporte:{
-                    required:"Campo vacío",
-                    minlength: "Debe de tener una longitud minima de 9"
-                },
-                "asistiran[]": {
-                    required:"Campo vacío",
-                    minlength: "Debe de tener una longitud minima de 10" 
-                },
-                "pasaporte_personas[]":{
-                    required:"Campo vacío",
-                    minlength: "Debe de tener una longitud minima de 9"
-                },
-                "fotos[]":{
-                    required:"Inserte las fotos de los pasaportes"
                 }
-
             },
             errorElement: 'span',
             errorPlacement: function (error, element) {
@@ -86,47 +48,6 @@ function inicializarValidaciones() {
             }
         });
 
-    }
-
-    //***************para la galeria******************
-     function inicializarGaleria() {
-        // ESTO ES PARA INICIALIZAR EL ELEMENTO DE SUBIDA DE FOTOS (EN ESTE CASO UNA GALERIA )
-        $('#fotos').fileinput({
-            theme: 'fas',
-            language: 'es',
-            //uploadUrl: '#',
-            showUpload: false,
-            //showCaption: false,
-            maxFileSize: 2000,
-            maxFilesNum: 10,
-            allowedFileExtensions: ['jpg', 'png', 'gif'],
-            required: true,
-            uploadAsync: false,
-            showClose: false,
-        });
-    }
-
-    function inicializarFoto() {
-        // ESTO ES PARA INICIALIZAR EL ELEMENTO DE SUBIDA DE UNA UNICA FOTO
-        $('#foto').fileinput({
-            theme: 'fas',
-            language: 'es',
-            required: true,
-            maxFileSize: 2000,
-            maxFilesNum: 10,
-            showUpload: false,
-            showClose: false,
-            showCaption: true,
-            browseLabel: '',
-            removeLabel: '',
-            //removeIcon: '<i class="glyphicon glyphicon-remove"></i>',
-            removeTitle: 'Cancel or reset changes',
-            elErrorContainer: '#kv-avatar-errors-1',
-            msgErrorClass: 'alert alert-block alert-danger',
-            defaultPreviewContent: '<img src="../../img/avatar.png" alt="Your Avatar">',
-            layoutTemplates: { main2: '{preview} {remove} {browse}' },
-            allowedFileExtensions: ["jpg", "png", "gif"]
-        });
     }
 
     //**********************************

@@ -7,7 +7,7 @@
 <link href="../../assets/vendor/subir-foto/css/avatar.css" rel="stylesheet" type="text/css" />
 <link href="../../assets/vendor/subir-foto/themes/explorer-fas/theme.css" rel="stylesheet" type="text/css" />
 <link href="../../assets/vendor/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css" rel="stylesheet" type="text/css" />
-<link rel='stylesheet' type='text/css' href='http://localhost/Plantillas/SistemaAgencia/plugins/a/css/fullcalendar.css' />
+<link rel='stylesheet' type='text/css' href='../../assets/css/fullcalendar.css' />
 <link href="../../assets/css/mdtimepicker.css" rel="stylesheet" type="text/css">
 
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
@@ -51,11 +51,7 @@
 <script src="../../assets/vendor/select2/js/select2.full.min.js"></script>
 <script src="../../assets/vendor/jquery-validation/jquery.validate.min.js" type="text/javascript"></script>
 <script src="../../assets/vendor/jquery-validation/additional-methods.min.js" type="text/javascript"></script>
-<script src="../../assets/vendor/subir-foto/js/plugins/piexif.js" type="text/javascript"></script>
-<script src="../../assets/vendor/subir-foto/js/plugins/sortable.js" type="text/javascript"></script>
-<script src="../../assets/vendor/subir-foto/js/fileinput.js" type="text/javascript"></script>
-<script src="../../assets/vendor/subir-foto/js/locales/es.js" type="text/javascript"></script>
-<script src="../../assets/vendor/subir-foto/themes/fas/theme.js" type="text/javascript"></script>
+
 <script src='../../assets/vendor/oldCalendar/js/moment.min.js'></script>
 <script src='../../assets/vendor/oldCalendar/js/fullcalendar.min.js'></script>
 <script src='../../assets/vendor/oldCalendar/js/locale/es.js'></script>
