@@ -83,45 +83,13 @@
             <form id="update-form" onsubmit="return false">
                <div class="modal-body">
                   <div class="form-row">
-                     <div class="form-group col-md-2">
+                     <div class="form-group col-md-6">
                         <input type="hidden" id="txtFecha3" name="fecha" class="form-control" />
                         <input type="hidden" id="txtId" name="id_cita" class="form-control" />
                         <label>Fecha</label>
                         <input type="text" id="txtFecha2" disabled="" name="fecha" class="form-control" />
 
                      </div>
-
-                     <div class="form-group col-md-4">
-                        <label>¿Asistirá solo/a?</label>
-                        <select name="asistencia" id="asistencia2" class="form-control">
-                           <option selected>Seleccione</option>
-                           <option value=1>Si</option>
-                           <option value=0>No</option>
-                        </select>
-                     </div>
-
-                     <div class="form-group col-md-6">
-                        <div class="caja2">
-                           <div id="recargar2">
-                              <label id="per_edit">¿Personas que asistirán ?</label>
-                              <div class="form-group multiple-form-group input-group" name="grupo_personasEdit">
-                                 <input type="text" name="asistiran[]" id="asistiran2" disabled="true"
-                                    class="form-control" placeholder="Agregar otra persona">
-                                 <span class="input-group-btn">
-                                    <button type="button" class="btn btn-success btn-add" id="btn-asistiran2"
-                                       disabled="true" style="margin-top:0px;">+</button>
-                                 </span>
-                              </div>
-                           </div>
-                        </div>
-                        <!--Recargar las personas-->
-
-                     </div>
-
-                  </div>
-
-
-                  <div class="form-row">
                      <div class="form-group col-md-6">
                         <label>Hora de la cita</label>
                         <div class="input-group clockpicker" data-autoclose="true">
@@ -129,23 +97,6 @@
 
                         </div>
                         <input type="hidden" class="form-control" id="txtTitulo" name="title" value="Asesoria" />
-                     </div>
-
-                     <div class="form-group col-md-6">
-                        <div class="caja1">
-                           <div id="recargarPasa">
-                              <label id="pasa_edit">N° pasaporte de las personas</label>
-                              <div class="form-group multiple-form-group input-group" name="grupo_pasaporteEdit">
-                                 <input type="text" name="pasaporte_personas[]" id="pasaporte_personas2" disabled="true"
-                                    class="form-control" placeholder="Digite el pasaporte">
-                                 <span class="input-group-btn">
-                                    <button type="button" class="btn btn-success btn-add" id="btn-pasaportes2"
-                                       disabled="true" style="margin-top:0px;">+</button>
-                                 </span>
-                              </div>
-                           </div>
-                        </div>
-                        <!--recargar pasaportes-->
                      </div>
 
                   </div>

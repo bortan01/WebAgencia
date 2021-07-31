@@ -76,47 +76,8 @@ let id = localStorage.getItem('id_cliente');
       $('#txtFecha3').val(fechita);
       $('#txtId').val(calEvent.id_cita);
       $('#timepicker2').val(calEvent.hora);
-      document.getElementById("asistencia2").value = calEvent.compania;
-
-      if (calEvent.compania == 0) {
-        $('#inputs').empty();//vaciar los inputs dinamicos
-        $('#inputsPasa').empty();//vaciar los inputs dinamicos
-        //que los vacie y despues que los muestre...
-        $('#asistiran2').prop("disabled", false);
-        $('#btn-asistiran2').prop("disabled", false);
-        $("#pasaporte_personas2").prop("disabled", false);
-        $("#btn-pasaportes2").prop("disabled", false);
-        //para mostrar en el input de las personas que asitiran
-        $(document).ready(function () {
-
-          $.ajax({
-            type: "GET",
-            url: URL_SERVIDOR + 'PersonasCitas/personas/' + calEvent.id_cita,
-            
-            dataType: "json",
-            success: function (data) {
-
-              let $select = $('#inputs');
-              let $selectPas = $('#inputsPasa');
-              $.each(data.personas, function (i, index) {
-                $select.append('<input id="input" name="input[]" class="form-control" value="' + index.nombres_personas + '">');
-                $selectPas.append('<input id="inputPas" name="inputPas[]" class="form-control" value="' + index.pasaporte_personas + '">');
-              });
-
-            },
-            error: function (data) {
-              //alert('error');
-            }
-          });
-
-        });
-        //****
-      } else {
-        $('#asistiran2').prop("disabled", true);
-        $('#btn-asistiran2').prop("disabled", true);
-        $('#inputs').empty();
-        $('#inputsPasa').empty();
-      }
+     
+    
       $('#id_cliente').val(calEvent.id_cita);
       $('#modal_eventos').modal();
       //document.getElementById("update-form").reset();
@@ -169,7 +130,7 @@ let id = localStorage.getItem('id_cliente');
             $(document).ready(function () {
 
               $.ajax({
-                url: "http://localhost/API-REST-PHP/index.php/Cita/moverDias",
+                url: URL_SERVIDOR+"index.php/Cita/moverDias",
                 method: 'POST',
                 data: $("#update-form").serialize()
 
