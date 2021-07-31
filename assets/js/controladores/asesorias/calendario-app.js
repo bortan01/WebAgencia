@@ -37,9 +37,48 @@ let id = localStorage.getItem('id_cliente');
       } else {
 
         if (select >= hoy) {
-
-          $('#modal_registro').modal();
-          $('#txtFecha').val(date.format("DD-MM-YYYY"));
+          $(document).ready(function () {
+          //***METER LA VALIDACION SI EXITE Y NO HA SIDO ATENDIDO */
+          $.ajax({
+            url: URL_SERVIDOR + "Cita/verificarExist?id_cliente="+id,
+            method: 'GET'
+    
+        }).done(function(response) {
+    
+    
+           if(response.mensaje=='Existe' && response.existe.color=='#007bff'){
+    
+           let fecha=response.existe.fecha;
+           let nueva= fecha.split('-');
+    
+             const Toast = Swal.mixin();
+            Swal.fire({
+                title: '¡EL cliente ya tiene una cita agendada!',
+                text: "Fecha de su cita: "+nueva[2]+'-'+nueva[1]+'-'+nueva[0],
+                icon: 'warning',
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Ok!'
+            }).then((result) => {
+                console.log(result);
+                if (result.value) {
+                }
+            });
+    
+             document.getElementById("btnAgregar").disabled = true; 
+    
+           }else{
+             //por si se queda trabado el disabled lo habilitamos
+             alert('entre')
+               $('#modal_registro').modal();
+               $('#txtFecha').val(date.format("DD-MM-YYYY"));
+               document.getElementById("btnAgregar").disabled = false;
+           }
+    
+        }).fail(function(response) {
+        });
+          });
+          //FIN DE METER LA VALIDACION
         } else {
 
           const Toast = Swal.mixin();
@@ -62,11 +101,6 @@ let id = localStorage.getItem('id_cliente');
     events: URL_SERVIDOR+'index.php/Cita/citaWeb?id_cliente='+id, //aqui pongo la api que e hecho
     //http://localhost/restful/index.php/Calendario/calendario
     eventClick: function (calEvent, jsEvent, view) {
-
-      if (calEvent.estado_cita == 0 || calEvent.color == '#FF0040') {
-        $('#btnActualizar').prop("disabled", true);
-      } else { $('#btnActualizar').prop("disabled", false); }
-      $('#tituloEvento').html(calEvent.title);
 
       let convertir = calEvent.fecha;
       let nuevaFecha = convertir.split('-');
