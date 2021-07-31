@@ -23,9 +23,7 @@
                      <div class="form-group col-md-6">
                         <label>Fecha</label>
                         <input type="text" id="txtFecha" name="fecha" class="form-control" disabled />
-                        <input type="hidden" id="usuario" name="usuario" id="usuario" class="form-control" />
-
-                     </div>
+                       </div>
                      <div class="form-group col-md-6">
                         <label>Hora de la cita</label>
                         <div class="input-group clockpicker" data-autoclose="true">
@@ -35,26 +33,14 @@
                      </div>
                   </div>
                   <div class="form-row">
-                     <div class="col-md-11">
+                     <div class="col-md-12">
+                     <label>Cliente</label>
                         <div class="form-group multiple-form-group input-group">
-                           <label>Cliente</label>
-                           <div class="input-group">
-                              <select name="id_cliente" id="comboUsuario"
-                                 class="select2 select2-hidden-accessible form-control" data-placeholder="Seleccione"
-                                 style="width: 100%;" onchange="ShowSelected();">
-                              </select>
-                              <input type="hidden" name="estado" id="estado" value="Enviado">
-
-                           </div>
+                        <input type="hidden" id="id_cliente" name="id_cliente" class="form-control" disabled/>
+                           <input type="text" id="usuario" name="usuario" class="form-control" disabled/>
                         </div>
                      </div>
-                     <div class="col-sm-1">
-                        <br>
-                        <span class="input-group-btn">
-                           <button type="button" class="btn btn-success" data-toggle="modal"
-                              data-target="#modalAgregarCliente" style="margin-top: 10px; width: 100%;">+</button>
-                        </span>
-                     </div>
+                    
                   </div>
                      
                   </div>
