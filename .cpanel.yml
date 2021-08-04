@@ -1,0 +1,13 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/a147409/www/
+    - /bin/cp index.php $DEPLOYPATH
+    - /bin/cp login.php $DEPLOYPATH
+    - /bin/cp reset_password.php $DEPLOYPATH
+    - /bin/cp createAccount.php $DEPLOYPATH
+     
+    - /bin/cp -r assets $DEPLOYPATH
+    - /bin/cp -r layaut $DEPLOYPATH
+    - /bin/cp -r servicios $DEPLOYPATH
+    
