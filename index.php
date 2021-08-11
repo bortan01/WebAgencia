@@ -582,17 +582,17 @@ h6 {
                                 <div class="footer-icons">
                                     <ul>
                                         <li>
-                                            <a href="#" style="padding-top: 10px"><i class="fa fa-facebook"></i></a>
+                                            <a href="https://www.facebook.com/martineztours99/"
+                                                style="padding-top: 10px"><i class="fa fa-facebook"></i></a>
                                         </li>
                                         <li>
-                                            <a href="#" style="padding-top: 10px"><i class="fa fa-twitter"></i></a>
+                                            <a href="https://api.whatsapp.com/send/?phone=50378411184&text&app_absent=0"
+                                                style="padding-top: 10px"><i class="fa fa-whatsapp"></i></a>
                                         </li>
                                         <li>
                                             <a href="#" style="padding-top: 10px"><i class="fa fa-google"></i></a>
                                         </li>
-                                        <li>
-                                            <a href="#" style="padding-top: 10px"><i class="fa fa-pinterest"></i></a>
-                                        </li>
+
                                     </ul>
                                 </div>
                             </div>
