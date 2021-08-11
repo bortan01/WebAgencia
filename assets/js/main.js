@@ -119,22 +119,7 @@ preloader
   ------------------------------ */
   new WOW().init();
 
-  //---------------------------------------------
-  //Nivo slider
-  //---------------------------------------------
-  $('#ensign-nivoslider').nivoSlider({
-    effect: 'random',
-    slices: 15,
-    boxCols: 12,
-    boxRows: 8,
-    animSpeed: 500,
-    pauseTime: 5000,
-    startSlide: 0,
-    directionNav: true,
-    controlNavThumbs: false,
-    pauseOnHover: true,
-    manualAdvance: false,
-  });
+
 
   /*----------------------------
    Scrollspy js
@@ -201,22 +186,7 @@ preloader
   /*---------------------
    Testimonial carousel
   ---------------------*/
-  $(".testimonial-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 1
-      },
-      900: {
-        items: 1
-      }
-    }
-  });
+ 
   /*----------------------------
    isotope active
   ------------------------------ */
