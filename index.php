@@ -590,7 +590,7 @@ h6 {
                                                 style="padding-top: 10px"><i class="fa fa-whatsapp"></i></a>
                                         </li>
                                         <li>
-                                            <a href="#" style="padding-top: 10px"><i class="fa fa-google"></i></a>
+                                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1 " style="padding-top: 10px"><i class="fa fa-google"></i></a>
                                         </li>
 
                                     </ul>
