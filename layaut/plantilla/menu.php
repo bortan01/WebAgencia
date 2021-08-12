@@ -14,7 +14,7 @@
          <nav class="nav-menu d-none d-lg-block">
             <ul>
                <li class=""><a href="../../index.php">Inicio</a></li>
-               <li><a href="#about">¿Quiénes somos?</a></li>
+               <li><a href="../../nosotros.php">¿Quiénes somos?</a></li>
                <li class="drop-down">
                   <a href="#">Servicios</a>
                   <ul>
