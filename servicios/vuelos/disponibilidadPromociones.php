@@ -3,15 +3,15 @@
 <link rel="stylesheet" href="../../assets/vendor/galery/disponibilidad.css">
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 <style type="text/css" media="all">
-    h3,
-    h6 {
-        display: inline;
-    }
+h3,
+h6 {
+    display: inline;
+}
 
-    .centrar {
+.centrar {
 
-        text-align: center;
-    }
+    text-align: center;
+}
 </style>
 <main id="main" style="padding-top: 55px;">
 
@@ -96,14 +96,16 @@
 
                                     <br>
                                     <h6>Promoción disponible hasta: </h6>
-                                    <label name="fechaR" id="fechaR" data-date="" data-date-format="DD MMMM YYYY"></label>
+                                    <label name="fechaR" id="fechaR" data-date=""
+                                        data-date-format="DD MMMM YYYY"></label>
                                     <hr>
 
 
                                     <div class="bg-primary py-2 px-3 mt-4">
                                         <div class="centrar">
-                                            <h3>Precio por persona: $</h3>
-                                            <h3 class="mb-0" name="precioP" id="precioP" style="text-align:center"></h3>
+                                            <h6 style="color:#FFFFFF">Precio por persona: $</h6>
+                                            <h6 class="mb-0" name="precioP" id="precioP"
+                                                style="text-align:center; color:#FFFFFF"></h6>
                                         </div>
                                     </div>
 
@@ -112,7 +114,8 @@
                                             <h3 class="card-title">Descripción:</h3>
 
                                             <div class="card-tools">
-                                                <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
+                                                <button type="button" class="btn btn-tool"
+                                                    data-card-widget="collapse"><i class="fas fa-minus"></i>
                                                 </button>
                                             </div>
                                         </div>
