@@ -303,6 +303,41 @@ div#preloader {
     }
 }
 
+@media (max-width: 415px) {
+    #header {
+        height: 60px;
+        padding: 10px 0;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    #header .logo h1 {
+        font-size: 23px;
+        padding: 4px 0;
+    }
+}
+@media (max-width: 370px) {
+    #header {
+        height: 60px;
+        padding: 10px 0;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    #header .logo h1 {
+        font-size: 20px;
+        padding: 4px 0;
+    }
+}
+@media (max-width: 320px) {
+    #header {
+        height: 60px;
+        padding: 10px 0;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    #header .logo h1 {
+        font-size: 15px;
+        padding: 4px 0;
+    }
+}
+
+
 .header-bg {
     background: url(../img/slider/slider.jpg);
     background-repeat: no-repeat;
