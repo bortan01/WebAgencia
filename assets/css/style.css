@@ -298,23 +298,23 @@ div#preloader {
         background: rgba(0, 0, 0, 0.8);
     }
     #header .logo h1 {
-        font-size: 28px;
+        font-size: 30px;
         padding: 4px 0;
     }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 400px) {
     #header {
         height: 60px;
         padding: 10px 0;
         background: rgba(0, 0, 0, 0.8);
     }
     #header .logo h1 {
-        font-size: 23px;
+        font-size: 25px;
         padding: 4px 0;
     }
 }
-@media (max-width: 370px) {
+@media (max-width: 345px) {
     #header {
         height: 60px;
         padding: 10px 0;
@@ -325,7 +325,53 @@ div#preloader {
         padding: 4px 0;
     }
 }
-@media (max-width: 320px) {
+
+@media (max-width: 318px) {
+    #header {
+        height: 60px;
+        padding: 10px 0;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    #header .logo h1 {
+        font-size: 18.5px;
+        padding: 4px 0;
+    }
+}
+
+@media (max-width: 290px) {
+    #header {
+        height: 60px;
+        padding: 10px 0;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    #header .logo h1 {
+        font-size: 17px;
+        padding: 4px 0;
+    }
+}
+/* @media (max-width: 250px) {
+    #header {
+        height: 60px;
+        padding: 10px 0;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    #header .logo h1 {
+        font-size: 17px;
+        padding: 4px 0;
+    }
+} */
+/* @media (max-width: 286px) {
+    #header {
+        height: 60px;
+        padding: 10px 0;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    #header .logo h1 {
+        font-size: 20px;
+        padding: 4px 0;
+    }
+} 
+@media (max-width: 243px) {
     #header {
         height: 60px;
         padding: 10px 0;
@@ -335,7 +381,7 @@ div#preloader {
         font-size: 15px;
         padding: 4px 0;
     }
-}
+} */
 
 
 .header-bg {

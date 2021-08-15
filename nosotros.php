@@ -59,8 +59,8 @@ h6 {
          </div>
          <nav class="nav-menu d-none d-lg-block">
             <ul>
-               <li class="active"><a href="index.php">Inicio</a></li>
-               <li><a href="#about">¿Quiénes somos?</a></li>
+               <li class=""><a href="index.php">Inicio</a></li>
+               <li class="active"><a href="#">¿Quiénes somos?</a></li>
                <li class="drop-down">
                   <a href="#services">Servicios</a>
                   <ul>

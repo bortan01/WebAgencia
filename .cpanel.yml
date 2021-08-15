@@ -7,6 +7,7 @@ deployment:
     - /bin/cp login.php $DEPLOYPATH
     - /bin/cp reset_password.php $DEPLOYPATH
     - /bin/cp createAccount.php $DEPLOYPATH
+    - /bin/cp nosotros.php $DEPLOYPATH
      
     - /bin/cp -r assets $DEPLOYPATH
     - /bin/cp -r layaut $DEPLOYPATH
