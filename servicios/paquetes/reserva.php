@@ -173,8 +173,8 @@
                                  </div>
                               </div>
                               <div class="timeline-footer" style="text-align: right;">
-                                 <button name="btnguardarReserva" id="btnguardarReserva" class="btn btn-info btn-sm"
-                                    style="color: white">Guardar</button>
+                                 <button disabled name="btnguardarReserva" id="btnguardarReserva"
+                                    class="btn btn-info btn-sm" style="color: white">Guardar</button>
                                  <button class="btn btn-danger btn-sm" style="color: white">Cancelar</button>
                               </div>
                            </div>
