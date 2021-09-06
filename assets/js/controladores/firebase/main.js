@@ -35,8 +35,6 @@ function login() {
     method: "POST",
     data: $("#login-form").serialize()
   }).done(function (resp) {
-    $("#login-btn").prop('disabled', false);
-    initPreferencias(resp);
     //NUESTRO SERVICIO RETORNARA UN TOKEN QUE ES EL
     // QUE OCUPAREMOS PARA MANEJAR LA SESION DEL USUARIO
     if (!resp.err) {
@@ -47,7 +45,8 @@ function login() {
           .auth()
           .signInWithCustomToken(token)
           .then(function (data) {
-            $("#login-btn").html(btnHTML);
+            initPreferencias(resp);
+
             if (data.user.uid != "") {
               $.post("servicios/client/session.php", {
                 action: "start"
@@ -81,6 +80,7 @@ function login() {
 
   }).fail(function (resp) {
     $("#login-btn").prop('disabled', false);
+    $("#login-btn").html(btnHTML);
     if (resp.responseJSON.err) {
       if (resp.responseJSON.mensaje == 'EMAIL_NOT_FOUND') {
         Toast.fire({

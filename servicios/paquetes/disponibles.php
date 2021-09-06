@@ -98,7 +98,8 @@
                                  <h3 class="card-title">Datos Basico:</h3>
 
                                  <div class="card-tools">
-                                    <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
+                                    <button type="button" class="btn btn-tool" data-card-widget="collapse"><i
+                                          class="fas fa-minus"></i>
                                     </button>
                                  </div>
                               </div>
@@ -107,17 +108,9 @@
 
                                     <li class="nav-item active">
                                        <a href="#" class="nav-link">
-                                          <i class="far fa-calendar-alt"></i> Fecha de viaje
+                                          <i class="far fa-calendar-alt"></i>Estado
                                           <span class="badge bg-primary float-right">
-                                             <h7 name="fecha" id="fecha"></h7>
-                                          </span>
-                                       </a>
-                                    </li>
-                                    <li class="nav-item">
-                                       <a href="#" class="nav-link">
-                                          <i class="fas fa-user-friends"></i> Cupos Disponibles
-                                          <span class="badge bg-danger float-right">
-                                             <h7 name="cupos" id="cupos"></h7>
+                                             <h7>Siempre Disponible</h7>
                                           </span>
                                        </a>
                                     </li>
@@ -141,7 +134,7 @@
                                     <li class="nav-item">
                                        <a href="#" class="nav-link">
                                           <i class="fab fa-whatsapp"></i> Whatsapp
-                                          <span class="badge bg-Success float-right">
+                                          <span class="badge bg-success float-right">
                                              <h7 name="transmision" id="transmision">7841-1184 /
                                                 7602-2242 </h7>
                                           </span>
@@ -154,7 +147,7 @@
                            <div class="mt-4">
                               <button class="btn btn-block btn-success btn-flat" id="btnReservar" name="btnReservar">
                                  <i class="fas fa-cart-plus fa-lg"></i>
-                                 Reservar Paquete
+                                 Vistítanos Para Reservar
                               </button>
                            </div>
                         </div>
@@ -162,14 +155,22 @@
                      <div class="row mt-4">
                         <nav class="w-100">
                            <div class="nav nav-tabs" role="tablist">
-                              <a class="nav-item nav-link active" data-toggle="tab" href="#tab-descripcion" role="tab" aria-selected="true">Descripción</a>
-                              <a class="nav-item nav-link" data-toggle="tab" href="#tab-incluye" role="tab" aria-selected="false">Incluye</a>
-                              <a class="nav-item nav-link" data-toggle="tab" href="#tab-noIncluye" role="tab" aria-selected="false">No Incluye</a>
-                              <a class="nav-item nav-link" data-toggle="tab" href="#tab-requisito" role="tab" aria-selected="false"> Requisitos</a>
-                              <a class="nav-item nav-link" data-toggle="tab" href="#tab-promocion" role="tab" aria-selected="false"> Promociones</a>
-                              <a class="nav-item nav-link" data-toggle="tab" href="#tab-salida" role="tab" aria-selected="false">Lugar de Salida</a>
-                              <a class="nav-item nav-link" data-toggle="tab" href="#tab-sitios" role="tab" aria-selected="false">Sitios Turísticos</a>
-                              <a class="nav-item nav-link" data-toggle="tab" href="#tab-otros" role="tab" aria-selected="false">Otros Servicios</a>
+                              <a class="nav-item nav-link active" data-toggle="tab" href="#tab-descripcion" role="tab"
+                                 aria-selected="true">Descripción</a>
+                              <a class="nav-item nav-link" data-toggle="tab" href="#tab-incluye" role="tab"
+                                 aria-selected="false">Incluye</a>
+                              <a class="nav-item nav-link" data-toggle="tab" href="#tab-noIncluye" role="tab"
+                                 aria-selected="false">No Incluye</a>
+                              <a class="nav-item nav-link" data-toggle="tab" href="#tab-requisito" role="tab"
+                                 aria-selected="false"> Requisitos</a>
+                              <a class="nav-item nav-link" data-toggle="tab" href="#tab-promocion" role="tab"
+                                 aria-selected="false"> Promociones</a>
+                              <a class="nav-item nav-link" data-toggle="tab" href="#tab-salida" role="tab"
+                                 aria-selected="false">Lugar de Salida</a>
+                              <a class="nav-item nav-link" data-toggle="tab" href="#tab-sitios" role="tab"
+                                 aria-selected="false">Sitios Turísticos</a>
+                              <a class="nav-item nav-link" data-toggle="tab" href="#tab-otros" role="tab"
+                                 aria-selected="false">Otros Servicios</a>
                            </div>
                         </nav>
                         <div class="tab-content p-3" id="nav-tabContent">

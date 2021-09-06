@@ -41,8 +41,7 @@ $(document).ready(function () {
       $('#precio').text("Asiento Normal $" + data.precio);
       $('#titulo').text(data.nombreTours);
       $('#descripcion_tur').html(data.descripcion_tur);
-      let fechaSalida = moment(data.start);
-      $('#fecha').text(fechaSalida.locale('es').format('ll'));
+  
       $('#cupos').text(data.cupos_disponibles);
 
       $('#incluye').empty();
@@ -71,7 +70,7 @@ $(document).ready(function () {
    });
    // CLICK EN EL BOTON DE RESRVA
    $(document).on('click', '#btnReservar', function () {
-      location = 'reserva.php?paquete=' + ID_PAQUETE;
+      // location = 'reserva.php?paquete=' + ID_PAQUETE;
    });
    // CLICK EN LA IMAGEN PEQUE;A
    $(document).on('click', '.product-image-thumb', function () {
@@ -96,7 +95,7 @@ $(document).ready(function () {
                html += '        <div class="mask">';
                html += '            <h2 id="">' + ARR_TUR[index].nombreTours + '</h2>';
                html += '            <br>';
-               html += '            <div> Fecha: ' + ARR_TUR[index].start + '</div>';
+               html += '            <div>Siempre Disponible</div>';
                html += '            <p> Precio $' + ARR_TUR[index].precio + '</p>';
                html += '           <button type="button" name="' + ARR_TUR[index].id_tours + '" class="btn btn-primary" data-toggle="modal"';
                html += '            data-target="#modal-editar">Detalles</button>';
