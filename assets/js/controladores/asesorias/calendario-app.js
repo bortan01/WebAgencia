@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-let id = localStorage.getItem('id_cliente'); 
+  let id = localStorage.getItem('id_cliente');
 
   $('#calendar').fullCalendar({
     header: {
@@ -38,45 +38,45 @@ let id = localStorage.getItem('id_cliente');
 
         if (select >= hoy) {
           $(document).ready(function () {
-          //***METER LA VALIDACION SI EXITE Y NO HA SIDO ATENDIDO */
-          $.ajax({
-            url: URL_SERVIDOR + "Cita/verificarExist?id_cliente="+id,
-            method: 'GET'
-    
-        }).done(function(response) {
-    
-    
-           if(response.mensaje=='Existe' && response.existe.color=='#007bff'){
-    
-           let fecha=response.existe.fecha;
-           let nueva= fecha.split('-');
-    
-             const Toast = Swal.mixin();
-            Swal.fire({
-                title: '¡EL cliente ya tiene una cita agendada!',
-                text: "Fecha de su cita: "+nueva[2]+'-'+nueva[1]+'-'+nueva[0],
-                icon: 'warning',
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Ok!'
-            }).then((result) => {
-                console.log(result);
-                if (result.value) {
-                }
+            //***METER LA VALIDACION SI EXITE Y NO HA SIDO ATENDIDO */
+            $.ajax({
+              url: URL_SERVIDOR + "Cita/verificarExist?id_cliente=" + id,
+              method: 'GET'
+
+            }).done(function (response) {
+
+
+              if (response.mensaje == 'Existe' && response.existe.color == '#007bff') {
+
+                let fecha = response.existe.fecha;
+                let nueva = fecha.split('-');
+
+                const Toast = Swal.mixin();
+                Swal.fire({
+                  title: '¡EL cliente ya tiene una cita agendada!',
+                  text: "Fecha de su cita: " + nueva[2] + '-' + nueva[1] + '-' + nueva[0],
+                  icon: 'warning',
+                  confirmButtonColor: '#3085d6',
+                  cancelButtonColor: '#d33',
+                  confirmButtonText: 'Ok!'
+                }).then((result) => {
+                  console.log(result);
+                  if (result.value) {
+                  }
+                });
+
+                document.getElementById("btnAgregar").disabled = true;
+
+              } else {
+                //por si se queda trabado el disabled lo habilitamos
+
+                $('#modal_registro').modal();
+                $('#txtFecha').val(date.format("DD-MM-YYYY"));
+                document.getElementById("btnAgregar").disabled = false;
+              }
+
+            }).fail(function (response) {
             });
-    
-             document.getElementById("btnAgregar").disabled = true; 
-    
-           }else{
-             //por si se queda trabado el disabled lo habilitamos
-             alert('entre')
-               $('#modal_registro').modal();
-               $('#txtFecha').val(date.format("DD-MM-YYYY"));
-               document.getElementById("btnAgregar").disabled = false;
-           }
-    
-        }).fail(function(response) {
-        });
           });
           //FIN DE METER LA VALIDACION
         } else {
@@ -98,7 +98,7 @@ let id = localStorage.getItem('id_cliente');
 
 
     },
-    events: URL_SERVIDOR+'index.php/Cita/citaWeb?id_cliente='+id, //aqui pongo la api que e hecho
+    events: URL_SERVIDOR + 'Cita/citaWeb?id_cliente=' + id, //aqui pongo la api que e hecho
     //http://localhost/restful/index.php/Calendario/calendario
     eventClick: function (calEvent, jsEvent, view) {
 
@@ -110,8 +110,8 @@ let id = localStorage.getItem('id_cliente');
       $('#txtFecha3').val(fechita);
       $('#txtId').val(calEvent.id_cita);
       $('#timepicker2').val(calEvent.hora);
-     
-    
+
+
       $('#id_cliente').val(calEvent.id_cita);
       $('#modal_eventos').modal();
       //document.getElementById("update-form").reset();
@@ -161,56 +161,60 @@ let id = localStorage.getItem('id_cliente');
             $('#txtId').val(calEvent.id_cita);
             $('#timepicker2').val(calEvent.hora);
 
-            $(document).ready(function () {
+            
+            
+            $('#loadingActualizarEventos').show();
+            $.ajax({
+              url: URL_SERVIDOR + "Cita/moverDias",
+              method: 'POST',
+              data: $("#update-form").serialize()
 
-              $.ajax({
-                url: URL_SERVIDOR+"index.php/Cita/moverDias",
-                method: 'POST',
-                data: $("#update-form").serialize()
+            }).done(function (response) {
+            $('#loadingActualizarEventos').hide();
 
-              }).done(function (response) {
-                $('#calendar').fullCalendar('refetchEvents');
-                //$("#recargar2").load(" #recargar2");//recargar solo un div y no toda la pagina
-                // $('#inputs').empty();//vaciar los inputs dinamicos
+              $('#calendar').fullCalendar('refetchEvents');
+              //$("#recargar2").load(" #recargar2");//recargar solo un div y no toda la pagina
+              // $('#inputs').empty();//vaciar los inputs dinamicos
 
-                //REST_Controller::HTTP_OK
-                //let respuestaDecodificada = JSON.parse(response);
-                const Toast = Swal.mixin();
-                Toast.fire({
-                  title: 'Exito...',
-                  icon: 'success',
-                  text: response.mensaje,
-                  showConfirmButton: true,
-                }).then((result) => {
-                  //TODO BIEN Y RECARGAMOS LA PAGINA 
-                  //location.reload(); NO QUIERO QUE RECARGUE ME ACTUALIZA SOLA
-                });
+              //REST_Controller::HTTP_OK
+              //let respuestaDecodificada = JSON.parse(response);
+              const Toast = Swal.mixin();
+              Toast.fire({
+                title: 'Exito...',
+                icon: 'success',
+                text: response.mensaje,
+                showConfirmButton: true,
+              }).then((result) => {
+                //TODO BIEN Y RECARGAMOS LA PAGINA 
+                //location.reload(); NO QUIERO QUE RECARGUE ME ACTUALIZA SOLA
+              });
 
-              }).fail(function (response) {
-                //SI HUBO UN ERROR EN LA RESPUETA REST_Controller::HTTP_BAD_REQUEST
-                let respuestaDecodificada = JSON.parse(response.responseText);
-                let listaErrores = "";
+            }).fail(function (response) {
+              $('#loadingActualizarEventos').hide();
+              //SI HUBO UN ERROR EN LA RESPUETA REST_Controller::HTTP_BAD_REQUEST
+              let respuestaDecodificada = JSON.parse(response.responseText);
+              let listaErrores = "";
 
-                if (respuestaDecodificada.errores) {
-                  ///ARREGLO DE ERRORES 
-                  let erroresEnvioDatos = respuestaDecodificada.errores;
-                  for (mensaje in erroresEnvioDatos) {
-                    listaErrores += erroresEnvioDatos[mensaje] + "\n";
-                    //toastr.error(erroresEnvioDatos[mensaje]);
-                  };
-                } else {
-                  listaErrores = respuestaDecodificada.mensaje
-                }
-                const Toast = Swal.mixin();
-                Toast.fire({
-                  title: 'Error',
-                  icon: 'error',
-                  text: listaErrores,
-                  showConfirmButton: true,
-                });
-                $('#calendar').fullCalendar('refetchEvents');//refrescar el calendario
-              })
-            });
+              if (respuestaDecodificada.errores) {
+                ///ARREGLO DE ERRORES 
+                let erroresEnvioDatos = respuestaDecodificada.errores;
+                for (mensaje in erroresEnvioDatos) {
+                  listaErrores += erroresEnvioDatos[mensaje] + "\n";
+                  //toastr.error(erroresEnvioDatos[mensaje]);
+                };
+              } else {
+                listaErrores = respuestaDecodificada.mensaje
+              }
+              const Toast = Swal.mixin();
+              Toast.fire({
+                title: 'Error',
+                icon: 'error',
+                text: listaErrores,
+                showConfirmButton: true,
+              });
+              $('#calendar').fullCalendar('refetchEvents');//refrescar el calendario
+            })
+
             //***********codigo de procedimiento
           } else {
             const Toast = Swal.mixin();

@@ -6,7 +6,7 @@
       <div class="modal-content">
 
          <div class="overlay-wrapper">
-            <div id="loadingActualizar" class="overlay">
+            <div id="loadingSave" class="overlay">
                <i class="fas fa-3x fa-sync-alt fa-spin"></i>
                <div class="text-bold pt-2">Cargando...
                </div>
@@ -23,41 +23,52 @@
                      <div class="form-group col-md-6">
                         <label>Fecha</label>
                         <input type="text" id="txtFecha" name="fecha" class="form-control" disabled />
-                       </div>
+                     </div>
                      <div class="form-group col-md-6">
                         <label>Hora de la cita</label>
                         <div class="input-group clockpicker" data-autoclose="true">
-                           <input type="text" id="timepicker" name="start" class="form-control" value="08:00" />
+
+
+                           <select name="timeUpdate" id="timepicker"
+                              class="select2 select2-hidden-accessible form-control" style="width: 100%;">
+                              <option value="08:00">08:00</option>
+                              <option value="09:00">09:00</option>
+                              <option value="10:00">10:00</option>
+                              <option value="11:00">11:00</option>
+                              <option value="13:00">13:00</option>
+                              <option value="14:00">14:00</option>
+                              <option value="15:00">15:00</option>
+                           </select>
+
                         </div>
                         <input type="hidden" class="form-control" id="txtTitulo" name="title" value="Asesoria" />
                      </div>
                   </div>
                   <div class="form-row">
                      <div class="col-md-12">
-                     <label>Cliente</label>
+                        <label>Cliente</label>
                         <div class="form-group multiple-form-group input-group">
-                        <input type="hidden" id="id_cliente" name="id_cliente" class="form-control" disabled/>
-                           <input type="text" id="usuario" name="usuario" class="form-control" disabled/>
+                           <input type="hidden" id="id_cliente" name="id_cliente" class="form-control" disabled />
+                           <input type="text" id="usuario" name="usuario" class="form-control" disabled />
                         </div>
                      </div>
-                    
-                  </div>
-                     
-                  </div>
-                  
-               </div>
-               <div class="modal-footer">
-                  <button type="button" id="btnAgregar" class="btn btn-info btn-sm"
-                     style="color: white">Guardar</button>
-                  <button type="button" class="btn btn-danger btn-sm" style="color: white"
-                     data-dismiss="modal">Cancelar</button>
-               </div>
-            </form>
-         </div>
 
+                  </div>
+
+               </div>
+
+         </div>
+         <div class="modal-footer">
+            <button type="button" id="btnAgregar" class="btn btn-info btn-sm" style="color: white">Guardar</button>
+            <button type="button" class="btn btn-danger btn-sm" style="color: white"
+               data-dismiss="modal">Cancelar</button>
+         </div>
+         </form>
       </div>
+
    </div>
-   <!-- /.modal-content -->
+</div>
+<!-- /.modal-content -->
 </div>
 <!--fin de modal de enventos-->
 
@@ -93,7 +104,17 @@
                      <div class="form-group col-md-6">
                         <label>Hora de la cita</label>
                         <div class="input-group clockpicker" data-autoclose="true">
-                           <input type="text" id="timepicker2" name="start" class="form-control" />
+
+                           <select name="timeUpdate" id="timepicker2"
+                              class="select2 select2-hidden-accessible form-control" style="width: 100%;">
+                              <option value="08:00">08:00</option>
+                              <option value="09:00">09:00</option>
+                              <option value="10:00">10:00</option>
+                              <option value="11:00">11:00</option>
+                              <option value="13:00">13:00</option>
+                              <option value="14:00">14:00</option>
+                              <option value="15:00">15:00</option>
+                           </select>
 
                         </div>
                         <input type="hidden" class="form-control" id="txtTitulo" name="title" value="Asesoria" />

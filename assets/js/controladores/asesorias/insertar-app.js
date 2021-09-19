@@ -1,15 +1,15 @@
-$(document).ready(function (){
+$(document).ready(function () {
 
-    let id = localStorage.getItem('id_cliente'); 
+    let id = localStorage.getItem('id_cliente');
     let nombre = localStorage.getItem('nombre');
     let celular = localStorage.getItem('celular');
 
-    $('#id_cliente').val(id); 
+    $('#id_cliente').val(id);
     $('#usuario').val(nombre);
 
     inicializarValidaciones();
 
-  
+
     //BOTON PARA AGREGAR
     $(document).on('click', '#btnAgregar', function (evento) {
         evento.preventDefault(); //para evitar que la pagina se recargue
@@ -20,16 +20,16 @@ $(document).ready(function (){
         }
     });
 
-function inicializarValidaciones() {
+    function inicializarValidaciones() {
 
-       $('#register-form').validate({
+        $('#register-form').validate({
             rules: {
                 id_cliente: {
                     required: true
                 }
             },
             messages: {
-                id_cliente:{
+                id_cliente: {
                     required: "Seleccione el Cliente"
                 }
             },
@@ -52,12 +52,13 @@ function inicializarValidaciones() {
     //**********************************
     function add() {
 
-         let form = obtenerInfo();
-        
-        
+        let form = obtenerInfo();
+
+        $('#loadingSave').show();
+
 
         $.ajax({
-            url: URL_SERVIDOR+"Cita/citas",
+            url: URL_SERVIDOR + "Cita/citas",
             method: 'POST',
             mimeType: "multipart/form-data",
             data: form,
@@ -66,15 +67,15 @@ function inicializarValidaciones() {
             contentType: false,
 
         }).done(function (response) {
-
-          $("#modal_registro").modal('toggle');
-          $('#calendar').fullCalendar('refetchEvents');
-          $("#register-form").trigger("reset");
-          $('#comboUsuario').val('').trigger('change');//limpia el combo
-         // toastr.success(response.mensaje)//me gusta
-                    //console.log(response);
-         // document.getElementById("register-form").reset();
-         // $("#recargar").load("#recargar");//recargar solo un div y no toda la pagina
+            $('#loadingSave').hide();
+            $("#modal_registro").modal('toggle');
+            $('#calendar').fullCalendar('refetchEvents');
+            $("#register-form").trigger("reset");
+            $('#comboUsuario').val('').trigger('change');//limpia el combo
+            // toastr.success(response.mensaje)//me gusta
+            //console.log(response);
+            // document.getElementById("register-form").reset();
+            // $("#recargar").load("#recargar");//recargar solo un div y no toda la pagina
             //REST_Controller::HTTP_OK
             //let respuestaDecodificada = JSON.parse(response);
             const Toast = Swal.mixin();
@@ -88,6 +89,7 @@ function inicializarValidaciones() {
                 //location.reload(); 
             });
         }).fail(function (response) {
+            $('#loadingSave').hide();
             //SI HUBO UN ERROR EN LA RESPUETA REST_Controller::HTTP_BAD_REQUEST
             let respuestaDecodificada = JSON.parse(response.responseText);
             let listaErrores = "";
@@ -97,7 +99,7 @@ function inicializarValidaciones() {
                 let erroresEnvioDatos = respuestaDecodificada.errores;
                 for (mensaje in erroresEnvioDatos) {
                     listaErrores += erroresEnvioDatos[mensaje] + "\n";
-                     //toastr.error(erroresEnvioDatos[mensaje]);
+                    //toastr.error(erroresEnvioDatos[mensaje]);
                 };
             } else {
                 listaErrores = respuestaDecodificada.mensaje
@@ -109,25 +111,25 @@ function inicializarValidaciones() {
                 text: listaErrores,
                 showConfirmButton: true,
             });
-        
+
         });
 
     }
 
-    function obtenerInfo(){
+    function obtenerInfo() {
         let form = new FormData();
 
-        
-        form.append("fecha",       document.getElementById("txtFecha").value);
-        form.append("usuario",     document.getElementById("usuario").value);
-        form.append("id_cliente",  document.getElementById("id_cliente").value);
-       
+
+        form.append("fecha", document.getElementById("txtFecha").value);
+        form.append("usuario", document.getElementById("usuario").value);
+        form.append("id_cliente", document.getElementById("id_cliente").value);
+
         form.append("start", document.getElementById("timepicker").value);
         form.append("title", document.getElementById("txtTitulo").value);
-      
-     
+
+
         //
         return form;
     }
-   
+
 });

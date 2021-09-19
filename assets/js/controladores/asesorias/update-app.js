@@ -1,12 +1,14 @@
-$(document).ready(function (){
+$(document).ready(function () {
 
-    $("#btnActualizar").on('click', function(e) {
+    $("#btnActualizar").on('click', function (e) {
 
         e.preventDefault();
         // recolectarDatos();
-         let form = obtenerInfo();
-         $.ajax({
-            url: URL_SERVIDOR+"Cita/updateCita",
+        $('#loadingActualizarEventos').show();
+
+        let form = obtenerInfo();
+        $.ajax({
+            url: URL_SERVIDOR + "Cita/updateCita",
             method: 'POST',
             mimeType: "multipart/form-data",
             data: form,
@@ -14,10 +16,11 @@ $(document).ready(function (){
             processData: false,
             contentType: false,
         }).done(function (response) {
-            
-          $("#modal_eventos").modal('toggle');
-          $('#calendar').fullCalendar('refetchEvents');
-        
+            $('#loadingActualizarEventos').hide();
+
+            $("#modal_eventos").modal('toggle');
+            $('#calendar').fullCalendar('refetchEvents');
+
             //REST_Controller::HTTP_OK
             let respuestaDecodificada = JSON.parse(response);
             const Toast = Swal.mixin();
@@ -32,6 +35,7 @@ $(document).ready(function (){
             });
 
         }).fail(function (response) {
+            $('#loadingActualizarEventos').hide();
             let respuestaDecodificada = JSON.parse(response.responseText);
             let listaErrores = "";
 
@@ -40,7 +44,7 @@ $(document).ready(function (){
                 let erroresEnvioDatos = respuestaDecodificada.errores;
                 for (mensaje in erroresEnvioDatos) {
                     listaErrores += erroresEnvioDatos[mensaje] + "\n";
-                     //toastr.error(erroresEnvioDatos[mensaje]);
+                    //toastr.error(erroresEnvioDatos[mensaje]);
                 };
             } else {
                 listaErrores = respuestaDecodificada.mensaje
@@ -57,10 +61,10 @@ $(document).ready(function (){
 
     });
 
-     function obtenerInfo(){
-        let form = new FormData();   
-        form.append("id_cita",       document.getElementById("txtId").value);
-        form.append("fecha", document.getElementById("txtFecha2").value);  
+    function obtenerInfo() {
+        let form = new FormData();
+        form.append("id_cita", document.getElementById("txtId").value);
+        form.append("fecha", document.getElementById("txtFecha2").value);
         form.append("start", document.getElementById("timepicker2").value);
         return form;
     }

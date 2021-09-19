@@ -67,15 +67,17 @@
 <script src="../../assets/js/controladores/asesorias/operaciones.js"></script>
 <script src="../../assets/js/mdtimepicker.js"></script>
 <script>
-   $(document).ready(function() {
-      $('#timepicker').mdtimepicker(); //Initializes the time picker
-   });
+$(document).ready(function() {
+   $('#timepicker').mdtimepicker(); //Initializes the time picker
+});
 
-   $(document).ready(function() {
-      $('#timepicker2').mdtimepicker(); //Initializes the time picker
-   });
+$(document).ready(function() {
+   $('#timepicker2').mdtimepicker(); //Initializes the time picker
+});
+$('#timepicker').select2();
+$('#timepicker2').select2();
 
-   $('#loadingActualizar').hide();
-   $('#loadingActualizarEventos').hide();
+$('#loadingSave').hide();
+$('#loadingActualizarEventos').hide();
 </script>
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>
