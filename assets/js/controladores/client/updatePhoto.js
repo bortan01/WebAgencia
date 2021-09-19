@@ -30,7 +30,7 @@ $(document).ready(function () {
       let infoFotos = [];
       $.ajax({
          url:
-            URL_SERVIDOR +
+            URL_SERVIDOR_IMAGENES +
             "Imagen/show?tipo=" + nombreTabla + "&identificador=" + identificador,
          method: "GET",
       }).done(function (response) {
@@ -38,7 +38,7 @@ $(document).ready(function () {
          //REST_Controller::HTTP_OK
          response.forEach((element) => {
             let informacion = {
-               url: URL_SERVIDOR + "Imagen/delete",
+               url: URL_SERVIDOR_IMAGENES + "Imagen/delete",
                key: element.id_foto,
             };
             infoFotos.push(informacion);
@@ -47,7 +47,7 @@ $(document).ready(function () {
          explorer.fileinput({
             theme: "fas",
             language: "es",
-            uploadUrl: URL_SERVIDOR + "/Imagen/save",
+            uploadUrl: URL_SERVIDOR_IMAGENES + "/Imagen/save",
             uploadExtraData: informacionAdicional,
             overwriteInitial: false,
             initialPreviewAsData: true,

@@ -141,7 +141,7 @@ $(document).ready(function () {
         form.append("nivel", nivel);
         //OCUPAR ESTA CONFIGURACION CUANDO SE ENVIAEN ARCHIVOS(FOTOS-IMAGENES)
         $.ajax({
-            url: URL_SERVIDOR + "Usuario/registroUser",
+            url: URL_SERVIDOR_IMAGENES + "Usuario/registroUser",
             method: "POST",
             mimeType: "multipart/form-data",
             data: form,

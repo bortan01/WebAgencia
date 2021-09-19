@@ -112,7 +112,7 @@ $(document).ready(function () {
         }
         ///OCUPAR ESTA CONFIGURACION CUANDO SOLO SEA TEXTO
         $.ajax({
-            url: URL_SERVIDOR + "Usuario/update",
+            url: URL_SERVIDOR_IMAGENES + "Usuario/update",
             method: "PUT",
             timeout: 0,
             data: data
@@ -191,7 +191,7 @@ $(document).ready(function () {
 
         //OCUPAR ESTA CONFIGURACION CUANDO SE ENVIAEN ARCHIVOS(FOTOS-IMAGENES)
         $.ajax({
-            url: URL_SERVIDOR + "Imagen/savePhotoPerfil",
+            url: URL_SERVIDOR_IMAGENES + "Imagen/savePhotoPerfil",
             method: "POST",
             mimeType: "multipart/form-data",
             data: form,
