@@ -105,7 +105,7 @@ h6 {
                                 <ul>
                                     <li><a href="servicios/paquetes/adquiridos.php">Tours/Paquetes</a></li>
                                     <li><a href="servicios/vehiculos/vehiculosAlquilados.php">Vehículos</a></li>
-                                    <li><a href="#">Encomiendas</a></li>
+                                    <li><a href="servicios/encomienda/verEncomiendas.php">Encomiendas</a></li>
                                 </ul>
                             </li>
                             <li class="drop-down"><a href="#">Cotizaciones</a>
