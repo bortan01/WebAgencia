@@ -70,8 +70,8 @@ $(document).ready(function () {
             $('#loadingSave').hide();
             $("#modal_registro").modal('toggle');
             $('#calendar').fullCalendar('refetchEvents');
-            $("#register-form").trigger("reset");
-            $('#comboUsuario').val('').trigger('change');//limpia el combo
+          // $("#register-form").trigger("reset");
+         // $('#comboUsuario').val('').trigger('change');//limpia el combo
             // toastr.success(response.mensaje)//me gusta
             //console.log(response);
             // document.getElementById("register-form").reset();
@@ -86,7 +86,7 @@ $(document).ready(function () {
                 showConfirmButton: true,
             }).then((result) => {
                 //TODO BIEN Y RECARGAMOS LA PAGINA 
-                //location.reload(); 
+                location.reload(); 
             });
         }).fail(function (response) {
             $('#loadingSave').hide();
