@@ -99,7 +99,7 @@ $(document).ready(function () {
     },
     events: URL_SERVIDOR + 'Cita/citaWeb?id_cliente=' + id, //aqui pongo la api que e hecho
     //http://localhost/restful/index.php/Calendario/calendario
-    height:500,
+    height:460,
     eventClick: function (calEvent, jsEvent, view) {
 
       let convertir = calEvent.fecha;
