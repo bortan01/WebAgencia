@@ -106,6 +106,7 @@ $(document).ready(function () {
       let nuevaFecha = convertir.split('-');
       let fechita = nuevaFecha[2] + '-' + nuevaFecha[1] + '-' + nuevaFecha[0];
 
+      $('#tituloEvento').text(calEvent.title);
       $('#txtFecha2').val(fechita);
       $('#txtFecha3').val(fechita);
       $('#txtId').val(calEvent.id_cita);
