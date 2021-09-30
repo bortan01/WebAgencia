@@ -23,14 +23,8 @@
                   </div>
                   <!-- /.col -->
                   <div class="col-md-10">
-                     <div class="card card-primary">
-                        <div class="card-body p-0" style="width: 90%;">
-                           <!-- THE CALENDAR -->
-                           <div id="calendar"></div>
-                        </div>
-                        <!-- /.card-body -->
-                     </div>
-                     <!-- /.card -->
+                      <!-- THE CALENDAR -->
+                      <div id="calendar"></div>
                   </div>
                   <!-- /.col -->
                   <div class="col-md-1">
