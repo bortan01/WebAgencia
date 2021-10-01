@@ -107,7 +107,7 @@
 
                                     <div class="card">
                                         <div class="card-header">
-                                            <h3 class="card-title">Caracteristicas:</h3>
+                                            <h3 class="card-title">Características:</h3>
 
                                             <div class="card-tools">
                                                 <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
@@ -128,7 +128,7 @@
                                                 <li class="nav-item">
                                                     <a href="#" class="nav-link">
                                                         <i class="fas fa-user-friends"></i> Pasajeros
-                                                        <span class="badge bg-Secondary float-right">
+                                                        <span class="badge bg-secondary float-right">
                                                             <h7 name="pasajero" id="pasajero"></h7>
                                                         </span>
                                                     </a>
@@ -153,7 +153,7 @@
                                                 <li class="nav-item">
                                                     <a href="#" class="nav-link">
                                                         <i class="fas fa-car"></i> Transmisión
-                                                        <span class="badge bg-Success float-right">
+                                                        <span class="badge bg-success float-right">
                                                             <h7 name="transmision" id="transmision"></h7>
                                                         </span>
                                                     </a>

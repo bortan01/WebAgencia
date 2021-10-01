@@ -143,7 +143,7 @@ h6 {
                                                 <li class="nav-item">
                                                     <a href="#" class="nav-link">
                                                         <i class="fas fa-map-marked-alt"></i> Lugar de Destino
-                                                        <span class="badge bg-Secondary float-right">
+                                                        <span class="badge bg-secondary float-right">
                                                             <h7 name="lugard" id="lugard"></h7>
                                                         </span>
                                                     </a>

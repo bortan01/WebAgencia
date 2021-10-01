@@ -133,7 +133,7 @@
                                     </li>
                                     <li class="nav-item">
                                        <a href="#" class="nav-link">
-                                          <i class="fab fa-whatsapp"></i> Whatsapp
+                                          <i class="fab fa-whatsapp"></i> WhatsApp
                                           <span class="badge bg-success float-right">
                                              <h7 name="transmision" id="transmision">7841-1184 /
                                                 7602-2242 </h7>
@@ -147,7 +147,7 @@
                            <div class="mt-4">
                               <button class="btn btn-block btn-success btn-flat" id="btnReservar" name="btnReservar">
                                  <i class="fas fa-cart-plus fa-lg"></i>
-                                 Vistítanos Para Reservar
+                                 visítanos para Reservar
                               </button>
                            </div>
                         </div>
