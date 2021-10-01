@@ -128,7 +128,7 @@ h6 {
     <!-- End Header -->
 
     <!-- INICIO Slider Area -->
-    <div class="container" style="padding-top: 10%;">
+    <div class="container" style="max-width: 100%;">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="slideshow-container">
@@ -174,8 +174,6 @@ h6 {
             </div>
         </div>
     </div>
-
-
 
     <!-- FIN Slider Area -->
 
