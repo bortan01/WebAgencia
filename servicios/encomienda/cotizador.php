@@ -115,7 +115,7 @@
                                                             <div class="col-sm-6">
                                                                 <label>Teléfono</label>
                                                                 <div class="input-group">
-                                                                    <input type="text" name="telefono_des" id="telefono_des" class="form-control" autocomplete="off">
+                                                                    <input type="text" name="telefono_des" id="telefono_des" class="form-control" autocomplete="off" placeholder="(+___)____-____">
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-6">
@@ -294,8 +294,11 @@
 
 <?php include_once('../../layaut/plantilla/footer.php'); ?>
 <!-- PONER SCRIPT ADICIONALES ACA -->
+
+
 <script src="../../assets/vendor/jquery-ui/jquery-ui.min.js"></script>
 <script src="../../assets/vendor/sweetalert2/sweetalert2.js"></script>
+<script src="../../assets/vendor/inputmask/jquery.inputmask.js"></script>
 <!-- DataTables -->
 <script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
@@ -304,4 +307,12 @@
 
 <script type="text/javascript" src="../../assets/js/controladores/encomiendas/producto.js"></script>
 <script type="text/javascript" src="../../assets/js/controladores/encomiendas/calculo.js"></script>
+<script>
+//para la mascara del celular
+$(":input").inputmask();
+$("#telefono_des").inputmask({
+    "mask": "(+999) 9999-9999"
+});
+</script>
+
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>
