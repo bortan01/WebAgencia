@@ -14,7 +14,7 @@ $(document).ready(function() {
         if (form.valid()) {
         let form = new FormData();
 
-        form.append("id_cliente", id);
+        form.append("id_usuario", id);
         form.append("modelo", document.getElementById("id_modelo").value);
         form.append("anio", document.getElementById("anio").value);
         form.append("caracteristicas", document.getElementById("caracteristicas").value);
