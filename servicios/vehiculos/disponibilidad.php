@@ -168,7 +168,12 @@
                                             <h3 class="mb-0" name="precio" id="precio" style="text-align:center; color:#FFFFFF"></h3>
                                         </div>
                                     </div>
-
+                                    <div class="mt-4">
+                                        <button class="btn btn-block btn-success btn-flat"  onclick="location.href='cotizarVehiculo.php'">
+                                            <i class="fas fa-cart-plus fa-lg"></i>
+                                            Cotizar Vehículo
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row mt-4">
