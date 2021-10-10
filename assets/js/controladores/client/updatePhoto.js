@@ -47,7 +47,7 @@ $(document).ready(function () {
          explorer.fileinput({
             theme: "fas",
             language: "es",
-            uploadUrl: URL_SERVIDOR_IMAGENES + "/Imagen/save",
+            uploadUrl: URL_SERVIDOR_IMAGENES + "Imagen/save",
             uploadExtraData: informacionAdicional,
             overwriteInitial: false,
             initialPreviewAsData: true,

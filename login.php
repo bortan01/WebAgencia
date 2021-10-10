@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION["activo"])) {
-   echo ("NO LOGUEADO");
+   // echo ("NO LOGUEADO");
 } else {
   header('Location: index.php');
 }
