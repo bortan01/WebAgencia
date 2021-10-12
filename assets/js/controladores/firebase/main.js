@@ -98,8 +98,30 @@ function login() {
           showConfirmButton: true,
         });
       }
+      else if (resp.responseJSON.mensaje == 'INVALID_PASSWORD') {
+        Toast.fire({
+          title: 'Oops...',
+          icon: 'error',
+          text: 'Contraseña Incorrecta',
+          showConfirmButton: true,
+        });
+      }
+      else if (resp.responseJSON.mensaje == 'TOO_MANY_ATTEMPTS_TRY_LATER : Access to this account has been temporarily disabled due to many failed login attempts. You can immediately restore it by resetting your password or you can try again later.') {
+        Toast.fire({
+          title: 'Oops...',
+          icon: 'error',
+          text: 'acceso a esta cuenta se ha inhabilitado temporalmente debido a muchos intentos fallidos de inicio de sesión. Puede restaurarlo inmediatamente restableciendo su contraseña o puede intentarlo de nuevo más tarde.',
+          showConfirmButton: true,
+        });
+      } else {
+        Toast.fire({
+          title: 'Oops...',
+          icon: 'error',
+          text: 'Credenciales no validas',
+          showConfirmButton: true,
+        });
+      }
     } else {
-
       Toast.fire({
         title: 'Oops...',
         icon: 'error',
