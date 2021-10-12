@@ -42,7 +42,7 @@ $(document).ready(function () {
         let cantidad = $('#cantidad').val();
         //alert(cantidad);
         if (!cantidad) {
-                 errors = { cantidad: "Digite la cantidad" };
+            errors = { cantidad: "Digite la cantidad" };
             $("#encomienda-form").validate().showErrors(errors);
         } else {
 

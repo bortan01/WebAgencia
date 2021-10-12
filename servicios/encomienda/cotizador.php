@@ -44,7 +44,7 @@
                                         <div id="formulario">
                                             <i class="fas fa-box-open bg-green"></i>
                                             <div class="timeline-item">
-                                                <h3 class="timeline-header"><a href="#">Datos de Origen</a></h3>
+                                                <h3 class="timeline-header"><a href="#">Datos de cliente</a></h3>
 
                                                 <div class="timeline-body">
                                                     <form id="datosOrigen-form" name="register-form"
@@ -74,108 +74,11 @@
                                                             </div>
                                                             <div class="col-sm-6">
                                                                 <div class="form-group">
-                                                                    <label>Ciudad</label>
-                                                                    <div class="input-group">
-                                                                        <input type="text" class="form-control"
-                                                                            name="ciudad" id="ciudad"
-                                                                            placeholder="Digite la ciudad de origen">
-                                                                    </div>
 
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-sm-6">
-                                                                <div class="form-group">
-                                                                    <label>Código</label>
-                                                                    <input name="codigo" id="codigo" type="text"
-                                                                        class="form-control"
-                                                                        placeholder="Introduzca el Código postal de origen">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-6">
-                                                                <div class="form-group">
-                                                                    <input name="fecha" id="fecha" type="hidden"
-                                                                        class="form-control"
-                                                                        placeholder="Introduzca el punto de referencia">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div>
-                                                        </div>
-
-                                                    </form>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <!-- END timeline item -->
-                                        <!-- timeline item -->
-                                        <div id="formulario">
-                                            <i class="fas fa-box-open bg-green"></i>
-                                            <div class="timeline-item">
-                                                <h3 class="timeline-header"><a href="#">Datos de Destino</a></h3>
-
-                                                <div class="timeline-body">
-                                                    <form id="datosDestino-form" name="register-form"
-                                                        onsubmit="return false">
-                                                        <div class="row">
-                                                            <div class="col-sm-6">
-                                                                <div class="form-group multiple-form-group input-group">
-                                                                    <label>Nombre Completo</label>
-                                                                    <div class="input-group">
-                                                                        <input class="form-control" type="text"
-                                                                            name="cliente_des" id="cliente_des"
-                                                                            placeholder="Digite el nombre">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-6">
-                                                                <label>Teléfono</label>
-                                                                <div class="input-group">
-                                                                    <input type="text" name="telefono_des"
-                                                                        id="telefono_des" class="form-control"
-                                                                        autocomplete="off"
-                                                                        placeholder="(+___)____-____">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-6">
-                                                                <div class="form-group">
-                                                                    <label>Ciudad</label>
-                                                                    <div class="input-group">
-                                                                        <input type="text" class="form-control"
-                                                                            name="ciudad_des" id="ciudad_des"
-                                                                            placeholder="Digite la ciudad de destino">
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-sm-6">
-                                                                <div class="form-group">
-                                                                    <label>Código</label>
-                                                                    <input name="codigo_des" id="codigo_des" type="text"
-                                                                        class="form-control"
-                                                                        placeholder="Introduzca el Código postal de destino">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-sm-6">
-                                                                <div class="form-group">
-                                                                    <label>Dirección</label>
-                                                                    <input name="direccion" id="direccion" type="text"
-                                                                        class="form-control"
-                                                                        placeholder="Introduzca la Dirección">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-6">
-                                                                <div class="form-group">
-                                                                    <label>Dirección alterna</label>
-                                                                    <input name="direccion_alterna"
-                                                                        id="direccion_alterna" type="text"
-                                                                        class="form-control"
-                                                                        placeholder="Ej: Correo El Salvador ó 2da, av sur, numero 34, barrio centro">
-                                                                </div>
-                                                            </div>
                                                         </div>
 
                                                     </form>
@@ -244,11 +147,8 @@
                                                             <div class="row">
                                                                 <div class="col-sm-3">
                                                                     <div class="form-group">
-                                                                        <label>Comision de Agencia (%)</label>
                                                                         <div class="input-group">
-                                                                            <input id="porcenaje" type="number" min="1"
-                                                                                value="1" class="form-control"
-                                                                                id="porcenaje">
+                                                                            <input id="porcenaje" type="hidden" min="1" value="1" class="form-control" id="porcenaje">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -284,19 +184,11 @@
                                                             <label id="total" class="text-primary "> $0</label>
                                                         </div>
                                                     </div>
+                                                   
                                                     <div class="row">
                                                         <div class="col-md-1 col-md-offset-1"> </div>
                                                         <div class="col-md-3  ">
-                                                            <label class="text-success "> Comisión de Agencia: </label>
-                                                        </div>
-                                                        <div class="col-md-3  ">
-                                                            <label id="comision" class="text-success "> $0</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-1 col-md-offset-1"> </div>
-                                                        <div class="col-md-3  ">
-                                                            <label class="text-danger "> Total de cliente: </label>
+                                                            <label class="text-danger "> Total de cliente + Envío: </label>
                                                         </div>
                                                         <div class="col-md-3  ">
                                                             <label id="totalCliente" class="text-danger "> $0</label>
@@ -305,9 +197,10 @@
                                                 </div>
                                                 <br> <br>
                                                 <!--****************botones***********-->
-                                                <div class="timeline-footer" style="text-align: right;">
-                                                    <button class="btn btn-danger btn-sm"
-                                                        style="color: white">Cancelar</button>
+                                                <div class="timeline-footer" style="text-align:center;">
+                                                <h6>Restricciones: Cálculo aplicá solo para encimiendas nacionales, para las internacionales ponerse
+                                                    en contacto con la agencia.
+                                                </h6>
                                                 </div>
                                                 <!--**************fin de los botones*********-->
                                             </div>
@@ -339,6 +232,7 @@
 <script src="../../assets/vendor/sweetalert2/sweetalert2.js"></script>
 <script src="../../assets/vendor/inputmask/jquery.inputmask.js"></script>
 <!-- DataTables -->
+<script src="../../assets/vendor/jquery-validation/jquery.validate.js"></script>
 <script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="../../assets/vendor/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
