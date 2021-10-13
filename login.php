@@ -12,7 +12,7 @@ if (!isset($_SESSION["activo"])) {
 <head>
    <meta charset="utf-8" />
    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-   <title>Martínez Travels y Tours</title>
+   <title>Martínez Travels & Tours</title>
    <meta content="" name="description" />
    <meta content="" name="keywords" />
    <!-- Favicons -->
@@ -32,12 +32,12 @@ if (!isset($_SESSION["activo"])) {
 <body class="hold-transition login-page">
    <div class="login-box">
       <div class="login-logo">
-         <a href=""><br>Martínez Travels y Tours</a>
+         <a href=""><br>Martínez Travels & Tours</a>
       </div>
       <!-- /.login-logo -->
       <div class="card">
          <div class="card-body login-card-body">
-            <p class="login-box-msg">Identificate para iniciar sesión</p>
+            <p class="login-box-msg">Identifícate para Iniciar Sesión</p>
             <form id="login-form">
                <div class="input-group mb-3">
                   <input name="username" id="username" type="email" class="form-control"
@@ -67,7 +67,7 @@ if (!isset($_SESSION["activo"])) {
             <!-- /.social-auth-links -->
 
             <p class="mb-1" style="text-align: center;">
-               <a href="./reset_password.php">Olvide mi contraseña</a>
+               <a href="./reset_password.php">Olvidé mi Contraseña</a>
             </p>
 
          </div>
