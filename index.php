@@ -136,7 +136,7 @@ h6 {
             <main class="content">
                 <div class="slider">
                     <ul class="slides">
-                        <li data-background="assets/img/portfolio/2.jpg">
+                        <li data-background="assets/img/portfolio/paquetes.png">
                             <div class="container">
                                 <div class="slide-caption col-md-4">
                                     <h2 class="slide-title">Promociones de Paquetes Turísticos</h2>
@@ -147,7 +147,7 @@ h6 {
                                 </div>
                             </div>
                         </li>
-                        <li data-background="assets/img/portfolio/4.jpg">
+                        <li data-background="assets/img/portfolio/tours.png">
                             <div class="container">
                                 <div class="slide-caption col-md-4">
                                     <h2 class="slide-title">Promociones de Tours</h2>
@@ -158,7 +158,7 @@ h6 {
                                 </div>
                             </div>
                         </li>
-                        <li data-background="assets/img/portfolio/6.jpg">
+                        <li data-background="assets/img/portfolio/autos.png">
                             <div class="container">
                                 <div class="slide-caption col-md-4">
                                     <h2 class="slide-title">Flota Dispobible</h2>
