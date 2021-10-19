@@ -130,65 +130,66 @@ h6 {
     <!-- End Header -->
 
     <!-- INICIO Slider Area -->
+    <main id="main">
 
-    <body class="slider-collapse">
-        <div id="site-content">
-            <main class="content">
-                <div class="slider">
-                    <ul class="slides">
-                        <li data-background="assets/img/portfolio/paquetes.png">
-                            <div class="container">
-                                <div class="slide-caption col-md-4">
-                                    <h2 class="slide-title">Promociones de Paquetes Turísticos</h2>
-                                    <p>Consectetur adipisicing elit. Dignissimos fuga eos nihil repellat et enim, neque,
-                                        aliquid delectus quia hic praesentium sit, repudiandae pariatur deleniti vero.
-                                    </p>
-                                    <a href="servicios/paquetes/disponibles.php" class="button">ver Paquetes</a>
+        <body class="slider-collapse">
+            <div id="site-content">
+                <main class="content">
+                    <div class="slider">
+                        <ul class="slides">
+                            <li data-background="assets/img/portfolio/paquetes.png">
+                                <div class="container">
+                                    <div class="slide-caption col-md-4">
+                                        <h2 class="slide-title">Promociones de Paquetes Turísticos</h2>
+                                        <p>Adquire tu paquete con nosotros y haz realidad tus sueños en Centro América,
+                                            Sudamérica y Europa.
+                                        </p>
+                                        <a href="servicios/paquetes/disponibles.php" class="button">ver Paquetes</a>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li data-background="assets/img/portfolio/tours.png">
-                            <div class="container">
-                                <div class="slide-caption col-md-4">
-                                    <h2 class="slide-title">Promociones de Tours</h2>
-                                    <p>Consectetur adipisicing elit. Pariatur, ut assumenda, delectus illo est
-                                        dignissimos maiores quisquam rem nulla harum ratione, dolorum recusandae, unde
-                                        cumque sint</p>
+                            </li>
+                            <li data-background="assets/img/portfolio/tours.png">
+                                <div class="container">
+                                    <div class="slide-caption col-md-4">
+                                        <h2 class="slide-title">Promociones de Tours</h2>
+                                        <p>Tú elige el destino, nosotros te llevamos! haz realidad tus sueños viajando a
+                                            Centro América, Sudamérica y Europa.</p>
                                         <a href="servicios/tours/disponibles.php" class="button">ver Tours</a>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li data-background="assets/img/portfolio/autos.png">
+                            </li>
+                            <li data-background="assets/img/portfolio/autos.png">
+                                <div class="container">
+                                    <div class="slide-caption col-md-4">
+                                        <h2 class="slide-title">Flota Dispobible</h2>
+                                        <p>Si lo que quieres es movilizarte en modernos vehículos, pregunta por nuestro
+                                            servicio de alquiler de autos.</p>
+                                        <a href="servicios/vehiculos/disponibilidad.php" class="button">ver
+                                            Vehículos</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="flexslider-controls">
                             <div class="container">
-                                <div class="slide-caption col-md-4">
-                                    <h2 class="slide-title">Flota Dispobible</h2>
-                                    <p>Consectetur adipisicing elit. Facere excepturi itaque quasi dolorem deserunt
-                                        nesciunt neque debitis incidunt voluptatem, laudantium, odio fugit. Obcaecati
-                                        fugiat perferendis numquam?</p>
-                                        <a href="servicios/vehiculos/disponibilidad.php" class="button">ver Vehículos</a>
-                                </div>
+                                <ol class="flex-control-nav">
+                                    <li><a>1</a></li>
+                                    <li><a>2</a></li>
+                                    <li><a>3</a></li>
+                                </ol>
                             </div>
-                        </li>
-                    </ul>
-                    <div class="flexslider-controls">
-                        <div class="container">
-                            <ol class="flex-control-nav">
-                                <li><a>1</a></li>
-                                <li><a>2</a></li>
-                                <li><a>3</a></li>
-                            </ol>
                         </div>
                     </div>
-                </div>
-                <br>               
-            </main> <!-- .content -->
-        </div>
-    </body>
+                    <br>
+                </main> <!-- .content -->
+            </div>
+        </body>
+    </main>
     <!-- FIN Slider Area -->
 
     <main id="main">
         <!-- ======= About Section Quienes Somos ======= -->
-        
+
         <!-- End About Section Quienes Somos-->
         <!-- ======= Services Section ======= -->
         <div id="services" class="services-area area-padding">
