@@ -42,10 +42,9 @@
                                     <div class="timeline">
                                         <!-- timeline item -->
                                         <div id="formulario">
-                                            <i class="fas fa-box-open bg-green"></i>
+                                            <i class="fas fa-user bg-blue"></i>
                                             <div class="timeline-item">
                                                 <h3 class="timeline-header"><a href="#">Datos de cliente</a></h3>
-
                                                 <div class="timeline-body">
                                                     <form id="datosOrigen-form" name="register-form"
                                                         onsubmit="return false">
@@ -63,7 +62,6 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-
                                                             <div class="col-sm-6">
                                                                 <label>Teléfono</label>
                                                                 <div class="input-group">
@@ -74,29 +72,24 @@
                                                             </div>
                                                             <div class="col-sm-6">
                                                                 <div class="form-group">
-
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div>
                                                         </div>
-
                                                     </form>
                                                 </div>
                                             </div>
-
                                         </div>
                                         <!-- END timeline item -->
                                         <div>
                                             <i class="fas fa-box-open bg-green"></i>
                                             <div class="timeline-item">
                                                 <h3 class="timeline-header"><a href="#">Productos</a></h3>
-
                                                 <div class="timeline-body">
                                                     <form id="encomienda-form" name="register-form"
                                                         onsubmit="return false">
                                                         <div class="row">
-
                                                             <div class="col-sm-6">
                                                                 <div class="form-group multiple-form-group input-group">
                                                                     <label>Producto</label>
@@ -116,28 +109,21 @@
                                                                         class="form-control" placeholder="Costo">
                                                                 </div>
                                                             </div>
-
                                                             <div class="col-sm-3">
                                                                 <div class="form-group" id="mostrar">
-
                                                                 </div>
                                                             </div>
                                                         </div>
-
                                                         <div class="timeline-footer" style="text-align: right;">
                                                             <a class="btn btn-info btn-sm" id="agregarTabla"
                                                                 style="color: white">Agregar</a>
-
                                                         </div>
                                                     </form>
                                                 </div>
                                             </div>
-
                                         </div>
-                                        <!-- END timeline item -->
-                                        <!-- timeline item -->
                                         <div id="tabla">
-                                            <i class="fas fa-user bg-green"></i>
+                                            <i class="fas fa-file-invoice-dollar bg-red"></i>
                                             <div class="timeline-item">
                                                 <h3 class="timeline-header no-border"><a href="#">Agregando
                                                         Información</a></h3>
@@ -148,7 +134,9 @@
                                                                 <div class="col-sm-3">
                                                                     <div class="form-group">
                                                                         <div class="input-group">
-                                                                            <input id="porcenaje" type="hidden" min="1" value="1" class="form-control" id="porcenaje">
+                                                                            <input id="porcenaje" type="hidden" min="1"
+                                                                                value="1" class="form-control"
+                                                                                id="porcenaje">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -168,12 +156,8 @@
                                                                 </thead>
                                                                 <tbody style="text-align: center;">
                                                                 </tbody>
-
                                                             </table>
                                                         </div>
-
-
-
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-md-1 col-md-offset-1"> </div>
@@ -184,11 +168,12 @@
                                                             <label id="total" class="text-primary "> $0</label>
                                                         </div>
                                                     </div>
-                                                   
+
                                                     <div class="row">
                                                         <div class="col-md-1 col-md-offset-1"> </div>
                                                         <div class="col-md-3  ">
-                                                            <label class="text-danger "> Total de cliente + Envío: </label>
+                                                            <label class="text-danger "> Total de cliente + Envío:
+                                                            </label>
                                                         </div>
                                                         <div class="col-md-3  ">
                                                             <label id="totalCliente" class="text-danger "> $0</label>
@@ -198,13 +183,13 @@
                                                 <br> <br>
                                                 <!--****************botones***********-->
                                                 <div class="timeline-footer" style="text-align:center;">
-                                                <h6>Restricciones: Cálculo aplicá solo para encimiendas nacionales, para las internacionales ponerse
-                                                    en contacto con la agencia.
-                                                </h6>
+                                                    <h6>Restricciones: Cálculo aplica solo para encomiendas nacionales,
+                                                        para las internacionales ponerse
+                                                        en contacto con la agencia.
+                                                    </h6>
                                                 </div>
                                                 <!--**************fin de los botones*********-->
                                             </div>
-
                                         </div>
                                         <!-- END timeline item -->
                                         <!-- /.timeline-label -->
@@ -213,9 +198,6 @@
                                 </div>
                             </div>
                         </section>
-
-                        <!--AQUI COLOCARE MI DISEÑO FIN-->
-
                     </div><!-- /overlay-wrapper -->
                 </div><!-- /.container-fluid -->
             </section>

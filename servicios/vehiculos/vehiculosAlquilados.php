@@ -25,7 +25,7 @@
 
                                 <div class="card">
                                     <div class="card-header">
-                                        <h3 class="card-title">Historial de Vehiculos Alquilados</h3>
+                                        <h3 class="card-title">Historial de Vehículos Alquilados</h3>
                                     </div>
                                     <!-- /.card-header -->
                                     <div class="card-body">
@@ -38,17 +38,16 @@
                                                             <thead style="text-align: center;">
                                                                 <tr>
                                                                     <th>ID Alquiler</th>
-                                                                    <th>Vehiculo</th>
+                                                                    <th>Vehículo</th>
                                                                     <th>Año</th>
                                                                     <th>Fecha - Hora</th>
-                                                                    <th>Precio</th>
+                                                                    <th>Precio ($)</th>
                                                                     <th>Acciones</th>
                                                                 </tr>
                                                             </thead>
                                                             <!-- /.inicio de loading -->
                                                             <div class="overlay-wrapper">
                                                                 <div id="loading" class="overlay"><i class="fas fa-3x fa-sync-alt fa-spin"></i>
-
                                                                     <div class="text-bold pt-2">Cargando...
                                                                     </div>
                                                                 </div>
@@ -56,12 +55,10 @@
                                                                 </tbody>
                                                             </div>
                                                             <!-- /.fin de loading -->
-
                                                         </table>
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
                                     <!-- /.card-body -->
@@ -71,9 +68,6 @@
                             <!-- /.col -->
                         </div>
                         <!-- /.row -->
-
-                        <!--AQUI COLOCARE MI DISEÑO FIN-->
-
                     </div><!-- /overlay-wrapper -->
                 </div><!-- /.container-fluid -->
             </section>

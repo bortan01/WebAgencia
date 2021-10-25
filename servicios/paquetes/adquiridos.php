@@ -26,15 +26,7 @@ table.dataTable tbody td {
    <!-- ======= Blog Page ======= -->
    <div class="blog-page area-padding">
       <div class="container">
-         <div class="row">
-            <br>
-            <div class="col-md-12 col-sm-12 col-xs-12">
-               <div class="section-headline services-head text-center">
-                  <h2>Tours/Paquetes Adquiridos</h2>
-               </div>
-            </div>
-            <br>
-         </div>
+         
          <!-- Main content -->
          <section class="content">
             <div class="container-fluid">
