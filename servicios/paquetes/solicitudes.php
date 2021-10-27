@@ -26,11 +26,7 @@ table.dataTable tbody td {
       <div class="container">
          <div class="row">
             <br>
-            <div class="col-md-12 col-sm-12 col-xs-12">
-               <div class="section-headline services-head text-center">
-                  <h2>Solicitudes de Cotización</h2>
-               </div>
-            </div>
+            
             <br>
          </div>
          <!-- Main content -->
@@ -72,7 +68,7 @@ table.dataTable tbody td {
                                                 <tbody id="tableBody" style="text-align: center;">
                                                 </tbody>
                                              </div>
-                                             <!-- /.fin de loading -->
+                                             <!--/.fin de loading -->
                                           </table>
                                        </div>
                                     </div>
