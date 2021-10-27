@@ -19,7 +19,7 @@ $(document).ready(function() {
                 { data: "botones" }
             ],
             columnDefs: [
-                { "className": "dt-center", "targets": "_all" },
+                { "className": "text-center", "targets": "_all" },
 
                 { targets: [5], visible: false },
             ]

@@ -45,16 +45,7 @@
                                                                     <th>Acciones</th>
                                                                 </tr>
                                                             </thead>
-                                                            <!-- /.inicio de loading -->
-                                                            <div class="overlay-wrapper">
-                                                                <div id="loading" class="overlay"><i class="fas fa-3x fa-sync-alt fa-spin"></i>
-                                                                    <div class="text-bold pt-2">Cargando...
-                                                                    </div>
-                                                                </div>
-                                                                <tbody id="tableBody" style="text-align: center;">
-                                                                </tbody>
-                                                            </div>
-                                                            <!-- /.fin de loading -->
+                                                           
                                                         </table>
                                                     </div>
                                                 </div>
