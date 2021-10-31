@@ -10,68 +10,63 @@
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 
 <main id="main" style="padding-top: 55px;">
-    <!-- ======= Blog Page ======= -->
-    <div class="blog-page area-padding">
-        <div class="container">
-            <!-- Main content -->
-            <section class="content">
-                <div class="container-fluid">
-                    <div class="overlay-wrapper">
+   <!-- ======= Blog Page ======= -->
+   <div class="blog-page area-padding">
+      <div class="container">
+         <!-- Main content -->
+         <section class="content">
+            <div class="container-fluid">
+               <div class="overlay-wrapper">
 
-                        <!--AQUI COLOCARE MI DISEÑO-->
-                        <div class="row">
-                            <div class="col-12">
+                  <!--AQUI COLOCARE MI DISEÑO-->
+                  <div class="row">
+                     <div class="col-12">
 
 
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Historial de Vehículos Alquilados</h3>
+                        <div class="card">
+                           <div class="card-header">
+                              <h3 class="card-title">Historial de Vehículos Alquilados</h3>
+                           </div>
+                           <!-- /.card-header -->
+                           <div class="card-body">
+                              <div id="" class="dataTables_wrapper dt-bootstrap4">
+                                 <div class="row">
+                                    <div class="table-responsive">
+
+                                       <div class="col-sm-12">
+                                          <table id="tabla_historial" class="table table-bordered table-striped">
+                                             <thead style="text-align: center;">
+                                                <tr>
+                                                   <th>ID Alquiler</th>
+                                                   <th>Vehículo</th>
+                                                   <th>Año</th>
+                                                   <th>Fecha - Hora</th>
+                                                   <th>Precio ($)</th>
+                                                   <th>Acciones</th>
+                                                </tr>
+                                             </thead>
+
+                                          </table>
+                                       </div>
                                     </div>
-                                    <!-- /.card-header -->
-                                    <div class="card-body">
-                                        <div id="" class="dataTables_wrapper dt-bootstrap4">
-                                            <div class="row">
-                                                <div class="table-responsive">
-
-                                                    <div class="col-sm-12">
-                                                        <table id="tabla_historial" class="table table-bordered table-striped">
-                                                            <thead style="text-align: center;">
-                                                                <tr>
-                                                                    <th>ID Alquiler</th>
-                                                                    <th>Vehículo</th>
-                                                                    <th>Año</th>
-                                                                    <th>Fecha - Hora</th>
-                                                                    <th>Precio ($)</th>
-                                                                    <th>Acciones</th>
-                                                                </tr>
-                                                            </thead>
-                                                           
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /.card-body -->
-                                </div>
-                                <!-- /.card -->
-                            </div>
-                            <!-- /.col -->
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- /.card-body -->
                         </div>
-                        <!-- /.row -->
-                    </div><!-- /overlay-wrapper -->
-                </div><!-- /.container-fluid -->
-            </section>
-        </div>
-    </div><!-- End Blog Page -->
+                        <!-- /.card -->
+                     </div>
+                     <!-- /.col -->
+                  </div>
+                  <!-- /.row -->
+               </div><!-- /overlay-wrapper -->
+            </div><!-- /.container-fluid -->
+         </section>
+      </div>
+   </div><!-- End Blog Page -->
 </main><!-- End #main -->
-<script>
-    let id = localStorage.getItem('id_cliente');
-    console.log(id);
-</script>
-
 <?php include_once('../../layaut/plantilla/footer.php'); ?>
-!-- PONER SCRIPT ADICIONALES ACA -->
+
 <script src="../../assets/vendor/jquery-ui/jquery-ui.min.js"></script>
 <script src="../../assets/vendor/sweetalert2/sweetalert2.js"></script>
 <!-- DataTables -->
