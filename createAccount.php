@@ -383,7 +383,8 @@ if (!isset($_SESSION["activo"])) {
    <!-- End  Footer -->
 
    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-   <div id="preloader"></div>
+   <!-- preloader -->
+   <div id=""></div>
 
    <!-- Vendor JS Files -->
    <script src="assets/vendor/jquery/jquery.min.js"></script>

@@ -124,7 +124,7 @@ html, body{
 	overflow-x: hidden;
 }
 .write-message{
-	padding-top: 10px;
+	padding-top: 3px;
 }
 .message-area{
 	height: 50px;
@@ -169,6 +169,14 @@ html, body{
 }
 .message-block .message{
 	background: #0084ff;
+	color: #fff;
+	border-radius: 10px;
+	padding:5px;
+	display: inline-block;
+	margin: 0px 1% 0px 2%;
+}
+.message-block .message-grey{
+	background: grey;
 	color: #fff;
 	border-radius: 10px;
 	padding:5px;

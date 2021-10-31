@@ -92,8 +92,8 @@ $(document).ready(function () {
                 FLOTA = response.autos;
                 for (let index = 0; index < FLOTA.length; index++) {
                     let html = "";
-                    html += '<div class="col-xs-6 col-sm-4">';
-                    html += '    <div class="fall-item fall-effect">';
+                    html += '<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">';
+                    html += '    <div class="fall-item fall-effect mx-auto">';
                     html += '        <img  src="' + FLOTA[index].foto + '" />';
                     html += '        <div class="mask">';
                     html += '            <h2 id="">' + FLOTA[index].modelo + '</h2>';

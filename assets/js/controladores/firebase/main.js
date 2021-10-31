@@ -55,12 +55,15 @@ function login() {
               });
             }
           }).catch(function (error) {
+            $("#login-btn").prop('disabled', false);
+            $("#login-btn").html(btnHTML);
             // Handle Errors here.
             let errorCode = error.code;
             let errorMessage = error.message;
             alert(errorMessage);
           });
       } else {
+        $("#login-btn").prop('disabled', false);
         $("#login-btn").html(btnHTML);
         Toast.fire({
           title: 'Oops...',
@@ -70,6 +73,8 @@ function login() {
         });
       }
     } else {
+      $("#login-btn").prop('disabled', false);
+      $("#login-btn").html(btnHTML);
       Toast.fire({
         title: 'Oops...',
         icon: 'error',

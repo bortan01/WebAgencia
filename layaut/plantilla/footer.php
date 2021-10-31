@@ -103,7 +103,8 @@
 <!-- End  Footer -->
 
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-<div id="preloader"></div>
+<!--  preloader-->
+<div id=""></div>
 
 <!-- FIREBASE -->
 <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-app.js"></script>

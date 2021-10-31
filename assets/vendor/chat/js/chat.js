@@ -106,7 +106,7 @@ function realTime() {
             //debe de mostrar la foto de quien se esta recibiendo el mensaje (la imagen que aca de darse click) RECEPTOR
             newMessage +=
               '<div class="message-block ">' +
-              '   <div class="message">' + change.doc.data().message + "</div>" +
+              '   <div class="message-grey">' + change.doc.data().message + "</div>" +
               "</div>";
           }
         }
@@ -182,7 +182,7 @@ $('#chats').scroll(function () {
               //debe de mostrar la foto de quien se esta recibiendo el mensaje (la imagen que aca de darse click) RECEPTOR
               let newMessage =
                 '<div class="message-block ">' +
-                '   <div class="message">' + doc.data().message + "</div>" +
+                '   <div class="message-grey">' + doc.data().message + "</div>" +
                 "</div>";
               arrMessage.push(newMessage);
             }

@@ -91,8 +91,8 @@ $(document).ready(function () {
             ARR_TUR = response;
             for (let index = 0; index < ARR_TUR.length; index++) {
                let html = "";
-               html += '<div class="col-xs-6 col-sm-4">';
-               html += '    <div class="fall-item fall-effect">';
+               html += '<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">';
+               html += '    <div class="fall-item fall-effect mx-auto">';
                html += '        <img  src="' + ARR_TUR[index].foto + '" />';
                html += '        <div class="mask">';
                html += '            <h2 id="">' + ARR_TUR[index].nombreTours + '</h2>';
