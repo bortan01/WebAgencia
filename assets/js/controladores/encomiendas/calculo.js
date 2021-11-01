@@ -7,12 +7,11 @@ $(document).ready(function () {
      $('#cliente').val(nombre);
      $('#telefono').val(celular);
 
-
-
     let contadorTabla = 0;
     let TOTAL = 0.0;
     let COMISION = 0.0;
     let TOTALCLIENTE = 0.0;
+    let COSTO_ENVIO = 0;
     // let cantidad = document.getElementById("cantidad");
     let tabla = $('#add-tabla').DataTable({
         "paging": true,
@@ -75,6 +74,7 @@ $(document).ready(function () {
             tabla.order([6, 'desc']).draw();
             contadorTabla++;
         }
+        modificarCostoEnvio();
         modificarTotal();
         modificarComision();
         modificarTotalCliente();
@@ -113,13 +113,24 @@ $(document).ready(function () {
     function modificarTotalCliente() {
 
         $('#totalCliente').empty();
-        $('#totalCliente').text("$" + (TOTAL + COMISION));
+        $('#totalCliente').text("$" + (TOTAL + COMISION + COSTO_ENVIO));
+    }
+    function modificarCostoEnvio() {
+        // DATA_MUNICIPIOS esta difinida en el js encominda/producto.js
+        let id = document.getElementById('municipio_envio').value;
+        let municipio_envio = DATA_MUNICIPIOS.find(municipio_envio => municipio_envio.id_municipio === id);
+        COSTO_ENVIO = parseInt(municipio_envio.costo_agregado);
+        $('#envio').empty();
+        $('#envio').text("$" + (municipio_envio.costo_agregado));
+
+
     }
     
     //BOTON DE ELIMINAR
     $(document).on('click', '.btn-group .btn-danger', function (evento) {
 
         tabla.row($(this).parents('tr')).remove().draw();
+        modificarCostoEnvio();
         modificarTotal();
         modificarComision();
         modificarTotalCliente();
