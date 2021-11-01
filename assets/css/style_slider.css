@@ -28,7 +28,7 @@
 }
 @media (min-width: 992px) {
   .container, .slider .flexslider-controls .flex-control-nav {
-    width: 970px;
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
