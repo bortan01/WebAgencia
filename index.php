@@ -34,6 +34,7 @@ if (isset($_SESSION["activo"])) {
    <link href="assets/css/animate.min.css" rel="stylesheet" />
    <link href="assets/css/style_slider.css" rel="stylesheet" />
    <link href="assets/vendor/galery/disponibilidad.css" rel="stylesheet">
+   <link href="assets/css/avatar.css" rel="stylesheet">
 
 
 </head>
@@ -47,14 +48,6 @@ h6 {
 .centrar {
 
    text-align: center;
-}
-
-
-.user-image {
-   width: 50px;
-   height: 50px;
-   background: #cecece;
-   border-radius: 50px;
 }
 </style>
 
@@ -132,13 +125,13 @@ h6 {
                      <?php endif; ?>
                   </ul>
                </li>
+               <?php if (isset($_SESSION["activo"])) : ?>
                <li><a style="padding: 0px; margin-top: -4px;" href="#">
-                     <div class="user-image"><img src="assets/img/no-user.png" class="user-image">
+                     <div class="user-image"><img src="assets/img/no-user.png" id="avatar-img" class="user-image">
                      </div>
                   </a>
                </li>
-
-
+               <?php endif; ?>
             </ul>
          </nav>
          <!-- .nav-menu -->
@@ -634,6 +627,7 @@ h6 {
    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-auth.js"></script>
    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-firestore.js"></script>
    <script src="assets/vendor/jquery/jquery.min.js"></script>
+   <script src="assets/js/controladores/client/changeAvatar.js"></script>
    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
    <script src="assets/vendor/php-email-form/validate.js"></script>

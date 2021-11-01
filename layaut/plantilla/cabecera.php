@@ -26,13 +26,21 @@
    <link href="../../assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
    <link href="../../assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
    <link href="../../assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-   <link href="../../assets/vendor/nivo-slider/css/nivo-slider.css" rel="stylesheet" />
-   <link href="../../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
+   <link href="../../assets/css/slider.css" rel="stylesheet" />
    <link href="../../assets/vendor/venobox/venobox.css" rel="stylesheet" />
    <link href="../../assets/css/adminlte.css" rel="stylesheet" />
-
-   
-
-   <!-- Template Main CSS File -->
+   <!-- Templat../../e Main CSS File -->
    <link href="../../assets/css/style.css" rel="stylesheet" />
+   <link href="../../assets/css/animate.min.css" rel="stylesheet" />
+   <link href="../../assets/css/style_slider.css" rel="stylesheet" />
+   <link href="../../assets/vendor/galery/disponibilidad.css" rel="stylesheet">
+   <link href="../../assets/css/avatar.css" rel="stylesheet">
+
+
+   <link href="../../assets/vendor/nivo-slider/css/nivo-slider.css" rel="stylesheet" />
+   <link href="../../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+   <link href="../../assets/css/style.css" rel="stylesheet" />
+   <!-- Template Main CSS File -->
+
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">

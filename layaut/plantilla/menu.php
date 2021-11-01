@@ -3,7 +3,7 @@
 <body data-spy="scroll" data-target="#navbar-example">
    <!-- ======= Header ======= -->
    <header id="header" class="fixed-top">
-      <div class="container d-flex" style="max-width: 1000px;">
+      <div class="container d-flex" style="max-width: 100%;">
          <div class="logo mr-auto">
             <h1 class="text-light">
                <a href="../../index.php"><span>Martínez</span>Travels & Tours</a>
@@ -73,6 +73,14 @@
                      <?php endif; ?>
                   </ul>
                </li>
+               <?php if (isset($_SESSION["activo"])) : ?>
+               <li><a style="padding: 0px; margin-top: -4px;" href="#">
+                     <div class="user-image"><img src="./../../assets/img/no-user.png" id="avatar-img"
+                           class="user-image">
+                     </div>
+                  </a>
+               </li>
+               <?php endif; ?>
 
             </ul>
          </nav>
