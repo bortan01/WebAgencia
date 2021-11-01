@@ -349,7 +349,7 @@ h6 {
          <!-- ======= contenedor promociones ======= -->
          <div id="promociones" class="promociones-area area-padding">
             <div class="">
-               <div class="row">
+               <div class="">
                   <div class="col-md-12 col-sm-12 col-xs-12">
                      <div class="section-headline services-head text-center">
                         <h2>Promociones</h2>

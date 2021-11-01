@@ -66,7 +66,7 @@ $(document).ready(function() {
                 promo = response.promociones;
                 for (let index = 0; index < promo.length; index++) {
                     let html = "";
-                    html += '<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">';
+                    html += '<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"  style="padding: 0px;" >';
                     html += '    <div class="fall-item fall-effect mx-auto">';
                     html += '        <img  src="' + promo[index].foto + '"/>';
                     html += '        <div class="mask">';
