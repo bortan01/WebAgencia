@@ -26,7 +26,7 @@ table.dataTable tbody td {
    <!-- ======= Blog Page ======= -->
    <div class="blog-page area-padding">
       <div class="container">
-         
+
          <!-- Main content -->
          <section class="content">
             <div class="container-fluid">
@@ -108,7 +108,7 @@ table.dataTable tbody td {
             <section class="content">
 
                <!-- Default box -->
-               <div class="card card-solid">
+               <div class="card-solid">
                   <div class="card-body">
                      <div class="row">
                         <div class="col-12 col-sm-6">
@@ -270,6 +270,9 @@ table.dataTable tbody td {
                      </div>
                   </div>
 
+               </div>
+               <div class="modal-footer justify-content-center">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                </div>
 
          </div>

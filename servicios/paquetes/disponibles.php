@@ -206,6 +206,7 @@
                <div class="modal-footer justify-content-center">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                </div>
+            </section>
          </div>
       </div>
       <!-- /.card-body -->

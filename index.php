@@ -501,6 +501,9 @@ h6 {
                               </div>
                               <!-- /.card-body -->
                            </div>
+                           <div class="modal-footer justify-content-center">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                           </div>
                            <!-- /.card -->
                         </section>
                      </div>

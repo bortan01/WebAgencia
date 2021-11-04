@@ -53,7 +53,7 @@ h6 {
             <section class="content">
 
                <!-- Default box -->
-               <div class="card card-solid">
+               <div class="card-solid">
                   <div class="card-body">
                      <div class="row">
                         <div class="col-12 col-sm-6">
@@ -216,6 +216,9 @@ h6 {
                   <!-- /.card-body -->
                </div>
                <!-- /.card -->
+               <div class="modal-footer justify-content-center">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+               </div>
 
             </section>
          </div>
