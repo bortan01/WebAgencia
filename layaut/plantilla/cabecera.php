@@ -40,7 +40,7 @@
    <link href="../../assets/vendor/nivo-slider/css/nivo-slider.css" rel="stylesheet" />
    <link href="../../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
-   <link href="../../assets/css/style.css" rel="stylesheet" />
+   <!-- <link href="../../assets/css/style.css" rel="stylesheet" /> -->
    <!-- Template Main CSS File -->
 
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">

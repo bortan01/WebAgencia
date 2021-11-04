@@ -372,7 +372,7 @@ h6 {
                         <section class="content">
 
                            <!-- Default box -->
-                           <div class="card card-solid">
+                           <div class="card-solid">
                               <div class="card-body">
                                  <div class="row">
                                     <div class="col-12 col-sm-6">

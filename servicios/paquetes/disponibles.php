@@ -37,11 +37,9 @@
    <div class="modal fade" id="modal-editar">
       <div class="modal-dialog modal-xl modal-dialog-centered">
          <div class="modal-content">
-
             <section class="content">
-
                <!-- Default box -->
-               <div class="card card-solid">
+               <div class="card-solid">
                   <div class="card-body">
                      <div class="row">
                         <div class="col-12 col-sm-6">
@@ -204,12 +202,12 @@
 
                      </div>
                   </div>
-
                </div>
-
+               <div class="modal-footer justify-content-center">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+               </div>
          </div>
       </div>
-
       <!-- /.card-body -->
    </div>
    <!-- /.card -->
