@@ -22,7 +22,7 @@ function inicializarTabla() {
          }
       },
       columns: [
-         { data: "fechaPeticion" },
+         { data: "fechaPeticionWeb" },
          { data: "peticion" },
          { data: "respuesta" },
       ],

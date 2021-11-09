@@ -19128,9 +19128,11 @@ html.maximized-card {
 }
 
 .btn-default {
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa;
     border-color: #ddd;
-    color: #444;
+    color: #444; */
+    background-color: #19bdce;
+    color: white;
 }
 
 .btn-default:hover,
