@@ -68,7 +68,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            
+
 
                                                             <div class="col-sm-3">
                                                                 <!-- text input -->
@@ -160,7 +160,7 @@
                                                                         class="form-control" value="08:00" />
                                                                 </div>
                                                             </div>
-                                                            
+
                                                         </div>
                                                         <div class="timeline-footer" style="text-align: right;">
                                                             <button name="btnGuardarCotizacionV"
@@ -228,6 +228,24 @@ $(function() {
     });
 
 })
+</script>
+<script>
+$(function() {
+    var hoy = new Date();
+    var dd = hoy.getDate();
+    var mm = hoy.getMonth() + 1;
+    var yyyy = hoy.getFullYear();
+    if (dd < 10) {
+        dd = '0' + dd
+    }
+    if (mm < 10) {
+        mm = '0' + mm
+    }
+
+    hoy = yyyy + '-' + mm + '-' + dd;
+    document.getElementById("fechaRecogida").setAttribute("min", hoy);
+    document.getElementById("fechaDevolucion").setAttribute("min", hoy);
+});
 </script>
 
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>
