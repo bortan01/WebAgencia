@@ -26,6 +26,7 @@ $(document).ready(function() {
             form.append("ciudad_partida", document.getElementById("ciudad_partida").value);
             form.append("fechaPartida", document.getElementById("fechaPartida").value);
             form.append("HoraPartida", document.getElementById("timepicker").value);
+            form.append("ciudad_destino", document.getElementById("ciudad_destino").value);
             form.append("ciudad_llegada", document.getElementById("ciudad_llegada").value);
             form.append("fechaLlegada", document.getElementById("fechaLlegada").value);
             form.append("HoraLlegada", document.getElementById("timepicker2").value);
@@ -100,6 +101,10 @@ $(document).ready(function() {
                 fechaPartida: {
                     required: true
                 },
+                ciudad_destino: {
+                    required: true,
+                    minlength: 10
+                },
                 idaerolinea: {
                     required: true
                 },
@@ -138,6 +143,9 @@ $(document).ready(function() {
                 fechaPartida: {
                     required: "Seleccione Fecha de Partida",
 
+                },
+                ciudad_destino: {
+                    required: "Debe de proporcionar la ciudad de destino",
                 },
                 idaerolinea: {
                     required: "Seleccione Aerolinea",

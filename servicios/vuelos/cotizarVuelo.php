@@ -105,14 +105,22 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3">
-                                                                <label>Hora Estimada de Llegada</label>
+                                                                <label>Hora Estimada de Partida</label>
                                                                 <div class="input-group clockpicker"
                                                                     data-autoclose="true">
                                                                     <input type="text" id="timepicker" name="start"
                                                                         class="form-control" value="08:00" />
                                                                 </div>
                                                             </div>
-
+                                                            <div class="col-sm-12">
+                                                                <!-- text input -->
+                                                                <div class="form-group">
+                                                                    <label>Punto de Destino</label>
+                                                                    <input type="text" class="form-control"
+                                                                        name="ciudad_destino" id="ciudad_destino"
+                                                                        placeholder="Ejemplo: Los Angeles, Estados Unidos">
+                                                                </div>
+                                                            </div>
                                                         </div>
 
                                                     </div>
@@ -337,7 +345,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                   
+
                                                     <div class="timeline-footer" style="text-align: right;">
                                                         <button name="btnGuardarCotizacion" id="btnGuardarCotizacion"
                                                             class="btn btn-info btn-sm"

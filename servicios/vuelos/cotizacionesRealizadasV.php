@@ -37,10 +37,11 @@
                                                             <thead style="text-align: center;">
                                                                 <tr>
                                                                     <th>Ciudad de Partida</th>
-                                                                    <th>Ciudad de Llegada</th>
+                                                                    <th>Ciudad de Destino</th>
                                                                     <th>Aerolinea</th>
                                                                     <th>Opc Avanzadas</th>
                                                                     <th>Precio ($)</th>
+                                                                    <th>Respuesta</th>
                                                                     <th>Acciones</th>
                                                                 </tr>
                                                             </thead>

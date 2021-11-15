@@ -12,16 +12,17 @@ $(document).ready(function() {
             columns: [
 
                 { data: "ciudad_partida" },
-                { data: "ciudad_llegada" },
+                { data: "ciudad_destino" },
                 { data: "nombre_aerolinea" },
                 { data: "opc_avanzadas" },
                 { data: "total" },
+                { data: "respuesta" },
                 { data: "botones" }
             ],
             columnDefs: [
                 { "className": "text-center", "targets": "_all" },
 
-                { targets: [5], visible: false },
+                { targets: [6], visible: false },
             ]
         });
 
@@ -49,11 +50,11 @@ $(document).ready(function() {
                     let nuevoDetalle = {
 
                         ciudad_partida: response.informacion[i].ciudad_partida,
-                        ciudad_llegada: response.informacion[i].ciudad_llegada,
+                        ciudad_destino: response.informacion[i].ciudad_destino,
                         nombre_aerolinea: response.informacion[i].nombre_aerolinea,
                         opc_avanzadas: response.informacion[i].opc_avanzadas,
                         total: response.informacion[i].total,
-
+                        respuesta: response.informacion[i].respuesta,
                         botones: html,
                     };
                     tablaCotizaciones.row.add(nuevoDetalle).draw(false);
