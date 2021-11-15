@@ -97,9 +97,8 @@ $(document).ready(function() {
                     required: true,
                     minlength: 10
                 },
-                ciudad_llegada: {
-                    required: true,
-                    minlength: 10
+                fechaPartida: {
+                    required: true
                 },
                 idaerolinea: {
                     required: true
@@ -109,27 +108,35 @@ $(document).ready(function() {
                 },
                 adultos: {
                     required: true,
-                    number: true
+                    pattern: /^[\d\s]+$/,
+                    number: true,
+                    minlength: 1
                 },
                 ninos: {
                     required: true,
-                    number: true
+                    pattern: /^[\d\s]+$/,
+                    number: true,
+                    minlength: 1
                 },
                 bebes: {
                     required: true,
-                    number: true
+                    pattern: /^[\d\s]+$/,
+                    number: true,
+                    minlength: 1
                 },
                 maletas: {
                     required: true,
-                    number: true
+                    pattern: /^[\d\s]+$/,
+                    number: true,
+                    minlength: 1
                 }
             },
             messages: {
                 ciudad_partida: {
                     required: "Debe de proporcionar la ciudad de partida",
                 },
-                ciudad_llegada: {
-                    required: "Debe de proporcionar la ciudad de llegada",
+                fechaPartida: {
+                    required: "Seleccione Fecha de Partida",
 
                 },
                 idaerolinea: {
@@ -137,19 +144,23 @@ $(document).ready(function() {
 
                 },
                 idclase: {
-                    required: "Seleccione el tipo de clase"
+                    required: "Seleccione el Tipo de Clase"
                 },
                 adultos: {
-                    required: "Ingrese solo numeros"
+                    pattern: "Ingrese solo números enteros",
+                    required: "Ingrese solo números enteros"
                 },
                 ninos: {
-                    required: "Ingrese solo numeros"
+                    pattern: "Ingrese solo números enteros",
+                    required: "Ingrese solo números enteros"
                 },
                 bebes: {
-                    required: "Ingrese solo numeros"
+                    pattern: "Ingrese solo números enteros",
+                    required: "Ingrese solo números enteros"
                 },
                 maletas: {
-                    required: "Ingrese solo numeros"
+                    pattern: "Ingrese solo números enteros",
+                    required: "Ingrese solo números enteros"
                 }
 
             },

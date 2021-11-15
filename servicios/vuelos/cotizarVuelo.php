@@ -12,7 +12,19 @@
 <link rel="stylesheet" href="../../assets/vendor/icheck-bootstrap/icheck-bootstrap.min.css">
 
 
+<style>
+#desborde {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
 
+.add-margin {
+    margin-right: 600px
+}
+</style>
 
 
 <!-- Theme style -->
@@ -43,16 +55,12 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="timeline">
-
                                             <div>
-                                                <i class="fas fa-plane bg-blue"></i>
+                                                <i class="fas fa-user bg-blue"></i>
                                                 <div class="timeline-item">
-
                                                     <h3 class="timeline-header"><a href="#">Datos Generales</a></h3>
-
                                                     <div class="timeline-body">
                                                         <div class="row">
-
                                                             <div class="col-sm-12">
                                                                 <!-- text input -->
                                                                 <div class="form-group multiple-form-group input-group">
@@ -64,8 +72,20 @@
                                                                             placeholder="Cliente">
                                                                     </div>
                                                                 </div>
-
                                                             </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <i class="fas fa-plane bg-red"></i>
+                                                <div class="timeline-item">
+                                                    <h3 class="timeline-header"><a href="#">Datos de Vuelos (Ida)</a>
+                                                    </h3>
+                                                    <div class="timeline-body">
+                                                        <div class="row">
 
                                                             <div class="col-sm-6">
                                                                 <!-- text input -->
@@ -73,115 +93,124 @@
                                                                     <label>Punto de Partida</label>
                                                                     <input type="text" class="form-control"
                                                                         name="ciudad_partida" id="ciudad_partida"
-                                                                        placeholder="Digite nombre del Lugar">
+                                                                        placeholder="Ejemplo: San Salvador, El Salvador">
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <!-- text input -->
                                                                 <div class="form-group">
-                                                                    <label>Fecha</label>
+                                                                    <label>Fecha de Partida</label>
                                                                     <input type="date" class="form-control"
                                                                         name="fechaPartida" id="fechaPartida">
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3">
-                                                                <label>Hora de Llegada</label>
+                                                                <label>Hora Estimada de Llegada</label>
                                                                 <div class="input-group clockpicker"
                                                                     data-autoclose="true">
                                                                     <input type="text" id="timepicker" name="start"
                                                                         class="form-control" value="08:00" />
-
                                                                 </div>
-
                                                             </div>
 
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <i class="fas fa-plane bg-red"></i>
+                                                <div class="timeline-item">
+
+                                                    <h3 class="timeline-header"><a class="add-margin" href="#">Datos de
+                                                            Vuelos
+                                                            (Retorno)</a>
+                                                        <input name="chec" type="checkbox" id="chec"
+                                                            onChange=" comprobar(this);" />
+                                                        <label for="chec">Habilitar Formulario</label>
+                                                    </h3>
+
+                                                    <div class="timeline-body">
+                                                        <div class="row">
                                                             <div class="col-sm-6">
                                                                 <!-- text input -->
                                                                 <div class="form-group">
-                                                                    <label>Punto de Llegada</label>
-                                                                    <input type="text" class="form-control"
+                                                                    <label>Punto de Retorno</label>
+                                                                    <input disabled type="text" class="form-control"
                                                                         name="ciudad_llegada" id="ciudad_llegada"
-                                                                        placeholder="Digite nombre del Lugar">
+                                                                        placeholder="Ejemplo: Los Angeles, Estados Unidos">
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <!-- text input -->
                                                                 <div class="form-group">
-                                                                    <label>Fecha</label>
-                                                                    <input type="date" class="form-control"
+                                                                    <label>Fecha de Retorno</label>
+                                                                    <input disabled type="date" class="form-control"
                                                                         name="fechaLlegada" id="fechaLlegada">
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3">
-                                                                <label>Hora de Llegada</label>
+                                                                <label>Hora Estimada de Retorno</label>
                                                                 <div class="input-group clockpicker"
                                                                     data-autoclose="true">
-                                                                    <input type="text" id="timepicker2" name="start"
-                                                                        class="form-control" value="08:00" />
-
+                                                                    <input disabled type="text" id="timepicker2"
+                                                                        name="start" class="form-control" value="08:00"
+                                                                        readonly />
                                                                 </div>
-
                                                             </div>
                                                         </div>
 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <i class="fas fa-luggage-cart bg-green"></i>
+                                                <div class="timeline-item">
+                                                    <h3 class="timeline-header no-border"><a href="#">Opciones
+                                                            Avanzadas</a></h3>
+                                                    <div class="timeline-body">
                                                         <div class="row">
                                                             <div class="col-sm-3">
                                                                 <div class="form-group">
                                                                     <label>Adultos (+12 años)</label>
-                                                                    <input type="number" class="form-control" min="0"
-                                                                        max="100" name="adultos" id="adultos">
+                                                                    <input type="number" class="form-control"
+                                                                        name="adultos" id="adultos">
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <div class="form-group">
                                                                     <label>Niños (5 a 11 años)</label>
-                                                                    <input type="number" class="form-control" min="0"
-                                                                        max="10" name="ninos" id="ninos">
+                                                                    <input type="number" class="form-control"
+                                                                        name="ninos" id="ninos">
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <div class="form-group">
                                                                     <label>Bebés (0 a 4 años)</label>
-                                                                    <input type="number" class="form-control" min="0"
-                                                                        max="3" name="bebes" id="bebes">
+                                                                    <input type="number" class="form-control"
+                                                                        name="bebes" id="bebes">
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <div class="form-group">
                                                                     <label>Cantidad de Maletas</label>
-                                                                    <input type="number" class="form-control" min="0"
-                                                                        max="3" name="maletas" id="maletas">
+                                                                    <input type="number" class="form-control"
+                                                                        name="maletas" id="maletas">
                                                                 </div>
                                                             </div>
-
                                                             <div class="col-sm-12">
                                                                 <div class="form-group">
                                                                     <label>*En caso que el bebe viaje solo, favor
                                                                         detallarlo</label>
                                                                     <textarea class="textarea" name="detalleBebe"
                                                                         id="detalleBebe"
-                                                                        placeholder="Ejemplo: La bebe Casey Henriquez de 10 meses viaja sola, encargada responsable: Aeromoza Beatriz Ponce"
+                                                                        placeholder="Ejemplo: La bebe Casey Henriquez de 10 meses viaja sola, sin acompañante como responsable"
                                                                         style="width: 100%; height: 50px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- END timeline item -->
-
-                                            <!-- timeline item -->
-                                            <div>
-                                                <i class="fas fa-user bg-green"></i>
-                                                <div class="timeline-item">
-
-                                                    <h3 class="timeline-header no-border"><a href="#">Opciones
-                                                            Avanzadas</a></h3>
-                                                    <div class="timeline-body">
                                                         <div class="row">
-
-
-                                                            <div class="col-sm-4">
+                                                            <div class="col-sm-3">
                                                                 <!-- select -->
                                                                 <div class="form-group multiple-form-group input-group">
                                                                     <label>Aerolinea</label>
@@ -194,8 +223,17 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-
-                                                            <div class="col-sm-4">
+                                                            <div class="col-sm-1">
+                                                                <br>
+                                                                <span class="input-group-btn">
+                                                                    <button type="button"
+                                                                        class="btn btn-success btn-add"
+                                                                        data-toggle="modal"
+                                                                        data-target="#modal-aerolinea"
+                                                                        style="margin-top: 10px; width: 100%;">+</button>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col-sm-3">
                                                                 <!-- select -->
                                                                 <div class="form-group multiple-form-group input-group">
                                                                     <label>Clase</label>
@@ -208,8 +246,17 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-
-                                                            <div class="col-sm-4">
+                                                            <div class="col-sm-1">
+                                                                <br>
+                                                                <span class="input-group-btn">
+                                                                    <button type="button"
+                                                                        class="btn btn-success btn-add"
+                                                                        data-toggle="modal"
+                                                                        data-target="#modal-tipoClase"
+                                                                        style="margin-top: 10px; width: 100%;">+</button>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col-sm-3">
                                                                 <!-- select -->
                                                                 <div class="form-group multiple-form-group input-group">
                                                                     <label>Tipo de Viaje</label>
@@ -222,8 +269,16 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-
-
+                                                            <div class="col-sm-1">
+                                                                <br>
+                                                                <span class="input-group-btn">
+                                                                    <button type="button"
+                                                                        class="btn btn-success btn-add"
+                                                                        data-toggle="modal"
+                                                                        data-target="#modal-tipoViaje"
+                                                                        style="margin-top: 10px; width: 100%;">+</button>
+                                                                </span>
+                                                            </div>
                                                             <div class="col-sm-7">
                                                                 <div class="form-group">
                                                                     <label>Opciones Avanzadas</label>
@@ -236,7 +291,6 @@
                                                                             <option>Vuelo sin Escalas</option>
                                                                             <option>Misma Aerolinea</option>
                                                                             <option>Equipaje Extra</option>
-
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -250,7 +304,6 @@
                                                                         placeholder="Insertar Nueva Opcion"
                                                                         autocomplete="off">
                                                                 </div>
-
                                                             </div>
                                                             <div class="col-sm-1">
                                                                 <br>
@@ -261,9 +314,7 @@
                                                                         style="margin-top: 10px; width: 100%;"
                                                                         onclick="OpcAvanzada()">+</button>
                                                                 </span>
-
                                                             </div>
-
                                                         </div>
                                                     </div>
                                                 </div>
@@ -273,20 +324,20 @@
                                             <div>
                                                 <i class="fas fa-comments bg-yellow"></i>
                                                 <div class="timeline-item">
-
                                                     <h3 class="timeline-header"><a href="#">Condiciones</a></h3>
                                                     <div class="timeline-body">
                                                         <div class="row">
                                                             <div class="col-sm-12">
                                                                 <div class="form-group" id="desborde">
                                                                     <p>
-                                                                        <!-- <pre> --><label name="condiciones"
+                                                                        <label name="condiciones"
                                                                             id="condiciones"></label>
                                                                     </p>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                   
                                                     <div class="timeline-footer" style="text-align: right;">
                                                         <button name="btnGuardarCotizacion" id="btnGuardarCotizacion"
                                                             class="btn btn-info btn-sm"
@@ -294,7 +345,6 @@
                                                         <a class="btn btn-danger btn-sm"
                                                             style="color: white">Cancelar</a>
                                                     </div>
-
                                                 </div>
                                             </div>
                                         </div>
@@ -322,7 +372,6 @@ function OpcAvanzada() {
 }
 </script>
 
-<!-- jquery-validation -->
 
 
 
@@ -370,4 +419,41 @@ $(function() {
 
 })
 </script>
+
+<script>
+function comprobar(obj) {
+    if (obj.checked) {
+
+        document.getElementById('ciudad_llegada').disabled = false;
+        document.getElementById('fechaLlegada').disabled = false;
+        document.getElementById('timepicker2').disabled = false;
+    } else {
+
+        document.getElementById('ciudad_llegada').disabled = true;
+        document.getElementById('fechaLlegada').disabled = true;
+        document.getElementById('timepicker2').disabled = true;
+    }
+}
+</script>
+
+<script>
+$(function() {
+    var hoy = new Date();
+    var dd = hoy.getDate();
+    var mm = hoy.getMonth() + 1;
+    var yyyy = hoy.getFullYear();
+    if (dd < 10) {
+        dd = '0' + dd
+    }
+    if (mm < 10) {
+        mm = '0' + mm
+    }
+
+    hoy = yyyy + '-' + mm + '-' + dd;
+    document.getElementById("fechaPartida").setAttribute("min", hoy);
+    document.getElementById("fechaLlegada").setAttribute("min", hoy);
+});
+</script>
+
+
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>
