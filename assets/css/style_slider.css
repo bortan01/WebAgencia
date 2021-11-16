@@ -1364,7 +1364,7 @@ body {
   margin-right: -100%;
   float: left;
   width: 100%;
-  min-height: 900px;
+  min-height: 700px;
   background-size:cover;
 }
 .slider .slides li img {
@@ -1414,7 +1414,7 @@ body {
   position: absolute;
   right: 0;
   z-index: 99;
-  bottom: 260px;
+  bottom: 200px;
   width: 390px;
   text-align: center;
 }
