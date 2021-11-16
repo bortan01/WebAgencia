@@ -1347,8 +1347,8 @@ body {
 }
 .slider .slides {
   list-style: none;
-  padding-left: 60px;
-  padding-right: 50px;
+  padding-left: 0px;
+  padding-right: 0px;
   margin: 0;
   *zoom: 1;
 }
