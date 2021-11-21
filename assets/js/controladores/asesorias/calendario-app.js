@@ -45,7 +45,7 @@ $(document).ready(function () {
 
             }).done(function (response) {
 
-              if (response.mensaje.existe !=null || response.existe.color == '#007bff') {
+              if (response.existe !='NO' || response.existe.color == '#007bff') {
 
                 let fecha = response.existe.fecha;
                 let nueva = fecha.split('-');
@@ -75,6 +75,9 @@ $(document).ready(function () {
               }
 
             }).fail(function (response) {
+              $('#modal_registro').modal();
+              $('#txtFecha').val(date.format("DD-MM-YYYY"));
+              document.getElementById("btnAgregar").disabled = false;
             });
           });
           //FIN DE METER LA VALIDACION
