@@ -567,13 +567,13 @@ h6 {
                                     </p>
                                     <div class="footer-contacts">
                                         <p><span>Teléfono:</span>
-                                        <span style="color: #444; font-weight: 200;" name="telefono_a" 
-                                            id="telefono_a"></span>
-                                       </p>
+                                            <span style="color: #444; font-weight: 200;" name="telefono_a"
+                                                id="telefono_a"></span>
+                                        </p>
                                         <p><span>Email:</span>
-                                        <span style="color: #444; font-weight: 200;" name="email_a" 
-                                            id="email_a"></span>
-                                       </p>
+                                            <span style="color: #444; font-weight: 200;" name="email_a"
+                                                id="email_a"></span>
+                                        </p>
 
                                     </div>
                                 </div>
@@ -590,11 +590,17 @@ h6 {
                                     <div class="footer-contacts">
                                         <p>
                                             <span>Ubicación: </span>
-                                            <span style="color: #444; font-weight: 200;" name="direccion_a" 
-                                            id="direccion_a"></span>
+                                            <span style="color: #444; font-weight: 200;" name="direccion_a"
+                                                id="direccion_a"></span>
                                         </p>
-                                        <p><span>Lunes a Viernes</span> (8:00 am a 5:30 pm)</p>
-                                        <p><span>Sábados</span> (8:00 am a 12:30 pm)</p>
+                                        <p><span name="semana_a" id="semana_a"></span>
+                                            <span style="color: #444; font-weight: 200;" name="horaS_a"
+                                                id="horaS_a"></span>
+                                        </p>
+                                        <p><span name="fin_a" id="fin_a"></span>
+                                            <span style="color: #444; font-weight: 200;" name="horaF_a"
+                                                id="horaF_a"></span>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
