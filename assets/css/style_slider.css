@@ -1152,13 +1152,6 @@
     display: none !important;
   }
 }
-body {
-  font-family: "Open Sans", serif;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 24px;
-  color: #818c8d;
-}
 
 .site-header {
   z-index: 9999;
@@ -1637,5 +1630,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   font-size: 0.8125em;
 }
 .button:hover, .button:active {
-  background-color: #34d6e6;
+  background-color: #350a79;
+  color: white;
 }
