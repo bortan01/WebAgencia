@@ -89,10 +89,11 @@ $(document).ready(function () {
             });
         }).fail(function (response) {
             $('#loadingSave').hide();
+         console.log(JSON.parse(response.responseText));
             //SI HUBO UN ERROR EN LA RESPUETA REST_Controller::HTTP_BAD_REQUEST
             let respuestaDecodificada = JSON.parse(response.responseText);
             let listaErrores = "";
-
+            //alert(respuestaDecodificada);
             if (respuestaDecodificada.errores) {
                 ///ARREGLO DE ERRORES 
                 let erroresEnvioDatos = respuestaDecodificada.errores;
@@ -125,6 +126,7 @@ $(document).ready(function () {
 
         form.append("start", document.getElementById("timepicker").value);
         form.append("title", document.getElementById("txtTitulo").value);
+        form.append("dia", document.getElementById("dia").value);
 
 
         //

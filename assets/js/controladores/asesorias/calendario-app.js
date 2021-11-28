@@ -71,6 +71,7 @@ $(document).ready(function () {
 
                 $('#modal_registro').modal();
                 $('#txtFecha').val(date.format("DD-MM-YYYY"));
+                $('#dia').val(nombreDia);
                 document.getElementById("btnAgregar").disabled = false;
               }
 

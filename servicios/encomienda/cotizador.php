@@ -1,5 +1,5 @@
 <?php include_once('../../layaut/plantilla/cabecera.php'); ?>
-<?php include_once "../../layaut/plantilla/session.php"; ?>s
+
 <!-- PONER ESTILOS ADICIONALES ACA ABAJO-->
 <link href="../../assets/vendor/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css" rel="stylesheet" type="text/css" />
 
@@ -41,42 +41,7 @@
                         <div class="col-md-12">
                            <div class="timeline">
                               <!-- timeline item -->
-                              <div id="formulario">
-                                 <i class="fas fa-user bg-blue"></i>
-                                 <div class="timeline-item">
-                                    <h3 class="timeline-header"><a href="#">Datos de cliente</a></h3>
-                                    <div class="timeline-body">
-                                       <form id="datosOrigen-form" name="register-form" onsubmit="return false">
-                                          <div class="row">
-                                             <div class="col-sm-6">
-                                                <div class="form-group multiple-form-group input-group">
-                                                   <label>Cliente</label>
-                                                   <div class="input-group">
-                                                      <input disabled="true" type="text" name="cliente" id="cliente"
-                                                         class="form-control" autocomplete="off" placeholder="Cliente">
-                                                      <input type="hidden" name="estado" id="estado" value="Enviado">
-                                                   </div>
-                                                </div>
-                                             </div>
-                                             <div class="col-sm-6">
-                                                <label>Teléfono</label>
-                                                <div class="input-group">
-                                                   <input disabled="true" type="text" name="telefono" id="telefono"
-                                                      class="form-control" autocomplete="off"
-                                                      placeholder="(503)7232-2345">
-                                                </div>
-                                             </div>
-                                             <div class="col-sm-6">
-                                                <div class="form-group">
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div>
-                                          </div>
-                                       </form>
-                                    </div>
-                                 </div>
-                              </div>
+                              
                               <!-- END timeline item -->
                               <div>
                                  <i class="fas fa-box-open bg-green"></i>
