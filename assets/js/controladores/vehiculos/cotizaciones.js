@@ -13,9 +13,9 @@ $(document).ready(function() {
 
                 { data: "modelo" },
                 { data: "anio" },
-                { data: "totalCotizacion" },
                 { data: "fechaRecogida" },
                 { data: "fechaDevolucion" },
+                { data: "totalCotizacion" },
                 { data: "respuestaCotizacion" },
                 { data: "botones" }
             ],

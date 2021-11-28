@@ -30,7 +30,7 @@
 
                                 <div class="card">
                                     <div class="card-header">
-                                        <h3 class="card-title">Cotizaciones de Vehiculos Realizadas</h3>
+                                        <h3 class="card-title">Cotizaciones de Vehículos Realizadas</h3>
                                     </div>
                                     <!-- /.card-header -->
                                     <div class="card-body">
@@ -44,10 +44,10 @@
                                                                 <tr>
                                                                     <th>Vehiculo</th>
                                                                     <th>Año</th>
-                                                                    <th>Precio ($)</th>
                                                                     <th>Fecha Recogida</th>
                                                                     <th>Fecha Devolución</th>
-                                                                    <th>Respuesta</th>
+                                                                    <th>Precio ($)</th>
+                                                                    <th>Respuesta de Cotización</th>
                                                                     <th>Acciones</th>
                                                                 </tr>
                                                             </thead>
@@ -176,9 +176,9 @@
                                                 <table id="factura_detalle">
                                                     <thead>
                                                         <tr>
-                                                            <th class="textcenter">Vehiculo</th>
+                                                            <th class="textcenter">Vehículo</th>
                                                             <th class="textcenter">Año</th>
-                                                            <th class="textcenter">Caracteristicas</th>
+                                                            <th class="textcenter">Características</th>
 
                                                         </tr>
                                                     </thead>
