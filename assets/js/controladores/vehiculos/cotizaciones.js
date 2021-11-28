@@ -50,9 +50,9 @@ $(document).ready(function() {
 
                         modelo: response.cotizacion[i].modelo,
                         anio: response.cotizacion[i].anio,
-                        totalCotizacion: response.cotizacion[i].totalCotizacion,
                         fechaRecogida: response.cotizacion[i].fechaRecogida,
                         fechaDevolucion: response.cotizacion[i].fechaDevolucion,
+                        totalCotizacion: response.cotizacion[i].totalCotizacion,
                         respuestaCotizacion: response.cotizacion[i].respuestaCotizacion,
                         botones: html,
                     };
