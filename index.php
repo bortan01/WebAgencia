@@ -535,8 +535,8 @@ h6 {
                               <h2><span>Martínez</span>Travel & Tours</h2>
                            </div>
 
-                           <p>Síguenos en todas nuestras redes sociales para estar al tanto de todas
-                              nuestras promociones y productos</p>
+                           <p style="color: #444; font-weight: 200;">Síguenos en todas nuestras redes sociales para estar al tanto de todas
+                              nuestras promociones y productos.</p>
                            <div class="footer-icons">
                               <ul>
                                  <li>
@@ -564,8 +564,8 @@ h6 {
                            <div class="footer-logo">
                               <h2><span>Cont</span>acto</h2>
                            </div>
-                           <p>
-                              También puedes contactarnos de las siguiente manera
+                           <p style="color: #444; font-weight: 200;">
+                              También puedes contactarnos de las siguiente manera:
                            </p>
                            <div class="footer-contacts">
                               <p><span>Teléfono:</span>
