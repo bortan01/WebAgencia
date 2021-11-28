@@ -172,9 +172,9 @@ h6 {
                            </div>
                            <div class="mt-4">
                               <button class="btn btn-block btn-success btn-flat"
-                                 onclick="location.href='cotizarVehiculo.php'">
+                                >
                                  <i class="fas fa-cart-plus fa-lg"></i>
-                                 Cotizar Vehículo
+                                 Vísitanos para reservar
                               </button>
                            </div>
                         </div>

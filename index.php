@@ -80,9 +80,11 @@ h6 {
                         <a href="servicios/tours/disponibles.php">Tours</a>
                      </li>
                      <li>
-                        <a href="servicios/vehiculos/disponibilidad.php">Renta de Vehículos</a>
+                        <a href="servicios/vehiculos/disponibilidad.php">Flota de Vehículos</a>
                      </li>
-
+                     <li>
+                        <a href="servicios/vehiculos/cotizarVehiculo.php">Cotización de Vehículo</a>
+                     </li>
                      <li>
                         <a href="servicios/vuelos/cotizarVuelo.php">Cotización de Vuelos</a>
                      </li>
