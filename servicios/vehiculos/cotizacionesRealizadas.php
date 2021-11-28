@@ -38,7 +38,8 @@
                                             <div class="row">
                                                 <div class="table-responsive">
                                                     <div class="col-sm-12">
-                                                        <table id="tabla_cotizaciones" class="table table-bordered table-striped">
+                                                        <table id="tabla_cotizaciones"
+                                                            class="table table-bordered table-striped">
                                                             <thead style="text-align: center;">
                                                                 <tr>
                                                                     <th>Vehiculo</th>
@@ -52,7 +53,8 @@
                                                             </thead>
                                                             <!-- /.inicio de loading -->
                                                             <div class="overlay-wrapper">
-                                                                <div id="loading" class="overlay"><i class="fas fa-3x fa-sync-alt fa-spin"></i>
+                                                                <div id="loading" class="overlay"><i
+                                                                        class="fas fa-3x fa-sync-alt fa-spin"></i>
 
                                                                     <div class="text-bold pt-2">Cargando...
                                                                     </div>
@@ -113,17 +115,21 @@
                                                     <tr>
                                                         <td class="logo_factura">
                                                             <div>
-                                                                <img src="../../assets/img/logo-min.jpg" all rel="stylesheet" type="text/css">
+                                                                <img src="../../assets/img/logo-min.jpg" all
+                                                                    rel="stylesheet" type="text/css">
                                                             </div>
                                                         </td>
                                                         <td class="info_empresa">
                                                             <div>
-                                                                <span class="h2">Agencia de Viajes Martínez Travels &
-                                                                    Tours</span>
-                                                                <p>Segunda Avenida Sur, Barrio El Centro, #4D a 150mts
-                                                                    del Parquecito Infantil<br>Teléfono: +(503) 2319
-                                                                    2338<br>info.ventas@martineztraveltours.com</p>
-
+                                                                <span class="h2" name="nombre_a" id="nombre_a"></span>
+                                                                <p>
+                                                                <p style="margin: 1px;display:inline;"
+                                                                    name="direccion_a" id="direccion_a"></p>
+                                                                <p style="margin: 1px;display:inline:float:right"
+                                                                    name="telefono_a" id="telefono_a">
+                                                                </p>
+                                                                <p name="email_a" id="email_a"></p>
+                                                                </p>
                                                             </div>
                                                         </td>
 
@@ -179,9 +185,14 @@
                                                     <tbody id="detalle_productos">
 
                                                         <tr>
-                                                            <td class="textcenter"><label name="nombreVehiculoC" id="nombreVehiculoC" style="font-weight: normal;"></label></td>
-                                                            <td class="textcenter"><label name="anioC" id="anioC" style="font-weight: normal;"></label></td>
-                                                            <td class="textcenter"><label name="caracteristicasC" id="caracteristicasC" style="font-weight: normal;"></label></td>
+                                                            <td class="textcenter"><label name="nombreVehiculoC"
+                                                                    id="nombreVehiculoC"
+                                                                    style="font-weight: normal;"></label></td>
+                                                            <td class="textcenter"><label name="anioC" id="anioC"
+                                                                    style="font-weight: normal;"></label></td>
+                                                            <td class="textcenter"><label name="caracteristicasC"
+                                                                    id="caracteristicasC"
+                                                                    style="font-weight: normal;"></label></td>
 
                                                         </tr>
 
@@ -201,9 +212,15 @@
                                                     <tbody id="detalle_productos">
 
                                                         <tr>
-                                                            <td class="textcenter"><label name="direccion_recogidaC" id="direccion_recogidaC" style="font-weight: normal;"></label></td>
-                                                            <td class="textcenter"><label name="fechaRecogidaC" id="fechaRecogidaC" style="font-weight: normal;"></label></label></td>
-                                                            <td class="textcenter"><label name="HoraRecogidaC" id="HoraRecogidaC" style="font-weight: normal;"></label></label></td>
+                                                            <td class="textcenter"><label name="direccion_recogidaC"
+                                                                    id="direccion_recogidaC"
+                                                                    style="font-weight: normal;"></label></td>
+                                                            <td class="textcenter"><label name="fechaRecogidaC"
+                                                                    id="fechaRecogidaC"
+                                                                    style="font-weight: normal;"></label></label></td>
+                                                            <td class="textcenter"><label name="HoraRecogidaC"
+                                                                    id="HoraRecogidaC"
+                                                                    style="font-weight: normal;"></label></label></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -220,10 +237,16 @@
                                                     <tbody id="detalle_productos">
 
                                                         <tr>
-                                                            <td class="textcenter"><label name="direccion_devolucionC" id="direccion_devolucionC" style="font-weight: normal;"></label>
+                                                            <td class="textcenter"><label name="direccion_devolucionC"
+                                                                    id="direccion_devolucionC"
+                                                                    style="font-weight: normal;"></label>
                                                             </td>
-                                                            <td class="textcenter"><label name="fechaDevolucionC" id="fechaDevolucionC" style="font-weight: normal;"></label></td>
-                                                            <td class="textcenter"><label name="HoraDevolucionC" id="HoraDevolucionC" style="font-weight: normal;"></label>
+                                                            <td class="textcenter"><label name="fechaDevolucionC"
+                                                                    id="fechaDevolucionC"
+                                                                    style="font-weight: normal;"></label></td>
+                                                            <td class="textcenter"><label name="HoraDevolucionC"
+                                                                    id="HoraDevolucionC"
+                                                                    style="font-weight: normal;"></label>
                                                             </td>
 
 
@@ -241,12 +264,14 @@
                                                             <td colspan="3" class="textright"><label>DESCUENTOS
                                                                     (%)</label>
                                                             </td>
-                                                            <td class="textcenter"><label name="descuent" id="descuent" style="font-weight: normal;"></label></td>
+                                                            <td class="textcenter"><label name="descuent" id="descuent"
+                                                                    style="font-weight: normal;"></label></td>
                                                         </tr>
                                                         <tr>
                                                             <td colspan="3" class="textright"><label>TOTAL ($)</label>
                                                             </td>
-                                                            <td class="textcenter"><label name="tot" id="tot" style="font-weight: normal;"></label></td>
+                                                            <td class="textcenter"><label name="tot" id="tot"
+                                                                    style="font-weight: normal;"></label></td>
                                                         </tr>
                                                     </tfoot>
                                                 </table>
@@ -254,7 +279,8 @@
                                             <div class="row no-print">
                                                 <div class="col-md-12">
 
-                                                    <button target="_blank" id="doPrint" type="button" class="btn btn-default"><i class="fas fa-print"></i>
+                                                    <button target="_blank" id="doPrint" type="button"
+                                                        class="btn btn-default"><i class="fas fa-print"></i>
                                                         Imprimir</button>
 
                                                     <div id="editor"></div>
@@ -282,10 +308,8 @@
 <script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="../../assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="../../assets/vendor/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../assets/js/controladores/agencia/mostrarInfo.js"></script>
 <script type="text/javascript" src="../../assets/js/imprimir.js"></script>
-
 <script type="text/javascript" src="../../assets/js/controladores/vehiculos/cotizaciones.js"></script>
-
-
 
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>
