@@ -100,7 +100,7 @@ h6 {
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="servicios/chat/messenger.php">Contacto</a></li>
                     <li class="drop-down"><a href="#">Mi Cuenta</a>
                         <ul>
                             <?php if (!isset($_SESSION["activo"])) : ?>
