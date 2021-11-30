@@ -45,7 +45,7 @@ $(document).ready(function () {
 
             }).done(function (response) {
 
-              if (response.existe !='NO' || response.existe.color == '#007bff') {
+              if (response.existe != null || response.existe.color == '#007bff') {
 
                 let fecha = response.existe.fecha;
                 let nueva = fecha.split('-');
