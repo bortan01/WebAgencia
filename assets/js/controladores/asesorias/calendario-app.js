@@ -125,7 +125,7 @@ $(document).ready(function () {
 
 
     },
-    editable: true,
+    editable: false,
     eventDrop: function (calEvent) {
       if (calEvent.estado_cita == 0) {
 
