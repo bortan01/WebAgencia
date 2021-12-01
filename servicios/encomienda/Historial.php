@@ -80,16 +80,6 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="col-sm-6">
-                                                            <div class="form-group">
-                                                                <label class="text-success">Código postal</label>
-                                                                <div class="input-group">
-                                                                    <label id="codigo"></label>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-
                                                     </div>
                                                     <div>
                                                     </div>
@@ -121,25 +111,6 @@
                                                             <label class="text-success">Teléfono</label>
                                                             <div class="input-group">
                                                                 <label id="telefono_des"></label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <div class="form-group">
-                                                                <label class="text-success">Ciudad</label>
-                                                                <div class="input-group">
-                                                                    <label id="ciudad_des"></label>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-sm-6">
-                                                            <div class="form-group">
-                                                                <label class="text-success">Código postal</label>
-                                                                <div class="input-group">
-                                                                    <label id="codigo_des"></label>
-                                                                </div>
-
                                                             </div>
                                                         </div>
 
