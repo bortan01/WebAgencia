@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+    $('#loading').hide();
     let id = localStorage.getItem('id_cliente');
     let nombre = localStorage.getItem('nombre');
     $('#cliente').val(nombre);
@@ -42,6 +42,8 @@ $(document).ready(function() {
             form.append("maletaMano", document.getElementById("maletaMa").value);
             form.append("maletaBodega", document.getElementById("maletaBo").value);
 
+            $('#loading').show();
+
             $.ajax({
                 url: URL_SERVIDOR + "cotizarVuelo/cotizacionv",
                 method: 'POST',
@@ -51,7 +53,7 @@ $(document).ready(function() {
                 contentType: false,
 
             }).done(function(response) {
-
+                $('#loading').hide();
                 document.getElementById("register-cotizarv").reset();
 
                 const Toast = Swal.mixin();
@@ -65,6 +67,7 @@ $(document).ready(function() {
                     location.reload();
                 });
             }).fail(function(response) {
+                $('#loading').hide();
                 //SI HUBO UN ERROR EN LA RESPUETA REST_Controller::HTTP_BAD_REQUEST
                 let respuestaDecodificada = JSON.parse(response.responseText);
                 let listaErrores = "";

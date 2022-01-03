@@ -72,8 +72,7 @@ function inicializarValidaciones() {
 
 function guardar() {
    const fecha = new Date();
-   // console.log(``);
-   // return;
+   $('#loading').show();
    $.ajax({
       url: URL_SERVIDOR + "TurPaquete/cotizacion",
       method: "POST",
@@ -85,6 +84,7 @@ function guardar() {
          visto: "0"
       },
    }).done(function (response) {
+      $('#loading').hide();
       const Toast = Swal.mixin();
       Toast.fire({
          title: "Exito...",
@@ -94,6 +94,7 @@ function guardar() {
       });
       $('#miFormulario').trigger("reset"); //Line1
    }).fail(function (response) {
+      $('#loading').hide();
       const Toast = Swal.mixin();
       Toast.fire({
          title: "Oops...",

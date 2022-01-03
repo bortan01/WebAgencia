@@ -121,19 +121,21 @@ h6 {
                         <ul>
                            <li><a href="servicios/vehiculos/cotizacionesRealizadas.php">Vehículos</a></li>
                            <li><a href="servicios/vuelos/cotizacionesRealizadasV.php">Vuelos</a></li>
-                        </ul>
+                           <li><a href="../../servicios/paquetes/solicitudes.php">Tours</a></li>
                      </li>
-                     <li><a name="logout" id="logout" href="#">Cerrar Sesión</a></li>
-                     <?php endif; ?>
                   </ul>
                </li>
-               <?php if (isset($_SESSION["activo"])) : ?>
-               <li><a style="padding: 0px; margin-top: -4px;" href="#">
-                     <div class="user-image"><img src="assets/img/no-user.png" id="avatar-img" class="user-image">
-                     </div>
-                  </a>
-               </li>
+               <li><a name="logout" id="logout" href="#">Cerrar Sesión</a></li>
                <?php endif; ?>
+            </ul>
+            </li>
+            <?php if (isset($_SESSION["activo"])) : ?>
+            <li><a style="padding: 0px; margin-top: -4px;" href="#">
+                  <div class="user-image"><img src="assets/img/no-user.png" id="avatar-img" class="user-image">
+                  </div>
+               </a>
+            </li>
+            <?php endif; ?>
             </ul>
          </nav>
          <!-- .nav-menu -->
