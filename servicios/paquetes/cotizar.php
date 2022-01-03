@@ -25,27 +25,29 @@
                            </div>
                         </div>
                         <div class="timeline">
-                           
+
                            <!-- timeline item -->
                            <div>
                               <i class="fas fa-umbrella-beach bg-green"></i>
                               <div class="timeline-item">
                                  <!--<span class="time"><i class="fas fa-clock"></i> 5 mins ago</span>-->
-                                 <h3 class="timeline-header no-border"><a href="#">Cotización de Paquete</a></h3>
+                                 <h3 class="timeline-header no-border"><a href="#">Cotización de Tour</a></h3>
                                  <div class="timeline-body">
                                     <div class="row">
                                        <div class="col-sm-12">
                                           <div class="form-group multiple-form-group input-group">
-                                             <label>Describa su paquete ideal</label>
+                                             <label>Describa Tour ideal</label>
                                              <div class="input-group">
-                                                <textarea name="peticion" id="peticion" rows="8" style="width: 100%;"></textarea>
+                                                <textarea name="peticion" id="peticion" rows="8"
+                                                   style="width: 100%;"></textarea>
                                              </div>
                                           </div>
                                        </div>
                                     </div>
                                  </div>
                                  <div class="timeline-footer" style="text-align: right;">
-                                    <button name="btnguardar" id="btnguardar" class="btn btn-info btn-sm" style="color: white">Guardar</button>
+                                    <button name="btnguardar" id="btnguardar" class="btn btn-info btn-sm"
+                                       style="color: white">Guardar</button>
                                     <button class="btn btn-danger btn-sm" style="color: white">Cancelar</button>
                                  </div>
                               </div>

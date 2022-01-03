@@ -77,10 +77,10 @@ if (!isset($_SESSION["activo"])) {
                         <a href="servicios/asesoria/cita.php">Asesoria Migratora</a>
                      </li>
                      <li>
-                        <a href="servicios/paquetes/disponibles.php">Paquetes</a>
+                        <a href="servicios/paquetes/disponibles.php">Tours Terrestres</a>
                      </li>
                      <li>
-                        <a href="servicios/tours/disponibles.php">Tours</a>
+                        <a href="servicios/tours/disponibles.php">Tours Aéreos</a>
                      </li>
                      <li>
                         <a href="servicios/vehiculos/disponibilidad.php">Renta de Vehiculos</a>
@@ -95,9 +95,6 @@ if (!isset($_SESSION["activo"])) {
                      <li>
                         <a href="servicios/vuelos/disponibilidadPromociones.php">Promociones de Vuelos</a>
                      </li>
-                     <li>
-                        <a href="servicios/encomienda/cotizador.php">Encomienda</a>
-                     </li>
                   </ul>
                </li>
                <li><a href="#contact">Contacto</a></li>
@@ -111,14 +108,13 @@ if (!isset($_SESSION["activo"])) {
                      <li><a href="servicios/client/updateDocumentos.php">Documentos Personales</a></li>
                      <li class="drop-down"><a href="#">Servicios Adquiridos</a>
                         <ul>
-                           <li><a href="servicios/paquetes/adquiridos.php">Tours/Paquetes</a></li>
+                           <li><a href="servicios/paquetes/adquiridos.php">Tours</a></li>
                            <li><a href="servicios/vehiculos/vehiculosAlquilados.php">Vehículos</a></li>
                            <li><a href="#">Encomiendas</a></li>
                         </ul>
                      </li>
                      <li class="drop-down"><a href="#">Cotizaciones</a>
                         <ul>
-                           <li><a href="servicios/paquetes/solicitudes.php">Paquetes</a></li>
                            <li><a href="servicios/vehiculos/cotizacionesRealizadas.php">Vehículos</a></li>
                            <li><a href="servicios/vuelos/cotizacionesRealizadasV.php">Vuelos</a></li>
                         </ul>

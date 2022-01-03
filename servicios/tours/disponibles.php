@@ -13,7 +13,7 @@
       <div class="row">
          <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="section-headline services-head text-center">
-               <h2>Tours disponibles</h2>
+               <h2>Tours Aéreos</h2>
             </div>
          </div>
       </div>
@@ -154,9 +154,9 @@
                               </div>
                            </div>
                            <div class="mt-4">
-                              <button class="btn btn-block btn-success btn-flat" id="btnReservar" name="btnReservar">
+                              <button class="btn btn-block btn-success btn-flat" id="" name="">
                                  <i class="fas fa-cart-plus fa-lg"></i>
-                                 Reservar Tour
+                                 visítanos para Reservar
                               </button>
                            </div>
                         </div>

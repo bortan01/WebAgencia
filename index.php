@@ -74,10 +74,10 @@ h6 {
                         <a href="servicios/asesoria/cita.php">Asesoría Migratora</a>
                      </li>
                      <li>
-                        <a href="servicios/paquetes/disponibles.php">Paquetes</a>
+                        <a href="servicios/paquetes/disponibles.php">Tours Terrestres</a>
                      </li>
                      <li>
-                        <a href="servicios/tours/disponibles.php">Tours</a>
+                        <a href="servicios/tours/disponibles.php">Tours Aéreos</a>
                      </li>
                      <li>
                         <a href="servicios/vehiculos/disponibilidad.php">Flota de Vehículos</a>
@@ -89,13 +89,10 @@ h6 {
                         <a href="servicios/vuelos/cotizarVuelo.php">Cotización de Vuelos</a>
                      </li>
                      <li>
-                        <a href="servicios/paquetes/cotizar.php">Cotización de Paquete</a>
+                        <a href="servicios/paquetes/cotizar.php">Cotización de Tours</a>
                      </li>
                      <li>
                         <a href="servicios/vuelos/disponibilidadPromociones.php">Promociones de Vuelos</a>
-                     </li>
-                     <li>
-                        <a href="servicios/encomienda/cotizador.php">Encomienda</a>
                      </li>
                      <li>
                         <a href="assets/apk/Martínez Travel y Tours.apk">Descargar Aplicación Móvil</a>
@@ -118,12 +115,10 @@ h6 {
                         <ul>
                            <li><a href="servicios/paquetes/adquiridos.php">Tours/Paquetes</a></li>
                            <li><a href="servicios/vehiculos/vehiculosAlquilados.php">Vehículos</a></li>
-                           <li><a href="servicios/encomienda/verEncomiendas.php">Encomiendas</a></li>
                         </ul>
                      </li>
                      <li class="drop-down"><a href="#">Cotizaciones</a>
                         <ul>
-                           <li><a href="servicios/paquetes/solicitudes.php">Paquetes</a></li>
                            <li><a href="servicios/vehiculos/cotizacionesRealizadas.php">Vehículos</a></li>
                            <li><a href="servicios/vuelos/cotizacionesRealizadasV.php">Vuelos</a></li>
                         </ul>
@@ -157,7 +152,7 @@ h6 {
                      <li data-background="assets/img/portfolio/paquetes.png">
                         <div class="container">
                            <div class="slide-caption col-md-4">
-                              <h2 class="slide-title">Promociones de Paquetes Turísticos</h2>
+                              <h2 class="slide-title">Promociones de Tours Terrestres</h2>
                               <p>Adquire tu paquete con nosotros y haz realidad tus sueños en Centro América,
                                  Sudamérica y Europa.
                               </p>
@@ -168,7 +163,7 @@ h6 {
                      <li data-background="assets/img/portfolio/tours.png">
                         <div class="container">
                            <div class="slide-caption col-md-4">
-                              <h2 class="slide-title">Promociones de Tours</h2>
+                              <h2 class="slide-title">Promociones de Tours Aéreos</h2>
                               <p>Tú elige el destino, nosotros te llevamos! haz realidad tus sueños viajando a
                                  Centro América, Sudamérica y Europa.</p>
                               <a href="servicios/tours/disponibles.php" class="button">ver Tours</a>
@@ -236,7 +231,7 @@ h6 {
                            <div class="single-services">
                               <a href="servicios/paquetes/disponibles.php"><img src="assets/img/paquetes.png" /></a>
                               </a>
-                              <h4>Paquetes</h4>
+                              <h4>Tours Terrestres</h4>
                               <p>
                                  Haz realidad tus sueños con nuestros paquetes turísticos para Centro
                                  América,
@@ -253,7 +248,7 @@ h6 {
                         <div class="services-details">
                            <div class="single-services">
                               <a href="servicios/tours/disponibles.php"><img src="assets/img/tours.png" /></a>
-                              <h4>Tours</h4>
+                              <h4>Tours Aéreos</h4>
                               <p>
                                  Tú elige el destino, nosotros te llevamos! haz realidad tus
                                  sueños viajando a Centro América, Sudamérica y Europa.
@@ -299,30 +294,7 @@ h6 {
                         <!-- end about-details -->
                      </div>
                   </div>
-                  <div class="col-md-4 col-sm-4 col-xs-12">
-                     <!-- end col-md-4 -->
-                     <div class="about-move">
-                        <div class="services-details">
-                           <div class="single-services">
-                              <a href="./servicios/encomienda/cotizador.php"><img
-                                    src="assets/img/encomiendas.png" /></a>
-                              <h4>Encomiendas</h4>
-                              <p>
-                                 Deseas relizar envíos nacionales o al extrangero, no busques más somos
-                                 la mejor
-                                 opcion para enviar tu encomienda.
-                              </p>
-                           </div>
-                        </div>
-                        <!-- end about-details -->
-                     </div>
-                  </div>
-                  <!-- End Left services -->
 
-                  <div class="col-md-4 col-sm-4 col-xs-12">
-                     <!-- end col-md-4 -->
-
-                  </div>
                   <div class="col-md-4 col-sm-4 col-xs-12">
                      <!-- end col-md-4 -->
                      <div class="about-move">
@@ -537,7 +509,8 @@ h6 {
                               <h2><span>Martínez</span>Travel & Tours</h2>
                            </div>
 
-                           <p style="color: #444; font-weight: 200;">Síguenos en todas nuestras redes sociales para estar al tanto de todas
+                           <p style="color: #444; font-weight: 200;">Síguenos en todas nuestras redes sociales para
+                              estar al tanto de todas
                               nuestras promociones y productos.</p>
                            <div class="footer-icons">
                               <ul>
