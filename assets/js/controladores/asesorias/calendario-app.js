@@ -120,10 +120,6 @@ $(document).ready(function () {
       $('#id_cliente').val(calEvent.id_cita);
       $('#modal_eventos').modal();
       //document.getElementById("update-form").reset();
-
-
-
-
     },
     editable: false,
     eventDrop: function (calEvent) {
