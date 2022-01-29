@@ -22,10 +22,10 @@
                         <a href="../../servicios/asesoria/cita.php">Asesoría Migratora</a>
                      </li>
                      <li>
-                        <a href="../../servicios/paquetes/disponibles.php">Tours Terrestres</a>
+                        <a href="../../servicios/paquetes/disponibles.php">Tours Aéreos</a>
                      </li>
                      <li>
-                        <a href="../../servicios/tours/disponibles.php">Tours Aéreos</a>
+                        <a href="../../servicios/tours/disponibles.php">Tours Terrestres</a>
                      </li>
                      <li>
                         <a href="../../servicios/vehiculos/disponibilidad.php">Flota de Vehículos</a>

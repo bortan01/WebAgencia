@@ -41,7 +41,7 @@ $(document).ready(function () {
       $('#precio').text("Asiento Normal $" + data.precio);
       $('#titulo').text(data.nombreTours);
       $('#descripcion_tur').html(data.descripcion_tur);
-  
+
       $('#cupos').text(data.cupos_disponibles);
 
       $('#incluye').empty();
@@ -81,7 +81,7 @@ $(document).ready(function () {
    });
    function inicializarViajes() {
       $.ajax({
-         url: URL_SERVIDOR + "TurPaquete/show?estado=1&tipo=paquete",
+         url: URL_SERVIDOR + "TurPaquete/showApp?estado=1&tipo=aereos",
          method: "GET"
       }).done(function (response) {
          let contenedor = $('#contenedorAutos');

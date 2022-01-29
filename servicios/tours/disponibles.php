@@ -13,7 +13,7 @@
       <div class="row">
          <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="section-headline services-head text-center">
-               <h2>Tours Aéreos</h2>
+               <h2>Tours Terrestres</h2>
             </div>
          </div>
       </div>

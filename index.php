@@ -1,8 +1,8 @@
 <?php session_start();
 if (isset($_SESSION["activo"])) {
-    // echo ("LOGUEADO");
+   // echo ("LOGUEADO");
 } else {
-    // echo ("NO LOGUEADO");
+   // echo ("NO LOGUEADO");
 }
 ?>
 <!DOCTYPE html>
@@ -74,10 +74,10 @@ h6 {
                         <a href="servicios/asesoria/cita.php">Asesoría Migratora</a>
                      </li>
                      <li>
-                        <a href="servicios/paquetes/disponibles.php">Tours Terrestres</a>
+                        <a href="servicios/paquetes/disponibles.php">Tours Aéreos</a>
                      </li>
                      <li>
-                        <a href="servicios/tours/disponibles.php">Tours Aéreos</a>
+                        <a href="servicios/tours/disponibles.php">Tours Terrestres</a>
                      </li>
                      <li>
                         <a href="servicios/vehiculos/disponibilidad.php">Flota de Vehículos</a>
@@ -113,7 +113,7 @@ h6 {
                      <li><a href="servicios/client/updateDocumentos.php">Documentos Personales</a></li>
                      <li class="drop-down"><a href="#">Servicios Adquiridos</a>
                         <ul>
-                           <li><a href="servicios/paquetes/adquiridos.php">Tours/Paquetes</a></li>
+                           <li><a href="servicios/paquetes/adquiridos.php">Tours</a></li>
                            <li><a href="servicios/vehiculos/vehiculosAlquilados.php">Vehículos</a></li>
                         </ul>
                      </li>
@@ -165,7 +165,7 @@ h6 {
                      <li data-background="assets/img/portfolio/tours.png">
                         <div class="container">
                            <div class="slide-caption col-md-4">
-                              <h2 class="slide-title">Promociones de Tours Aéreos</h2>
+                              <h2 class="slide-title">Promociones de Tours Terrestres</h2>
                               <p>Tú elige el destino, nosotros te llevamos! haz realidad tus sueños viajando a
                                  Centro América, Sudamérica y Europa.</p>
                               <a href="servicios/tours/disponibles.php" class="button">ver Tours</a>
@@ -233,11 +233,10 @@ h6 {
                            <div class="single-services">
                               <a href="servicios/paquetes/disponibles.php"><img src="assets/img/paquetes.png" /></a>
                               </a>
-                              <h4>Tours Terrestres</h4>
+                              <h4>Tours Aéreos</h4>
                               <p>
-                                 Haz realidad tus sueños con nuestros paquetes turísticos para Centro
-                                 América,
-                                 Sudamérica y Europa.
+                                 Tú elige el destino, nosotros te llevamos! haz realidad tus
+                                 sueños viajando a Centro América, Sudamérica y Europa.
                               </p>
                            </div>
                         </div>
@@ -250,10 +249,10 @@ h6 {
                         <div class="services-details">
                            <div class="single-services">
                               <a href="servicios/tours/disponibles.php"><img src="assets/img/tours.png" /></a>
-                              <h4>Tours Aéreos</h4>
+                              <h4>Tours Terrestres</h4>
                               <p>
-                                 Tú elige el destino, nosotros te llevamos! haz realidad tus
-                                 sueños viajando a Centro América, Sudamérica y Europa.
+                                 Haz realidad tus sueños con nuestros paquetes turísticos para Centro
+                                 América, Sudamérica y Europa.
                               </p>
                            </div>
                         </div>
