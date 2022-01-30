@@ -240,6 +240,7 @@
 
 
 
+
 <script src="../../assets/vendor/moment/moment.min.js"></script>
 <script src="../../assets/js/controladores/tour/seleccionar-tur.js"></script>
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>

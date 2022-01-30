@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     let explorer = $("#kv-explorer");
     let idPromo;
     let promo = [];
@@ -7,12 +7,12 @@ $(document).ready(function() {
     inicializarPromocion();
 
     //BOTON DE MOSTRAR CARACTERISTICAS
-    $(document).on('click', '.btn-primary', function() {
+    $(document).on('click', '.btn-primary', function () {
 
         idPromo = $(this).attr("name");
         let data = obtenerPromocion(idPromo);
         console.log(data);
-        
+
         $('#fechaR').text(data.fechaDisponible_promocion);
         $('#pais').text(data.pais_promocion);
         $('#lugar').text(data.nombre_promocion);
@@ -21,7 +21,7 @@ $(document).ready(function() {
         $('#precioP').text(data.precio_promocion);
         $('#aerolineav').text(data.nombre_aerolinea);
         $('#tipoClase').text(data.nombre_clase);
-        
+
         console.log("entrando en la funcion");
         if (data.galeria) {
             let galeria = data.galeria;
@@ -49,8 +49,8 @@ $(document).ready(function() {
                 //alert('aqui estoy');
                 $('#' + i).hide();
             }
-            
-           
+
+
         }
 
     });
@@ -60,9 +60,21 @@ $(document).ready(function() {
         $.ajax({
             url: URL_SERVIDOR + "promocionVuelo/promocion",
             method: "GET"
-        }).done(function(response) {
+        }).done(function (response) {
             let contenedor = $('#contenedorPromociones');
             if (response.promociones) {
+
+
+                if (response.promociones.length == 0) {
+                    let html = "";
+                    html += '<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center;>';
+                    html += '    <div class="mx-auto">';
+                    html += `        <img  src="${URL_PAGINA}assets/img/error.png" />`;
+                    html += '    </div>';
+                    html += '</div>';
+                    contenedor.append(html);
+                }
+
                 promo = response.promociones;
                 for (let index = 0; index < promo.length; index++) {
                     let html = "";
@@ -84,7 +96,7 @@ $(document).ready(function() {
                     contenedor.append(html);
                 }
             }
-        }).fail(function(response) {
+        }).fail(function (response) {
             console.log(response);
 
         });

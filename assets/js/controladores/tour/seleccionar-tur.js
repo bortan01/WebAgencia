@@ -88,6 +88,20 @@ $(document).ready(function () {
       }).done(function (response) {
          let contenedor = $('#contenedorAutos');
          if (response) {
+
+
+            if (response.length == 0) {
+               let html = "";
+               html += '<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center;>';
+               html += '    <div class="mx-auto">';
+               html += '        <img  src="../../assets/img/error.png" />';
+               html += '    </div>';
+               html += '</div>';
+               contenedor.append(html);
+            }
+
+
+
             ARR_TUR = response;
             for (let index = 0; index < ARR_TUR.length; index++) {
                let html = "";
