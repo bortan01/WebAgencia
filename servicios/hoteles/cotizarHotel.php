@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">
 <link rel="stylesheet" href="../../assets/vendor/daterangepicker/daterangepicker.css">
 <link href="../../assets/css/mdtimepicker.css" rel="stylesheet" type="text/css"> <!-- reloj -->
-
 <link rel="stylesheet" href="../../assets/vendor/icheck-bootstrap/icheck-bootstrap.min.css">
 
 
@@ -47,7 +46,7 @@
          <!-- Main content -->
          <section class="content">
             <div class="overlay-wrapper">
-               <div id="loading" class="overlay"><i class="fas fa-3x fa-sync-alt fa-spin"></i>
+               <div id="loading" class="overlay" style="height: 130%;"><i class="fas fa-3x fa-sync-alt fa-spin"></i>
                   <div class="text-bold pt-2">Cargando...
                   </div>
                </div>

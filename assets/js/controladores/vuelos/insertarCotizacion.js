@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $('#loading').hide();
     let id = localStorage.getItem('id_cliente');
     let nombre = localStorage.getItem('nombre');
@@ -6,8 +6,9 @@ $(document).ready(function() {
 
     inicializarValidaciones();
     inicializarCalendario();
+    inicializarcomboHoteles();
 
-    $("#btnGuardarCotizacion").on('click', function(e) {
+    $("#btnGuardarCotizacion").on('click', function (e) {
         e.preventDefault();
         let form = $("#register-cotizarv");
         form.validate();
@@ -23,37 +24,25 @@ $(document).ready(function() {
             console.log(arregloOpciones);
             let form = new FormData();
 
-            form.append("id_cliente", id);
-            form.append("ciudad_partida", document.getElementById("ciudad_partida").value);
-            form.append("fechaPartida", document.getElementById("fechaPartida").value);
-            form.append("HoraPartida", document.getElementById("timepicker").value);
-            form.append("ciudad_destino", document.getElementById("ciudad_destino").value);
-            form.append("ciudad_llegada", document.getElementById("ciudad_llegada").value);
-            form.append("fechaLlegada", document.getElementById("fechaLlegada").value);
-            form.append("HoraLlegada", document.getElementById("timepicker2").value);
-            form.append("adultos", document.getElementById("adultos").value);
-            form.append("ninos", document.getElementById("ninos").value);
-            form.append("bebes", document.getElementById("bebes").value);
-            form.append("maletas", document.getElementById("maletas").value);
-            form.append("idaerolinea", document.getElementById("idaerolinea").value);
-            form.append("idclase", document.getElementById("idclase").value);
-            form.append("idtipo_viaje", document.getElementById("idtipo_viaje").value);
-            form.append("detallePasajero", document.getElementById("detalleBebe").value);
-            form.append("opc_avanzadas", arregloOpciones);
-            form.append("maletaMano", document.getElementById("maletaMa").value);
-            form.append("maletaBodega", document.getElementById("maletaBo").value);
-
+            form.append("idhotel", document.getElementById("comboHotel").value);
+            form.append("idcliente", id);
+            form.append("fechaEntradaSalida", document.getElementById("fecha_salida").value);
+            form.append("detalleHabitaciones", document.getElementById("descripcion_habitacion").value);
+            form.append("servicios_adicionales", arregloOpciones);
+            form.append("fechaRecogida", "2021-05-12");
+            form.append("total", 0);
+  
             $('#loading').show();
 
             $.ajax({
-                url: URL_SERVIDOR + "cotizarVuelo/cotizacionv",
+                url: URL_SERVIDOR + "cotizarHotel/cotizacion",
                 method: 'POST',
                 data: form,
                 timeout: 0,
                 processData: false,
                 contentType: false,
 
-            }).done(function(response) {
+            }).done(function (response) {
                 $('#loading').hide();
                 document.getElementById("register-cotizarv").reset();
 
@@ -67,7 +56,7 @@ $(document).ready(function() {
                     //TODO BIEN Y RECARGAMOS LA PAGINA 
                     location.reload();
                 });
-            }).fail(function(response) {
+            }).fail(function (response) {
                 $('#loading').hide();
                 //SI HUBO UN ERROR EN LA RESPUETA REST_Controller::HTTP_BAD_REQUEST
                 let respuestaDecodificada = JSON.parse(response.responseText);
@@ -179,14 +168,14 @@ $(document).ready(function() {
 
             },
             errorElement: 'span',
-            errorPlacement: function(error, element) {
+            errorPlacement: function (error, element) {
                 error.addClass('invalid-feedback');
                 element.closest('.form-group').append(error);
             },
-            highlight: function(element, errorClass, validClass) {
+            highlight: function (element, errorClass, validClass) {
                 $(element).addClass('is-invalid');
             },
-            unhighlight: function(element, errorClass, validClass) {
+            unhighlight: function (element, errorClass, validClass) {
                 $(element).removeClass('is-invalid');
 
             }
@@ -231,5 +220,32 @@ $(document).ready(function() {
             }
         });
     }
-    
+    function inicializarcomboHoteles() {
+
+
+        $.ajax({
+            url: `${URL_SERVIDOR}hotel/hotel`,
+            method: "GET"
+        }).done(function (response) {
+            let myData = [];
+            for (let index = 0; index < response.hoteles.length; index++) {
+                myData.push({
+                    id: response.hoteles[index].idhotel,
+                    text: response.hoteles[index].nombreHotel
+                });
+            }
+            ///LE CARGAMOS LA DATA 
+            $('#comboHotel').select2({ data: myData });
+        }).fail(function (response) {
+            let myData = [];
+            ///LE CARGAMOS LA DATA 
+            $('#comboHotel').select2({ data: myData });
+
+        });
+
+
+
+
+    }
+
 });
