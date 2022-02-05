@@ -92,6 +92,9 @@ h6 {
                         <a href="servicios/paquetes/cotizar.php">Cotización de Tours</a>
                      </li>
                      <li>
+                        <a href="servicios/hoteles/cotizarHotel.php">Cotización de Hotel</a>
+                     </li>
+                     <li>
                         <a href="servicios/vuelos/disponibilidadPromociones.php">Promociones de Vuelos</a>
                      </li>
                      <li>

@@ -37,6 +37,9 @@
                         <a href="../../servicios/vuelos/cotizarVuelo.php">Cotización de Vuelos</a>
                      </li>
                      <li>
+                        <a href="../../servicios/hoteles/cotizarHotel.php">Cotización de Hotel</a>
+                     </li>
+                     <li>
                         <a href="../../servicios/paquetes/cotizar.php">Cotización de Tours</a>
                      </li>
                      <li>
