@@ -616,7 +616,7 @@ h6 {
                                                         <div class="mt-4">
                                                             <button class="btn btn-block btn-success btn-flat">
                                                                 <i class="fas fas-cart-plus fa-lg"></i>
-                                                                Cotiza con Nosotros en el Menú "Servicios"
+                                                                Cotiza los Hoteles en el Menú "Servicios"
                                                             </button>
                                                         </div>
                                                     </div>
