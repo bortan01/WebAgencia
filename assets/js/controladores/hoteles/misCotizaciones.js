@@ -23,6 +23,7 @@ function inicializarTabla() {
       },
       columns: [
          { data: "fechaEntradaSalida" },
+         { data: "nombreHotel" },
          { data: "detalleHabitaciones" },
          { data: "respuesta" },
       ],

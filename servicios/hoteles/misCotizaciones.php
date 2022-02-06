@@ -53,7 +53,8 @@ table.dataTable tbody td {
                                              <thead style="text-align: center;">
                                                 <tr>
                                                    <th>Fecha de Petición</th>
-                                                   <th>Peticiónn</th>
+                                                   <th>Hotel</th>
+                                                   <th>Petición</th>
                                                    <th>Respuesta</th>
                                                 </tr>
                                              </thead>
