@@ -52,7 +52,7 @@ table.dataTable tbody td {
                                           <table id="tabla_historial" class="table table-bordered table-striped">
                                              <thead style="text-align: center;">
                                                 <tr>
-                                                   <th>Fecha de Petición</th>
+                                                   <th>Fechas Solicitadas</th>
                                                    <th>Hotel</th>
                                                    <th>Petición</th>
                                                    <th>Respuesta</th>
