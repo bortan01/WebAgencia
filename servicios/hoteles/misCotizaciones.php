@@ -55,6 +55,7 @@ table.dataTable tbody td {
                                                    <th>Fechas Solicitadas</th>
                                                    <th>Hotel</th>
                                                    <th>Petición</th>
+                                                   <th>Total a Pagar ($)</th>
                                                    <th>Respuesta</th>
                                                 </tr>
                                              </thead>

@@ -25,13 +25,13 @@ function inicializarTabla() {
          { data: "fechaEntradaSalida" },
          { data: "nombreHotel" },
          { data: "detalleHabitaciones" },
+         { data: "total" },
          { data: "respuesta" },
       ],
       columnDefs: [
          { "className": "dt-center", "targets": "_all" },
          { "width": "20%", "targets": 0 },
      
-         //  { targets: [5], visible: false },
       ]
    });
 }
