@@ -614,10 +614,9 @@ h6 {
                                                         </div>
 
                                                         <div class="mt-4">
-                                                            <button class="btn btn-block btn-success btn-flat"
-                                                                onclick="window.location.href='servicios/hoteles/cotizarHotel.php'">
+                                                            <button class="btn btn-block btn-success btn-flat">
                                                                 <i class="fas fas-cart-plus fa-lg"></i>
-                                                                Cotizar Hoteles
+                                                                Cotiza con Nosotros en el Menú "Servicios"
                                                             </button>
                                                         </div>
                                                     </div>
