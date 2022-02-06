@@ -124,7 +124,8 @@ h6 {
                         <ul>
                            <li><a href="servicios/vehiculos/cotizacionesRealizadas.php">Vehículos</a></li>
                            <li><a href="servicios/vuelos/cotizacionesRealizadasV.php">Vuelos</a></li>
-                           <li><a href="../../servicios/paquetes/solicitudes.php">Tours</a></li>
+                           <li><a href="servicios/paquetes/solicitudes.php">Tours</a></li>
+                           <li><a href="servicios/hoteles/misCotizaciones.php">Hoteles</a></li>
                      </li>
                   </ul>
                </li>
