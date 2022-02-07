@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     let explorer = $("#kv-explorer");
     let idHotelito;
     let promo = [];
@@ -7,18 +7,18 @@ $(document).ready(function() {
     inicializarPromocion();
 
     //BOTON DE MOSTRAR CARACTERISTICAS
-    $(document).on('click', '.btn-success', function() {
+    $(document).on('click', '.btn-success', function () {
 
         idHotelito = $(this).attr("name");
         let data = obtenerPromocion(idHotelito);
         console.log(data);
-        
+
         $('#nombreH').text(data.nombreHotel);
         $('#precioN').text(data.precioNoche);
         $('#detalles').text(data.descripcionHotel);
         $('#incluye').text(data.incluye);
-      
-            if (data.galeria) {
+
+        if (data.galeria) {
             let galeria = data.galeria;
             let imagenGrande = document.getElementById('imagenGrandeHotel');
             imagenGrande.innerHTML = '';
@@ -28,12 +28,12 @@ $(document).ready(function() {
                     imgBig.className = "product-image";
                     imgBig.src = galeria[index];
                     imagenGrande.appendChild(imgBig);
-                    let crear = $('#' + index);
+                    let crear = $('#2' + index);
                     crear.empty();
                     crear.append('<img src="' + galeria[index] + '" alt="">');
                     crear.show();
                 } else {
-                    let crear = $('#' + index);
+                    let crear = $('#2' + index);
                     crear.empty();
                     crear.append('<img src="' + galeria[index] + '" alt="">');
                     crear.show();
@@ -41,10 +41,10 @@ $(document).ready(function() {
                 }
             }
             for (let i = galeria.length; i <= 10; i++) {
-                $('#' + i).hide();
+                $('#2' + i).hide();
             }
-            
-           
+
+
         }
 
     });
@@ -54,7 +54,7 @@ $(document).ready(function() {
         $.ajax({
             url: URL_SERVIDOR + "hotel/hotel",
             method: "GET"
-        }).done(function(response) {
+        }).done(function (response) {
             let contenedor = $('#contenedorHotel');
             if (response.hoteles) {
                 promo = response.hoteles;
@@ -78,7 +78,7 @@ $(document).ready(function() {
                     contenedor.append(html);
                 }
             }
-        }).fail(function(response) {
+        }).fail(function (response) {
             console.log(response);
 
         });
@@ -109,6 +109,6 @@ $(document).ready(function() {
             }
         });
     }
-    
+
 
 });
