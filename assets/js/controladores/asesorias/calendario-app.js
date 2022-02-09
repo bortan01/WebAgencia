@@ -26,20 +26,12 @@ $(document).ready(function () {
       var select = moment(date).format('YYYY-MM-DD');
       var hoy = moment(new Date()).format('YYYY-MM-DD');
 
-      if (nombreDia == 'domingo') {//si es domingo dia que no abre la agencia
-        const Toast = Swal.mixin();
-        Toast.fire({
-          title: 'Error',
-          icon: 'error',
-          text: 'Este dia esta cerrado!',
-          showConfirmButton: true,
-        });
-      } else {
+     
 
         if (select >= hoy) {
-          $(document).ready(function () {
+         /* $(document).ready(function () {*/
             //***METER LA VALIDACION SI EXITE Y NO HA SIDO ATENDIDO */
-            $.ajax({
+           /* $.ajax({
               url: URL_SERVIDOR + "Cita/verificarExist?id_cliente=" + id,
               method: 'GET'
 
@@ -66,21 +58,21 @@ $(document).ready(function () {
 
                 document.getElementById("btnAgregar").disabled = true;
 
-              } else {
+              } else {*/
                 //por si se queda trabado el disabled lo habilitamos
 
                 $('#modal_registro').modal();
                 $('#txtFecha').val(date.format("DD-MM-YYYY"));
                 $('#dia').val(nombreDia);
                 document.getElementById("btnAgregar").disabled = false;
-              }
+            /*  }
 
             }).fail(function (response) {
               $('#modal_registro').modal();
               $('#txtFecha').val(date.format("DD-MM-YYYY"));
               document.getElementById("btnAgregar").disabled = false;
             });
-          });
+          });*/
           //FIN DE METER LA VALIDACION
         } else {
 
@@ -92,11 +84,6 @@ $(document).ready(function () {
             showConfirmButton: true,
           });
         }
-
-
-
-      }//fin else domingo
-
       // limpiar();
 
 
