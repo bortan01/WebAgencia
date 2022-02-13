@@ -13,29 +13,59 @@
 <?php include_once('../../layaut/plantilla/menu.php'); ?>
 
 <main id="main" style="padding-top: 55px;">
-   <!-- ======= Blog Page ======= -->
-   <div class="blog-page area-padding">
-      <div class="container">
-         <section class="content">
-            <div class="container-fluid">
-               <div class="row">
-                  <div class="col-md-1">
-                  </div>
-                  <!-- /.col -->
-                  <div class="col-md-10">
-                      <!-- THE CALENDAR -->
-                      <div id="calendar"></div>
-                  </div>
-                  <!-- /.col -->
-                  <div class="col-md-1">
-                  </div>
-               </div>
-               <!-- /.row -->
-            </div><!-- /.container-fluid -->
-         </section>
+    <!-- ======= Blog Page ======= -->
+    <div class="blog-page area-padding">
+        <div class="container">
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="section-headline services-head text-center">
+                                <h2>Agendar Cita</h2>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="timeline">
+                                <div>
+                                    <i class="fas fa-calendar bg-blue"></i>
+                                    <div class="timeline-item">
+                                        <h3 class="timeline-header"><a href="#">Selecciona el día para agendar tu cita de Asesoría Migratoria</a></h3>
+                                        <div class="timeline-body">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="row">
+                                                        <div class="col-md-1">
+                                                        </div>
+                                                        <!-- /.col -->
+                                                        <div class="col-md-10">
+                                                            <!-- THE CALENDAR -->
+                                                            <div id="calendar"></div>
+                                                        </div>
+                                                        <!-- /.col -->
+                                                        <div class="col-md-1">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-      </div>
-   </div><!-- End Blog Page -->
+
+
+                    <!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </section>
+
+        </div>
+    </div><!-- End Blog Page -->
 </main><!-- End #main -->
 
 <?php include_once('./modal_eventos.php') ?>
@@ -62,11 +92,11 @@
 <script src="../../assets/js/mdtimepicker.js"></script>
 <script>
 $(document).ready(function() {
-   $('#timepicker').mdtimepicker(); //Initializes the time picker
+    $('#timepicker').mdtimepicker(); //Initializes the time picker
 });
 
 $(document).ready(function() {
-   $('#timepicker2').mdtimepicker(); //Initializes the time picker
+    $('#timepicker2').mdtimepicker(); //Initializes the time picker
 });
 $('#timepicker').select2();
 $('#timepicker2').select2();
