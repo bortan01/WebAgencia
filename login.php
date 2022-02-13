@@ -37,11 +37,11 @@ if (!isset($_SESSION["activo"])) {
       <!-- /.login-logo -->
       <div class="card">
          <div class="card-body login-card-body">
-            <p class="login-box-msg">Identifícate para Iniciar Sesión</p>
+            <p class="login-box-msg">Ingresa tu correo y contraseña para poder acceder al servicio solicitado</p>
             <form id="login-form">
                <div class="input-group mb-3">
                   <input name="username" id="username" type="email" class="form-control"
-                     placeholder="Correo electrónico" autocomplete="false">
+                     placeholder="Correo Electrónico" autocomplete="false">
                   <div class=" input-group-append">
                      <div class="input-group-text">
                         <span class="fas fa-user"></span>
@@ -49,7 +49,7 @@ if (!isset($_SESSION["activo"])) {
                   </div>
                </div>
                <div class="input-group mb-3">
-                  <input type="password" id="password" name="password" class="form-control" placeholder="Password">
+                  <input type="password" id="password" name="password" class="form-control" placeholder="Contraseña">
                   <div class="input-group-append">
                      <div class="input-group-text">
                         <span class="fas fa-lock"></span>

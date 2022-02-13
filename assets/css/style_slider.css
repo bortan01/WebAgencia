@@ -1375,7 +1375,7 @@
 .slider .slides li .slide-caption {
   position: absolute;
   right: 15px;
-  bottom: 20px;
+  bottom: -100px;
   background: white;
   padding: 30px;
   border-radius: 5px;
@@ -1407,7 +1407,7 @@
   position: absolute;
   right: 0;
   z-index: 99;
-  bottom: 200px;
+  bottom: 160px;
   width: 390px;
   text-align: center;
 }
