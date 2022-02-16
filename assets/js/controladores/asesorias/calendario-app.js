@@ -28,7 +28,7 @@ $(document).ready(function () {
 
      
 
-        if (select >= hoy) {
+        if (select > hoy) {
          /* $(document).ready(function () {*/
             //***METER LA VALIDACION SI EXITE Y NO HA SIDO ATENDIDO */
            /* $.ajax({
@@ -80,7 +80,7 @@ $(document).ready(function () {
           Toast.fire({
             title: 'Error',
             icon: 'error',
-            text: 'No se puede agendar una cita en el pasado',
+            text: 'No se puede agendar una cita en el pasado, tampoco el dia actual',
             showConfirmButton: true,
           });
         }
