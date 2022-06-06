@@ -474,7 +474,6 @@ h6 {
                                                                         <span class="badge bg-danger float-right">
                                                                             <h7 name="tipoClase" id="tipoClase"></h7>
                                                                         </span>
-
                                                                     </a>
                                                                 </li>
                                                             </ul>

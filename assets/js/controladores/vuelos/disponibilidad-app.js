@@ -33,12 +33,12 @@ $(document).ready(function () {
                     imgBig.className = "product-image";
                     imgBig.src = galeria[index];
                     imagenGrande.appendChild(imgBig);
-                    let crear = $('#' + index);
+                    let crear = $('#2' + index);
                     crear.empty();
                     crear.append('<img src="' + galeria[index] + '" alt="">');
                     crear.show();
                 } else {
-                    let crear = $('#' + index);
+                    let crear = $('#2' + index);
                     crear.empty();
                     crear.append('<img src="' + galeria[index] + '" alt="">');
                     crear.show();
@@ -47,7 +47,7 @@ $(document).ready(function () {
             }
             for (let i = galeria.length; i <= 10; i++) {
                 //alert('aqui estoy');
-                $('#' + i).hide();
+                $('#2' + i).hide();
             }
 
 
@@ -106,6 +106,24 @@ $(document).ready(function () {
         console.log(promo);
         console.log(idBuscado);
         return promo.find((promocion_vuelo) => promocion_vuelo.idpromocion_vuelo == idBuscado);
+    }
+
+    function name(params) {
+        document.getElementById("addToDo").addEventListener("keyup", function todoList() {
+            var item = document.getElementById("addToDo").value;
+            var text = document.createTextNode(item);
+            var newItem = document.createElement("li");
+            var span = document.createElement("span");
+            var itag = document.createElement("i");
+            itag.className = "fa fa-trash";
+            span.appendChild(itag);
+            newItem.appendChild(span);
+            newItem.appendChild(text);
+
+            if (event.keyCode === 13) { //keycode de tecla enter
+                document.querySelector("ul").appendChild(newItem);
+            }
+        });
     }
 
 });
