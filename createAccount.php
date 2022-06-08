@@ -412,7 +412,7 @@ if (!isset($_SESSION["activo"])) {
    <script src="assets/vendor/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
    <script src="assets/vendor/select2/js/select2.full.min.js"></script>
    <script src="assets/vendor/asiento-bus/js/jquery.seat-charts.js"></script>
-   <script src="assets/js/controladores/client/registro-cliente.js"></script>
+   <script src="assets/js/controladores/client/registro-cliente1.js"></script>
 
 </body>
 
