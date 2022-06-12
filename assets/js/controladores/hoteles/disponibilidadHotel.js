@@ -20,7 +20,7 @@ $(document).ready(function () {
 
         if (data.galeria) {
             let galeria = data.galeria;
-            let imagenGrande = document.getElementById('imagenGrande');
+            let imagenGrande = document.getElementById('imagenGrandeHotel');
             imagenGrande.innerHTML = '';
             for (let index = 0; index < galeria.length; index++) {
                 if (index == 0) {

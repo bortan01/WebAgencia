@@ -542,7 +542,7 @@ h6 {
                                         <div class="card-body">
                                             <div class="row">
                                                 <div class="col-12 col-sm-6">
-                                                    <div id="imagenGrande" class="col-12">
+                                                    <div id="imagenGrandeHotel" class="col-12">
                                                     </div>
                                                     <div id="imagenesPequenas" class="col-12 product-image-thumbs">
 
