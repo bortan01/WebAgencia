@@ -33,7 +33,7 @@ if (isset($_SESSION["activo"])) {
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/animate.min.css" rel="stylesheet" />
     <link href="assets/css/style_slider.css" rel="stylesheet" />
-    <link href="assets/vendor/galery/disponibilidad.css" rel="stylesheet">
+    <link href="assets/css/disponibilidadImagenes.css" rel="stylesheet">
     <link href="assets/css/avatar.css" rel="stylesheet">
 
 
