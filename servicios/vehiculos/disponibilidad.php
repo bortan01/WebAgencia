@@ -236,6 +236,7 @@ console.log(id);
 
 <?php include_once('../../layaut/plantilla/footer.php'); ?>
 <!-- COLOCAR JS ADICIONALES ACA ABAJO -->
+
 <script src="../../assets/vendor/moment/moment.min.js"></script>
 <script src="../../assets/js/controladores/vehiculos/flota-app.js"></script>
 <?php include_once('../../layaut/plantilla/cierre.php'); ?>

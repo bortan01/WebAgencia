@@ -795,7 +795,6 @@ h6 {
     <script src="assets/vendor/venobox/venobox.min.js"></script>
     <script src="assets/js/conf.js"></script>
     <!-- Template Main JS File -->
-    <script src="assets/js/slider.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/controladores/firebase/firestore-config.js"></script>
     <script src="assets/js/controladores/firebase/main.js"></script>

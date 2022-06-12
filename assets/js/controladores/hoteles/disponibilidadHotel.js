@@ -44,10 +44,7 @@ $(document).ready(function () {
                 //alert('aqui estoy');
                 $('#' + i).hide();
             }
-
-
         }
-
     });
 
     // CLICK EN LA IMAGEN PEQUE;A
