@@ -24,34 +24,35 @@ $(document).ready(function () {
 
         console.log("entrando en la funcion");
         if (data.galeria) {
-            let galeria = data.galeria;
-            let imagenGrande = document.getElementById('imagenGrande');
-            imagenGrande.innerHTML = '';
-            for (let index = 0; index < galeria.length; index++) {
-                if (index == 0) {
-                    let imgBig = document.createElement("img");
-                    imgBig.className = "product-image";
-                    imgBig.src = galeria[index];
-                    imagenGrande.appendChild(imgBig);
-                    let crear = $('#' + index);
-                    crear.empty();
-                    crear.append('<img src="' + galeria[index] + '" alt="">');
-                    crear.show();
-                } else {
-                    let crear = $('#' + index);
-                    crear.empty();
-                    crear.append('<img src="' + galeria[index] + '" alt="">');
-                    crear.show();
-
-                }
-            }
-            for (let i = galeria.length; i <= 10; i++) {
-                //alert('aqui estoy');
-                $('#' + i).hide();
-            }
-
-
-        }
+          let galeria = data.galeria;
+          let imagenGrande = document.getElementById('imagenGrande');
+          imagenGrande.innerHTML = '';
+ 
+          galeria.forEach((foto, index) => {
+ 
+             if (index == 0) {
+                let imgBig = document.createElement("img");
+                imgBig.className = "product-image";
+                imgBig.src = foto;
+                imagenGrande.appendChild(imgBig);
+                let crear = $('#' + index);
+                crear.empty();
+                crear.append('<img src="' + foto + '" alt="">');
+                crear.show();
+             } else {
+                let crear = $('#' + index);
+                crear.empty();
+                crear.append('<img src="' + foto + '" alt="">');
+                crear.show();
+ 
+             }
+          });
+          for (let i = galeria.length; i <= 10; i++) {
+             //alert('aqui estoy');
+             $('#' + i).hide();
+          }
+ 
+       }
 
     });
 
@@ -84,7 +85,7 @@ $(document).ready(function () {
                     html += '        <div class="mask">';
                     html += '            <h2 id="">' + promo[index].pais_promocion + '</h2>';
                     html += '            <br>';
-                    html += '            <div> Promoción: ' + promo[index].nombre_promocion + '</div>';
+                    html += '            <div> Promoci贸n: ' + promo[index].nombre_promocion + '</div>';
                     html += '            <p> Precio Vuelo: $' + promo[index].precio_promocion + '</p>';
                     html += '           <button type="button" name="' + promo[index].idpromocion_vuelo + '" class="btn btn-primary" data-toggle="modal"';
                     html += '            data-target="#modal-editar">Detalles</button>';
@@ -101,6 +102,14 @@ $(document).ready(function () {
 
         });
     }
+    
+      // CLICK EN LA IMAGEN PEQUE;A
+    $(document).on('click', '.product-image-thumb', function () {
+       let $image_element = $(this).find('img')
+       $('.product-image').prop('src', $image_element.attr('src'))
+       $('.product-image-thumb.active').removeClass('active')
+       $(this).addClass('active')
+    });
 
     function obtenerPromocion(idBuscado) {
         console.log(promo);
