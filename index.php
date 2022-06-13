@@ -1,6 +1,6 @@
 <?php session_start();
 if (isset($_SESSION["activo"])) {
-   // echo ("LOGUEADO OK");
+   // echo ("LOGUEADO OK1");
 } else {
    // echo ("NO LOGUEADO");
 }
