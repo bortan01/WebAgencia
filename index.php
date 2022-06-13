@@ -544,36 +544,36 @@ h6 {
                                                 <div class="col-12 col-sm-6">
                                                     <div id="imagenGrandeHotel" class="col-12">
                                                     </div>
-                                                    <div id="imagenesPequenas" class="col-12 product-image-thumbs">
+                                                    <div id="imagenesPequenasHotel" class="col-12 product-image-thumbs">
 
-                                                        <div class="product-image-thumb" id="0">
-
-                                                        </div>
-                                                        <div class="product-image-thumb" id="1">
+                                                        <div class="product-image-thumb" id="20">
 
                                                         </div>
-                                                        <div class="product-image-thumb" id="2">
+                                                        <div class="product-image-thumb" id="21">
 
                                                         </div>
-                                                        <div class="product-image-thumb" id="3">
+                                                        <div class="product-image-thumb" id="22">
 
                                                         </div>
-                                                        <div class="product-image-thumb" id="4">
+                                                        <div class="product-image-thumb" id="23">
 
                                                         </div>
-                                                        <div class="product-image-thumb" id="5">
+                                                        <div class="product-image-thumb" id="24">
 
                                                         </div>
-                                                        <div class="product-image-thumb" id="6">
+                                                        <div class="product-image-thumb" id="25">
 
                                                         </div>
-                                                        <div class="product-image-thumb" id="7">
+                                                        <div class="product-image-thumb" id="26">
 
                                                         </div>
-                                                        <div class="product-image-thumb" id="8">
+                                                        <div class="product-image-thumb" id="27">
 
                                                         </div>
-                                                        <div class="product-image-thumb" id="9">
+                                                        <div class="product-image-thumb" id="28">
+
+                                                        </div>
+                                                        <div class="product-image-thumb" id="29">
 
                                                         </div>
                                                     </div>
